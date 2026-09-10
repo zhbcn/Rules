@@ -3,4 +3,8 @@
 
 payload:
   - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,grok-sandbox.com
+  - DOMAIN-SUFFIX,grok.me
+  - DOMAIN-SUFFIX,groktpcontent.com
+  - DOMAIN-SUFFIX,grokusercontent.com
   - DOMAIN-SUFFIX,x.ai
