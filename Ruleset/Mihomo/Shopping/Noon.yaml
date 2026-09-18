@@ -1,0 +1,6 @@
+# Noon
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,noon.com
+  - DOMAIN-SUFFIX,nooncdn.com

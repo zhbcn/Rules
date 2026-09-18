@@ -1,0 +1,11 @@
+# Walmart
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,walmart.com
+  - DOMAIN-SUFFIX,walmart.ca
+  - DOMAIN-SUFFIX,walmart.com.mx
+  - DOMAIN-SUFFIX,walmartimages.com
+  - DOMAIN-SUFFIX,walmartstores.com
+  - DOMAIN-SUFFIX,wal.co
+  - DOMAIN,walmart.onelink.me

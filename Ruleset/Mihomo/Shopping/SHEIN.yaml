@@ -1,0 +1,7 @@
+# SHEIN
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,shein.com
+  - DOMAIN-SUFFIX,ltwebstatic.com
+  - DOMAIN-SUFFIX,sheincdn.com

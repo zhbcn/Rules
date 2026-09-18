@@ -1,0 +1,6 @@
+# Temu
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,temu.com
+  - DOMAIN-SUFFIX,kwcdn.com

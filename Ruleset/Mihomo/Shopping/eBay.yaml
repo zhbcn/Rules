@@ -1,0 +1,22 @@
+# eBay
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,ebay.com
+  - DOMAIN-SUFFIX,ebay.ca
+  - DOMAIN-SUFFIX,ebay.co.uk
+  - DOMAIN-SUFFIX,ebay.de
+  - DOMAIN-SUFFIX,ebay.fr
+  - DOMAIN-SUFFIX,ebay.it
+  - DOMAIN-SUFFIX,ebay.es
+  - DOMAIN-SUFFIX,ebay.com.au
+  - DOMAIN-SUFFIX,ebay.at
+  - DOMAIN-SUFFIX,ebay.be
+  - DOMAIN-SUFFIX,ebay.ch
+  - DOMAIN-SUFFIX,ebay.ie
+  - DOMAIN-SUFFIX,ebay.nl
+  - DOMAIN-SUFFIX,ebay.pl
+  - DOMAIN-SUFFIX,ebay.co.nz
+  - DOMAIN-SUFFIX,ebaystatic.com
+  - DOMAIN-SUFFIX,ebayimg.com
+  - DOMAIN-SUFFIX,ebaycdn.net

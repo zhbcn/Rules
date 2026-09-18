@@ -1,0 +1,9 @@
+# Wayfair
+# https://github.com/zhbcn/Rules
+
+DOMAIN-SUFFIX,wayfair.com
+DOMAIN-SUFFIX,wayfair.ca
+DOMAIN-SUFFIX,wayfair.co.uk
+DOMAIN-SUFFIX,wayfair.de
+DOMAIN-SUFFIX,wayfair.ie
+DOMAIN-SUFFIX,wfcdn.com

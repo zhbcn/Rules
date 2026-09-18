@@ -1,0 +1,6 @@
+# iHerb
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,iherb.com
+  - DOMAIN-SUFFIX,images-iherb.com

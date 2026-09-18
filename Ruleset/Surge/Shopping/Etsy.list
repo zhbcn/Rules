@@ -1,0 +1,6 @@
+# Etsy
+# https://github.com/zhbcn/Rules
+
+DOMAIN-SUFFIX,etsy.com
+DOMAIN-SUFFIX,etsystatic.com
+DOMAIN-SUFFIX,etsy.me

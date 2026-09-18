@@ -1,0 +1,9 @@
+# AliExpress
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,aliexpress.com
+  - DOMAIN-SUFFIX,aliexpress.us
+  - DOMAIN-SUFFIX,aliexpress.ru
+  - DOMAIN-SUFFIX,aliexpress-media.com
+  - DOMAIN,img.alicdn.com

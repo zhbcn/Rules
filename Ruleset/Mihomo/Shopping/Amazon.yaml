@@ -1,0 +1,33 @@
+# Amazon
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,amazon.com
+  - DOMAIN-SUFFIX,amazon.ca
+  - DOMAIN-SUFFIX,amazon.com.mx
+  - DOMAIN-SUFFIX,amazon.com.br
+  - DOMAIN-SUFFIX,amazon.co.uk
+  - DOMAIN-SUFFIX,amazon.de
+  - DOMAIN-SUFFIX,amazon.fr
+  - DOMAIN-SUFFIX,amazon.it
+  - DOMAIN-SUFFIX,amazon.es
+  - DOMAIN-SUFFIX,amazon.nl
+  - DOMAIN-SUFFIX,amazon.se
+  - DOMAIN-SUFFIX,amazon.pl
+  - DOMAIN-SUFFIX,amazon.com.be
+  - DOMAIN-SUFFIX,amazon.ie
+  - DOMAIN-SUFFIX,amazon.co.jp
+  - DOMAIN-SUFFIX,amazon.in
+  - DOMAIN-SUFFIX,amazon.com.au
+  - DOMAIN-SUFFIX,amazon.sg
+  - DOMAIN-SUFFIX,amazon.ae
+  - DOMAIN-SUFFIX,amazon.sa
+  - DOMAIN-SUFFIX,amazon.eg
+  - DOMAIN-SUFFIX,amazon.com.tr
+  - DOMAIN-SUFFIX,amazon.co.za
+  - DOMAIN-SUFFIX,amazon.cn
+  - DOMAIN-SUFFIX,media-amazon.com
+  - DOMAIN-SUFFIX,images-amazon.com
+  - DOMAIN-SUFFIX,ssl-images-amazon.com
+  - DOMAIN-SUFFIX,amazonimages.com
+  - DOMAIN-SUFFIX,amzn.to

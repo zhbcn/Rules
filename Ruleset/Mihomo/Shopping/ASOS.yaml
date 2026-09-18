@@ -1,0 +1,7 @@
+# ASOS
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,asos.com
+  - DOMAIN-SUFFIX,asos-media.com
+  - DOMAIN-SUFFIX,asosservices.com

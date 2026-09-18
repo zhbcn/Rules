@@ -1,0 +1,7 @@
+# Mercari
+# https://github.com/zhbcn/Rules
+
+DOMAIN-SUFFIX,mercari.com
+DOMAIN-SUFFIX,mercari.jp
+DOMAIN-SUFFIX,mercdn.net
+DOMAIN-SUFFIX,mercari-shops.com

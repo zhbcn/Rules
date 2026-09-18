@@ -1,0 +1,8 @@
+# Flipkart
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,flipkart.com
+  - DOMAIN-SUFFIX,flipkart.net
+  - DOMAIN-SUFFIX,flixcart.com
+  - DOMAIN-SUFFIX,fkimg.com

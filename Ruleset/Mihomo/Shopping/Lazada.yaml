@@ -1,0 +1,14 @@
+# Lazada
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,lazada.com
+  - DOMAIN-SUFFIX,lazada.sg
+  - DOMAIN-SUFFIX,lazada.com.my
+  - DOMAIN-SUFFIX,lazada.co.id
+  - DOMAIN-SUFFIX,lazada.co.th
+  - DOMAIN-SUFFIX,lazada.com.ph
+  - DOMAIN-SUFFIX,lazada.vn
+  - DOMAIN-SUFFIX,lazcdn.com
+  - DOMAIN-SUFFIX,slatic.net
+  - DOMAIN-SUFFIX,lazadausercontent.com
