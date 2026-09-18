@@ -1,0 +1,9 @@
+# Etherscan
+# https://github.com/zhbcn/Rules
+
+DOMAIN-SUFFIX,etherscan.io
+DOMAIN-SUFFIX,bscscan.com
+DOMAIN-SUFFIX,polygonscan.com
+DOMAIN-SUFFIX,arbiscan.io
+DOMAIN-SUFFIX,basescan.org
+DOMAIN-SUFFIX,snowtrace.io

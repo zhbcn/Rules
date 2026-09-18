@@ -1,0 +1,5 @@
+# Ethereum
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,ethereum.org

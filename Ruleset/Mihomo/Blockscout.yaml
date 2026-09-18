@@ -1,0 +1,5 @@
+# Blockscout
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,blockscout.com

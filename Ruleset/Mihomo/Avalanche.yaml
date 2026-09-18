@@ -1,0 +1,5 @@
+# Avalanche
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,avax.network

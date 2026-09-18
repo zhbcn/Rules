@@ -1,0 +1,6 @@
+# TRON
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,tron.network
+  - DOMAIN-SUFFIX,trondao.org

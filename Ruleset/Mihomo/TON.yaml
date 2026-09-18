@@ -1,0 +1,5 @@
+# TON
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,ton.org

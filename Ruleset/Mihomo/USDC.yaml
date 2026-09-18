@@ -1,0 +1,6 @@
+# USDC
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,usdc.com
+  - DOMAIN-SUFFIX,circle.com

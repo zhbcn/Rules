@@ -1,0 +1,5 @@
+# Bitcoin
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,bitcoin.org
