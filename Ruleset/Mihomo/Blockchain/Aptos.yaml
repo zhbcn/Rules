@@ -1,6 +1,0 @@
-# Aptos
-# https://github.com/zhbcn/Rules
-
-payload:
-  - DOMAIN-SUFFIX,aptosfoundation.org
-  - DOMAIN-SUFFIX,aptos.dev

@@ -1,0 +1,21 @@
+# NAME: ChinaRailway
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/12306/12306.yaml
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - 12306.cn
+  - 95306.cn
+  - 95572.com
+  - china-railway.com.cn
+  - china-ric.com
+  - crct.com
+  - cre.cn
+  - crecc.com.cn
+  - creip.cn
+  - crscl.com.cn
+  - gzrailway.com.cn
+  - nntlj.com
+  - peoplerail.com
+  - rails.cn
+  - tdpress.com

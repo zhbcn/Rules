@@ -1,0 +1,8 @@
+# NAME: PokePay
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,pokepay.cc
+  - DOMAIN-SUFFIX,pokepay.com

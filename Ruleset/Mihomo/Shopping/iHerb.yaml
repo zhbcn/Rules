@@ -1,5 +1,7 @@
-# iHerb
-# https://github.com/zhbcn/Rules
+# NAME: iHerb
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,iherb.com

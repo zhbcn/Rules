@@ -1,9 +1,0 @@
-# MEXC
-# https://github.com/zhbcn/Rules
-
-payload:
-  - DOMAIN-SUFFIX,mexc.com
-  - DOMAIN,images.mocortech.com
-  - DOMAIN,public.mocortech.com
-  - DOMAIN,static.mocortech.com
-  - DOMAIN,mexcdevelop.github.io

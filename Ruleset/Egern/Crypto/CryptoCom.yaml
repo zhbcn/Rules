@@ -1,0 +1,11 @@
+# NAME: CryptoCom
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - crypto.onelink.me
+  - crypto-exchange.onelink.me
+
+domain_suffix_set:
+  - crypto.com

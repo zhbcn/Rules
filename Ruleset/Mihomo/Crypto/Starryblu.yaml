@@ -1,0 +1,10 @@
+# NAME: Starryblu
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,starryblu.com
+  - DOMAIN-SUFFIX,wotransfer.com
+  - DOMAIN,starryblu-public.oss-accelerate.aliyuncs.com
+  - DOMAIN,panda-common-bucket.oss-cn-hangzhou.aliyuncs.com

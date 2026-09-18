@@ -1,0 +1,12 @@
+# NAME: Qwen
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - qwen.ai
+  - qwen.com
+  - qwenlm.ai
+  - tongyi.com
+  - tongyi.aliyun.com
+  - dashscope.aliyuncs.com

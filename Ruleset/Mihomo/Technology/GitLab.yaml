@@ -1,0 +1,12 @@
+# NAME: GitLab
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: gitlab
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,gitlab.com
+  - DOMAIN-SUFFIX,gitlab.io
+  - DOMAIN-SUFFIX,gitlab.net
+  - DOMAIN-SUFFIX,gitlab-static.net
+  - DOMAIN,gitlab-assets.oss-cn-hongkong.aliyuncs.com

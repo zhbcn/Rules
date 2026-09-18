@@ -1,0 +1,10 @@
+# NAME: Costco
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: costco
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - costco-static.com
+  - costco.com
+  - costcobusinessdelivery.com

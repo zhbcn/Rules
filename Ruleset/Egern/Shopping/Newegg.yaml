@@ -1,0 +1,9 @@
+# NAME: Newegg
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: newegg
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - newegg.com
+  - neweggimages.com

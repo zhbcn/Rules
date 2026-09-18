@@ -1,0 +1,8 @@
+# NAME: Solana
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - solana.com
+  - solana.org

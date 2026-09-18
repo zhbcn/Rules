@@ -1,6 +1,0 @@
-# EtherFi
-# https://github.com/zhbcn/Rules
-
-payload:
-  - DOMAIN-SUFFIX,ether.fi
-  - DOMAIN,etherfi.gitbook.io

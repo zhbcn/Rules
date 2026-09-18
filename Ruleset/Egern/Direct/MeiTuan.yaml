@@ -1,0 +1,26 @@
+# NAME: MeiTuan
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: meituan
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - 100.me
+  - ddcorp.net
+  - ddfresh.net
+  - ddimg.mobi
+  - ddmaicai.net
+  - ddmc.mobi
+  - dduser.mobi
+  - ddxq.mobi
+  - imaicai.mobi
+  - 51ping.com
+  - baobaoaichi.cn
+  - dianping.com
+  - dpfile.com
+  - maoyan.com
+  - meituan.com
+  - meituan.net
+  - mtyun.com
+  - neixin.cn
+  - sankuai.com

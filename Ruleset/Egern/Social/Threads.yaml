@@ -1,0 +1,9 @@
+# NAME: Threads
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: threads
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - threads.com
+  - threads.net

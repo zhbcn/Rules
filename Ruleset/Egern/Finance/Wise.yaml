@@ -1,0 +1,9 @@
+# NAME: Wise
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: wise
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - transferwise.com
+  - wise.com

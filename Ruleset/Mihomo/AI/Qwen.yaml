@@ -1,5 +1,7 @@
-# 千问（Qwen Chat / 千问 APP / 通义 / 百炼 API）
-# https://github.com/hbchnz/Rules
+# NAME: Qwen
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,qwen.ai

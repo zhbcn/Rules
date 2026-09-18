@@ -1,0 +1,12 @@
+# NAME: Etherscan
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - etherscan.io
+  - bscscan.com
+  - polygonscan.com
+  - arbiscan.io
+  - basescan.org
+  - snowtrace.io

@@ -1,5 +1,7 @@
-# MercadoLibre
-# https://github.com/zhbcn/Rules
+# NAME: MercadoLibre
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,mercadolibre.com

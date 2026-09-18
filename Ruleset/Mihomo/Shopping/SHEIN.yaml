@@ -1,5 +1,7 @@
-# SHEIN
-# https://github.com/zhbcn/Rules
+# NAME: SHEIN
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,shein.com

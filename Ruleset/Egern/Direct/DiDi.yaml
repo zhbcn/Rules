@@ -1,0 +1,19 @@
+# NAME: DiDi
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: didi
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - didi-food.com
+  - didi.cn
+  - didialift.com
+  - didiaustralia.blog
+  - didichuxing.com
+  - didiglobal.com
+  - didimobility.co.jp
+  - didistatic.com
+  - diditaxi.com.cn
+  - hongyibo.com.cn
+  - udache.com
+  - xiaojukeji.com

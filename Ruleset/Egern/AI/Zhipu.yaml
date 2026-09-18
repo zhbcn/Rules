@@ -1,0 +1,16 @@
+# NAME: Zhipu
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - chatglm.cn
+  - chatglm.com
+  - bigmodel.cn
+  - zhipuai.cn
+  - zhipu.com
+  - zhipu.ai
+  - z.ai
+  - codegeex.cn
+  - codegeex.ai
+  - autoglm.ai

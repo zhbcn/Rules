@@ -1,0 +1,9 @@
+# NAME: ASOS
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - asos.com
+  - asos-media.com
+  - asosservices.com

@@ -1,5 +1,7 @@
-# Mercari
-# https://github.com/zhbcn/Rules
+# NAME: Mercari
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,mercari.com

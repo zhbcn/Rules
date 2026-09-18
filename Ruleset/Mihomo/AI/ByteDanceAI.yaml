@@ -1,6 +1,7 @@
-# 字节跳动 AI（豆包 / Coze / 即梦等）
-# https://github.com/hbchnz/Rules
-# 依据 v2fly domain-list-community 的 doubao 分类整理
+# NAME: ByteDanceAI
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,doubao.com

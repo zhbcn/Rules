@@ -1,0 +1,12 @@
+# NAME: Bitwarden
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: bitwarden
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - bitwarden.com
+  - bitwarden.eu
+  - bitwarden.net
+  - btwrdn.co
+  - btwrdn.com

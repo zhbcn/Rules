@@ -1,0 +1,22 @@
+# NAME: GovCN
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/GovCN/GovCN.yaml
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - 91huayi.cn
+  - 91huayi.com
+  - 91huayi.net
+  - gov.cn
+  - heart301.cn
+  - henancme.net
+  - huayi.cn
+  - huayiweibo.com
+  - huayiyuan.com
+  - robot301.net
+  - roboticsurg301.net
+  - scncrc.com
+  - shiyanma.org.cn
+  - sqpx.org
+  - wsglw.com
+  - wsglw.net

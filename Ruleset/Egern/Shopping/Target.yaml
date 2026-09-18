@@ -1,0 +1,10 @@
+# NAME: Target
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: target
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - target
+  - target.com
+  - targetimg1.com

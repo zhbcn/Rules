@@ -1,6 +1,0 @@
-# Solana
-# https://github.com/zhbcn/Rules
-
-payload:
-  - DOMAIN-SUFFIX,solana.com
-  - DOMAIN-SUFFIX,solana.org

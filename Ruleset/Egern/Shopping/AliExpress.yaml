@@ -1,0 +1,13 @@
+# NAME: AliExpress
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - img.alicdn.com
+
+domain_suffix_set:
+  - aliexpress.com
+  - aliexpress.us
+  - aliexpress.ru
+  - aliexpress-media.com

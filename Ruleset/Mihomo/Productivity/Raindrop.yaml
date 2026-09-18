@@ -1,5 +1,7 @@
-# Raindrop
-# https://github.com/hbchnz/Rules
+# NAME: Raindrop
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,raindrop.io

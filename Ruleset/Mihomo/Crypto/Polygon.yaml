@@ -1,0 +1,7 @@
+# NAME: Polygon
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,polygon.technology

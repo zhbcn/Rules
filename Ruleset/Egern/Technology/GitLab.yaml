@@ -1,0 +1,14 @@
+# NAME: GitLab
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: gitlab
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - gitlab-assets.oss-cn-hongkong.aliyuncs.com
+
+domain_suffix_set:
+  - gitlab.com
+  - gitlab.io
+  - gitlab.net
+  - gitlab-static.net

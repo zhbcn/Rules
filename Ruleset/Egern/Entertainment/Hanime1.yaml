@@ -1,0 +1,10 @@
+# NAME: Hanime1
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - vdownload.hembed.com
+
+domain_suffix_set:
+  - hanime1.me

@@ -1,0 +1,18 @@
+# NAME: HeMa
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/HeMa/HeMa.yaml
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - freshhema.com
+  - hemaapi.cn
+  - hemamax.com
+  - hemaopen.cn
+  - hemaos.com
+  - hemashare.cn
+  - marioall.com
+  - marioin.com
+  - mariowap.com
+  - rexpos.cn
+  - rextech.cn
+  - shyhhema.com

@@ -1,0 +1,10 @@
+# NAME: Coinbase
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - asset-metadata-service-production.s3.amazonaws.com
+
+domain_suffix_set:
+  - coinbase.com

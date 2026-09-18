@@ -1,0 +1,13 @@
+# NAME: MEXC
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - images.mocortech.com
+  - public.mocortech.com
+  - static.mocortech.com
+  - mexcdevelop.github.io
+
+domain_suffix_set:
+  - mexc.com

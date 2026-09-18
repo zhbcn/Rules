@@ -1,5 +1,7 @@
-# Grok
-# https://github.com/hbchnz/Rules
+# NAME: Grok
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,grok.com

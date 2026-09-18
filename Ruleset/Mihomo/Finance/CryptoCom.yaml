@@ -1,7 +1,0 @@
-# CryptoCom
-# https://github.com/zhbcn/Rules
-
-payload:
-  - DOMAIN-SUFFIX,crypto.com
-  - DOMAIN,crypto.onelink.me
-  - DOMAIN,crypto-exchange.onelink.me

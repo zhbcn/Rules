@@ -1,0 +1,17 @@
+# NAME: Walmart
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: walmart
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - walmart
+  - w-mt.co
+  - wal-mart.com
+  - wal.co
+  - walmart-content.com
+  - walmart.cn
+  - walmart.com
+  - walmart.pharmacy
+  - walmartimages.com
+  - wmt.co

@@ -1,9 +1,12 @@
-# Bitwarden
-# https://github.com/hbchnz/Rules
+# NAME: Bitwarden
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: bitwarden
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,bitwarden.com
-  - DOMAIN-SUFFIX,bitwarden.net
   - DOMAIN-SUFFIX,bitwarden.eu
-  - DOMAIN-SUFFIX,btwrdn.com
+  - DOMAIN-SUFFIX,bitwarden.net
   - DOMAIN-SUFFIX,btwrdn.co
+  - DOMAIN-SUFFIX,btwrdn.com

@@ -1,5 +1,7 @@
-# Hermes Agent
-# https://github.com/hbchnz/Rules
+# NAME: HermesAgent
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,nousresearch.com

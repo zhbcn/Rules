@@ -1,0 +1,8 @@
+# NAME: TRONSCAN
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,tronscan.org
+  - DOMAIN-SUFFIX,tronscanapi.com

@@ -1,0 +1,16 @@
+# NAME: Lazada
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - lazada.com
+  - lazada.sg
+  - lazada.com.my
+  - lazada.co.id
+  - lazada.co.th
+  - lazada.com.ph
+  - lazada.vn
+  - lazcdn.com
+  - slatic.net
+  - lazadausercontent.com

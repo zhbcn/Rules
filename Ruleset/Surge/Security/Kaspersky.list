@@ -1,6 +1,0 @@
-# Kaspersky
-# https://github.com/hbchnz/Rules
-
-DOMAIN-SUFFIX,kaspersky.com
-DOMAIN-SUFFIX,kaspersky.com.cn
-DOMAIN-SUFFIX,kaspersky-labs.com

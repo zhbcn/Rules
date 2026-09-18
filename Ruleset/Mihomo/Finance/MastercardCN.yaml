@@ -1,5 +1,7 @@
-# MastercardCN
-# https://github.com/hbchnz/Rules
+# NAME: MastercardCN
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,mastercard.com.cn

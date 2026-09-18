@@ -1,0 +1,10 @@
+# NAME: HTX
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,htx.com
+  - DOMAIN-SUFFIX,huobi.com
+  - DOMAIN-SUFFIX,huobi.pro
+  - DOMAIN-SUFFIX,hbfile.net

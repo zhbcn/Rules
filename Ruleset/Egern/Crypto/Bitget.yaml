@@ -1,0 +1,14 @@
+# NAME: Bitget
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - bitget.com
+  - bitget.site
+  - bitgetapp.com
+  - bitgetapps.com
+  - bgstatic.com
+  - bgbstatic.com
+  - btsgtm.com
+  - bgwapi.io

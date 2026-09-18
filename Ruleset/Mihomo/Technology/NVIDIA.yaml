@@ -1,18 +1,37 @@
-# NVIDIA（GeForce / 驱动下载 / NVIDIA App）
-# https://github.com/hbchnz/Rules
+# NAME: NVIDIA
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: nvidia
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN-SUFFIX,nvidia.com
-  - DOMAIN-SUFFIX,nvidia.cn
+  - DOMAIN-SUFFIX,hf.co
+  - DOMAIN-SUFFIX,hf.space
+  - DOMAIN-SUFFIX,huggingface.co
+  - DOMAIN-SUFFIX,geforce.cn
+  - DOMAIN-SUFFIX,geforce.co.kr
+  - DOMAIN-SUFFIX,geforce.co.uk
+  - DOMAIN-SUFFIX,geforce.com
+  - DOMAIN-SUFFIX,geforce.com.tw
+  - DOMAIN-SUFFIX,gputechconf.cn
+  - DOMAIN-SUFFIX,gputechconf.co.kr
+  - DOMAIN-SUFFIX,gputechconf.com
+  - DOMAIN-SUFFIX,gputechconf.com.au
+  - DOMAIN-SUFFIX,gputechconf.com.tw
+  - DOMAIN-SUFFIX,gputechconf.eu
+  - DOMAIN-SUFFIX,gputechconf.in
+  - DOMAIN-SUFFIX,gputechconf.jp
   - DOMAIN-SUFFIX,nvidia.asia
   - DOMAIN-SUFFIX,nvidia.at
   - DOMAIN-SUFFIX,nvidia.be
   - DOMAIN-SUFFIX,nvidia.ch
+  - DOMAIN-SUFFIX,nvidia.cn
   - DOMAIN-SUFFIX,nvidia.co.at
   - DOMAIN-SUFFIX,nvidia.co.in
   - DOMAIN-SUFFIX,nvidia.co.jp
   - DOMAIN-SUFFIX,nvidia.co.kr
   - DOMAIN-SUFFIX,nvidia.co.uk
+  - DOMAIN-SUFFIX,nvidia.com
   - DOMAIN-SUFFIX,nvidia.com.au
   - DOMAIN-SUFFIX,nvidia.com.br
   - DOMAIN-SUFFIX,nvidia.com.mx
@@ -41,26 +60,14 @@ payload:
   - DOMAIN-SUFFIX,nvidia.ru
   - DOMAIN-SUFFIX,nvidia.se
   - DOMAIN-SUFFIX,nvidia.tw
-  - DOMAIN-SUFFIX,nvidiagrid.net
   - DOMAIN-SUFFIX,nvidiaforhp.com
-  - DOMAIN-SUFFIX,nvidia.custhelp.com
-  - DOMAIN-SUFFIX,nvidia.tt.omtrdc.net
-  - DOMAIN-SUFFIX,geforce.cn
-  - DOMAIN-SUFFIX,geforce.co.kr
-  - DOMAIN-SUFFIX,geforce.co.uk
-  - DOMAIN-SUFFIX,geforce.com
-  - DOMAIN-SUFFIX,geforce.com.tw
-  - DOMAIN-SUFFIX,gputechconf.cn
-  - DOMAIN-SUFFIX,gputechconf.co.kr
-  - DOMAIN-SUFFIX,gputechconf.com
-  - DOMAIN-SUFFIX,gputechconf.com.au
-  - DOMAIN-SUFFIX,gputechconf.com.tw
-  - DOMAIN-SUFFIX,gputechconf.eu
-  - DOMAIN-SUFFIX,gputechconf.in
-  - DOMAIN-SUFFIX,gputechconf.jp
+  - DOMAIN-SUFFIX,nvidiagrid.net
+  - DOMAIN-SUFFIX,shotwithgeforce.com
   - DOMAIN-SUFFIX,tegrazone.co
   - DOMAIN-SUFFIX,tegrazone.co.kr
   - DOMAIN-SUFFIX,tegrazone.com
   - DOMAIN-SUFFIX,tegrazone.jp
   - DOMAIN-SUFFIX,tegrazone.kr
-  - DOMAIN-SUFFIX,shotwithgeforce.com
+  - DOMAIN,nvidia.custhelp.com
+  - DOMAIN,nvidia.tt.omtrdc.net
+  - DOMAIN,cn.download.nvidia.com

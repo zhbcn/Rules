@@ -1,0 +1,14 @@
+# NAME: Notion
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: notion
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - notion-static.com
+  - notion-status.com
+  - notion.com
+  - notion.new
+  - notion.site
+  - notion.so
+  - notionusercontent.com

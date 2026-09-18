@@ -1,0 +1,13 @@
+# NAME: Gate
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,gate.com
+  - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,gateio.ws
+  - DOMAIN-SUFFIX,gateapi.io
+  - DOMAIN-SUFFIX,gateapp.org
+  - DOMAIN,gimg2.staticimgs.com
+  - DOMAIN,icon.staticimgs.com

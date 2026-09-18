@@ -1,0 +1,19 @@
+# NAME: DiDi
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: didi
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,didi-food.com
+  - DOMAIN-SUFFIX,didi.cn
+  - DOMAIN-SUFFIX,didialift.com
+  - DOMAIN-SUFFIX,didiaustralia.blog
+  - DOMAIN-SUFFIX,didichuxing.com
+  - DOMAIN-SUFFIX,didiglobal.com
+  - DOMAIN-SUFFIX,didimobility.co.jp
+  - DOMAIN-SUFFIX,didistatic.com
+  - DOMAIN-SUFFIX,diditaxi.com.cn
+  - DOMAIN-SUFFIX,hongyibo.com.cn
+  - DOMAIN-SUFFIX,udache.com
+  - DOMAIN-SUFFIX,xiaojukeji.com

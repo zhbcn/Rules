@@ -1,6 +1,0 @@
-# TRONSCAN
-# https://github.com/zhbcn/Rules
-
-payload:
-  - DOMAIN-SUFFIX,tronscan.org
-  - DOMAIN-SUFFIX,tronscanapi.com

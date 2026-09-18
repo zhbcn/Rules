@@ -1,0 +1,15 @@
+# NAME: Gate
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - gimg2.staticimgs.com
+  - icon.staticimgs.com
+
+domain_suffix_set:
+  - gate.com
+  - gate.io
+  - gateio.ws
+  - gateapi.io
+  - gateapp.org

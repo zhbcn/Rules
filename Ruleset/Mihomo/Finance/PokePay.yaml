@@ -1,6 +1,0 @@
-# PokePay
-# https://github.com/zhbcn/Rules
-
-payload:
-  - DOMAIN-SUFFIX,pokepay.cc
-  - DOMAIN-SUFFIX,pokepay.com

@@ -1,0 +1,14 @@
+# NAME: Bitget
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,bitget.com
+  - DOMAIN-SUFFIX,bitget.site
+  - DOMAIN-SUFFIX,bitgetapp.com
+  - DOMAIN-SUFFIX,bitgetapps.com
+  - DOMAIN-SUFFIX,bgstatic.com
+  - DOMAIN-SUFFIX,bgbstatic.com
+  - DOMAIN-SUFFIX,btsgtm.com
+  - DOMAIN-SUFFIX,bgwapi.io

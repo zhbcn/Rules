@@ -1,8 +1,10 @@
-# Target
-# https://github.com/zhbcn/Rules
+# NAME: Target
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: target
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
+  - DOMAIN-SUFFIX,target
   - DOMAIN-SUFFIX,target.com
   - DOMAIN-SUFFIX,targetimg1.com
-  - DOMAIN-SUFFIX,tgtneptune.com
-  - DOMAIN,target.scene7.com

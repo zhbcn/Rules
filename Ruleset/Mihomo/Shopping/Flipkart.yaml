@@ -1,5 +1,7 @@
-# Flipkart
-# https://github.com/zhbcn/Rules
+# NAME: Flipkart
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,flipkart.com

@@ -1,5 +1,7 @@
-# Noon
-# https://github.com/zhbcn/Rules
+# NAME: Noon
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,noon.com

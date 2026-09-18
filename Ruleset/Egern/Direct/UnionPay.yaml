@@ -1,0 +1,21 @@
+# NAME: UnionPay
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: unionpay
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - 95516.com
+  - 95516.net
+  - chinapay.com
+  - chinaums.com
+  - chinaunionpay.com
+  - chinaunionpay.com.cn
+  - chinaunionpay.net
+  - cup.com.cn
+  - cup62.cn
+  - unionpay.com
+  - unionpay.net
+  - unionpaysecure.com
+  - unionpayintl.cn
+  - unionpayintl.com

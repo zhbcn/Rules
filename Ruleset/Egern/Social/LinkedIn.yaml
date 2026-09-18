@@ -1,0 +1,21 @@
+# NAME: LinkedIn
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: linkedin
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - e122475.dscg.akamaiedge.net
+  - licdn.cn.cdn20.com
+  - linkedin.sc.omtrdc.net
+
+domain_suffix_set:
+  - bizographics.com
+  - l-0005.dc-msedge.net
+  - l-0005.l-msedge.net
+  - licdn.com
+  - linkedin.at
+  - linkedin.com
+  - lnkd.in
+  - licdn.cn
+  - linkedin.cn

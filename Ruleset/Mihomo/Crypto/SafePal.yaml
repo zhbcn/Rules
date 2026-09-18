@@ -1,0 +1,9 @@
+# NAME: SafePal
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: safepal
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,isafepal.com
+  - DOMAIN-SUFFIX,safepal.com

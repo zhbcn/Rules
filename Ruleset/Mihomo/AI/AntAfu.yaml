@@ -1,5 +1,7 @@
-# 蚂蚁阿福（AI 健康助手，原 AQ）
-# https://github.com/hbchnz/Rules
+# NAME: AntAfu
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,antafu.com

@@ -1,0 +1,7 @@
+# NAME: Bitcoin
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,bitcoin.org

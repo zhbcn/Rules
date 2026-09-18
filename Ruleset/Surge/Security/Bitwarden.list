@@ -1,8 +1,0 @@
-# Bitwarden
-# https://github.com/hbchnz/Rules
-
-DOMAIN-SUFFIX,bitwarden.com
-DOMAIN-SUFFIX,bitwarden.net
-DOMAIN-SUFFIX,bitwarden.eu
-DOMAIN-SUFFIX,btwrdn.com
-DOMAIN-SUFFIX,btwrdn.co

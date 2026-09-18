@@ -1,0 +1,12 @@
+# NAME: Wayfair
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - wayfair.com
+  - wayfair.ca
+  - wayfair.co.uk
+  - wayfair.de
+  - wayfair.ie
+  - wfcdn.com

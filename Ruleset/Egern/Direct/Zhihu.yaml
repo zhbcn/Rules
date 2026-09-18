@@ -1,0 +1,13 @@
+# NAME: Zhihu
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: zhihu
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - zhihu.com
+  - zhimg.com
+  - laiyagushi.com
+  - vzuu.com
+  - crash2.zhihu.com
+  - zhihu-web-analytics.zhihu.com

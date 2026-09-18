@@ -1,7 +1,15 @@
-# 小黑盒（App / 黑盒语音 / 小黑盒加速器）
-# https://github.com/hbchnz/Rules
+# NAME: XiaoHeiHe
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: xiaoheihe
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN-SUFFIX,xiaoheihe.cn
-  - DOMAIN-SUFFIX,max-c.com
+  - DOMAIN-SUFFIX,1xhh.cn
+  - DOMAIN-SUFFIX,accxiaoheihe.com
   - DOMAIN-SUFFIX,chat.top
+  - DOMAIN-SUFFIX,debugmode.cn
+  - DOMAIN-SUFFIX,max-c.com
+  - DOMAIN-SUFFIX,maxadmin.cn
+  - DOMAIN-SUFFIX,maxjia.com
+  - DOMAIN-SUFFIX,xiaoheihe.cn

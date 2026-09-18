@@ -1,5 +1,7 @@
-# Zalando
-# https://github.com/zhbcn/Rules
+# NAME: Zalando
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,zalando.com

@@ -1,0 +1,10 @@
+# NAME: EtherFi
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - etherfi.gitbook.io
+
+domain_suffix_set:
+  - ether.fi

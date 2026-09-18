@@ -1,0 +1,8 @@
+# NAME: Polkadot
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,polkadot.com
+  - DOMAIN-SUFFIX,polkadot.network

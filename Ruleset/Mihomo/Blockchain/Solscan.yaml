@@ -1,5 +1,0 @@
-# Solscan
-# https://github.com/zhbcn/Rules
-
-payload:
-  - DOMAIN-SUFFIX,solscan.io

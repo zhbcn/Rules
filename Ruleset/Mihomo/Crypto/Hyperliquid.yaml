@@ -1,0 +1,8 @@
+# NAME: Hyperliquid
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,hyperfoundation.org
+  - DOMAIN-SUFFIX,hyperliquid.xyz

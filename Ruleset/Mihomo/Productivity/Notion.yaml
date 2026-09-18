@@ -1,0 +1,14 @@
+# NAME: Notion
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: notion
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,notion-static.com
+  - DOMAIN-SUFFIX,notion-status.com
+  - DOMAIN-SUFFIX,notion.com
+  - DOMAIN-SUFFIX,notion.new
+  - DOMAIN-SUFFIX,notion.site
+  - DOMAIN-SUFFIX,notion.so
+  - DOMAIN-SUFFIX,notionusercontent.com

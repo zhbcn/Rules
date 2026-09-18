@@ -1,0 +1,18 @@
+# NAME: OneDrive
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: onedrive
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - 1drv.com
+  - 1drv.ms
+  - livefilestore.com
+  - onedrive.co
+  - onedrive.co.uk
+  - onedrive.com
+  - onedrive.eu
+  - onedrive.net
+  - onedrive.org
+  - onedrive.live.com
+  - storage.live.com

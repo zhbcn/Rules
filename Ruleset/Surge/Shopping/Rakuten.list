@@ -1,9 +1,0 @@
-# 乐天市场（Rakuten Ichiba）
-# https://github.com/hbchnz/Rules
-
-DOMAIN-SUFFIX,rakuten.co.jp
-DOMAIN-SUFFIX,rakuten.ne.jp
-DOMAIN-SUFFIX,r10s.jp
-DOMAIN-SUFFIX,rakuten-static.com
-DOMAIN-SUFFIX,r10.to
-DOMAIN,ichiba.faq.rakuten.net

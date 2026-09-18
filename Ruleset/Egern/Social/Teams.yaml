@@ -1,0 +1,12 @@
+# NAME: Teams
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/Teams/Teams.yaml
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - teams.events.data.microsoft.com
+
+domain_suffix_set:
+  - teams.cdn.live.net
+  - teams.live.com
+  - teams.microsoft.com

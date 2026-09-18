@@ -1,18 +1,10 @@
-# Costco
-# https://github.com/zhbcn/Rules
+# NAME: Costco
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: costco
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN-SUFFIX,costco.com
-  - DOMAIN-SUFFIX,costco.ca
-  - DOMAIN-SUFFIX,costco.co.jp
-  - DOMAIN-SUFFIX,costco.co.kr
-  - DOMAIN-SUFFIX,costco.co.nz
-  - DOMAIN-SUFFIX,costco.co.uk
-  - DOMAIN-SUFFIX,costco.com.au
-  - DOMAIN-SUFFIX,costco.com.mx
-  - DOMAIN-SUFFIX,costco.com.tw
-  - DOMAIN-SUFFIX,costco.es
-  - DOMAIN-SUFFIX,costco.fr
-  - DOMAIN-SUFFIX,costco.is
-  - DOMAIN-SUFFIX,costco.se
   - DOMAIN-SUFFIX,costco-static.com
+  - DOMAIN-SUFFIX,costco.com
+  - DOMAIN-SUFFIX,costcobusinessdelivery.com

@@ -1,0 +1,18 @@
+# NAME: Slack
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: slack
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - slack-core.com
+  - slack-edge.com
+  - slack-files.com
+  - slack-imgs.com
+  - slack-msgs.com
+  - slack-redir.net
+  - slack.com
+  - slackb.com
+  - slackcertified.com
+  - slackdemo.com
+  - slackhq.com

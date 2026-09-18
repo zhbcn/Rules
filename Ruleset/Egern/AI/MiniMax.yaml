@@ -1,0 +1,12 @@
+# NAME: MiniMax
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - minimaxi.com
+  - minimax.chat
+  - minimax.io
+  - hailuoai.com
+  - hailuoai.video
+  - talkie-ai.com

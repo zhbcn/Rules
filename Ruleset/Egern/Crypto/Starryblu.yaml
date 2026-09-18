@@ -1,0 +1,12 @@
+# NAME: Starryblu
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - starryblu-public.oss-accelerate.aliyuncs.com
+  - panda-common-bucket.oss-cn-hangzhou.aliyuncs.com
+
+domain_suffix_set:
+  - starryblu.com
+  - wotransfer.com

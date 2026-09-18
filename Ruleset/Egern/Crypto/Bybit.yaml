@@ -1,0 +1,25 @@
+# NAME: Bybit
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: bybit
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - bybit-exchange.github.io
+  - bybit.ada.support
+
+domain_suffix_set:
+  - bybit.com
+  - bycsi.com
+  - bytick.com
+  - byapis.com
+  - bycbe.com
+  - bymj.io
+  - byabcde.com
+  - byapps.net
+  - byd3c3.com
+  - bybit.biz
+  - bybdc6.com
+  - bybit-global.com
+  - bybit.cloud
+  - bybitglobal.com

@@ -1,0 +1,14 @@
+# NAME: Pinduoduo
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: pinduoduo
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - pddcdn.com
+  - pddim.com
+  - pddpic.com
+  - pddugc.com
+  - pinduoduo.com
+  - pinduoduo.net
+  - yangkeduo.com

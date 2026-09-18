@@ -1,6 +1,0 @@
-# Coinbase
-# https://github.com/zhbcn/Rules
-
-payload:
-  - DOMAIN-SUFFIX,coinbase.com
-  - DOMAIN,asset-metadata-service-production.s3.amazonaws.com

@@ -1,0 +1,10 @@
+# NAME: Flipkart
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - flipkart.com
+  - flipkart.net
+  - flixcart.com
+  - fkimg.com

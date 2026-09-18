@@ -1,0 +1,15 @@
+# NAME: Farfetch
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: farfetch
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - farfetch-apps.com
+  - farfetch-contents.com
+  - farfetch.cn
+  - farfetch.com
+  - farfetch.com.cn
+  - farfetch.net
+  - farfetch.net.cn
+  - fflnk.net

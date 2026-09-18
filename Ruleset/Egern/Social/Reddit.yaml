@@ -1,0 +1,19 @@
+# NAME: Reddit
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: reddit
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - redd.it
+  - reddit.app.link
+  - reddit.com
+  - redditblog.com
+  - reddithelp.com
+  - redditinc.com
+  - redditmail.com
+  - redditmedia.com
+  - redditspace.com
+  - redditstatic.com
+  - redditstatus.com
+  - reddit.map.fastly.net

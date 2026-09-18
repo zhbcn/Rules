@@ -1,6 +1,10 @@
-# N26
-# https://github.com/zhbcn/Rules
+# NAME: N26
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: n26
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,n26.com
+  - DOMAIN-SUFFIX,number26.de
   - DOMAIN-SUFFIX,tech26.de

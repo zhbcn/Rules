@@ -1,10 +1,9 @@
-# Manus
-# https://github.com/hbchnz/Rules
+# NAME: Manus
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: manus
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN,manus.go.link
   - DOMAIN-SUFFIX,manus.im
-  - DOMAIN-SUFFIX,manus.ai
   - DOMAIN-SUFFIX,manuscdn.com
-  - DOMAIN-SUFFIX,manus.space
-  - DOMAIN-SUFFIX,manus.bot

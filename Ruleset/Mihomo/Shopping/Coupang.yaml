@@ -1,5 +1,8 @@
-# Coupang
-# https://github.com/zhbcn/Rules
+# NAME: Coupang
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: coupang
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,coupang.com

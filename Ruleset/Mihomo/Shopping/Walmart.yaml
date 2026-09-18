@@ -1,11 +1,17 @@
-# Walmart
-# https://github.com/zhbcn/Rules
+# NAME: Walmart
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: walmart
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN-SUFFIX,walmart.com
-  - DOMAIN-SUFFIX,walmart.ca
-  - DOMAIN-SUFFIX,walmart.com.mx
-  - DOMAIN-SUFFIX,walmartimages.com
-  - DOMAIN-SUFFIX,walmartstores.com
+  - DOMAIN-SUFFIX,walmart
+  - DOMAIN-SUFFIX,w-mt.co
+  - DOMAIN-SUFFIX,wal-mart.com
   - DOMAIN-SUFFIX,wal.co
-  - DOMAIN,walmart.onelink.me
+  - DOMAIN-SUFFIX,walmart-content.com
+  - DOMAIN-SUFFIX,walmart.cn
+  - DOMAIN-SUFFIX,walmart.com
+  - DOMAIN-SUFFIX,walmart.pharmacy
+  - DOMAIN-SUFFIX,walmartimages.com
+  - DOMAIN-SUFFIX,wmt.co

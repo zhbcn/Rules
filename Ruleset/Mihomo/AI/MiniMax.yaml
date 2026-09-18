@@ -1,5 +1,7 @@
-# MiniMax（MiniMax 官网 / 开放平台 / 海螺AI / MiniMax Agent / Talkie）
-# https://github.com/hbchnz/Rules
+# NAME: MiniMax
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,minimaxi.com

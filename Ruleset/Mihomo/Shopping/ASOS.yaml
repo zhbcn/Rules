@@ -1,5 +1,7 @@
-# ASOS
-# https://github.com/zhbcn/Rules
+# NAME: ASOS
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,asos.com

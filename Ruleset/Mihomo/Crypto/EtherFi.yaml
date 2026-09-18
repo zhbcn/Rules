@@ -1,0 +1,8 @@
+# NAME: EtherFi
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,ether.fi
+  - DOMAIN,etherfi.gitbook.io

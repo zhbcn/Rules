@@ -1,0 +1,7 @@
+# NAME: YouTubeMusic
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - music.youtube.com

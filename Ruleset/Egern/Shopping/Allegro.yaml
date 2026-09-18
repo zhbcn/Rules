@@ -1,0 +1,11 @@
+# NAME: Allegro
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - allegro.pl
+  - allegro.cz
+  - allegro.sk
+  - allegrostatic.com
+  - allegroimg.com

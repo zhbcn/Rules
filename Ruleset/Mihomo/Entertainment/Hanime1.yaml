@@ -1,5 +1,7 @@
-# Hanime1
-# https://github.com/hbchnz/Rules
+# NAME: Hanime1
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,hanime1.me

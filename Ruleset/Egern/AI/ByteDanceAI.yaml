@@ -1,0 +1,38 @@
+# NAME: ByteDanceAI
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - doubao.com
+  - doubao-dev.com
+  - doubaocdn.com
+  - building.fun
+  - api-building.fun
+  - dbbuilding.fun
+  - butterfly-static.cn
+  - butterflyai.cn
+  - hi-butterfly.cn
+  - coze.cn
+  - coze.email
+  - coze.site
+  - coze-dns-01.com
+  - cozeapp.net
+  - cozebaas.cn
+  - cozebuild.com
+  - cozecdn.com
+  - cozedeploy.com
+  - cozefn.cn
+  - cozeide.cn
+  - cozesdk.com
+  - cozetest.cn
+  - cozetest2.cn
+  - cozetest3.cn
+  - instreet.com
+  - maoxiangai.com
+  - myparallelstory.com
+  - oceancloudapi.com
+  - obriccloud.com
+  - obricclouddw.com
+  - picpic-ai.cn
+  - pixeldance.com

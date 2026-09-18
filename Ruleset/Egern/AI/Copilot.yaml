@@ -1,0 +1,15 @@
+# NAME: Copilot
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: github-copilot
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - copilot-proxy.githubusercontent.com
+  - copilot-workspace.githubnext.com
+  - copilotprodattachments.blob.core.windows.net
+  - copilot-telemetry-service.githubusercontent.com
+  - copilot-telemetry.githubusercontent.com
+
+domain_suffix_set:
+  - githubcopilot.com

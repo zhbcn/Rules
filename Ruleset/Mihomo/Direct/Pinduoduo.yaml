@@ -1,0 +1,14 @@
+# NAME: Pinduoduo
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: pinduoduo
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,pddcdn.com
+  - DOMAIN-SUFFIX,pddim.com
+  - DOMAIN-SUFFIX,pddpic.com
+  - DOMAIN-SUFFIX,pddugc.com
+  - DOMAIN-SUFFIX,pinduoduo.com
+  - DOMAIN-SUFFIX,pinduoduo.net
+  - DOMAIN-SUFFIX,yangkeduo.com

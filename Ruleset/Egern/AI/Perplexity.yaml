@@ -1,0 +1,14 @@
+# NAME: Perplexity
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: perplexity
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - ppl-ai-file-upload.s3.amazonaws.com
+  - pplx-res.cloudinary.com
+
+domain_suffix_set:
+  - perplexity.ai
+  - perplexity.com
+  - pplx.ai

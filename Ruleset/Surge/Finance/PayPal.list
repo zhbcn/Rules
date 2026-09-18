@@ -1,8 +1,0 @@
-# PayPal
-# https://github.com/zhbcn/Rules
-
-DOMAIN-SUFFIX,paypal.com
-DOMAIN-SUFFIX,paypalobjects.com
-DOMAIN-SUFFIX,paypal.me
-DOMAIN-SUFFIX,paypal-corp.com
-DOMAIN-SUFFIX,pypl.com

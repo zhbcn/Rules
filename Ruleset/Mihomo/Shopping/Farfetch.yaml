@@ -1,6 +1,15 @@
-# Farfetch
-# https://github.com/zhbcn/Rules
+# NAME: Farfetch
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: farfetch
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN-SUFFIX,farfetch.com
+  - DOMAIN-SUFFIX,farfetch-apps.com
   - DOMAIN-SUFFIX,farfetch-contents.com
+  - DOMAIN-SUFFIX,farfetch.cn
+  - DOMAIN-SUFFIX,farfetch.com
+  - DOMAIN-SUFFIX,farfetch.com.cn
+  - DOMAIN-SUFFIX,farfetch.net
+  - DOMAIN-SUFFIX,farfetch.net.cn
+  - DOMAIN-SUFFIX,fflnk.net

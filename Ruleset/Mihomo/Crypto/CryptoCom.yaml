@@ -1,0 +1,9 @@
+# NAME: CryptoCom
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,crypto.com
+  - DOMAIN,crypto.onelink.me
+  - DOMAIN,crypto-exchange.onelink.me

@@ -1,5 +1,7 @@
-# 智谱清言（清言 APP / 官网 / BigModel 开放平台 / ZCode / Z.ai）
-# https://github.com/hbchnz/Rules
+# NAME: Zhipu
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,chatglm.cn

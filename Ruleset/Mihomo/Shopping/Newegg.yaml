@@ -1,8 +1,9 @@
-# Newegg
-# https://github.com/zhbcn/Rules
+# NAME: Newegg
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: newegg
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,newegg.com
-  - DOMAIN-SUFFIX,newegg.ca
   - DOMAIN-SUFFIX,neweggimages.com
-  - DOMAIN-SUFFIX,neweggbusiness.com

@@ -1,0 +1,28 @@
+# NAME: Telegram
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: telegram
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - cdn-telegram.org
+  - comments.app
+  - contest.com
+  - fragment.com
+  - graph.org
+  - quiz.directory
+  - t.me
+  - tdesktop.com
+  - telega.one
+  - telegra.ph
+  - telegram-cdn.org
+  - telegram.dog
+  - telegram.me
+  - telegram.org
+  - telegram.space
+  - telesco.pe
+  - tg.dev
+  - ton.org
+  - toncenter.com
+  - tx.me
+  - usercontent.dev
