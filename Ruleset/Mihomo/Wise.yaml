@@ -1,0 +1,11 @@
+# Wise
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,wise.com
+  - DOMAIN-SUFFIX,transferwise.com
+  - DOMAIN-SUFFIX,wiseconnect.io
+  - DOMAIN-SUFFIX,wiseturkiye.com.tr
+  - DOMAIN,consumer-onboarding-service.envoy.tw.ee
+  - DOMAIN,marketing-data.envoy.tw.ee
+  - DOMAIN,public.envoy.tw.ee

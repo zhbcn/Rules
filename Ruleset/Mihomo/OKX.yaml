@@ -1,0 +1,16 @@
+# OKX
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,okx.com
+  - DOMAIN-SUFFIX,okex.com
+  - DOMAIN-SUFFIX,oklink.com
+  - DOMAIN-SUFFIX,okx.ac
+  - DOMAIN-SUFFIX,okx.cab
+  - DOMAIN-SUFFIX,okx.reise
+  - DOMAIN-SUFFIX,okg.com
+  - DOMAIN-SUFFIX,coinall.ltd
+  - DOMAIN-SUFFIX,jingyunyilian.com
+  - DOMAIN-SUFFIX,okx-dns.com
+  - DOMAIN-SUFFIX,okx-dns1.com
+  - DOMAIN-SUFFIX,okx-dns2.com

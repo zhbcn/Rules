@@ -1,0 +1,5 @@
+# N26
+# https://github.com/zhbcn/Rules
+
+DOMAIN-SUFFIX,n26.com
+DOMAIN-SUFFIX,tech26.de

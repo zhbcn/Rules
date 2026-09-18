@@ -1,0 +1,8 @@
+# Starryblu
+# https://github.com/zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,starryblu.com
+  - DOMAIN-SUFFIX,wotransfer.com
+  - DOMAIN,starryblu-public.oss-accelerate.aliyuncs.com
+  - DOMAIN,panda-common-bucket.oss-cn-hangzhou.aliyuncs.com
