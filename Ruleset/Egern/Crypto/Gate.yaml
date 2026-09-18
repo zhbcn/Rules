@@ -1,6 +1,9 @@
 # NAME: Gate
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# SOURCE-LIST: gateio + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_set:
@@ -10,6 +13,11 @@ domain_set:
 domain_suffix_set:
   - gate.com
   - gate.io
+  - gate.tv
   - gateio.ws
   - gateapi.io
   - gateapp.org
+  - gatedata.org
+  - gateimg.com
+  - gateio.live
+  - gateio.services

@@ -1,38 +1,17 @@
 # NAME: Rakuten
-# SOURCE: v2fly/domain-list-community
-# SOURCE-LIST: rakuten
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom (existing Rakuten Ichiba rule)
+# SOURCE-LIST: rakuten (shopping-only subset) + retained Rakuten Ichiba domains
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
+domain_set:
+  - ichiba.faq.rakuten.net
+
 domain_suffix_set:
-  - buyservices.com
-  - r10s.com
+  - rakuten.co.jp
+  - rakuten.ne.jp
   - r10s.jp
   - rakuten-static.com
-  - rakuten.ca
-  - rakuten.co.jp
-  - rakuten.com
-  - rakuten.com.tw
-  - rakuten.ne.jp
-  - rakuten.tv
-  - rakuten.tw
-  - rakutenadvertising.com
-  - rakutengiftcards.ca
-  - bfads.net
-  - ebates.ca
-  - ebates.kr
-  - ebates.sg
-  - ebatescanada.com
-  - ecbsn.com
-  - fatwallet.com
-  - rclon.com
-  - rebates.jp
-  - rrcbsn.com
-  - kobo.com
-  - viber.com
-  - viber.co
-  - viber.me
-  - s-bid.rmp.rakuten.com
-  - vbcdn.com
-  - vbcdn.net
-  - viki.com
+  - r10.to

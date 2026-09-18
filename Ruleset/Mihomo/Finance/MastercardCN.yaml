@@ -1,8 +1,13 @@
 # NAME: MastercardCN
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: mastercard @cn
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,mastercard.com.cn
   - DOMAIN-SUFFIX,mastercard.cn
+  - DOMAIN-SUFFIX,priceless.com.cn
+  - DOMAIN-SUFFIX,pricelessbeijing.cn
+  - DOMAIN-SUFFIX,pricelessbeijing.com.cn
+  - DOMAIN-SUFFIX,travelex.com.cn

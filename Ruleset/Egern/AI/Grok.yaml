@@ -1,10 +1,15 @@
 # NAME: Grok
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# SOURCE-LIST: xai + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
   - grok.com
+  - grok.x.com
+  - grokipedia.com
   - grok-sandbox.com
   - grok.me
   - groktpcontent.com

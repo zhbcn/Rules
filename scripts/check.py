@@ -19,6 +19,25 @@ REPO_MARKERS = (
 )
 
 
+class EgernSafeLoader(yaml.SafeLoader):
+    """Safe YAML loader that accepts Egern's rule-type tags."""
+
+
+def _construct_egern_tag(loader: EgernSafeLoader, _suffix: str, node: yaml.Node) -> object:
+    if isinstance(node, yaml.MappingNode):
+        return loader.construct_mapping(node)
+    if isinstance(node, yaml.SequenceNode):
+        return loader.construct_sequence(node)
+    return loader.construct_scalar(node)
+
+
+EgernSafeLoader.add_multi_constructor("!", _construct_egern_tag)
+
+
+def load_yaml(text: str) -> object:
+    return yaml.load(text, Loader=EgernSafeLoader)
+
+
 def repo_path_from_url(url: str) -> str | None:
     path = unquote(urlparse(url).path)
     for marker in REPO_MARKERS:
@@ -55,7 +74,7 @@ def main() -> int:
         for path in sorted(area.rglob("*.yaml")):
             checked += 1
             try:
-                document = yaml.safe_load(path.read_text(encoding="utf-8-sig"))
+                document = load_yaml(path.read_text(encoding="utf-8-sig"))
             except Exception as exc:
                 errors.append(f"YAML {path.relative_to(root)}: {exc}")
                 continue
@@ -66,7 +85,7 @@ def main() -> int:
     for config in args.config:
         try:
             text = config.read_text(encoding="utf-8-sig")
-            yaml.safe_load(text)
+            load_yaml(text)
         except Exception as exc:
             errors.append(f"CONFIG {config}: {exc}")
             continue

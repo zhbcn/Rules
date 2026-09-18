@@ -1,8 +1,13 @@
 # NAME: MastercardCN
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: mastercard @cn
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
   - mastercard.com.cn
   - mastercard.cn
+  - priceless.com.cn
+  - pricelessbeijing.cn
+  - pricelessbeijing.com.cn
+  - travelex.com.cn

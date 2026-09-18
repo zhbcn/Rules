@@ -1,13 +1,21 @@
 # NAME: Gate
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# SOURCE-LIST: gateio + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,gate.com
   - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,gate.tv
   - DOMAIN-SUFFIX,gateio.ws
   - DOMAIN-SUFFIX,gateapi.io
   - DOMAIN-SUFFIX,gateapp.org
+  - DOMAIN-SUFFIX,gatedata.org
+  - DOMAIN-SUFFIX,gateimg.com
+  - DOMAIN-SUFFIX,gateio.live
+  - DOMAIN-SUFFIX,gateio.services
   - DOMAIN,gimg2.staticimgs.com
   - DOMAIN,icon.staticimgs.com

@@ -1,10 +1,17 @@
 # NAME: HTX
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: huobi
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
   - htx.com
+  - hbabit.com
   - huobi.com
   - huobi.pro
   - hbfile.net
+  - huobi.me
+  - huobi.sc
+  - huobiasia.vip
+  - huobigroup.com
+  - huobitoken.com

@@ -1,9 +1,19 @@
 # NAME: ByteDanceAI
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# SOURCE-LIST: doubao, bytedance-ai-!cn + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
+  - DOMAIN-SUFFIX,cici.com
+  - DOMAIN-SUFFIX,ciciai.com
+  - DOMAIN-SUFFIX,ciciaicdn.com
+  - DOMAIN-SUFFIX,dola.com
+  - DOMAIN-SUFFIX,coze.com
+  - DOMAIN-SUFFIX,marscode.com
+  - DOMAIN-SUFFIX,trae.ai
   - DOMAIN-SUFFIX,doubao.com
   - DOMAIN-SUFFIX,doubao-dev.com
   - DOMAIN-SUFFIX,doubaocdn.com

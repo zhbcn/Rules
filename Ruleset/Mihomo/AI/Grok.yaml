@@ -1,10 +1,15 @@
 # NAME: Grok
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# SOURCE-LIST: xai + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,grok.x.com
+  - DOMAIN-SUFFIX,grokipedia.com
   - DOMAIN-SUFFIX,grok-sandbox.com
   - DOMAIN-SUFFIX,grok.me
   - DOMAIN-SUFFIX,groktpcontent.com

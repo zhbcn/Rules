@@ -1,6 +1,8 @@
 # NAME: PaymentCN
-# SOURCE: v2fly/domain-list-community
-# SOURCE-LIST: unionpay + payment subsets from alibaba, tencent, jd, douyin, mastercard, visa
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom (pre-refactor client payment rules)
+# SOURCE-LIST: unionpay + payment subsets from alibaba, tencent, jd, douyin, mastercard, visa + retained payment domains
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
@@ -29,12 +31,16 @@ payload:
   - DOMAIN-SUFFIX,alipayobjects.com
   - DOMAIN-SUFFIX,alipayplus.com
   - DOMAIN-SUFFIX,tenpay.com
+  - DOMAIN-SUFFIX,wechatpay.com
   - DOMAIN-SUFFIX,wechatpay.cn
+  - DOMAIN-SUFFIX,globaltenpay.com
   - DOMAIN-SUFFIX,baitiao.com
   - DOMAIN-SUFFIX,chinabank.com.cn
   - DOMAIN-SUFFIX,jdpay.com
   - DOMAIN-SUFFIX,jdpaydns.com
+  - DOMAIN-SUFFIX,doupay.com
   - DOMAIN-SUFFIX,douyinpay.com
+  - DOMAIN-SUFFIX,wangyin.com
   - DOMAIN-SUFFIX,ulpay.com
   - DOMAIN-SUFFIX,mastercard.cn
   - DOMAIN-SUFFIX,mastercard.com.cn

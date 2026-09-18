@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Convert V2Fly domain lists to Mihomo and Egern rule-set YAML.
 
-The converter intentionally stays small: it expands includes recursively,
-honours include attribute filters, strips rule attributes/affiliations from
-the emitted rules, detects include cycles, and removes exact duplicates.
+The converter intentionally stays small: it expands includes and affiliations,
+honours include attribute filters, strips rule metadata from emitted rules,
+detects include cycles, and removes exact duplicates.
 """
 
 from __future__ import annotations
@@ -32,6 +32,7 @@ class Rule:
 class V2FlyConverter:
     def __init__(self, data_dir: Path):
         self.data_dir = data_dir
+        self._affiliations: dict[str, list[Rule]] | None = None
 
     def read(self, list_name: str) -> list[Rule]:
         return self._read(list_name, ())
@@ -42,11 +43,13 @@ class V2FlyConverter:
             raise ValueError(f"V2Fly include cycle: {chain}")
 
         source = self.data_dir / list_name
-        if not source.is_file():
+        affiliated = self._affiliated_rules().get(list_name.lower(), [])
+        if not source.is_file() and not affiliated:
             raise FileNotFoundError(f"V2Fly list not found: {source}")
 
-        rules: list[Rule] = []
-        for raw_line in source.read_text(encoding="utf-8").splitlines():
+        rules: list[Rule] = list(affiliated)
+        raw_lines = source.read_text(encoding="utf-8").splitlines() if source.is_file() else []
+        for raw_line in raw_lines:
             line = raw_line.split("#", 1)[0].strip()
             if not line:
                 continue
@@ -68,6 +71,40 @@ class V2FlyConverter:
             if value:
                 rules.append(Rule(kind, value, frozenset(attributes)))
         return dedupe(rules)
+
+    def _affiliated_rules(self) -> dict[str, list[Rule]]:
+        """Index direct rules added to other lists with V2Fly's ``&target``."""
+        if self._affiliations is not None:
+            return self._affiliations
+
+        affiliations: dict[str, list[Rule]] = {}
+        for source in sorted(path for path in self.data_dir.iterdir() if path.is_file()):
+            for raw_line in source.read_text(encoding="utf-8").splitlines():
+                line = raw_line.split("#", 1)[0].strip()
+                if not line:
+                    continue
+                body, attributes, targets = _split_metadata(line)
+                if body.startswith("include:") or not targets:
+                    continue
+
+                prefix, separator, value = body.partition(":")
+                if separator and prefix in RULE_PREFIXES:
+                    kind = prefix
+                else:
+                    kind = "domain"
+                    value = body
+                value = value.strip()
+                if not value:
+                    continue
+
+                rule = Rule(kind, value, frozenset(attributes))
+                for target in targets:
+                    affiliations.setdefault(target, []).append(rule)
+
+        self._affiliations = {
+            target: dedupe(rules) for target, rules in affiliations.items()
+        }
+        return self._affiliations
 
 
 def _split_metadata(line: str) -> tuple[str, tuple[str, ...], tuple[str, ...]]:

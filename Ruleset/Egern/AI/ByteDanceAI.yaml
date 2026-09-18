@@ -1,9 +1,19 @@
 # NAME: ByteDanceAI
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# SOURCE-LIST: doubao, bytedance-ai-!cn + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
+  - cici.com
+  - ciciai.com
+  - ciciaicdn.com
+  - dola.com
+  - coze.com
+  - marscode.com
+  - trae.ai
   - doubao.com
   - doubao-dev.com
   - doubaocdn.com

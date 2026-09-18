@@ -1,6 +1,8 @@
 # NAME: PaymentCN
-# SOURCE: v2fly/domain-list-community
-# SOURCE-LIST: unionpay + payment subsets from alibaba, tencent, jd, douyin, mastercard, visa
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom (pre-refactor client payment rules)
+# SOURCE-LIST: unionpay + payment subsets from alibaba, tencent, jd, douyin, mastercard, visa + retained payment domains
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
@@ -29,12 +31,16 @@ domain_suffix_set:
   - alipayobjects.com
   - alipayplus.com
   - tenpay.com
+  - wechatpay.com
   - wechatpay.cn
+  - globaltenpay.com
   - baitiao.com
   - chinabank.com.cn
   - jdpay.com
   - jdpaydns.com
+  - doupay.com
   - douyinpay.com
+  - wangyin.com
   - ulpay.com
   - mastercard.cn
   - mastercard.com.cn
