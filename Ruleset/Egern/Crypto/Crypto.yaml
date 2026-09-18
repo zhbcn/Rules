@@ -103,6 +103,7 @@ domain_suffix_set:
   - ethereum.foundation
   - ethereum.org
   - etherscan.io
+  - etherscan.com
   - gate.com
   - gate.io
   - gate.tv
@@ -299,6 +300,7 @@ domain_suffix_set:
   - sui.io
   - suiscan.xyz
   - ton.org
+  - toncenter.com
   - tonviewer.com
   - tron.network
   - trondao.org

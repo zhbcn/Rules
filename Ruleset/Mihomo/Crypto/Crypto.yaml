@@ -86,6 +86,7 @@ payload:
   - DOMAIN-SUFFIX,ethereum.foundation
   - DOMAIN-SUFFIX,ethereum.org
   - DOMAIN-SUFFIX,etherscan.io
+  - DOMAIN-SUFFIX,etherscan.com
   - DOMAIN-SUFFIX,gate.com
   - DOMAIN-SUFFIX,gate.io
   - DOMAIN-SUFFIX,gate.tv
@@ -297,6 +298,7 @@ payload:
   - DOMAIN-SUFFIX,sui.io
   - DOMAIN-SUFFIX,suiscan.xyz
   - DOMAIN-SUFFIX,ton.org
+  - DOMAIN-SUFFIX,toncenter.com
   - DOMAIN-SUFFIX,tonviewer.com
   - DOMAIN-SUFFIX,tron.network
   - DOMAIN-SUFFIX,trondao.org
