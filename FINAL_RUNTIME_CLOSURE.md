@@ -87,4 +87,4 @@ Ash、Clash Party、吹雪三份配置各自删除了 `RULE-SET,PaymentCN,DIRECT
 
 ## 13. 最终 commit
 
-（见下方 git log，提交信息：`fix: sync aggregate rules and runtime configs`）
+`50ddac4` — `fix: sync aggregate rules and runtime configs`，已推送到 `origin/main`（远端 SHA 已验证一致，raw URL 抽查通过）。
