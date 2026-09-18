@@ -1,6 +1,7 @@
 # NAME: Coinbase
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency) + custom
+# SOURCE-LIST: category-cryptocurrency (Coinbase subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_set:

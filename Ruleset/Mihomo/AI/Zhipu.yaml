@@ -1,6 +1,7 @@
 # NAME: Zhipu
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community (category-ai-cn) + custom
+# SOURCE-LIST: category-ai-cn (Zhipu subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
@@ -8,6 +9,7 @@ payload:
   - DOMAIN-SUFFIX,chatglm.com
   - DOMAIN-SUFFIX,bigmodel.cn
   - DOMAIN-SUFFIX,zhipuai.cn
+  - DOMAIN-SUFFIX,zhipucn.com
   - DOMAIN-SUFFIX,zhipu.com
   - DOMAIN-SUFFIX,zhipu.ai
   - DOMAIN-SUFFIX,z.ai

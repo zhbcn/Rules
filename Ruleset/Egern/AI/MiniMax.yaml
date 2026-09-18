@@ -1,6 +1,7 @@
 # NAME: MiniMax
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community (category-ai-cn/category-ai-!cn) + custom
+# SOURCE-LIST: category-ai-cn, category-ai-!cn (MiniMax subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
@@ -8,5 +9,6 @@ domain_suffix_set:
   - minimax.chat
   - minimax.io
   - hailuoai.com
+  - xingyeai.com
   - hailuoai.video
   - talkie-ai.com

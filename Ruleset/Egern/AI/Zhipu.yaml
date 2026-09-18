@@ -1,6 +1,7 @@
 # NAME: Zhipu
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community (category-ai-cn) + custom
+# SOURCE-LIST: category-ai-cn (Zhipu subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
@@ -8,6 +9,7 @@ domain_suffix_set:
   - chatglm.com
   - bigmodel.cn
   - zhipuai.cn
+  - zhipucn.com
   - zhipu.com
   - zhipu.ai
   - z.ai

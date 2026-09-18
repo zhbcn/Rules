@@ -1,6 +1,7 @@
 # NAME: Dogecoin
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency)
+# SOURCE-LIST: category-cryptocurrency (Dogecoin subset)
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:

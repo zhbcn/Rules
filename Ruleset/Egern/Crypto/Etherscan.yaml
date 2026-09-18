@@ -1,10 +1,12 @@
 # NAME: Etherscan
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency via ethereum) + blackmatrix7/ios_rule_script (Crypto aggregate) + custom
+# SOURCE-LIST: ethereum, rule/Clash/Crypto/Crypto.yaml (Etherscan subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
   - etherscan.io
+  - etherscan.com
   - bscscan.com
   - polygonscan.com
   - arbiscan.io

@@ -1,10 +1,13 @@
 # NAME: MEXC
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency) + custom
+# SOURCE-LIST: category-cryptocurrency (MEXC subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
+  - DOMAIN-SUFFIX,mexc.co
   - DOMAIN-SUFFIX,mexc.com
+  - DOMAIN-SUFFIX,mexcsensors.com
   - DOMAIN,images.mocortech.com
   - DOMAIN,public.mocortech.com
   - DOMAIN,static.mocortech.com

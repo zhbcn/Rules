@@ -1,9 +1,13 @@
 # NAME: Qwen
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community (category-ai-cn) + custom
+# SOURCE-LIST: category-ai-cn (Qwen subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
+  - qianwen.aliyun.com
+  - qianwen.com
+  - qianwenai.com
   - qwen.ai
   - qwen.com
   - qwenlm.ai

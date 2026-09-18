@@ -1,6 +1,6 @@
 # NAME: Solana
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: blackmatrix7/ios_rule_script (Crypto aggregate) + custom
+# SOURCE-LIST: rule/Clash/Crypto/Crypto.yaml (Solana subset) + existing zhbcn/Rules rule
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:

@@ -1,6 +1,6 @@
 # NAME: Avalanche
-# SOURCE: custom
-# SOURCE-LIST: existing zhbcn/Rules rule
+# SOURCE: blackmatrix7/ios_rule_script (Crypto aggregate)
+# SOURCE-LIST: rule/Clash/Crypto/Crypto.yaml (Avalanche subset)
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
