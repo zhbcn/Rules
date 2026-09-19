@@ -324,9 +324,6 @@ payload:
   - DOMAIN-WILDCARD,pixel*.adswizz.com
   - DOMAIN-WILDCARD,log*-normal-*.tiktokv.com
   - DOMAIN-WILDCARD,analytics-*.aasaam.com
-  - "URL-REGEX,/igd\\.xml"
-  - "URL-REGEX,/\\d+/resolve"
-  - "URL-REGEX,/\\d+/sign_d"
   - IP-CIDR,39.97.128.148/32,no-resolve
   - IP-CIDR,39.97.130.51/32,no-resolve
   - IP-CIDR,42.81.232.18/32,no-resolve
