@@ -1,0 +1,17 @@
+# NAME: Meta
+# SOURCE:
+# - v2fly/domain-list-community (meta direct entries)
+# - Meta official
+# SOURCE-LIST: meta (direct entries only) + Muse
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_set:
+  - ai.facebook.com
+
+domain_suffix_set:
+  - atmeta.com
+  - llama.com
+  - meta.ai
+  - meta.com
+  - muse.ai

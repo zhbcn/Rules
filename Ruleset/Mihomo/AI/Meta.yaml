@@ -1,0 +1,15 @@
+# NAME: Meta
+# SOURCE:
+# - v2fly/domain-list-community (meta direct entries)
+# - Meta official
+# SOURCE-LIST: meta (direct entries only) + Muse
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,atmeta.com
+  - DOMAIN-SUFFIX,llama.com
+  - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,meta.com
+  - DOMAIN-SUFFIX,muse.ai
+  - DOMAIN,ai.facebook.com
