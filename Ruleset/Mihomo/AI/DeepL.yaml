@@ -1,0 +1,7 @@
+# NAME: DeepL
+# SOURCE: DeepL official
+# SOURCE-URL: https://support.deepl.com/hc/en-us/articles/4409573020306-Troubleshooting-web-translator
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,deepl.com
