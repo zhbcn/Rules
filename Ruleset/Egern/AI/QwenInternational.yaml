@@ -1,0 +1,7 @@
+# NAME: QwenInternational
+# SOURCE: existing zhbcn/Rules AI/Qwen.yaml (international product subset)
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - qwen.ai
+  - qwenlm.ai

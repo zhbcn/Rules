@@ -1,0 +1,13 @@
+# NAME: MicrosoftUpdate
+# SOURCE: Microsoft official; v2fly microsoft update entries
+# SOURCE-URL: https://learn.microsoft.com/en-us/windows/deployment/do/delivery-optimization-proxy
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,windowsupdate.com"
+  - "DOMAIN-SUFFIX,windowsupdate.microsoft.com"
+  - "DOMAIN-SUFFIX,update.microsoft.com"
+  - "DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com"
+  - "DOMAIN-SUFFIX,do.dsp.mp.microsoft.com"
+  - "DOMAIN,officecdn.microsoft.com"
+  - "DOMAIN,officecdn-microsoft-com.akamaized.net"

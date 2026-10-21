@@ -1,0 +1,15 @@
+# NAME: MicrosoftUpdate
+# SOURCE: Microsoft official; v2fly microsoft update entries
+# SOURCE-URL: https://learn.microsoft.com/en-us/windows/deployment/do/delivery-optimization-proxy
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - windowsupdate.com
+  - windowsupdate.microsoft.com
+  - update.microsoft.com
+  - dl.delivery.mp.microsoft.com
+  - do.dsp.mp.microsoft.com
+
+domain_set:
+  - officecdn.microsoft.com
+  - officecdn-microsoft-com.akamaized.net

@@ -1,0 +1,6 @@
+# NAME: ZhipuInternational
+# SOURCE: existing zhbcn/Rules AI/Zhipu.yaml (international product subset)
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - z.ai

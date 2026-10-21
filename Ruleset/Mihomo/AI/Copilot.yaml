@@ -1,6 +1,6 @@
 # NAME: Copilot
 # SOURCE: v2fly/domain-list-community
-# SOURCE-LIST: github-copilot
+# SOURCE-LIST: github-copilot + existing Technology/Microsoft.yaml Copilot subset
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
@@ -11,3 +11,6 @@ payload:
   - DOMAIN,copilotprodattachments.blob.core.windows.net
   - DOMAIN,copilot-telemetry-service.githubusercontent.com
   - DOMAIN,copilot-telemetry.githubusercontent.com
+  - DOMAIN-SUFFIX,copilot.com
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,copilot.cloud.microsoft

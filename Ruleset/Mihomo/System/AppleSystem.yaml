@@ -1,0 +1,13 @@
+# NAME: AppleSystem
+# SOURCE: Apple official (push, activation, captive portal, time)
+# SOURCE-URL: https://support.apple.com/en-us/101555
+# SOURCE-URL: https://support.apple.com/en-us/102266
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,push.apple.com"
+  - "DOMAIN,captive.apple.com"
+  - "DOMAIN,albert.apple.com"
+  - "DOMAIN,gs.apple.com"
+  - "DOMAIN,time.apple.com"
+  - "DOMAIN,time-ios.apple.com"

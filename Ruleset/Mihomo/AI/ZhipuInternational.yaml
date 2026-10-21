@@ -1,0 +1,6 @@
+# NAME: ZhipuInternational
+# SOURCE: existing zhbcn/Rules AI/Zhipu.yaml (international product subset)
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,z.ai"

@@ -1,0 +1,8 @@
+# NAME: MiniMaxInternational
+# SOURCE: existing zhbcn/Rules AI/MiniMax.yaml (international product subset)
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,minimax.io"
+  - "DOMAIN-SUFFIX,hailuoai.video"
+  - "DOMAIN-SUFFIX,talkie-ai.com"

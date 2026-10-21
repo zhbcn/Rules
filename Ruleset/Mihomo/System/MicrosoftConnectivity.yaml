@@ -1,0 +1,8 @@
+# NAME: MicrosoftConnectivity
+# SOURCE: Microsoft official; existing Technology/Microsoft.yaml
+# SOURCE-URL: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/troubleshoot-ncsi-guidance
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,msftconnecttest.com"
+  - "DOMAIN-SUFFIX,msftncsi.com"

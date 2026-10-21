@@ -1,0 +1,12 @@
+# NAME: ByteDanceAIInternational
+# SOURCE: existing zhbcn/Rules AI/ByteDanceAI.yaml (international product subset)
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - cici.com
+  - ciciai.com
+  - ciciaicdn.com
+  - dola.com
+  - coze.com
+  - marscode.com
+  - trae.ai
