@@ -11,6 +11,7 @@ domain_suffix_set:
   - anthropic.com
   - clau.de
   - claude.ai
+  - claude.app
   - claude.com
   - claudemcpclient.com
   - claudemcpcontent.com
