@@ -126,6 +126,10 @@ def check_egern_document(document: object, label: str, errors: list[str]) -> Non
         errors.append(f"SCHEMA {label}: expected a non-empty mapping of Egern rule sets")
         return
     for key, value in document.items():
+        if key == "no_resolve":
+            if not isinstance(value, bool):
+                errors.append(f"SCHEMA {label}: no_resolve is not a boolean")
+            continue
         if key not in EGERN_RULE_SET_TYPES:
             errors.append(f"RULE-TYPE {label}: unsupported Egern rule-set type: {key}")
         if not isinstance(value, list):

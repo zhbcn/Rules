@@ -2,6 +2,7 @@
 # SOURCE: v2fly/domain-list-community
 # SOURCE-LIST: anthropic
 # FALLBACK: blackmatrix7/ios_rule_script
+# CUSTOM: https://platform.claude.com/docs/en/api/ip-addresses (inbound only)
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
@@ -14,3 +15,5 @@ payload:
   - DOMAIN-SUFFIX,claudemcpcontent.com
   - DOMAIN-SUFFIX,claudeusercontent.com
   - DOMAIN,servd-anthropic-website.b-cdn.net
+  - IP-CIDR,160.79.104.0/23,no-resolve
+  - IP-CIDR6,2607:6bc0::/48,no-resolve

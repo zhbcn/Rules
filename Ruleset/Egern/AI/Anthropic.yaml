@@ -2,7 +2,10 @@
 # SOURCE: v2fly/domain-list-community
 # SOURCE-LIST: anthropic
 # FALLBACK: blackmatrix7/ios_rule_script
+# CUSTOM: https://platform.claude.com/docs/en/api/ip-addresses (inbound only)
 # MAINTAINED-BY: zhbcn/Rules
+
+no_resolve: true
 
 domain_set:
   - servd-anthropic-website.b-cdn.net
@@ -16,3 +19,9 @@ domain_suffix_set:
   - claudemcpclient.com
   - claudemcpcontent.com
   - claudeusercontent.com
+
+ip_cidr_set:
+  - 160.79.104.0/23
+
+ip_cidr6_set:
+  - 2607:6bc0::/48

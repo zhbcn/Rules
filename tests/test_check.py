@@ -62,6 +62,30 @@ class EgernYamlTest(unittest.TestCase):
             ["RULE-TYPE rules.yaml: unsupported Mihomo rule type: PROTOCOL"],
         )
 
+    def test_accepts_egern_no_resolve_metadata(self):
+        for value in (True, False):
+            with self.subTest(value=value):
+                errors = []
+                check_egern_document(
+                    {"no_resolve": value, "ip_cidr_set": ["160.79.104.0/23"]},
+                    "rules.yaml",
+                    errors,
+                )
+                self.assertEqual(errors, [])
+
+    def test_rejects_non_boolean_egern_no_resolve(self):
+        for value in ("true", 1, None, []):
+            with self.subTest(value=value):
+                errors = []
+                check_egern_document(
+                    {"no_resolve": value, "ip_cidr_set": ["160.79.104.0/23"]},
+                    "rules.yaml",
+                    errors,
+                )
+                self.assertEqual(
+                    errors, ["SCHEMA rules.yaml: no_resolve is not a boolean"]
+                )
+
     def test_rejects_unsupported_egern_rule_set_type(self):
         errors = []
 
