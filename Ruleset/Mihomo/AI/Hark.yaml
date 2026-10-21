@@ -1,0 +1,7 @@
+# NAME: Hark
+# SOURCE: Hark official
+# SOURCE-URL: https://hark.com/
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,hark.com

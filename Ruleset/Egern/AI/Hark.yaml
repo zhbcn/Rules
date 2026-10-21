@@ -1,0 +1,7 @@
+# NAME: Hark
+# SOURCE: Hark official
+# SOURCE-URL: https://hark.com/
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - hark.com
