@@ -1,0 +1,11 @@
+# NAME: Muse
+# SOURCE: v2fly/domain-list-community (meta aggregate) + Meta official
+# SOURCE-LIST: meta (Muse and shared account domains only)
+# SOURCE-URL: https://ai.meta.com/muse/
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - muse.ai
+  - metaaivm.com
+  - meta.ai
+  - meta.com
