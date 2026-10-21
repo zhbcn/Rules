@@ -2,5 +2,5 @@
 
 个人代理分流规则库。
 
-- `Ruleset/Mihomo/`：Clash Party / FlClash
+- `Ruleset/Mihomo/`：Clash Verge Rev / FlClash
 - `Ruleset/Egern/`：Egern
