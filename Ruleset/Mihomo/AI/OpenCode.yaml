@@ -1,0 +1,10 @@
+# NAME: OpenCode
+# SOURCE: v2fly/domain-list-community + OpenCode official
+# SOURCE-LIST: category-ai-!cn (OpenCode only) + official supplements
+# SOURCE-URL: https://github.com/anomalyco/opencode
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - DOMAIN-SUFFIX,opencode.ai
+  - DOMAIN-SUFFIX,opncd.ai
+  - DOMAIN-SUFFIX,models.dev
