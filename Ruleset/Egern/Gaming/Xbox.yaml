@@ -5,12 +5,9 @@
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_set:
-  - flightsimulator.azureedge.net
   - prodforza.blob.core.windows.net
 
 domain_suffix_set:
-  - asobostudio.com
-  - flightsimulator.com
   - beth.games
   - bethesda.net
   - bethesdagamestudios.com

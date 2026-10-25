@@ -28,3 +28,5 @@ payload:
   - DOMAIN-SUFFIX,chatgpt.livekit.cloud
   - DOMAIN-SUFFIX,host.livekit.cloud
   - DOMAIN-SUFFIX,turn.livekit.cloud
+  - "DOMAIN-SUFFIX,openai.org"
+  - "DOMAIN,o33249.ingest.us.sentry.io"

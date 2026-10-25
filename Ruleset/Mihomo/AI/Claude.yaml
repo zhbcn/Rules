@@ -17,3 +17,13 @@ payload:
   - DOMAIN,servd-anthropic-website.b-cdn.net
   - IP-CIDR,160.79.104.0/23,no-resolve
   - IP-CIDR6,2607:6bc0::/48,no-resolve
+  - "DOMAIN-SUFFIX,ant.dev"
+  - "DOMAIN-SUFFIX,anthropic.team"
+  - "DOMAIN-SUFFIX,antspace.dev"
+  - "DOMAIN-SUFFIX,chatbotclaude.com"
+  - "DOMAIN-SUFFIX,claude.dev"
+  - "DOMAIN-SUFFIX,claude.new"
+  - "DOMAIN-SUFFIX,claude.site"
+  - "DOMAIN-SUFFIX,claudeacademy.com"
+  - "DOMAIN-SUFFIX,claudepages.dev"
+  - "DOMAIN-SUFFIX,claudestudio.com"

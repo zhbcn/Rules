@@ -704,3 +704,4 @@ payload:
   - DOMAIN-SUFFIX,trace.qq.com
   - DOMAIN-SUFFIX,ugdtimg.com
   - DOMAIN-SUFFIX,wit.qq.com
+  - "DOMAIN-SUFFIX,cnb.space"

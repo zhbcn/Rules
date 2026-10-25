@@ -4,43 +4,6 @@
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN-SUFFIX,ai.google.dev
-  - DOMAIN-SUFFIX,aistudio.google.com
-  - DOMAIN-SUFFIX,akmcdnoversea-tw.inter.ptqy.gitv.tv
-  - DOMAIN-SUFFIX,api.githubcopilot.com
-  - DOMAIN-SUFFIX,api.groq.com
-  - DOMAIN-SUFFIX,api.okzy.tv
-  - DOMAIN-SUFFIX,api.together.xyz
-  - DOMAIN-SUFFIX,apm-misaka.biliapi.net
-  - DOMAIN-SUFFIX,apple.comscoreresearch.com
-  - DOMAIN-SUFFIX,bcbolt446c5271-a.akamaihd.net
-  - DOMAIN-SUFFIX,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
-  - DOMAIN-SUFFIX,console.groq.com
-  - DOMAIN-SUFFIX,copilot-proxy.githubusercontent.com
-  - DOMAIN-SUFFIX,cs428.wpc.edgecastcdn.net
-  - DOMAIN-SUFFIX,dashasiafox.akamaized.netflix
-  - DOMAIN-SUFFIX,daznfeeds.com.edgekey.net
-  - DOMAIN-SUFFIX,dca-lm-livedazn.secure.footprint.net
-  - DOMAIN-SUFFIX,e13252.dscg.akamaiedge.net
-  - DOMAIN-SUFFIX,edge.cwtv-vod-ext.top.comcast.net
-  - DOMAIN-SUFFIX,generativelanguage.googleapis.com
-  - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
-  - DOMAIN-SUFFIX,h-dazn.online-metrix.net
-  - DOMAIN-SUFFIX,h-netflix.online-metrix.net
-  - DOMAIN-SUFFIX,hamifans.emome.net
-  - DOMAIN-SUFFIX,hulu.com.c.footprint.net
-  - DOMAIN-SUFFIX,hulu.map.fastly.net
-  - DOMAIN-SUFFIX,images-daznservices-com.cdn.ampproject.org
-  - DOMAIN-SUFFIX,itvpnpmobile-a.akamaihd.net
-  - DOMAIN-SUFFIX,ktpx.amazon.com
-  - DOMAIN-SUFFIX,news-client.apple.com
-  - DOMAIN-SUFFIX,news-edge.apple.com
-  - DOMAIN-SUFFIX,news-events.apple.com
-  - DOMAIN-SUFFIX,notebooklm.google.com
-  - DOMAIN-SUFFIX,ocvideo.apple.com
-  - DOMAIN-SUFFIX,rpg.pic-imges.com
-  - DOMAIN-SUFFIX,rthklive2-lh.akamaihd.net
-  - DOMAIN-SUFFIX,sydney.bing.com
   - DOMAIN-SUFFIX,112263.com
   - DOMAIN-SUFFIX,20thcenturystudios.com.au
   - DOMAIN-SUFFIX,20thcenturystudios.com.br
@@ -1316,3 +1279,40 @@ payload:
   - DOMAIN-SUFFIX,youtubemobilesupport.com
   - DOMAIN-SUFFIX,yt.be
   - DOMAIN-SUFFIX,ytimg.com
+  - "DOMAIN,ai.google.dev"
+  - "DOMAIN,aistudio.google.com"
+  - "DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv"
+  - "DOMAIN,api.githubcopilot.com"
+  - "DOMAIN,api.groq.com"
+  - "DOMAIN,api.okzy.tv"
+  - "DOMAIN,api.together.xyz"
+  - "DOMAIN,apm-misaka.biliapi.net"
+  - "DOMAIN,apple.comscoreresearch.com"
+  - "DOMAIN,bcbolt446c5271-a.akamaihd.net"
+  - "DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv"
+  - "DOMAIN,console.groq.com"
+  - "DOMAIN,copilot-proxy.githubusercontent.com"
+  - "DOMAIN,cs428.wpc.edgecastcdn.net"
+  - "DOMAIN,dashasiafox.akamaized.netflix"
+  - "DOMAIN,daznfeeds.com.edgekey.net"
+  - "DOMAIN,dca-lm-livedazn.secure.footprint.net"
+  - "DOMAIN,e13252.dscg.akamaiedge.net"
+  - "DOMAIN,edge.cwtv-vod-ext.top.comcast.net"
+  - "DOMAIN,generativelanguage.googleapis.com"
+  - "DOMAIN,gspe1-ssl.ls.apple.com"
+  - "DOMAIN,h-dazn.online-metrix.net"
+  - "DOMAIN,h-netflix.online-metrix.net"
+  - "DOMAIN,hamifans.emome.net"
+  - "DOMAIN,hulu.com.c.footprint.net"
+  - "DOMAIN,hulu.map.fastly.net"
+  - "DOMAIN,images-daznservices-com.cdn.ampproject.org"
+  - "DOMAIN,itvpnpmobile-a.akamaihd.net"
+  - "DOMAIN,ktpx.amazon.com"
+  - "DOMAIN,news-client.apple.com"
+  - "DOMAIN,news-edge.apple.com"
+  - "DOMAIN,news-events.apple.com"
+  - "DOMAIN,notebooklm.google.com"
+  - "DOMAIN,ocvideo.apple.com"
+  - "DOMAIN,rpg.pic-imges.com"
+  - "DOMAIN,rthklive2-lh.akamaihd.net"
+  - "DOMAIN,sydney.bing.com"

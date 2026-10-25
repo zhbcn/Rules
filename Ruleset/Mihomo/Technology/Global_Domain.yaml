@@ -4,134 +4,6 @@
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN-SUFFIX,1password.drift.click
-  - DOMAIN-SUFFIX,adobeereg.com
-  - DOMAIN-SUFFIX,agb9r0ad.qllfkl.com
-  - DOMAIN-SUFFIX,angle.com.tw
-  - DOMAIN-SUFFIX,api-p.videomarket.jp
-  - DOMAIN-SUFFIX,apple.com.akadns.net
-  - DOMAIN-SUFFIX,appleworldwidedeveloper.hb-api.omtrdc.net
-  - DOMAIN-SUFFIX,appleworldwidedeveloper.sc.omtrdc.net
-  - DOMAIN-SUFFIX,asahishimbun.sc.omtrdc.net
-  - DOMAIN-SUFFIX,assets1.xboxlive.com
-  - DOMAIN-SUFFIX,assets2.xboxlive.com
-  - DOMAIN-SUFFIX,az416426.vo.msecnd.net
-  - DOMAIN-SUFFIX,az668014.vo.msecnd.net
-  - DOMAIN-SUFFIX,az764295.vo.msecnd.net
-  - DOMAIN-SUFFIX,bbs.boingboing.net
-  - DOMAIN-SUFFIX,beatselectronicsllc.tt.omtrdc.net
-  - DOMAIN-SUFFIX,beck-online.beck.de
-  - DOMAIN-SUFFIX,blizzard.nefficient.co.kr
-  - DOMAIN-SUFFIX,bybit.ada.support
-  - DOMAIN-SUFFIX,cbsi.live.ott.irdeto.com
-  - DOMAIN-SUFFIX,cbsplaylistserver.aws.syncbak.com
-  - DOMAIN-SUFFIX,cbsservice.aws.syncbak.com
-  - DOMAIN-SUFFIX,cdn-spotify-experiments.conductrics.com
-  - DOMAIN-SUFFIX,cdn.js7k.com
-  - DOMAIN-SUFFIX,cisco.evergage.com
-  - DOMAIN-SUFFIX,clubhouse.pubnubapi.com
-  - DOMAIN-SUFFIX,community.oneplus.com
-  - DOMAIN-SUFFIX,configuration-lb.ls-apple.com.akadns.net
-  - DOMAIN-SUFFIX,courier-push-apple.com.akadns.net
-  - DOMAIN-SUFFIX,crl.versign.net
-  - DOMAIN-SUFFIX,databank.worldbank.org
-  - DOMAIN-SUFFIX,datarouter.apps.netherrealm.com
-  - DOMAIN-SUFFIX,deutschewelle.h-cdn.com
-  - DOMAIN-SUFFIX,dl.begellhouse.com
-  - DOMAIN-SUFFIX,ea.tt.omtrdc.net
-  - DOMAIN-SUFFIX,elib.maruzen.co.jp
-  - DOMAIN-SUFFIX,espn.hb.omtrdc.net
-  - DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net
-  - DOMAIN-SUFFIX,faronics.kayako.com
-  - DOMAIN-SUFFIX,firstsearch.oclc.org
-  - DOMAIN-SUFFIX,github-api.arkoselabs.com
-  - DOMAIN-SUFFIX,gog-cdn-lumen.secure2.footprint.net
-  - DOMAIN-SUFFIX,gog.qtlglb.com
-  - DOMAIN-SUFFIX,hb4bbbbb.pmhcjk.com
-  - DOMAIN-SUFFIX,holoxx.f5.si
-  - DOMAIN-SUFFIX,hpstore.corpmerchandise.com
-  - DOMAIN-SUFFIX,hub.slarker.me
-  - DOMAIN-SUFFIX,i.jeded.com
-  - DOMAIN-SUFFIX,imperial.insendi.com
-  - DOMAIN-SUFFIX,lgelectronics.122.2o7.net
-  - DOMAIN-SUFFIX,linkedin.sc.omtrdc.net
-  - DOMAIN-SUFFIX,live-patreon-marketing.pantheonsite.io
-  - DOMAIN-SUFFIX,medone-education.thieme.com
-  - DOMAIN-SUFFIX,muse.jhu.edu
-  - DOMAIN-SUFFIX,nationalaustraliaban.tt.omtrdc.net
-  - DOMAIN-SUFFIX,nbbb1bb7.pmhcjk.com
-  - DOMAIN-SUFFIX,ntp-c.colorado.edu
-  - DOMAIN-SUFFIX,ntp.time.nl
-  - DOMAIN-SUFFIX,ntp0.ntp-servers.net
-  - DOMAIN-SUFFIX,ntp1.ntp-servers.net
-  - DOMAIN-SUFFIX,ntp1.time.nl
-  - DOMAIN-SUFFIX,ntp2.ntp-servers.net
-  - DOMAIN-SUFFIX,ntp2.time.nl
-  - DOMAIN-SUFFIX,ntp3.ntp-servers.net
-  - DOMAIN-SUFFIX,ntp4.ntp-servers.net
-  - DOMAIN-SUFFIX,ntp5.ntp-servers.net
-  - DOMAIN-SUFFIX,ntp6.ntp-servers.net
-  - DOMAIN-SUFFIX,ntp7.ntp-servers.net
-  - DOMAIN-SUFFIX,ntppool1.time.nl
-  - DOMAIN-SUFFIX,ntppool2.time.nl
-  - DOMAIN-SUFFIX,nvidia.tt.omtrdc.net
-  - DOMAIN-SUFFIX,ood.opsource.net
-  - DOMAIN-SUFFIX,practivate.adobe
-  - DOMAIN-SUFFIX,practivate.adobe.ipp
-  - DOMAIN-SUFFIX,practivate.adobe.newoa
-  - DOMAIN-SUFFIX,practivate.adobe.ntp
-  - DOMAIN-SUFFIX,public-us-pingsx.api.clonoth.com
-  - DOMAIN-SUFFIX,push-apple.com.akadns.net
-  - DOMAIN-SUFFIX,q676790b.pmhcjk.com
-  - DOMAIN-SUFFIX,qualcomm.sc.omtrdc.net
-  - DOMAIN-SUFFIX,roovza-launches.appsflyersdk.com
-  - DOMAIN-SUFFIX,roovza.inapps.appsflyersdk.com
-  - DOMAIN-SUFFIX,roovza.launches.appsflyersdk.com
-  - DOMAIN-SUFFIX,roovza.skadsdk.appsflyersdk.com
-  - DOMAIN-SUFFIX,rss.4040940.xyz
-  - DOMAIN-SUFFIX,rss.datuan.dev
-  - DOMAIN-SUFFIX,rss.littlebaby.life
-  - DOMAIN-SUFFIX,rss.owo.nz
-  - DOMAIN-SUFFIX,rss.wudifeixue.com
-  - DOMAIN-SUFFIX,rsshub.asailor.org
-  - DOMAIN-SUFFIX,rsshub.email-once.com
-  - DOMAIN-SUFFIX,rsshub.henry.wang
-  - DOMAIN-SUFFIX,rsshub.isrss.com
-  - DOMAIN-SUFFIX,rsshub.ktachibana.party
-  - DOMAIN-SUFFIX,rsshub.pseudoyu.com
-  - DOMAIN-SUFFIX,rsshub.rss.tips
-  - DOMAIN-SUFFIX,rsshub.rssforever.com
-  - DOMAIN-SUFFIX,rsshub.umzzz.com
-  - DOMAIN-SUFFIX,rsshub.woodland.cafe
-  - DOMAIN-SUFFIX,rsshub2.asailor.org
-  - DOMAIN-SUFFIX,sberpro.vedomosti.ru
-  - DOMAIN-SUFFIX,standchartbank.sc.omtrdc.net
-  - DOMAIN-SUFFIX,standchartbank.tt.omtrdc.net
-  - DOMAIN-SUFFIX,straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
-  - DOMAIN-SUFFIX,tesla-cdn.thron.com
-  - DOMAIN-SUFFIX,time.windows.com
-  - DOMAIN-SUFFIX,translomatic.foxfortmobile.com
-  - DOMAIN-SUFFIX,ubisoft.siteintercept.qualtrics.com
-  - DOMAIN-SUFFIX,ut1-time.colorado.edu
-  - DOMAIN-SUFFIX,utcnist.colorado.edu
-  - DOMAIN-SUFFIX,utcnist2.colorado.edu
-  - DOMAIN-SUFFIX,utcnist3.colorado.edu
-  - DOMAIN-SUFFIX,vmware.tt.omtrdc.net
-  - DOMAIN-SUFFIX,vscode.search.windows.net
-  - DOMAIN-SUFFIX,vsmarketplacebadge.apphb.com
-  - DOMAIN-SUFFIX,wetv.qq.com
-  - DOMAIN-SUFFIX,widgets.stripst.com
-  - DOMAIN-SUFFIX,wrds-www.wharton.upenn.edu
-  - DOMAIN-SUFFIX,ws.audioscrobbler.com
-  - DOMAIN-SUFFIX,www-cdn.icloud.com.akadns.net
-  - DOMAIN-SUFFIX,yangzhi.app
-  - DOMAIN-SUFFIX,zftksc.cdn-settings.appsflyersdk.com
-  - DOMAIN-SUFFIX,zftksc.launches.appsflyersdk.com
-  - DOMAIN-SUFFIX,ztedevices.com
-  - DOMAIN-SUFFIX,api.waqi.info
-  - DOMAIN-SUFFIX,aqi.aqicn.org
-  - DOMAIN-SUFFIX,cloud.oracle.com
-  - DOMAIN-SUFFIX,login.microsoftonline.com
   - DOMAIN-SUFFIX,01.org
   - DOMAIN-SUFFIX,02weqj32.com
   - DOMAIN-SUFFIX,04647.club
@@ -324,7 +196,6 @@ payload:
   - DOMAIN-SUFFIX,20thcenturystudios.com.br
   - DOMAIN-SUFFIX,20thcenturystudios.jp
   - DOMAIN-SUFFIX,20yearsoffea.com
-  - DOMAIN-SUFFIX,21-school.ru
   - DOMAIN-SUFFIX,21centuryaccess.com
   - DOMAIN-SUFFIX,21heise360dh.cc
   - DOMAIN-SUFFIX,21hub.com
@@ -790,7 +661,6 @@ payload:
   - DOMAIN-SUFFIX,accessfacebookfromschool.com
   - DOMAIN-SUFFIX,accesshe.ac.uk
   - DOMAIN-SUFFIX,accessheonline.ac.uk
-  - DOMAIN-SUFFIX,accesspoint.uz
   - DOMAIN-SUFFIX,accesstohe.ac.uk
   - DOMAIN-SUFFIX,accesstohighereducation.ac.uk
   - DOMAIN-SUFFIX,accesstomusic.ac.uk
@@ -1141,7 +1011,6 @@ payload:
   - DOMAIN-SUFFIX,affinity.studio
   - DOMAIN-SUFFIX,affirmtrust.com
   - DOMAIN-SUFFIX,afi.ac.uk
-  - DOMAIN-SUFFIX,afisha.ru
   - DOMAIN-SUFFIX,afkv28.com
   - DOMAIN-SUFFIX,aflamporn.com
   - DOMAIN-SUFFIX,aflamsex.net
@@ -2508,7 +2377,6 @@ payload:
   - DOMAIN-SUFFIX,asminternational.org
   - DOMAIN-SUFFIX,asmrbuluo.com
   - DOMAIN-SUFFIX,asn-online.org
-  - DOMAIN-SUFFIX,asobostudio.com
   - DOMAIN-SUFFIX,asp-cc.com
   - DOMAIN-SUFFIX,asp.net
   - DOMAIN-SUFFIX,aspbjournals.org
@@ -5950,7 +5818,6 @@ payload:
   - DOMAIN-SUFFIX,citycollegepeterborough.ac.uk
   - DOMAIN-SUFFIX,citycollegeplymouth.ac.uk
   - DOMAIN-SUFFIX,citycollegesoton.ac.uk
-  - DOMAIN-SUFFIX,citydrive.ru
   - DOMAIN-SUFFIX,cityheaven.net
   - DOMAIN-SUFFIX,citylab.com
   - DOMAIN-SUFFIX,citylit.ac.uk
@@ -6042,7 +5909,6 @@ payload:
   - DOMAIN-SUFFIX,clojure.org
   - DOMAIN-SUFFIX,closer.ac.uk
   - DOMAIN-SUFFIX,cloud.ac.uk
-  - DOMAIN-SUFFIX,cloud.ru
   - DOMAIN-SUFFIX,cloudapp.net
   - DOMAIN-SUFFIX,cloudappsecurity.com
   - DOMAIN-SUFFIX,cloudburstresearch.com
@@ -8035,8 +7901,6 @@ payload:
   - DOMAIN-SUFFIX,eandc-sirgar.ac.uk
   - DOMAIN-SUFFIX,eanordic.com
   - DOMAIN-SUFFIX,eaplay.com
-  - DOMAIN-SUFFIX,eaptechka.online
-  - DOMAIN-SUFFIX,eapteka.ru
   - DOMAIN-SUFFIX,earlham.ac.uk
   - DOMAIN-SUFFIX,earlhaminstitute.ac.uk
   - DOMAIN-SUFFIX,earlyenglishlaws.ac.uk
@@ -9735,7 +9599,6 @@ payload:
   - DOMAIN-SUFFIX,fli8.xyz
   - DOMAIN-SUFFIX,flic.kr
   - DOMAIN-SUFFIX,flickr.net
-  - DOMAIN-SUFFIX,flightsimulator.com
   - DOMAIN-SUFFIX,flipfap.com
   - DOMAIN-SUFFIX,flipnotestudio.com
   - DOMAIN-SUFFIX,flipshare.com
@@ -10561,7 +10424,6 @@ payload:
   - DOMAIN-SUFFIX,getscorecash.com
   - DOMAIN-SUFFIX,getsentry.com
   - DOMAIN-SUFFIX,getsexgames.com
-  - DOMAIN-SUFFIX,getsynapse.io
   - DOMAIN-SUFFIX,gettyimages.at
   - DOMAIN-SUFFIX,gettyimages.be
   - DOMAIN-SUFFIX,gettyimages.ch
@@ -10619,12 +10481,10 @@ payload:
   - DOMAIN-SUFFIX,gib.sg
   - DOMAIN-SUFFIX,gibdev.net
   - DOMAIN-SUFFIX,gibtds.ru
-  - DOMAIN-SUFFIX,gid.ru
   - DOMAIN-SUFFIX,giffgaff.com
   - DOMAIN-SUFFIX,giffgaff.design
   - DOMAIN-SUFFIX,gifnuki.com
   - DOMAIN-SUFFIX,gift-surg.ac.uk
-  - DOMAIN-SUFFIX,giga.chat
   - DOMAIN-SUFFIX,gigabyte.com
   - DOMAIN-SUFFIX,gigantits.com
   - DOMAIN-SUFFIX,gigaporn.org
@@ -10690,7 +10550,6 @@ payload:
   - DOMAIN-SUFFIX,gitstar.net
   - DOMAIN-SUFFIX,gittigidiyor.net
   - DOMAIN-SUFFIX,gittigidiyorsikayet.com
-  - DOMAIN-SUFFIX,gitverse.ru
   - DOMAIN-SUFFIX,givemebuzzsaw.com
   - DOMAIN-SUFFIX,gizmoxxx.com
   - DOMAIN-SUFFIX,gla.ac.uk
@@ -12771,7 +12630,6 @@ payload:
   - DOMAIN-SUFFIX,ictheatre.ac.uk
   - DOMAIN-SUFFIX,icuminside.com
   - DOMAIN-SUFFIX,id.hao123.com
-  - DOMAIN-SUFFIX,id.ru
   - DOMAIN-SUFFIX,idarkdoll.com
   - DOMAIN-SUFFIX,idcore.ac.uk
   - DOMAIN-SUFFIX,idea-server.com
@@ -14097,21 +13955,6 @@ payload:
   - DOMAIN-SUFFIX,jiuse905.com
   - DOMAIN-SUFFIX,jiuzhouyihuo.com
   - DOMAIN-SUFFIX,jivara.global
-  - DOMAIN-SUFFIX,jivo.chat
-  - DOMAIN-SUFFIX,jivo.ru
-  - DOMAIN-SUFFIX,jivochat.co.in
-  - DOMAIN-SUFFIX,jivochat.co.za
-  - DOMAIN-SUFFIX,jivochat.com
-  - DOMAIN-SUFFIX,jivochat.com.br
-  - DOMAIN-SUFFIX,jivochat.com.co
-  - DOMAIN-SUFFIX,jivochat.com.pe
-  - DOMAIN-SUFFIX,jivochat.com.tr
-  - DOMAIN-SUFFIX,jivochat.de
-  - DOMAIN-SUFFIX,jivochat.es
-  - DOMAIN-SUFFIX,jivochat.ng
-  - DOMAIN-SUFFIX,jivochat.ru
-  - DOMAIN-SUFFIX,jivosite.com
-  - DOMAIN-SUFFIX,jivosite.ru
   - DOMAIN-SUFFIX,jiyou520.com
   - DOMAIN-SUFFIX,jiyu-kobo.co.jp
   - DOMAIN-SUFFIX,jizzboom.com
@@ -14613,7 +14456,6 @@ payload:
   - DOMAIN-SUFFIX,korbit.co.kr
   - DOMAIN-SUFFIX,koreanpornmovie.com
   - DOMAIN-SUFFIX,korewaeroi.com
-  - DOMAIN-SUFFIX,korona.com
   - DOMAIN-SUFFIX,koshelek.app
   - DOMAIN-SUFFIX,koskade.com
   - DOMAIN-SUFFIX,kostenlosepornoclips.com
@@ -14664,7 +14506,6 @@ payload:
   - DOMAIN-SUFFIX,kumo.com
   - DOMAIN-SUFFIX,kun66.xyz
   - DOMAIN-SUFFIX,kundun1069.com
-  - DOMAIN-SUFFIX,kuper.ru
   - DOMAIN-SUFFIX,kusugurizanmai.com
   - DOMAIN-SUFFIX,kutjeporno.com
   - DOMAIN-SUFFIX,kwok7.com
@@ -15006,7 +14847,6 @@ payload:
   - DOMAIN-SUFFIX,likee.com
   - DOMAIN-SUFFIX,likeeapp.ru
   - DOMAIN-SUFFIX,likeevideo.com
-  - DOMAIN-SUFFIX,likeevideo.ru
   - DOMAIN-SUFFIX,likeseiyu.com
   - DOMAIN-SUFFIX,liketruyen.net
   - DOMAIN-SUFFIX,liketwice.com
@@ -16026,8 +15866,6 @@ payload:
   - DOMAIN-SUFFIX,megafon.ru
   - DOMAIN-SUFFIX,megafonpro.ru
   - DOMAIN-SUFFIX,megahdporno.net
-  - DOMAIN-SUFFIX,megamarket.ru
-  - DOMAIN-SUFFIX,megamarket.tech
   - DOMAIN-SUFFIX,megamon.co.kr
   - DOMAIN-SUFFIX,megaphone.fm
   - DOMAIN-SUFFIX,megapornfreehd.com
@@ -18948,7 +18786,6 @@ payload:
   - DOMAIN-SUFFIX,otaku55.xyz
   - DOMAIN-SUFFIX,otakuboo.com
   - DOMAIN-SUFFIX,otbm.com
-  - DOMAIN-SUFFIX,otello.ru
   - DOMAIN-SUFFIX,otleycollege.ac.uk
   - DOMAIN-SUFFIX,otleyeaston.ac.uk
   - DOMAIN-SUFFIX,otleyonline.ac.uk
@@ -19167,7 +19004,6 @@ payload:
   - DOMAIN-SUFFIX,pawchive.st
   - DOMAIN-SUFFIX,paxlicense.org
   - DOMAIN-SUFFIX,paydiant.com
-  - DOMAIN-SUFFIX,payecom.ru
   - DOMAIN-SUFFIX,payget.pro
   - DOMAIN-SUFFIX,paygonline.com
   - DOMAIN-SUFFIX,payhulu.com
@@ -19653,7 +19489,6 @@ payload:
   - DOMAIN-SUFFIX,plasma-mobile.org
   - DOMAIN-SUFFIX,plasticlabs.com
   - DOMAIN-SUFFIX,plastics-cadcam.com
-  - DOMAIN-SUFFIX,platiecom.ru
   - DOMAIN-SUFFIX,platinumlinks.org
   - DOMAIN-SUFFIX,platov.co
   - DOMAIN-SUFFIX,play-bmm.shop
@@ -20368,7 +20203,6 @@ payload:
   - DOMAIN-SUFFIX,proxyrarbg.org
   - DOMAIN-SUFFIX,prpops.com
   - DOMAIN-SUFFIX,prs-ltsn.ac.uk
-  - DOMAIN-SUFFIX,prts.plus
   - DOMAIN-SUFFIX,prucomm.ac.uk
   - DOMAIN-SUFFIX,prvbank.ru
   - DOMAIN-SUFFIX,ps-exchange.com
@@ -20382,7 +20216,6 @@ payload:
   - DOMAIN-SUFFIX,psds.ac.uk
   - DOMAIN-SUFFIX,pse.is
   - DOMAIN-SUFFIX,psigate.ac.uk
-  - DOMAIN-SUFFIX,pskb.ru
   - DOMAIN-SUFFIX,pssru.ac.uk
   - DOMAIN-SUFFIX,pstorage.space
   - DOMAIN-SUFFIX,psyccareers.com
@@ -20657,7 +20490,6 @@ payload:
   - DOMAIN-SUFFIX,rae.ac.uk
   - DOMAIN-SUFFIX,raft.ac.uk
   - DOMAIN-SUFFIX,ragnaporn.com
-  - DOMAIN-SUFFIX,raiffeisen-media.ru
   - DOMAIN-SUFFIX,raiffeisen.ru
   - DOMAIN-SUFFIX,rajwaphq.com
   - DOMAIN-SUFFIX,rakuten-bank.co.jp
@@ -21024,7 +20856,6 @@ payload:
   - DOMAIN-SUFFIX,resoubang.buzz
   - DOMAIN-SUFFIX,resourceshare.ac.uk
   - DOMAIN-SUFFIX,respawnbyrazer.com
-  - DOMAIN-SUFFIX,restnproducts.ru
   - DOMAIN-SUFFIX,restore.ac.uk
   - DOMAIN-SUFFIX,restream-media.net
   - DOMAIN-SUFFIX,restream.ru
@@ -21516,7 +21347,6 @@ payload:
   - DOMAIN-SUFFIX,sambaporno.com
   - DOMAIN-SUFFIX,samc.ac.uk
   - DOMAIN-SUFFIX,samebags.com
-  - DOMAIN-SUFFIX,samokat.ru
   - DOMAIN-SUFFIX,sams.ac.uk
   - DOMAIN-SUFFIX,samsung.com
   - DOMAIN-SUFFIX,samsungapps.com
@@ -21608,30 +21438,10 @@ payload:
   - DOMAIN-SUFFIX,sbank.ir
   - DOMAIN-SUFFIX,sbc.ac.uk
   - DOMAIN-SUFFIX,sber-bank.by
-  - DOMAIN-SUFFIX,sber.pro
   - DOMAIN-SUFFIX,sber.ru
-  - DOMAIN-SUFFIX,sberauto.com
-  - DOMAIN-SUFFIX,sberbank-insurance.ru
-  - DOMAIN-SUFFIX,sberbank-tele.com
   - DOMAIN-SUFFIX,sberbank.com
   - DOMAIN-SUFFIX,sberbank.ru
-  - DOMAIN-SUFFIX,sberbankaktivno.ru
-  - DOMAIN-SUFFIX,sberbankins.ru
-  - DOMAIN-SUFFIX,sbercloud.ru
-  - DOMAIN-SUFFIX,sbercloud.tech
-  - DOMAIN-SUFFIX,sberdevices.ru
-  - DOMAIN-SUFFIX,sberdisk.ru
-  - DOMAIN-SUFFIX,sberfactoring.ru
-  - DOMAIN-SUFFIX,sberhealth.ru
-  - DOMAIN-SUFFIX,sberindex.ru
-  - DOMAIN-SUFFIX,sberleasing.ru
-  - DOMAIN-SUFFIX,sberlogistics.ru
-  - DOMAIN-SUFFIX,sbermegamarket.ru
-  - DOMAIN-SUFFIX,sbermobile.ru
-  - DOMAIN-SUFFIX,sberpb.ru
   - DOMAIN-SUFFIX,sberspasibo.ru
-  - DOMAIN-SUFFIX,sbertech.ru
-  - DOMAIN-SUFFIX,sbertroika.ru
   - DOMAIN-SUFFIX,sbgkstv.shop
   - DOMAIN-SUFFIX,sbibankllc.ru
   - DOMAIN-SUFFIX,sbirmc.ac.uk
@@ -27044,7 +26854,6 @@ payload:
   - DOMAIN-SUFFIX,xn--colegsirgr-c5a.ac.uk
   - DOMAIN-SUFFIX,xn--d1abkf4ap.fun
   - DOMAIN-SUFFIX,xn--d1acpjx3f.xn--p1ai
-  - DOMAIN-SUFFIX,xn--d1aqf.xn--p1ai
   - DOMAIN-SUFFIX,xn--d4ty0ojsqzfd.com
   - DOMAIN-SUFFIX,xn--e1adjldbbpv.xn--90ais
   - DOMAIN-SUFFIX,xn--e1aigb.xn--p1ai
@@ -28168,8 +27977,6 @@ payload:
   - DOMAIN-SUFFIX,zuckerberg.net
   - DOMAIN-SUFFIX,zukunftswerkstatt.de
   - DOMAIN-SUFFIX,zunked.com
-  - DOMAIN-SUFFIX,zvuk-b2b.com
-  - DOMAIN-SUFFIX,zvuk.com
   - DOMAIN-SUFFIX,zweiporn.com
   - DOMAIN-SUFFIX,zwtvusa.com
   - DOMAIN-SUFFIX,zynaima.com
@@ -34899,3 +34706,402 @@ payload:
   - DOMAIN-SUFFIX,zzcartoon.com
   - DOMAIN-SUFFIX,zzcloud.me
   - DOMAIN-SUFFIX,zzux.com
+  - "DOMAIN,1password.drift.click"
+  - "DOMAIN,adobeereg.com"
+  - "DOMAIN,agb9r0ad.qllfkl.com"
+  - "DOMAIN,angle.com.tw"
+  - "DOMAIN,api-p.videomarket.jp"
+  - "DOMAIN,apple.com.akadns.net"
+  - "DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net"
+  - "DOMAIN,appleworldwidedeveloper.sc.omtrdc.net"
+  - "DOMAIN,asahishimbun.sc.omtrdc.net"
+  - "DOMAIN,assets1.xboxlive.com"
+  - "DOMAIN,assets2.xboxlive.com"
+  - "DOMAIN,az416426.vo.msecnd.net"
+  - "DOMAIN,az668014.vo.msecnd.net"
+  - "DOMAIN,az764295.vo.msecnd.net"
+  - "DOMAIN,bbs.boingboing.net"
+  - "DOMAIN,beatselectronicsllc.tt.omtrdc.net"
+  - "DOMAIN,beck-online.beck.de"
+  - "DOMAIN,blizzard.nefficient.co.kr"
+  - "DOMAIN,bybit.ada.support"
+  - "DOMAIN,cbsi.live.ott.irdeto.com"
+  - "DOMAIN,cbsplaylistserver.aws.syncbak.com"
+  - "DOMAIN,cbsservice.aws.syncbak.com"
+  - "DOMAIN,cdn-spotify-experiments.conductrics.com"
+  - "DOMAIN,cdn.js7k.com"
+  - "DOMAIN,cisco.evergage.com"
+  - "DOMAIN,clubhouse.pubnubapi.com"
+  - "DOMAIN,community.oneplus.com"
+  - "DOMAIN,configuration-lb.ls-apple.com.akadns.net"
+  - "DOMAIN,courier-push-apple.com.akadns.net"
+  - "DOMAIN,crl.versign.net"
+  - "DOMAIN,databank.worldbank.org"
+  - "DOMAIN,datarouter.apps.netherrealm.com"
+  - "DOMAIN,deutschewelle.h-cdn.com"
+  - "DOMAIN,dl.begellhouse.com"
+  - "DOMAIN,ea.tt.omtrdc.net"
+  - "DOMAIN,elib.maruzen.co.jp"
+  - "DOMAIN,espn.hb.omtrdc.net"
+  - "DOMAIN,espndotcom.tt.omtrdc.net"
+  - "DOMAIN,faronics.kayako.com"
+  - "DOMAIN,firstsearch.oclc.org"
+  - "DOMAIN,github-api.arkoselabs.com"
+  - "DOMAIN,gog-cdn-lumen.secure2.footprint.net"
+  - "DOMAIN,gog.qtlglb.com"
+  - "DOMAIN,hb4bbbbb.pmhcjk.com"
+  - "DOMAIN,holoxx.f5.si"
+  - "DOMAIN,hpstore.corpmerchandise.com"
+  - "DOMAIN,hub.slarker.me"
+  - "DOMAIN,i.jeded.com"
+  - "DOMAIN,imperial.insendi.com"
+  - "DOMAIN,lgelectronics.122.2o7.net"
+  - "DOMAIN,linkedin.sc.omtrdc.net"
+  - "DOMAIN,live-patreon-marketing.pantheonsite.io"
+  - "DOMAIN,medone-education.thieme.com"
+  - "DOMAIN,muse.jhu.edu"
+  - "DOMAIN,nationalaustraliaban.tt.omtrdc.net"
+  - "DOMAIN,nbbb1bb7.pmhcjk.com"
+  - "DOMAIN,ntp-c.colorado.edu"
+  - "DOMAIN,ntp.time.nl"
+  - "DOMAIN,ntp0.ntp-servers.net"
+  - "DOMAIN,ntp1.ntp-servers.net"
+  - "DOMAIN,ntp1.time.nl"
+  - "DOMAIN,ntp2.ntp-servers.net"
+  - "DOMAIN,ntp2.time.nl"
+  - "DOMAIN,ntp3.ntp-servers.net"
+  - "DOMAIN,ntp4.ntp-servers.net"
+  - "DOMAIN,ntp5.ntp-servers.net"
+  - "DOMAIN,ntp6.ntp-servers.net"
+  - "DOMAIN,ntp7.ntp-servers.net"
+  - "DOMAIN,ntppool1.time.nl"
+  - "DOMAIN,ntppool2.time.nl"
+  - "DOMAIN,nvidia.tt.omtrdc.net"
+  - "DOMAIN,ood.opsource.net"
+  - "DOMAIN,practivate.adobe"
+  - "DOMAIN,practivate.adobe.ipp"
+  - "DOMAIN,practivate.adobe.newoa"
+  - "DOMAIN,practivate.adobe.ntp"
+  - "DOMAIN,public-us-pingsx.api.clonoth.com"
+  - "DOMAIN,push-apple.com.akadns.net"
+  - "DOMAIN,q676790b.pmhcjk.com"
+  - "DOMAIN,qualcomm.sc.omtrdc.net"
+  - "DOMAIN,roovza-launches.appsflyersdk.com"
+  - "DOMAIN,roovza.inapps.appsflyersdk.com"
+  - "DOMAIN,roovza.launches.appsflyersdk.com"
+  - "DOMAIN,roovza.skadsdk.appsflyersdk.com"
+  - "DOMAIN,rss.4040940.xyz"
+  - "DOMAIN,rss.datuan.dev"
+  - "DOMAIN,rss.littlebaby.life"
+  - "DOMAIN,rss.owo.nz"
+  - "DOMAIN,rss.wudifeixue.com"
+  - "DOMAIN,rsshub.asailor.org"
+  - "DOMAIN,rsshub.email-once.com"
+  - "DOMAIN,rsshub.henry.wang"
+  - "DOMAIN,rsshub.isrss.com"
+  - "DOMAIN,rsshub.ktachibana.party"
+  - "DOMAIN,rsshub.pseudoyu.com"
+  - "DOMAIN,rsshub.rss.tips"
+  - "DOMAIN,rsshub.rssforever.com"
+  - "DOMAIN,rsshub.umzzz.com"
+  - "DOMAIN,rsshub.woodland.cafe"
+  - "DOMAIN,rsshub2.asailor.org"
+  - "DOMAIN,standchartbank.sc.omtrdc.net"
+  - "DOMAIN,standchartbank.tt.omtrdc.net"
+  - "DOMAIN,straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com"
+  - "DOMAIN,tesla-cdn.thron.com"
+  - "DOMAIN,time.windows.com"
+  - "DOMAIN,translomatic.foxfortmobile.com"
+  - "DOMAIN,ubisoft.siteintercept.qualtrics.com"
+  - "DOMAIN,ut1-time.colorado.edu"
+  - "DOMAIN,utcnist.colorado.edu"
+  - "DOMAIN,utcnist2.colorado.edu"
+  - "DOMAIN,utcnist3.colorado.edu"
+  - "DOMAIN,vmware.tt.omtrdc.net"
+  - "DOMAIN,vscode.search.windows.net"
+  - "DOMAIN,vsmarketplacebadge.apphb.com"
+  - "DOMAIN,wetv.qq.com"
+  - "DOMAIN,widgets.stripst.com"
+  - "DOMAIN,wrds-www.wharton.upenn.edu"
+  - "DOMAIN,ws.audioscrobbler.com"
+  - "DOMAIN,www-cdn.icloud.com.akadns.net"
+  - "DOMAIN,yangzhi.app"
+  - "DOMAIN,zftksc.cdn-settings.appsflyersdk.com"
+  - "DOMAIN,zftksc.launches.appsflyersdk.com"
+  - "DOMAIN,ztedevices.com"
+  - "DOMAIN,api.waqi.info"
+  - "DOMAIN,aqi.aqicn.org"
+  - "DOMAIN,cloud.oracle.com"
+  - "DOMAIN,login.microsoftonline.com"
+  - "DOMAIN-SUFFIX,24.place"
+  - "DOMAIN-SUFFIX,91short.com"
+  - "DOMAIN-SUFFIX,agroros.ru"
+  - "DOMAIN-SUFFIX,ai-bank.ru"
+  - "DOMAIN-SUFFIX,akcept.ru"
+  - "DOMAIN-SUFFIX,akibank.ru"
+  - "DOMAIN-SUFFIX,albank.ru"
+  - "DOMAIN-SUFFIX,ant.dev"
+  - "DOMAIN-SUFFIX,anthropic.team"
+  - "DOMAIN-SUFFIX,antspace.dev"
+  - "DOMAIN-SUFFIX,apkbank.ru"
+  - "DOMAIN-SUFFIX,aresbank.ru"
+  - "DOMAIN-SUFFIX,autofinancebank.ru"
+  - "DOMAIN-SUFFIX,avito.com"
+  - "DOMAIN-SUFFIX,avito.tech"
+  - "DOMAIN-SUFFIX,bancaintesa.ru"
+  - "DOMAIN-SUFFIX,bank-hlynov.ru"
+  - "DOMAIN-SUFFIX,bank131.ru"
+  - "DOMAIN-SUFFIX,bankofkazan.ru"
+  - "DOMAIN-SUFFIX,bankperm.ru"
+  - "DOMAIN-SUFFIX,bankstavr.ru"
+  - "DOMAIN-SUFFIX,bankvl.ru"
+  - "DOMAIN-SUFFIX,beget.app"
+  - "DOMAIN-SUFFIX,beget.cloud"
+  - "DOMAIN-SUFFIX,beget.de"
+  - "DOMAIN-SUFFIX,beget.hosting"
+  - "DOMAIN-SUFFIX,beget.pro"
+  - "DOMAIN-SUFFIX,beget.tech"
+  - "DOMAIN-SUFFIX,begetcdn.cloud"
+  - "DOMAIN-SUFFIX,beru.ru"
+  - "DOMAIN-SUFFIX,beserver.ru"
+  - "DOMAIN-SUFFIX,bget.ru"
+  - "DOMAIN-SUFFIX,blockchair.com"
+  - "DOMAIN-SUFFIX,blockchair.net"
+  - "DOMAIN-SUFFIX,bmwbank.ru"
+  - "DOMAIN-SUFFIX,boc.ru"
+  - "DOMAIN-SUFFIX,bookmate.ru"
+  - "DOMAIN-SUFFIX,bscdnweb.com"
+  - "DOMAIN-SUFFIX,bystrobank.ru"
+  - "DOMAIN-SUFFIX,centrinvest.ru"
+  - "DOMAIN-SUFFIX,chatbotclaude.com"
+  - "DOMAIN-SUFFIX,chelindbank.ru"
+  - "DOMAIN-SUFFIX,chelinvest.ru"
+  - "DOMAIN-SUFFIX,cibank.ru"
+  - "DOMAIN-SUFFIX,cifra-bank.ru"
+  - "DOMAIN-SUFFIX,claude.app"
+  - "DOMAIN-SUFFIX,claude.dev"
+  - "DOMAIN-SUFFIX,claude.new"
+  - "DOMAIN-SUFFIX,claude.site"
+  - "DOMAIN-SUFFIX,claudeacademy.com"
+  - "DOMAIN-SUFFIX,claudepages.dev"
+  - "DOMAIN-SUFFIX,claudestudio.com"
+  - "DOMAIN-SUFFIX,cmrbank.ru"
+  - "DOMAIN-SUFFIX,coalmetbank.ru"
+  - "DOMAIN-SUFFIX,codebuff.com"
+  - "DOMAIN-SUFFIX,craftifyx.com"
+  - "DOMAIN-SUFFIX,crediteurope.ru"
+  - "DOMAIN-SUFFIX,creditural.ru"
+  - "DOMAIN-SUFFIX,cryptoid.info"
+  - "DOMAIN-SUFFIX,cursorvm.com"
+  - "DOMAIN-SUFFIX,databank.ru"
+  - "DOMAIN-SUFFIX,dcapital.ru"
+  - "DOMAIN-SUFFIX,delets.cash"
+  - "DOMAIN-SUFFIX,delivery-club.ru"
+  - "DOMAIN-SUFFIX,derzhava.ru"
+  - "DOMAIN-SUFFIX,dvbank.ru"
+  - "DOMAIN-SUFFIX,edadeal.ru"
+  - "DOMAIN-SUFFIX,efbank.ru"
+  - "DOMAIN-SUFFIX,emb.ru"
+  - "DOMAIN-SUFFIX,energobank.ru"
+  - "DOMAIN-SUFFIX,energotransbank.com"
+  - "DOMAIN-SUFFIX,evrofinance.ru"
+  - "DOMAIN-SUFFIX,eximbank.ru"
+  - "DOMAIN-SUFFIX,expobank.ru"
+  - "DOMAIN-SUFFIX,fanfiction.net"
+  - "DOMAIN-SUFFIX,finstarbank.ru"
+  - "DOMAIN-SUFFIX,firebase.dev"
+  - "DOMAIN-SUFFIX,firefox-portal-detection.com"
+  - "DOMAIN-SUFFIX,fluxer.app"
+  - "DOMAIN-SUFFIX,fluxer.com"
+  - "DOMAIN-SUFFIX,fluxer.dev"
+  - "DOMAIN-SUFFIX,fluxer.gg"
+  - "DOMAIN-SUFFIX,fluxer.gift"
+  - "DOMAIN-SUFFIX,fluxer.media"
+  - "DOMAIN-SUFFIX,fluxer.tools"
+  - "DOMAIN-SUFFIX,fluxerapp.com"
+  - "DOMAIN-SUFFIX,fluxerstatic.com"
+  - "DOMAIN-SUFFIX,fluxerstatus.com"
+  - "DOMAIN-SUFFIX,fluxerusercontent.com"
+  - "DOMAIN-SUFFIX,foodfox.ru"
+  - "DOMAIN-SUFFIX,forabank.ru"
+  - "DOMAIN-SUFFIX,freebuff.com"
+  - "DOMAIN-SUFFIX,funko.com"
+  - "DOMAIN-SUFFIX,gamebanana.com"
+  - "DOMAIN-SUFFIX,gaztransbank.ru"
+  - "DOMAIN-SUFFIX,gebank.ru"
+  - "DOMAIN-SUFFIX,genbank.ru"
+  - "DOMAIN-SUFFIX,getsafety.com"
+  - "DOMAIN-SUFFIX,glitchprod.com"
+  - "DOMAIN-SUFFIX,glitchproductions.store"
+  - "DOMAIN-SUFFIX,googleplaycensorship.com"
+  - "DOMAIN-SUFFIX,halvacard.ru"
+  - "DOMAIN-SUFFIX,home.bank"
+  - "DOMAIN-SUFFIX,huarun.win"
+  - "DOMAIN-SUFFIX,in-bank.ru"
+  - "DOMAIN-SUFFIX,ingobank.ru"
+  - "DOMAIN-SUFFIX,investpay.ru"
+  - "DOMAIN-SUFFIX,isnbank.ru"
+  - "DOMAIN-SUFFIX,itb.ru"
+  - "DOMAIN-SUFFIX,k-bnk.ru"
+  - "DOMAIN-SUFFIX,kamkombank.ru"
+  - "DOMAIN-SUFFIX,kbb.ru"
+  - "DOMAIN-SUFFIX,koronapay.com"
+  - "DOMAIN-SUFFIX,koshelev-bank.ru"
+  - "DOMAIN-SUFFIX,kremlinbank.ru"
+  - "DOMAIN-SUFFIX,kurs.expert"
+  - "DOMAIN-SUFFIX,kuzbank.ru"
+  - "DOMAIN-SUFFIX,lanta.ru"
+  - "DOMAIN-SUFFIX,lockobank.ru"
+  - "DOMAIN-SUFFIX,magnific.com"
+  - "DOMAIN-SUFFIX,makeship.com"
+  - "DOMAIN-SUFFIX,maritimebank.com"
+  - "DOMAIN-SUFFIX,market.ru"
+  - "DOMAIN-SUFFIX,mcbank.ru"
+  - "DOMAIN-SUFFIX,megaad.nz"
+  - "DOMAIN-SUFFIX,megapay.nz"
+  - "DOMAIN-SUFFIX,megas4.com"
+  - "DOMAIN-SUFFIX,metallinvestbank.ru"
+  - "DOMAIN-SUFFIX,metib.ru"
+  - "DOMAIN-SUFFIX,modulbank.ru"
+  - "DOMAIN-SUFFIX,moex.com"
+  - "DOMAIN-SUFFIX,moneta.ru"
+  - "DOMAIN-SUFFIX,mspbank.ru"
+  - "DOMAIN-SUFFIX,mts-link.ru"
+  - "DOMAIN-SUFFIX,nationalclearingcentre.ru"
+  - "DOMAIN-SUFFIX,nico-bank.ru"
+  - "DOMAIN-SUFFIX,nipbank.ru"
+  - "DOMAIN-SUFFIX,nkcbank.ru"
+  - "DOMAIN-SUFFIX,norvikbank.ru"
+  - "DOMAIN-SUFFIX,novikom.ru"
+  - "DOMAIN-SUFFIX,novobank.ru"
+  - "DOMAIN-SUFFIX,ns-bank.ru"
+  - "DOMAIN-SUFFIX,nsd.ru"
+  - "DOMAIN-SUFFIX,nskbl.ru"
+  - "DOMAIN-SUFFIX,okbank.ru"
+  - "DOMAIN-SUFFIX,openai.org"
+  - "DOMAIN-SUFFIX,opencode.ai"
+  - "DOMAIN-SUFFIX,orbank.ru"
+  - "DOMAIN-SUFFIX,ownaj.com"
+  - "DOMAIN-SUFFIX,pervbank.ru"
+  - "DOMAIN-SUFFIX,pikhtabank.ru"
+  - "DOMAIN-SUFFIX,poidem.ru"
+  - "DOMAIN-SUFFIX,postman.com"
+  - "DOMAIN-SUFFIX,priobye.ru"
+  - "DOMAIN-SUFFIX,priovtb.com"
+  - "DOMAIN-SUFFIX,pskb.com"
+  - "DOMAIN-SUFFIX,pv-cdn.net"
+  - "DOMAIN-SUFFIX,pyup.io"
+  - "DOMAIN-SUFFIX,r2modman.com"
+  - "DOMAIN-SUFFIX,rdb.ru"
+  - "DOMAIN-SUFFIX,resocreditbank.ru"
+  - "DOMAIN-SUFFIX,rncb.ru"
+  - "DOMAIN-SUFFIX,rosdorbank.ru"
+  - "DOMAIN-SUFFIX,rsb.ru"
+  - "DOMAIN-SUFFIX,rutaxi.ru"
+  - "DOMAIN-SUFFIX,safetycli.com"
+  - "DOMAIN-SUFFIX,sbpvtb.ru"
+  - "DOMAIN-SUFFIX,scb.ru"
+  - "DOMAIN-SUFFIX,scea.com"
+  - "DOMAIN-SUFFIX,schwabcdn.com"
+  - "DOMAIN-SUFFIX,sdm.ru"
+  - "DOMAIN-SUFFIX,sevnb.ru"
+  - "DOMAIN-SUFFIX,shedevrum.com"
+  - "DOMAIN-SUFFIX,shedevrum.ru"
+  - "DOMAIN-SUFFIX,sibsoc.ru"
+  - "DOMAIN-SUFFIX,slbank.ru"
+  - "DOMAIN-SUFFIX,smbfin.ru"
+  - "DOMAIN-SUFFIX,snbank.ru"
+  - "DOMAIN-SUFFIX,sngb.ru"
+  - "DOMAIN-SUFFIX,socium-bank.ru"
+  - "DOMAIN-SUFFIX,solidbank.ru"
+  - "DOMAIN-SUFFIX,sony.com.py"
+  - "DOMAIN-SUFFIX,sonyinteractive.com"
+  - "DOMAIN-SUFFIX,sonymusic.com.hk"
+  - "DOMAIN-SUFFIX,spbexchange.ru"
+  - "DOMAIN-SUFFIX,sprut.io"
+  - "DOMAIN-SUFFIX,spvb.ru"
+  - "DOMAIN-SUFFIX,steamos.cloud"
+  - "DOMAIN-SUFFIX,svoi.ru"
+  - "DOMAIN-SUFFIX,syntx.ai"
+  - "DOMAIN-SUFFIX,tfbnw.net"
+  - "DOMAIN-SUFFIX,tgtime.store"
+  - "DOMAIN-SUFFIX,thbank.ru"
+  - "DOMAIN-SUFFIX,thequestion.ru"
+  - "DOMAIN-SUFFIX,thunderstore.io"
+  - "DOMAIN-SUFFIX,thunderstore.org"
+  - "DOMAIN-SUFFIX,timerbank.ru"
+  - "DOMAIN-SUFFIX,timeweb.tech"
+  - "DOMAIN-SUFFIX,timewebcloud.kz"
+  - "DOMAIN-SUFFIX,tmimgcdn.com"
+  - "DOMAIN-SUFFIX,toyota-bank.ru"
+  - "DOMAIN-SUFFIX,transfer.it"
+  - "DOMAIN-SUFFIX,transstroybank.ru"
+  - "DOMAIN-SUFFIX,tsbnk.ru"
+  - "DOMAIN-SUFFIX,typesafe.ai"
+  - "DOMAIN-SUFFIX,ubrr.ru"
+  - "DOMAIN-SUFFIX,umbank.ru"
+  - "DOMAIN-SUFFIX,unicredit.ru"
+  - "DOMAIN-SUFFIX,unicreditbank.ru"
+  - "DOMAIN-SUFFIX,united.ru"
+  - "DOMAIN-SUFFIX,uralfd.ru"
+  - "DOMAIN-SUFFIX,uralprombank.ru"
+  - "DOMAIN-SUFFIX,vbrr.ru"
+  - "DOMAIN-SUFFIX,veb.ru"
+  - "DOMAIN-SUFFIX,venets-bank.ru"
+  - "DOMAIN-SUFFIX,vezet.ru"
+  - "DOMAIN-SUFFIX,vfbank.ru"
+  - "DOMAIN-SUFFIX,vlbb.ru"
+  - "DOMAIN-SUFFIX,vtb.com"
+  - "DOMAIN-SUFFIX,vtbbo.ru"
+  - "DOMAIN-SUFFIX,worldofwarships.asia"
+  - "DOMAIN-SUFFIX,xn--90ab2c.xn--p1ai"
+  - "DOMAIN-SUFFIX,xn--90aefb9d.xn--p1ai"
+  - "DOMAIN-SUFFIX,yandex-team.com"
+  - "DOMAIN-SUFFIX,yandex.market"
+  - "DOMAIN-SUFFIX,yandex.net.ru"
+  - "DOMAIN-SUFFIX,yandex.pro"
+  - "DOMAIN-SUFFIX,yandex.taxi"
+  - "DOMAIN-SUFFIX,yandex.travel"
+  - "DOMAIN-SUFFIX,yandexdataschool.com"
+  - "DOMAIN-SUFFIX,yandexdataschool.ru"
+  - "DOMAIN-SUFFIX,ydb.tech"
+  - "DOMAIN-SUFFIX,yookassa.ru"
+  - "DOMAIN-SUFFIX,yoomoney.ru"
+  - "DOMAIN-SUFFIX,youtooz.com"
+  - "DOMAIN-SUFFIX,7x24hrs.com"
+  - "DOMAIN-SUFFIX,aidc.com.tw"
+  - "DOMAIN-SUFFIX,blue-plus.net"
+  - "DOMAIN-SUFFIX,c.go-mpulse.net"
+  - "DOMAIN-SUFFIX,cangku.moe"
+  - "DOMAIN-SUFFIX,chineseposters.net"
+  - "DOMAIN-SUFFIX,cpc.com.tw"
+  - "DOMAIN-SUFFIX,csc.com.tw"
+  - "DOMAIN-SUFFIX,dh.net"
+  - "DOMAIN-SUFFIX,eximbank.com.tw"
+  - "DOMAIN-SUFFIX,fuyin116.com"
+  - "DOMAIN-SUFFIX,hanime1.com"
+  - "DOMAIN-SUFFIX,hanimeone.me"
+  - "DOMAIN-SUFFIX,icdf.org.tw"
+  - "DOMAIN-SUFFIX,ipac.global"
+  - "DOMAIN-SUFFIX,javchu.com"
+  - "DOMAIN-SUFFIX,khc.edu.tw"
+  - "DOMAIN-SUFFIX,landbank.com.tw"
+  - "DOMAIN-SUFFIX,matichon.co.th"
+  - "DOMAIN-SUFFIX,metaaivm.com"
+  - "DOMAIN-SUFFIX,mirdc.org.tw"
+  - "DOMAIN-SUFFIX,moeli-desu.com"
+  - "DOMAIN-SUFFIX,muse.ai"
+  - "DOMAIN-SUFFIX,nationthailand.com"
+  - "DOMAIN-SUFFIX,note.com"
+  - "DOMAIN-SUFFIX,nstc.org.tw"
+  - "DOMAIN-SUFFIX,poland.tw"
+  - "DOMAIN-SUFFIX,rocmgov.org"
+  - "DOMAIN-SUFFIX,tfd.org.tw"
+  - "DOMAIN-SUFFIX,ttl.com.tw"
+  - "DOMAIN-SUFFIX,twfhcsec.com.tw"
+  - "DOMAIN-SUFFIX,tybio.com.tw"
+  - "DOMAIN-SUFFIX,vava8.com"
+  - "DOMAIN-SUFFIX,vscc.org.tw"
+  - "DOMAIN-SUFFIX,wikifunctions.org"
+  - "DOMAIN-SUFFIX,wikispecies.org"
+  - "DOMAIN-SUFFIX,xx.net"

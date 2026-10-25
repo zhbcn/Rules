@@ -310,3 +310,7 @@ payload:
   - DOMAIN-SUFFIX,xrpl.org
   - DOMAIN-SUFFIX,xrpscan.com
   - DOMAIN-SUFFIX,z.cash
+  - "DOMAIN-SUFFIX,blockchair.net"
+  - "DOMAIN-SUFFIX,cryptoid.info"
+  - "DOMAIN-SUFFIX,delets.cash"
+  - "DOMAIN-SUFFIX,kurs.expert"

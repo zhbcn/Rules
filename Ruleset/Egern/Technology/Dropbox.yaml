@@ -6,6 +6,7 @@
 
 domain_set:
   - paper-attachments.s3.amazonaws.com
+  - dropbox.zendesk.com
 
 domain_suffix_set:
   - db.tt
@@ -23,3 +24,11 @@ domain_suffix_set:
   - dropboxstatic.com
   - dropboxusercontent.com
   - getdropbox.com
+  - addtodropbox.com
+  - dash.ai
+  - docsend.com
+  - dropboxexperiment.com
+  - dropboxlegal.com
+  - dropboxteam.com
+  - hellofax.com
+  - hellosign.com

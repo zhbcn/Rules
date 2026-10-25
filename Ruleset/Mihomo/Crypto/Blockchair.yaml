@@ -1,7 +1,8 @@
 # NAME: Blockchair
-# SOURCE: blackmatrix7/ios_rule_script (Crypto aggregate)
-# SOURCE-LIST: rule/Clash/Crypto/Crypto.yaml (Blockchair subset)
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency) + blackmatrix7/ios_rule_script (Crypto aggregate)
+# SOURCE-LIST: category-cryptocurrency + rule/Clash/Crypto/Crypto.yaml (Blockchair subset)
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
   - DOMAIN-SUFFIX,blockchair.com
+  - "DOMAIN-SUFFIX,blockchair.net"

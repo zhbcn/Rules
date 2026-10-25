@@ -248,3 +248,15 @@ payload:
   - DOMAIN-SUFFIX,img-x.jd.com
   - DOMAIN-SUFFIX,jzt.jd.com
   - DOMAIN-SUFFIX,stat.m.jd.com
+  - "DOMAIN-SUFFIX,51epei.com"
+  - "DOMAIN-SUFFIX,51yipei.com"
+  - "DOMAIN-SUFFIX,dd-advisor.com"
+  - "DOMAIN-SUFFIX,jdallianz.com"
+  - "DOMAIN-SUFFIX,jdindustry.com"
+  - "DOMAIN-SUFFIX,jingbantong.com"
+  - "DOMAIN-SUFFIX,jingxiaoling.com"
+  - "DOMAIN-SUFFIX,joyai.com"
+  - "DOMAIN-SUFFIX,ybscjp.com"
+  - "DOMAIN-SUFFIX,yunpei.com"
+  - "DOMAIN-SUFFIX,yunxiu.com"
+  - "DOMAIN-SUFFIX,zhongyouex.com"

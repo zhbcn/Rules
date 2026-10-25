@@ -747,3 +747,4 @@ payload:
   - DOMAIN-SUFFIX,jivara.global
   - DOMAIN-SUFFIX,mql5.com
   - DOMAIN-SUFFIX,tradingview.com
+  - "DOMAIN-SUFFIX,schwabcdn.com"

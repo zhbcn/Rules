@@ -6,3 +6,4 @@
 
 payload:
   - DOMAIN-SUFFIX,bitcoin.org
+  - "DOMAIN-SUFFIX,bitcoincore.org"

@@ -371,3 +371,7 @@ payload:
   - "IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve"
   - "IP-CIDR6,240e:928:1400:10::25/128,no-resolve"
   - "IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve"
+  - "IP-CIDR,101.91.140.124/32,no-resolve"
+  - "IP-CIDR,101.91.140.224/32,no-resolve"
+  - "IP-CIDR,122.9.13.79/32,no-resolve"
+  - "IP-CIDR,122.9.15.129/32,no-resolve"

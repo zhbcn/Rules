@@ -5,10 +5,6 @@
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
-  - zuoyebang.cc
-  - zuoyebang.com
-  - zybang.com
-  - syh.zybang.com
   - baidu
   - 91.com
   - aipage.com

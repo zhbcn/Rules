@@ -120,3 +120,8 @@ payload:
   - DOMAIN-SUFFIX,sonytc.co.jp
   - DOMAIN-SUFFIX,sovec.net
   - DOMAIN-SUFFIX,so-net.net.tw
+  - "DOMAIN-SUFFIX,playstationnetwork.com"
+  - "DOMAIN-SUFFIX,scea.com"
+  - "DOMAIN-SUFFIX,sony.com.py"
+  - "DOMAIN-SUFFIX,sonyinteractive.com"
+  - "DOMAIN-SUFFIX,sonymusic.com.hk"

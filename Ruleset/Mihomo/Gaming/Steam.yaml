@@ -65,3 +65,4 @@ payload:
   - DOMAIN,xz.pphimalayanrt.com
   - DOMAIN-SUFFIX,steamchina.com
   - DOMAIN-SUFFIX,gstore.val.manlaxy.com
+  - "DOMAIN-SUFFIX,steamos.cloud"

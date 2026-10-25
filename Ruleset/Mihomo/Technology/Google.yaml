@@ -97,7 +97,6 @@ payload:
   - DOMAIN-SUFFIX,firebaseio.com
   - DOMAIN,crashlyticsreports-pa.googleapis.com
   - DOMAIN,firebase-settings.crashlytics.com
-  - DOMAIN,firebase.google.com
   - DOMAIN,firebase.googleapis.com
   - DOMAIN,firebaseappcheck.googleapis.com
   - DOMAIN,firebasedynamiclinks-ipv4.googleapis.com
@@ -1119,3 +1118,12 @@ payload:
   - DOMAIN,www.destinationurl.com
   - DOMAIN,www.gstatic.com
   - DOMAIN,www.pxcc.com
+  - "DOMAIN-SUFFIX,firebase.dev"
+  - "DOMAIN-SUFFIX,firebase.google.com"
+  - "DOMAIN,firebaseappdistribution.googleapis.com"
+  - "DOMAIN,firebaseapptesters.googleapis.com"
+  - "DOMAIN,geminiweb-pa.clients.google.com"
+  - "DOMAIN,geminiweb-pa.clients6.google.com"
+  - "DOMAIN-SUFFIX,labstailwind.pa.googleapis.com"
+  - "DOMAIN-SUFFIX,notebook.google"
+  - "DOMAIN-SUFFIX,flow.google.com"

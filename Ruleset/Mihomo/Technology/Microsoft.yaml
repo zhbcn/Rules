@@ -371,9 +371,6 @@ payload:
   - DOMAIN-SUFFIX,onedrive.org
   - DOMAIN-SUFFIX,onedrive.live.com
   - DOMAIN-SUFFIX,storage.live.com
-  - DOMAIN-SUFFIX,asobostudio.com
-  - DOMAIN-SUFFIX,flightsimulator.com
-  - DOMAIN,flightsimulator.azureedge.net
   - DOMAIN-SUFFIX,beth.games
   - DOMAIN-SUFFIX,bethesda.net
   - DOMAIN-SUFFIX,bethesdagamestudios.com
@@ -758,3 +755,4 @@ payload:
   - DOMAIN,vscode.download.prss.microsoft.com
   - DOMAIN,vz.download.prss.microsoft.com
   - DOMAIN,windbg.download.prss.microsoft.com
+  - "DOMAIN-SUFFIX,cafe.github.com"

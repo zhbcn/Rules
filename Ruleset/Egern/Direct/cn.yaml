@@ -72,6 +72,8 @@ domain_set:
   - api.alibabacloud.com
   - cn.alibabacloud.com
   - status.alibabacloud.com
+  - app.moegirl.org.cn
+  - storage.moegirl.org.cn
 
 domain_suffix_set:
   - alibaba
@@ -3733,8 +3735,6 @@ domain_suffix_set:
   - huijistatic.com
   - huijiwiki.com
   - mcmod.cn
-  - moegirl.org
-  - moegirl.org.cn
   - pwsannong.com
   - qiuwenbaike.cn
   - qiuwen.wiki
@@ -8262,6 +8262,133 @@ domain_suffix_set:
   - vhengdata.com
   - wanji.net.cn
   - yebinnet.com
+  - cnb.space
+  - nanocorechip.com
+  - gamedog.cn
+  - ituchong.com
+  - tuchong.com
+  - xzw.com
+  - youxibao.com
+  - ahnews.com.cn
+  - askci.com
+  - ccn.com.cn
+  - cfi.cn
+  - cfi.net.cn
+  - cfsn.cn
+  - china.cn
+  - china.com.cn
+  - china.org.cn
+  - chnfund.com
+  - cneo.com.cn
+  - cnmo.com
+  - radio.cn
+  - datasheet5.com
+  - eefcdn.com
+  - eefocus.com
+  - dili360.com
+  - hunantoday.cn
+  - hnr.cn
+  - jingjiribao.cn
+  - jjrbs.cn
+  - kkj.cn
+  - lifeweek.com.cn
+  - sdxjpc.com
+  - pedaily.cn
+  - sciencenet.cn
+  - toodaylab.com
+  - yangtse.com
+  - youth.cn
+  - rnote.com
+  - duoduo.link
+  - hammi.cn
+  - uboxs.com
+  - immomo.com
+  - momocdn.com
+  - zuiyou.tv
+  - qianliaowang.com
+  - qlchat.com
+  - soulapp.cn
+  - tancdn.com
+  - tantanapp.com
+  - bocd.com.cn
+  - cdrcb.com
+  - cdrcbank.com
+  - ibangbank.com
+  - qudian.com
+  - 51epei.com
+  - 51yipei.com
+  - dd-advisor.com
+  - jdallianz.com
+  - jdindustry.com
+  - jingbantong.com
+  - jingxiaoling.com
+  - joyai.com
+  - ybscjp.com
+  - yunpei.com
+  - yunxiu.com
+  - zhongyouex.com
+  - cncn.com
+  - cncnimg.cn
+  - findlaw.cn
+  - findlawimg.com
+  - lbdj.com
+  - nbdeli.com
+  - west.cn
+  - xiujiadian.com
+  - zmn.cn
+  - netbig.top
+  - chaonei.com
+  - eword.cn
+  - medlive.cn
+  - wkimg.com
+  - xyxy.net
+  - zhongliujie.com
+  - bigdatacq.com
+  - cqdcg.com
+  - cqge.com.cn
+  - cqsdlys.cn
+  - cqyyxc.com
+  - digitalcnzz.com
+  - fnrrc.com
+  - gpzshq.cn
+  - pbccrc.org.cn
+  - sqqmtj.com
+  - gaokao.cn
+  - huijiaoyun.com
+  - mddclass.com
+  - szu.app
+  - szu.moe
+  - cldisk.com
+  - xuexitong.com
+  - cae.cn
+  - cas.cn
+  - chinaxiv.org
+  - zsyyb.cn
+  - wkepu.cn
+  - wkepu.com
+  - easemob.com
+  - aaej.cn
+  - digitaling.com
+  - isigning.cn
+  - isigning.com
+  - daotudashi.com
+  - xunjiepdf.com
+  - gongniu.cn
+  - gongniukaiguan.net
+  - saicmobility.com
+  - t3go.cn
+  - xiaolachuxing.com
+  - xlcx.cn
+  - 189cube.com
+  - tv189.com
+  - smartont.net
+  - wo-adv.cn
+  - i4.cn
+  - ip.cn
+  - shipxy.com
+  - youbianku.com
+  - vxhcm.com
+  - sjfls6.com
 
 domain_regex_set:
   - "^.+-mihayo\\.akamaized\\.net$"

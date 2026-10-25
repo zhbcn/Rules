@@ -8,7 +8,6 @@ domain_set:
   - android.googlesource.com
   - crashlyticsreports-pa.googleapis.com
   - firebase-settings.crashlytics.com
-  - firebase.google.com
   - firebase.googleapis.com
   - firebaseappcheck.googleapis.com
   - firebasedynamiclinks-ipv4.googleapis.com
@@ -238,6 +237,10 @@ domain_set:
   - www.destinationurl.com
   - www.gstatic.com
   - www.pxcc.com
+  - firebaseappdistribution.googleapis.com
+  - firebaseapptesters.googleapis.com
+  - geminiweb-pa.clients.google.com
+  - geminiweb-pa.clients6.google.com
 
 domain_suffix_set:
   - android
@@ -1119,6 +1122,11 @@ domain_suffix_set:
   - 265.com
   - gvt1-cn.com
   - gvt2-cn.com
+  - firebase.dev
+  - firebase.google.com
+  - labstailwind.pa.googleapis.com
+  - notebook.google
+  - flow.google.com
 
 domain_regex_set:
   - "^r+[0-9]+(---|\\.)sn-(2x3|ni5|j5o)\\w{5}\\.xn--ngstr-lra8j\\.com$"

@@ -14,6 +14,7 @@ domain_set:
   - browser-intake-datadoghq.com
   - o33249.ingest.sentry.io
   - openai.qualtrics.com
+  - o33249.ingest.us.sentry.io
 
 domain_suffix_set:
   - chat.com
@@ -29,6 +30,7 @@ domain_suffix_set:
   - chatgpt.livekit.cloud
   - host.livekit.cloud
   - turn.livekit.cloud
+  - openai.org
 
 domain_regex_set:
   - "^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$"

@@ -46,3 +46,8 @@ payload:
   - DOMAIN-SUFFIX,antigravity.google
   - DOMAIN-SUFFIX,antigravity-unleash.goog
   - DOMAIN-SUFFIX,stitch.withgoogle.com
+  - "DOMAIN,geminiweb-pa.clients.google.com"
+  - "DOMAIN,geminiweb-pa.clients6.google.com"
+  - "DOMAIN-SUFFIX,labstailwind.pa.googleapis.com"
+  - "DOMAIN-SUFFIX,notebook.google"
+  - "DOMAIN-SUFFIX,flow.google.com"

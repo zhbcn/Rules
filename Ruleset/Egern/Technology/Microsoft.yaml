@@ -62,7 +62,6 @@ domain_set:
   - ocsp.microsoft.com
   - oneocsp.microsoft.com
   - www.microsoft.com
-  - flightsimulator.azureedge.net
   - prodforza.blob.core.windows.net
   - img-prod-cms-rt-microsoft-com.akamaized.net
   - img-s-msn-com.akamaized.net
@@ -429,8 +428,6 @@ domain_suffix_set:
   - onedrive.org
   - onedrive.live.com
   - storage.live.com
-  - asobostudio.com
-  - flightsimulator.com
   - beth.games
   - bethesda.net
   - bethesdagamestudios.com
@@ -760,3 +757,4 @@ domain_suffix_set:
   - dcg.microsoft.com
   - dl.delivery.mp.microsoft.com
   - download.windowsupdate.com
+  - cafe.github.com

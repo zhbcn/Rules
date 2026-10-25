@@ -21,3 +21,12 @@ payload:
   - DOMAIN-SUFFIX,dropboxusercontent.com
   - DOMAIN-SUFFIX,getdropbox.com
   - DOMAIN,paper-attachments.s3.amazonaws.com
+  - "DOMAIN-SUFFIX,addtodropbox.com"
+  - "DOMAIN-SUFFIX,dash.ai"
+  - "DOMAIN-SUFFIX,docsend.com"
+  - "DOMAIN-SUFFIX,dropboxexperiment.com"
+  - "DOMAIN-SUFFIX,dropboxlegal.com"
+  - "DOMAIN-SUFFIX,dropboxteam.com"
+  - "DOMAIN-SUFFIX,hellofax.com"
+  - "DOMAIN-SUFFIX,hellosign.com"
+  - "DOMAIN,dropbox.zendesk.com"

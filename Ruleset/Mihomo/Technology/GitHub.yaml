@@ -69,3 +69,4 @@ payload:
   - DOMAIN,productionresultssa18.blob.core.windows.net
   - DOMAIN,productionresultssa19.blob.core.windows.net
   - DOMAIN-SUFFIX,collector.github.com
+  - "DOMAIN-SUFFIX,cafe.github.com"

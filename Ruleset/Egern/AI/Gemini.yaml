@@ -16,6 +16,8 @@ domain_set:
   - notebooklm.googleapis.com
   - antigravity-pa.googleapis.com
   - antigravity.googleapis.com
+  - geminiweb-pa.clients.google.com
+  - geminiweb-pa.clients6.google.com
 
 domain_suffix_set:
   - deepmind.com
@@ -48,3 +50,6 @@ domain_suffix_set:
   - antigravity.google
   - antigravity-unleash.goog
   - stitch.withgoogle.com
+  - labstailwind.pa.googleapis.com
+  - notebook.google
+  - flow.google.com

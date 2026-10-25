@@ -31,6 +31,7 @@ domain_set:
   - dqrpb9wgowsf5.cloudfront.net
   - ds0h3roq6wcgc.cloudfront.net
   - dykkng5hnh52u.cloudfront.net
+  - d3stzm2eumvgb4.cloudfront.net
 
 domain_suffix_set:
   - ext-twitch.tv

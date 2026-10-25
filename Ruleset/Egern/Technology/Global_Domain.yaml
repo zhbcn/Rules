@@ -4,134 +4,6 @@
 # MAINTAINED-BY: zhbcn/Rules
 
 domain_suffix_set:
-  - 1password.drift.click
-  - adobeereg.com
-  - agb9r0ad.qllfkl.com
-  - angle.com.tw
-  - api-p.videomarket.jp
-  - apple.com.akadns.net
-  - appleworldwidedeveloper.hb-api.omtrdc.net
-  - appleworldwidedeveloper.sc.omtrdc.net
-  - asahishimbun.sc.omtrdc.net
-  - assets1.xboxlive.com
-  - assets2.xboxlive.com
-  - az416426.vo.msecnd.net
-  - az668014.vo.msecnd.net
-  - az764295.vo.msecnd.net
-  - bbs.boingboing.net
-  - beatselectronicsllc.tt.omtrdc.net
-  - beck-online.beck.de
-  - blizzard.nefficient.co.kr
-  - bybit.ada.support
-  - cbsi.live.ott.irdeto.com
-  - cbsplaylistserver.aws.syncbak.com
-  - cbsservice.aws.syncbak.com
-  - cdn-spotify-experiments.conductrics.com
-  - cdn.js7k.com
-  - cisco.evergage.com
-  - clubhouse.pubnubapi.com
-  - community.oneplus.com
-  - configuration-lb.ls-apple.com.akadns.net
-  - courier-push-apple.com.akadns.net
-  - crl.versign.net
-  - databank.worldbank.org
-  - datarouter.apps.netherrealm.com
-  - deutschewelle.h-cdn.com
-  - dl.begellhouse.com
-  - ea.tt.omtrdc.net
-  - elib.maruzen.co.jp
-  - espn.hb.omtrdc.net
-  - espndotcom.tt.omtrdc.net
-  - faronics.kayako.com
-  - firstsearch.oclc.org
-  - github-api.arkoselabs.com
-  - gog-cdn-lumen.secure2.footprint.net
-  - gog.qtlglb.com
-  - hb4bbbbb.pmhcjk.com
-  - holoxx.f5.si
-  - hpstore.corpmerchandise.com
-  - hub.slarker.me
-  - i.jeded.com
-  - imperial.insendi.com
-  - lgelectronics.122.2o7.net
-  - linkedin.sc.omtrdc.net
-  - live-patreon-marketing.pantheonsite.io
-  - medone-education.thieme.com
-  - muse.jhu.edu
-  - nationalaustraliaban.tt.omtrdc.net
-  - nbbb1bb7.pmhcjk.com
-  - ntp-c.colorado.edu
-  - ntp.time.nl
-  - ntp0.ntp-servers.net
-  - ntp1.ntp-servers.net
-  - ntp1.time.nl
-  - ntp2.ntp-servers.net
-  - ntp2.time.nl
-  - ntp3.ntp-servers.net
-  - ntp4.ntp-servers.net
-  - ntp5.ntp-servers.net
-  - ntp6.ntp-servers.net
-  - ntp7.ntp-servers.net
-  - ntppool1.time.nl
-  - ntppool2.time.nl
-  - nvidia.tt.omtrdc.net
-  - ood.opsource.net
-  - practivate.adobe
-  - practivate.adobe.ipp
-  - practivate.adobe.newoa
-  - practivate.adobe.ntp
-  - public-us-pingsx.api.clonoth.com
-  - push-apple.com.akadns.net
-  - q676790b.pmhcjk.com
-  - qualcomm.sc.omtrdc.net
-  - roovza-launches.appsflyersdk.com
-  - roovza.inapps.appsflyersdk.com
-  - roovza.launches.appsflyersdk.com
-  - roovza.skadsdk.appsflyersdk.com
-  - rss.4040940.xyz
-  - rss.datuan.dev
-  - rss.littlebaby.life
-  - rss.owo.nz
-  - rss.wudifeixue.com
-  - rsshub.asailor.org
-  - rsshub.email-once.com
-  - rsshub.henry.wang
-  - rsshub.isrss.com
-  - rsshub.ktachibana.party
-  - rsshub.pseudoyu.com
-  - rsshub.rss.tips
-  - rsshub.rssforever.com
-  - rsshub.umzzz.com
-  - rsshub.woodland.cafe
-  - rsshub2.asailor.org
-  - sberpro.vedomosti.ru
-  - standchartbank.sc.omtrdc.net
-  - standchartbank.tt.omtrdc.net
-  - straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
-  - tesla-cdn.thron.com
-  - time.windows.com
-  - translomatic.foxfortmobile.com
-  - ubisoft.siteintercept.qualtrics.com
-  - ut1-time.colorado.edu
-  - utcnist.colorado.edu
-  - utcnist2.colorado.edu
-  - utcnist3.colorado.edu
-  - vmware.tt.omtrdc.net
-  - vscode.search.windows.net
-  - vsmarketplacebadge.apphb.com
-  - wetv.qq.com
-  - widgets.stripst.com
-  - wrds-www.wharton.upenn.edu
-  - ws.audioscrobbler.com
-  - www-cdn.icloud.com.akadns.net
-  - yangzhi.app
-  - zftksc.cdn-settings.appsflyersdk.com
-  - zftksc.launches.appsflyersdk.com
-  - ztedevices.com
-  - api.waqi.info
-  - aqi.aqicn.org
-  - cloud.oracle.com
-  - login.microsoftonline.com
   - 01.org
   - 02weqj32.com
   - 04647.club
@@ -324,7 +196,6 @@ domain_suffix_set:
   - 20thcenturystudios.com.br
   - 20thcenturystudios.jp
   - 20yearsoffea.com
-  - 21-school.ru
   - 21centuryaccess.com
   - 21heise360dh.cc
   - 21hub.com
@@ -790,7 +661,6 @@ domain_suffix_set:
   - accessfacebookfromschool.com
   - accesshe.ac.uk
   - accessheonline.ac.uk
-  - accesspoint.uz
   - accesstohe.ac.uk
   - accesstohighereducation.ac.uk
   - accesstomusic.ac.uk
@@ -1141,7 +1011,6 @@ domain_suffix_set:
   - affinity.studio
   - affirmtrust.com
   - afi.ac.uk
-  - afisha.ru
   - afkv28.com
   - aflamporn.com
   - aflamsex.net
@@ -2508,7 +2377,6 @@ domain_suffix_set:
   - asminternational.org
   - asmrbuluo.com
   - asn-online.org
-  - asobostudio.com
   - asp-cc.com
   - asp.net
   - aspbjournals.org
@@ -5950,7 +5818,6 @@ domain_suffix_set:
   - citycollegepeterborough.ac.uk
   - citycollegeplymouth.ac.uk
   - citycollegesoton.ac.uk
-  - citydrive.ru
   - cityheaven.net
   - citylab.com
   - citylit.ac.uk
@@ -6042,7 +5909,6 @@ domain_suffix_set:
   - clojure.org
   - closer.ac.uk
   - cloud.ac.uk
-  - cloud.ru
   - cloudapp.net
   - cloudappsecurity.com
   - cloudburstresearch.com
@@ -8035,8 +7901,6 @@ domain_suffix_set:
   - eandc-sirgar.ac.uk
   - eanordic.com
   - eaplay.com
-  - eaptechka.online
-  - eapteka.ru
   - earlham.ac.uk
   - earlhaminstitute.ac.uk
   - earlyenglishlaws.ac.uk
@@ -9735,7 +9599,6 @@ domain_suffix_set:
   - fli8.xyz
   - flic.kr
   - flickr.net
-  - flightsimulator.com
   - flipfap.com
   - flipnotestudio.com
   - flipshare.com
@@ -10561,7 +10424,6 @@ domain_suffix_set:
   - getscorecash.com
   - getsentry.com
   - getsexgames.com
-  - getsynapse.io
   - gettyimages.at
   - gettyimages.be
   - gettyimages.ch
@@ -10619,12 +10481,10 @@ domain_suffix_set:
   - gib.sg
   - gibdev.net
   - gibtds.ru
-  - gid.ru
   - giffgaff.com
   - giffgaff.design
   - gifnuki.com
   - gift-surg.ac.uk
-  - giga.chat
   - gigabyte.com
   - gigantits.com
   - gigaporn.org
@@ -10690,7 +10550,6 @@ domain_suffix_set:
   - gitstar.net
   - gittigidiyor.net
   - gittigidiyorsikayet.com
-  - gitverse.ru
   - givemebuzzsaw.com
   - gizmoxxx.com
   - gla.ac.uk
@@ -12771,7 +12630,6 @@ domain_suffix_set:
   - ictheatre.ac.uk
   - icuminside.com
   - id.hao123.com
-  - id.ru
   - idarkdoll.com
   - idcore.ac.uk
   - idea-server.com
@@ -14097,21 +13955,6 @@ domain_suffix_set:
   - jiuse905.com
   - jiuzhouyihuo.com
   - jivara.global
-  - jivo.chat
-  - jivo.ru
-  - jivochat.co.in
-  - jivochat.co.za
-  - jivochat.com
-  - jivochat.com.br
-  - jivochat.com.co
-  - jivochat.com.pe
-  - jivochat.com.tr
-  - jivochat.de
-  - jivochat.es
-  - jivochat.ng
-  - jivochat.ru
-  - jivosite.com
-  - jivosite.ru
   - jiyou520.com
   - jiyu-kobo.co.jp
   - jizzboom.com
@@ -14613,7 +14456,6 @@ domain_suffix_set:
   - korbit.co.kr
   - koreanpornmovie.com
   - korewaeroi.com
-  - korona.com
   - koshelek.app
   - koskade.com
   - kostenlosepornoclips.com
@@ -14664,7 +14506,6 @@ domain_suffix_set:
   - kumo.com
   - kun66.xyz
   - kundun1069.com
-  - kuper.ru
   - kusugurizanmai.com
   - kutjeporno.com
   - kwok7.com
@@ -15006,7 +14847,6 @@ domain_suffix_set:
   - likee.com
   - likeeapp.ru
   - likeevideo.com
-  - likeevideo.ru
   - likeseiyu.com
   - liketruyen.net
   - liketwice.com
@@ -16026,8 +15866,6 @@ domain_suffix_set:
   - megafon.ru
   - megafonpro.ru
   - megahdporno.net
-  - megamarket.ru
-  - megamarket.tech
   - megamon.co.kr
   - megaphone.fm
   - megapornfreehd.com
@@ -18948,7 +18786,6 @@ domain_suffix_set:
   - otaku55.xyz
   - otakuboo.com
   - otbm.com
-  - otello.ru
   - otleycollege.ac.uk
   - otleyeaston.ac.uk
   - otleyonline.ac.uk
@@ -19167,7 +19004,6 @@ domain_suffix_set:
   - pawchive.st
   - paxlicense.org
   - paydiant.com
-  - payecom.ru
   - payget.pro
   - paygonline.com
   - payhulu.com
@@ -19653,7 +19489,6 @@ domain_suffix_set:
   - plasma-mobile.org
   - plasticlabs.com
   - plastics-cadcam.com
-  - platiecom.ru
   - platinumlinks.org
   - platov.co
   - play-bmm.shop
@@ -20368,7 +20203,6 @@ domain_suffix_set:
   - proxyrarbg.org
   - prpops.com
   - prs-ltsn.ac.uk
-  - prts.plus
   - prucomm.ac.uk
   - prvbank.ru
   - ps-exchange.com
@@ -20382,7 +20216,6 @@ domain_suffix_set:
   - psds.ac.uk
   - pse.is
   - psigate.ac.uk
-  - pskb.ru
   - pssru.ac.uk
   - pstorage.space
   - psyccareers.com
@@ -20657,7 +20490,6 @@ domain_suffix_set:
   - rae.ac.uk
   - raft.ac.uk
   - ragnaporn.com
-  - raiffeisen-media.ru
   - raiffeisen.ru
   - rajwaphq.com
   - rakuten-bank.co.jp
@@ -21024,7 +20856,6 @@ domain_suffix_set:
   - resoubang.buzz
   - resourceshare.ac.uk
   - respawnbyrazer.com
-  - restnproducts.ru
   - restore.ac.uk
   - restream-media.net
   - restream.ru
@@ -21516,7 +21347,6 @@ domain_suffix_set:
   - sambaporno.com
   - samc.ac.uk
   - samebags.com
-  - samokat.ru
   - sams.ac.uk
   - samsung.com
   - samsungapps.com
@@ -21608,30 +21438,10 @@ domain_suffix_set:
   - sbank.ir
   - sbc.ac.uk
   - sber-bank.by
-  - sber.pro
   - sber.ru
-  - sberauto.com
-  - sberbank-insurance.ru
-  - sberbank-tele.com
   - sberbank.com
   - sberbank.ru
-  - sberbankaktivno.ru
-  - sberbankins.ru
-  - sbercloud.ru
-  - sbercloud.tech
-  - sberdevices.ru
-  - sberdisk.ru
-  - sberfactoring.ru
-  - sberhealth.ru
-  - sberindex.ru
-  - sberleasing.ru
-  - sberlogistics.ru
-  - sbermegamarket.ru
-  - sbermobile.ru
-  - sberpb.ru
   - sberspasibo.ru
-  - sbertech.ru
-  - sbertroika.ru
   - sbgkstv.shop
   - sbibankllc.ru
   - sbirmc.ac.uk
@@ -27044,7 +26854,6 @@ domain_suffix_set:
   - xn--colegsirgr-c5a.ac.uk
   - xn--d1abkf4ap.fun
   - xn--d1acpjx3f.xn--p1ai
-  - xn--d1aqf.xn--p1ai
   - xn--d4ty0ojsqzfd.com
   - xn--e1adjldbbpv.xn--90ais
   - xn--e1aigb.xn--p1ai
@@ -28168,8 +27977,6 @@ domain_suffix_set:
   - zuckerberg.net
   - zukunftswerkstatt.de
   - zunked.com
-  - zvuk-b2b.com
-  - zvuk.com
   - zweiporn.com
   - zwtvusa.com
   - zynaima.com
@@ -34899,3 +34706,404 @@ domain_suffix_set:
   - zzcartoon.com
   - zzcloud.me
   - zzux.com
+  - 24.place
+  - 91short.com
+  - agroros.ru
+  - ai-bank.ru
+  - akcept.ru
+  - akibank.ru
+  - albank.ru
+  - ant.dev
+  - anthropic.team
+  - antspace.dev
+  - apkbank.ru
+  - aresbank.ru
+  - autofinancebank.ru
+  - avito.com
+  - avito.tech
+  - bancaintesa.ru
+  - bank-hlynov.ru
+  - bank131.ru
+  - bankofkazan.ru
+  - bankperm.ru
+  - bankstavr.ru
+  - bankvl.ru
+  - beget.app
+  - beget.cloud
+  - beget.de
+  - beget.hosting
+  - beget.pro
+  - beget.tech
+  - begetcdn.cloud
+  - beru.ru
+  - beserver.ru
+  - bget.ru
+  - blockchair.com
+  - blockchair.net
+  - bmwbank.ru
+  - boc.ru
+  - bookmate.ru
+  - bscdnweb.com
+  - bystrobank.ru
+  - centrinvest.ru
+  - chatbotclaude.com
+  - chelindbank.ru
+  - chelinvest.ru
+  - cibank.ru
+  - cifra-bank.ru
+  - claude.app
+  - claude.dev
+  - claude.new
+  - claude.site
+  - claudeacademy.com
+  - claudepages.dev
+  - claudestudio.com
+  - cmrbank.ru
+  - coalmetbank.ru
+  - codebuff.com
+  - craftifyx.com
+  - crediteurope.ru
+  - creditural.ru
+  - cryptoid.info
+  - cursorvm.com
+  - databank.ru
+  - dcapital.ru
+  - delets.cash
+  - delivery-club.ru
+  - derzhava.ru
+  - dvbank.ru
+  - edadeal.ru
+  - efbank.ru
+  - emb.ru
+  - energobank.ru
+  - energotransbank.com
+  - evrofinance.ru
+  - eximbank.ru
+  - expobank.ru
+  - fanfiction.net
+  - finstarbank.ru
+  - firebase.dev
+  - firefox-portal-detection.com
+  - fluxer.app
+  - fluxer.com
+  - fluxer.dev
+  - fluxer.gg
+  - fluxer.gift
+  - fluxer.media
+  - fluxer.tools
+  - fluxerapp.com
+  - fluxerstatic.com
+  - fluxerstatus.com
+  - fluxerusercontent.com
+  - foodfox.ru
+  - forabank.ru
+  - freebuff.com
+  - funko.com
+  - gamebanana.com
+  - gaztransbank.ru
+  - gebank.ru
+  - genbank.ru
+  - getsafety.com
+  - glitchprod.com
+  - glitchproductions.store
+  - googleplaycensorship.com
+  - halvacard.ru
+  - home.bank
+  - huarun.win
+  - in-bank.ru
+  - ingobank.ru
+  - investpay.ru
+  - isnbank.ru
+  - itb.ru
+  - k-bnk.ru
+  - kamkombank.ru
+  - kbb.ru
+  - koronapay.com
+  - koshelev-bank.ru
+  - kremlinbank.ru
+  - kurs.expert
+  - kuzbank.ru
+  - lanta.ru
+  - lockobank.ru
+  - magnific.com
+  - makeship.com
+  - maritimebank.com
+  - market.ru
+  - mcbank.ru
+  - megaad.nz
+  - megapay.nz
+  - megas4.com
+  - metallinvestbank.ru
+  - metib.ru
+  - modulbank.ru
+  - moex.com
+  - moneta.ru
+  - mspbank.ru
+  - mts-link.ru
+  - nationalclearingcentre.ru
+  - nico-bank.ru
+  - nipbank.ru
+  - nkcbank.ru
+  - norvikbank.ru
+  - novikom.ru
+  - novobank.ru
+  - ns-bank.ru
+  - nsd.ru
+  - nskbl.ru
+  - okbank.ru
+  - openai.org
+  - opencode.ai
+  - orbank.ru
+  - ownaj.com
+  - pervbank.ru
+  - pikhtabank.ru
+  - poidem.ru
+  - postman.com
+  - priobye.ru
+  - priovtb.com
+  - pskb.com
+  - pv-cdn.net
+  - pyup.io
+  - r2modman.com
+  - rdb.ru
+  - resocreditbank.ru
+  - rncb.ru
+  - rosdorbank.ru
+  - rsb.ru
+  - rutaxi.ru
+  - safetycli.com
+  - sbpvtb.ru
+  - scb.ru
+  - scea.com
+  - schwabcdn.com
+  - sdm.ru
+  - sevnb.ru
+  - shedevrum.com
+  - shedevrum.ru
+  - sibsoc.ru
+  - slbank.ru
+  - smbfin.ru
+  - snbank.ru
+  - sngb.ru
+  - socium-bank.ru
+  - solidbank.ru
+  - sony.com.py
+  - sonyinteractive.com
+  - sonymusic.com.hk
+  - spbexchange.ru
+  - sprut.io
+  - spvb.ru
+  - steamos.cloud
+  - svoi.ru
+  - syntx.ai
+  - tfbnw.net
+  - tgtime.store
+  - thbank.ru
+  - thequestion.ru
+  - thunderstore.io
+  - thunderstore.org
+  - timerbank.ru
+  - timeweb.tech
+  - timewebcloud.kz
+  - tmimgcdn.com
+  - toyota-bank.ru
+  - transfer.it
+  - transstroybank.ru
+  - tsbnk.ru
+  - typesafe.ai
+  - ubrr.ru
+  - umbank.ru
+  - unicredit.ru
+  - unicreditbank.ru
+  - united.ru
+  - uralfd.ru
+  - uralprombank.ru
+  - vbrr.ru
+  - veb.ru
+  - venets-bank.ru
+  - vezet.ru
+  - vfbank.ru
+  - vlbb.ru
+  - vtb.com
+  - vtbbo.ru
+  - worldofwarships.asia
+  - xn--90ab2c.xn--p1ai
+  - xn--90aefb9d.xn--p1ai
+  - yandex-team.com
+  - yandex.market
+  - yandex.net.ru
+  - yandex.pro
+  - yandex.taxi
+  - yandex.travel
+  - yandexdataschool.com
+  - yandexdataschool.ru
+  - ydb.tech
+  - yookassa.ru
+  - yoomoney.ru
+  - youtooz.com
+  - 7x24hrs.com
+  - aidc.com.tw
+  - blue-plus.net
+  - c.go-mpulse.net
+  - cangku.moe
+  - chineseposters.net
+  - cpc.com.tw
+  - csc.com.tw
+  - dh.net
+  - eximbank.com.tw
+  - fuyin116.com
+  - hanime1.com
+  - hanimeone.me
+  - icdf.org.tw
+  - ipac.global
+  - javchu.com
+  - khc.edu.tw
+  - landbank.com.tw
+  - matichon.co.th
+  - metaaivm.com
+  - mirdc.org.tw
+  - moeli-desu.com
+  - muse.ai
+  - nationthailand.com
+  - note.com
+  - nstc.org.tw
+  - poland.tw
+  - rocmgov.org
+  - tfd.org.tw
+  - ttl.com.tw
+  - twfhcsec.com.tw
+  - tybio.com.tw
+  - vava8.com
+  - vscc.org.tw
+  - wikifunctions.org
+  - wikispecies.org
+  - xx.net
+
+domain_set:
+  - 1password.drift.click
+  - adobeereg.com
+  - agb9r0ad.qllfkl.com
+  - angle.com.tw
+  - api-p.videomarket.jp
+  - apple.com.akadns.net
+  - appleworldwidedeveloper.hb-api.omtrdc.net
+  - appleworldwidedeveloper.sc.omtrdc.net
+  - asahishimbun.sc.omtrdc.net
+  - assets1.xboxlive.com
+  - assets2.xboxlive.com
+  - az416426.vo.msecnd.net
+  - az668014.vo.msecnd.net
+  - az764295.vo.msecnd.net
+  - bbs.boingboing.net
+  - beatselectronicsllc.tt.omtrdc.net
+  - beck-online.beck.de
+  - blizzard.nefficient.co.kr
+  - bybit.ada.support
+  - cbsi.live.ott.irdeto.com
+  - cbsplaylistserver.aws.syncbak.com
+  - cbsservice.aws.syncbak.com
+  - cdn-spotify-experiments.conductrics.com
+  - cdn.js7k.com
+  - cisco.evergage.com
+  - clubhouse.pubnubapi.com
+  - community.oneplus.com
+  - configuration-lb.ls-apple.com.akadns.net
+  - courier-push-apple.com.akadns.net
+  - crl.versign.net
+  - databank.worldbank.org
+  - datarouter.apps.netherrealm.com
+  - deutschewelle.h-cdn.com
+  - dl.begellhouse.com
+  - ea.tt.omtrdc.net
+  - elib.maruzen.co.jp
+  - espn.hb.omtrdc.net
+  - espndotcom.tt.omtrdc.net
+  - faronics.kayako.com
+  - firstsearch.oclc.org
+  - github-api.arkoselabs.com
+  - gog-cdn-lumen.secure2.footprint.net
+  - gog.qtlglb.com
+  - hb4bbbbb.pmhcjk.com
+  - holoxx.f5.si
+  - hpstore.corpmerchandise.com
+  - hub.slarker.me
+  - i.jeded.com
+  - imperial.insendi.com
+  - lgelectronics.122.2o7.net
+  - linkedin.sc.omtrdc.net
+  - live-patreon-marketing.pantheonsite.io
+  - medone-education.thieme.com
+  - muse.jhu.edu
+  - nationalaustraliaban.tt.omtrdc.net
+  - nbbb1bb7.pmhcjk.com
+  - ntp-c.colorado.edu
+  - ntp.time.nl
+  - ntp0.ntp-servers.net
+  - ntp1.ntp-servers.net
+  - ntp1.time.nl
+  - ntp2.ntp-servers.net
+  - ntp2.time.nl
+  - ntp3.ntp-servers.net
+  - ntp4.ntp-servers.net
+  - ntp5.ntp-servers.net
+  - ntp6.ntp-servers.net
+  - ntp7.ntp-servers.net
+  - ntppool1.time.nl
+  - ntppool2.time.nl
+  - nvidia.tt.omtrdc.net
+  - ood.opsource.net
+  - practivate.adobe
+  - practivate.adobe.ipp
+  - practivate.adobe.newoa
+  - practivate.adobe.ntp
+  - public-us-pingsx.api.clonoth.com
+  - push-apple.com.akadns.net
+  - q676790b.pmhcjk.com
+  - qualcomm.sc.omtrdc.net
+  - roovza-launches.appsflyersdk.com
+  - roovza.inapps.appsflyersdk.com
+  - roovza.launches.appsflyersdk.com
+  - roovza.skadsdk.appsflyersdk.com
+  - rss.4040940.xyz
+  - rss.datuan.dev
+  - rss.littlebaby.life
+  - rss.owo.nz
+  - rss.wudifeixue.com
+  - rsshub.asailor.org
+  - rsshub.email-once.com
+  - rsshub.henry.wang
+  - rsshub.isrss.com
+  - rsshub.ktachibana.party
+  - rsshub.pseudoyu.com
+  - rsshub.rss.tips
+  - rsshub.rssforever.com
+  - rsshub.umzzz.com
+  - rsshub.woodland.cafe
+  - rsshub2.asailor.org
+  - standchartbank.sc.omtrdc.net
+  - standchartbank.tt.omtrdc.net
+  - straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
+  - tesla-cdn.thron.com
+  - time.windows.com
+  - translomatic.foxfortmobile.com
+  - ubisoft.siteintercept.qualtrics.com
+  - ut1-time.colorado.edu
+  - utcnist.colorado.edu
+  - utcnist2.colorado.edu
+  - utcnist3.colorado.edu
+  - vmware.tt.omtrdc.net
+  - vscode.search.windows.net
+  - vsmarketplacebadge.apphb.com
+  - wetv.qq.com
+  - widgets.stripst.com
+  - wrds-www.wharton.upenn.edu
+  - ws.audioscrobbler.com
+  - www-cdn.icloud.com.akadns.net
+  - yangzhi.app
+  - zftksc.cdn-settings.appsflyersdk.com
+  - zftksc.launches.appsflyersdk.com
+  - ztedevices.com
+  - api.waqi.info
+  - aqi.aqicn.org
+  - cloud.oracle.com
+  - login.microsoftonline.com

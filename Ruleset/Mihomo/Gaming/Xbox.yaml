@@ -5,9 +5,6 @@
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN-SUFFIX,asobostudio.com
-  - DOMAIN-SUFFIX,flightsimulator.com
-  - DOMAIN,flightsimulator.azureedge.net
   - DOMAIN-SUFFIX,beth.games
   - DOMAIN-SUFFIX,bethesda.net
   - DOMAIN-SUFFIX,bethesdagamestudios.com

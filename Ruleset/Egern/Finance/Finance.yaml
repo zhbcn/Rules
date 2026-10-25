@@ -744,6 +744,7 @@ domain_suffix_set:
   - jivara.global
   - mql5.com
   - tradingview.com
+  - schwabcdn.com
 
 domain_set:
   - standchartbank.sc.omtrdc.net

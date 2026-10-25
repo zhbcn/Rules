@@ -81,3 +81,4 @@ payload:
   - DOMAIN,ads.mozilla.org
   - DOMAIN,incoming.telemetry.mozilla.org
   - DOMAIN,incoming-telemetry.thunderbird.net
+  - "DOMAIN-SUFFIX,firefox-portal-detection.com"

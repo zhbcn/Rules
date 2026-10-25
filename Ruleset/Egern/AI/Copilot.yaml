@@ -1,6 +1,6 @@
 # NAME: Copilot
 # SOURCE: v2fly/domain-list-community
-# SOURCE-LIST: github-copilot + existing Technology/Microsoft.yaml Copilot subset
+# SOURCE-LIST: github-copilot + category-ai-!cn (Copilot subset) + existing Technology/Microsoft.yaml Copilot subset
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
@@ -16,3 +16,4 @@ domain_suffix_set:
   - copilot.com
   - copilot.microsoft.com
   - copilot.cloud.microsoft
+  - copilot-stg.com
