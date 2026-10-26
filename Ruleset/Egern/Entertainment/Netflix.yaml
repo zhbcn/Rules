@@ -4,9 +4,6 @@
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
-domain_set:
-  - netflix.com.edgesuite.net
-
 domain_suffix_set:
   - fast.com
   - netflix.ca
@@ -31,6 +28,7 @@ domain_suffix_set:
   - netflixdnstest8.com
   - netflixdnstest9.com
   - netflixdnstest10.com
+  - netflix.com.edgesuite.net
 
 domain_regex_set:
   - "(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$"

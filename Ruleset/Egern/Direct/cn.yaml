@@ -3727,7 +3727,6 @@ domain_suffix_set:
   - yiigle.com
   - allhistory.com
   - fgo.wiki
-  - jikipedia.com
   - mbalib.com
   - sec-wiki.com
   - shidianbaike.com
@@ -8389,6 +8388,9 @@ domain_suffix_set:
   - youbianku.com
   - vxhcm.com
   - sjfls6.com
+  - kakaxing.com
+  - filmorigin.com
+  - xiaomaigui.com
 
 domain_regex_set:
   - "^.+-mihayo\\.akamaized\\.net$"

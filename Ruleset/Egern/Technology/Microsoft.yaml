@@ -117,6 +117,10 @@ domain_set:
   - vscode.download.prss.microsoft.com
   - vz.download.prss.microsoft.com
   - windbg.download.prss.microsoft.com
+  - dc.applicationinsights.azure.com
+  - live.applicationinsights.azure.com
+  - dc.services.visualstudio.com
+  - rt.services.visualstudio.com
 
 domain_suffix_set:
   - azure
@@ -758,3 +762,6 @@ domain_suffix_set:
   - dl.delivery.mp.microsoft.com
   - download.windowsupdate.com
   - cafe.github.com
+  - in.applicationinsights.azure.com
+  - data.microsoft.com
+  - telemetry.microsoft.com
