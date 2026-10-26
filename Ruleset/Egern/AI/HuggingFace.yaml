@@ -1,0 +1,11 @@
+# NAME: HuggingFace
+# SOURCE: v2fly/domain-list-community + Hugging Face official
+# SOURCE-LIST: huggingface + Inference Endpoints
+# SOURCE-URL: https://huggingface.co/docs/huggingface_hub/package_reference/inference_endpoints
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - hf.co
+  - hf.space
+  - huggingface.co
+  - endpoints.huggingface.cloud
