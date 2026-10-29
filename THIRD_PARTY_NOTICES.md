@@ -20,4 +20,11 @@
 - 许可证：GNU Affero General Public License v3.0（AGPL-3.0）
 - 许可证原文：https://github.com/SukkaW/Surge/blob/master/LICENSE
 
+## QingRex/LoonKissSurge 中的拦截规则
+
+- 来源：https://github.com/QingRex/LoonKissSurge/tree/main/Surge/Beta
+- 文件：`广告平台拦截器.beta.sgmodule`、`HTTPDNS拦截器.beta.sgmodule`。
+- 上游标注作者：luestr；HTTPDNS 文件另标注 VirgilClyne。
+- 本项目仅提取域名/IP 条目及等价的域名逻辑条件，保存为 `System/Advertising.yaml`、`System/HTTPDNS.yaml` 配对文件；不包含上游脚本、重写或 MITM。
+
 本文件只做简要归属说明，不替代各上游仓库中的完整许可证文本。
