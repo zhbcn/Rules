@@ -2,9 +2,12 @@
 # SOURCE:
 # - v2fly/domain-list-community
 # - custom
+# - Grok Bot / Cursor official network requirements
 # SOURCE-LIST: xai + retained zhbcn/Rules domains
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# SOURCE-URL: https://docs.x.ai/grok-bot/proxies
+# AUTH-SOURCE-URL: https://cursor.com/help/troubleshooting/sign-in-domains
 
 payload:
   - DOMAIN-SUFFIX,grok.com
@@ -15,3 +18,10 @@ payload:
   - DOMAIN-SUFFIX,groktpcontent.com
   - DOMAIN-SUFFIX,grokusercontent.com
   - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,grokbot.com
+  - DOMAIN-SUFFIX,cursor.com
+  - DOMAIN-SUFFIX,cursor.sh
+  - DOMAIN-SUFFIX,cursor-cdn.com
+  - DOMAIN-SUFFIX,cursorapi.com
+  - DOMAIN-SUFFIX,cursorvm.com
+  - DOMAIN-SUFFIX,spacex.ai
