@@ -765,3 +765,5 @@ domain_suffix_set:
   - in.applicationinsights.azure.com
   - data.microsoft.com
   - telemetry.microsoft.com
+  - bingstatic.com
+  - msftstatic.com

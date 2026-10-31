@@ -34988,6 +34988,15 @@ domain_suffix_set:
   - po-kaki-to.com
   - tipatipa.xyz
   - zozovideo.com
+  - addtodropbox.com
+  - dash.ai
+  - docsend.com
+  - dropboxexperiment.com
+  - dropboxlegal.com
+  - dropboxteam.com
+  - hellofax.com
+  - hellosign.com
+  - librewolf.dev
 
 domain_set:
   - 1password.drift.click
@@ -35117,3 +35126,5 @@ domain_set:
   - aqi.aqicn.org
   - cloud.oracle.com
   - login.microsoftonline.com
+  - dc.services.visualstudio.com
+  - rt.services.visualstudio.com

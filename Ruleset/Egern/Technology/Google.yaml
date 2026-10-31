@@ -241,6 +241,9 @@ domain_set:
   - firebaseapptesters.googleapis.com
   - geminiweb-pa.clients.google.com
   - geminiweb-pa.clients6.google.com
+  - appsgenaiserver-pa.clients.google.com
+  - appsgenaiserver-pa.clients6.google.com
+  - appsgenaiserver-pa.googleapis.com
 
 domain_suffix_set:
   - android

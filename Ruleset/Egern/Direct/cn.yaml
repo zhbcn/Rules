@@ -8391,6 +8391,9 @@ domain_suffix_set:
   - kakaxing.com
   - filmorigin.com
   - xiaomaigui.com
+  - favonis.cloud
+  - favonis.com
+  - favonis.space
 
 domain_regex_set:
   - "^.+-mihayo\\.akamaized\\.net$"

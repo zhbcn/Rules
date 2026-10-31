@@ -254,6 +254,8 @@ domain_set:
   - www.apple.com
   - www.apple.com.edgekey.net.globalredir.akadns.net
   - xp.apple.com
+  - sh-pod1-smp-device.apple.com
+  - sh-pod3-smp-device.apple.com
 
 domain_suffix_set:
   - appleswift.com

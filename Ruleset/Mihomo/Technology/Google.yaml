@@ -1127,3 +1127,6 @@ payload:
   - "DOMAIN-SUFFIX,labstailwind.pa.googleapis.com"
   - "DOMAIN-SUFFIX,notebook.google"
   - "DOMAIN-SUFFIX,flow.google.com"
+  - "DOMAIN,appsgenaiserver-pa.clients.google.com"
+  - "DOMAIN,appsgenaiserver-pa.clients6.google.com"
+  - "DOMAIN,appsgenaiserver-pa.googleapis.com"

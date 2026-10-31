@@ -763,3 +763,5 @@ payload:
   - "DOMAIN,rt.services.visualstudio.com"
   - "DOMAIN-SUFFIX,data.microsoft.com"
   - "DOMAIN-SUFFIX,telemetry.microsoft.com"
+  - "DOMAIN-SUFFIX,bingstatic.com"
+  - "DOMAIN-SUFFIX,msftstatic.com"

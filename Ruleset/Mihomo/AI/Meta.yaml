@@ -14,3 +14,4 @@ payload:
   - DOMAIN-SUFFIX,metaaivm.com
   - DOMAIN-SUFFIX,muse.ai
   - DOMAIN,ai.facebook.com
+  - "DOMAIN-SUFFIX,metaaiusercontent.com"

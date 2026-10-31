@@ -962,3 +962,6 @@ payload:
   - DOMAIN-SUFFIX,pglstatp-toutiao.com
   - DOMAIN-SUFFIX,sf3-ttcdn-tos.pstatp.com
   - DOMAIN-SUFFIX,shoppingads.cn
+  - "DOMAIN-SUFFIX,tiktokshop.com"
+  - "DOMAIN-SUFFIX,tiktokstaticb.com"
+  - "DOMAIN-SUFFIX,tiktokvapp.com"

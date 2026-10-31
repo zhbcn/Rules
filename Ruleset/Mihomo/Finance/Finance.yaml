@@ -748,3 +748,4 @@ payload:
   - DOMAIN-SUFFIX,mql5.com
   - DOMAIN-SUFFIX,tradingview.com
   - "DOMAIN-SUFFIX,schwabcdn.com"
+  - "DOMAIN-SUFFIX,thinkorswim.com"
