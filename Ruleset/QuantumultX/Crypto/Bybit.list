@@ -1,0 +1,26 @@
+# NAME: Bybit
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: bybit
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Crypto/Bybit.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,bybit.com,proxy
+host-suffix,bycsi.com,proxy
+host-suffix,bytick.com,proxy
+host-suffix,byapis.com,proxy
+host-suffix,bycbe.com,proxy
+host-suffix,bymj.io,proxy
+host-suffix,byabcde.com,proxy
+host-suffix,byapps.net,proxy
+host-suffix,byd3c3.com,proxy
+host-suffix,bybit.biz,proxy
+host-suffix,bybdc6.com,proxy
+host-suffix,bybit-global.com,proxy
+host-suffix,bybit.cloud,proxy
+host-suffix,bybitglobal.com,proxy
+host,bybit-exchange.github.io,proxy
+host,bybit.ada.support,proxy

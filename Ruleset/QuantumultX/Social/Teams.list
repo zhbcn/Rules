@@ -1,0 +1,13 @@
+# NAME: Teams
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/Teams/Teams.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Social/Teams.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host,teams.events.data.microsoft.com,proxy
+host-suffix,teams.cdn.live.net,proxy
+host-suffix,teams.live.com,proxy
+host-suffix,teams.microsoft.com,proxy

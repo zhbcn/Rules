@@ -1,0 +1,10 @@
+# NAME: BitcoinCash
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Crypto/BitcoinCash.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,bitcoincash.org,proxy

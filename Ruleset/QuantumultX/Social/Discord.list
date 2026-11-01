@@ -1,0 +1,38 @@
+# NAME: Discord
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: discord
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Social/Discord.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,dis.gd,proxy
+host-suffix,discord.co,proxy
+host-suffix,discord.com,proxy
+host-suffix,discord.design,proxy
+host-suffix,discord.dev,proxy
+host-suffix,discord.gg,proxy
+host-suffix,discord.gift,proxy
+host-suffix,discord.gifts,proxy
+host-suffix,discord.media,proxy
+host-suffix,discord.new,proxy
+host-suffix,discord.store,proxy
+host-suffix,discord.tools,proxy
+host-suffix,discord-activities.com,proxy
+host-suffix,discordactivities.com,proxy
+host-suffix,discordapp.com,proxy
+host-suffix,discordapp.net,proxy
+host-suffix,discordmerch.com,proxy
+host-suffix,discordpartygames.com,proxy
+host-suffix,discordsays.com,proxy
+host-suffix,discordstatus.com,proxy
+host-suffix,airhorn.solutions,proxy
+host-suffix,airhornbot.com,proxy
+host-suffix,bigbeans.solutions,proxy
+host-suffix,watchanimeattheoffice.com,proxy
+host-suffix,discordapp.io,proxy
+host-suffix,discordcdn.com,proxy
+host,discord-attachments-uploads-prd.storage.googleapis.com,proxy
+host,hammerandchisel.ssl.zendesk.com,proxy

@@ -1,0 +1,21 @@
+# NAME: Whatsapp
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: whatsapp
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Social/Whatsapp.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,wa.me,proxy
+host-suffix,whatsapp-plus.info,proxy
+host-suffix,whatsapp-plus.me,proxy
+host-suffix,whatsapp-plus.net,proxy
+host-suffix,whatsapp.cc,proxy
+host-suffix,whatsapp.com,proxy
+host-suffix,whatsapp.info,proxy
+host-suffix,whatsapp.net,proxy
+host-suffix,whatsapp.org,proxy
+host-suffix,whatsapp.tv,proxy
+host-suffix,whatsappbrand.com,proxy

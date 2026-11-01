@@ -1,0 +1,13 @@
+# NAME: Mercari
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/Mercari.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,mercari.com,proxy
+host-suffix,mercari.jp,proxy
+host-suffix,mercdn.net,proxy
+host-suffix,mercari-shops.com,proxy

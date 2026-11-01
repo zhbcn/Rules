@@ -1,0 +1,24 @@
+# NAME: Gate
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# SOURCE-LIST: gateio + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Crypto/Gate.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,gate.com,proxy
+host-suffix,gate.io,proxy
+host-suffix,gate.tv,proxy
+host-suffix,gateio.ws,proxy
+host-suffix,gateapi.io,proxy
+host-suffix,gateapp.org,proxy
+host-suffix,gatedata.org,proxy
+host-suffix,gateimg.com,proxy
+host-suffix,gateio.live,proxy
+host-suffix,gateio.services,proxy
+host,gimg2.staticimgs.com,proxy
+host,icon.staticimgs.com,proxy

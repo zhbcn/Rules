@@ -1,0 +1,13 @@
+# NAME: TIDAL
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: tidal
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Entertainment/TIDAL.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,tidal.com,proxy
+host-suffix,tidalhifi.com,proxy
+host-suffix,wimpmusic.com,proxy

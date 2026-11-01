@@ -1,0 +1,31 @@
+# NAME: Shopee
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: shopee
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/Shopee.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,shopee.cl,proxy
+host-suffix,shopee.cn,proxy
+host-suffix,shopee.co.id,proxy
+host-suffix,shopee.co.th,proxy
+host-suffix,shopee.com,proxy
+host-suffix,shopee.com.br,proxy
+host-suffix,shopee.com.co,proxy
+host-suffix,shopee.com.mx,proxy
+host-suffix,shopee.com.my,proxy
+host-suffix,shopee.es,proxy
+host-suffix,shopee.fr,proxy
+host-suffix,shopee.id,proxy
+host-suffix,shopee.in,proxy
+host-suffix,shopee.io,proxy
+host-suffix,shopee.ph,proxy
+host-suffix,shopee.sg,proxy
+host-suffix,shopee.tw,proxy
+host-suffix,shopee.vn,proxy
+host-suffix,shopeemobile.com,proxy
+host-suffix,shopeesz.com,proxy
+host-suffix,shp.ee,proxy

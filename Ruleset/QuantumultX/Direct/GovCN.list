@@ -1,0 +1,25 @@
+# NAME: GovCN
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/GovCN/GovCN.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Direct/GovCN.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,91huayi.cn,proxy
+host-suffix,91huayi.com,proxy
+host-suffix,91huayi.net,proxy
+host-suffix,gov.cn,proxy
+host-suffix,heart301.cn,proxy
+host-suffix,henancme.net,proxy
+host-suffix,huayi.cn,proxy
+host-suffix,huayiweibo.com,proxy
+host-suffix,huayiyuan.com,proxy
+host-suffix,robot301.net,proxy
+host-suffix,roboticsurg301.net,proxy
+host-suffix,scncrc.com,proxy
+host-suffix,shiyanma.org.cn,proxy
+host-suffix,sqpx.org,proxy
+host-suffix,wsglw.com,proxy
+host-suffix,wsglw.net,proxy

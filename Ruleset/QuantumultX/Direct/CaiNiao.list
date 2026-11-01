@@ -1,0 +1,20 @@
+# NAME: CaiNiao
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: cainiao
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Direct/CaiNiao.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,56xiniao.com,proxy
+host-suffix,cainiao-inc.com,proxy
+host-suffix,cainiao.com,proxy
+host-suffix,cainiao.com.cn,proxy
+host-suffix,cainiaoyizhan.com,proxy
+host-suffix,danniao.com,proxy
+host-suffix,dianwoda.cn,proxy
+host-suffix,dianwoda.com,proxy
+host-suffix,guoguo-app.com,proxy
+host-suffix,v6-adashx.ut.cainiao.com,proxy

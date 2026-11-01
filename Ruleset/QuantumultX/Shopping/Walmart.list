@@ -1,0 +1,20 @@
+# NAME: Walmart
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: walmart
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/Walmart.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,walmart,proxy
+host-suffix,w-mt.co,proxy
+host-suffix,wal-mart.com,proxy
+host-suffix,wal.co,proxy
+host-suffix,walmart-content.com,proxy
+host-suffix,walmart.cn,proxy
+host-suffix,walmart.com,proxy
+host-suffix,walmart.pharmacy,proxy
+host-suffix,walmartimages.com,proxy
+host-suffix,wmt.co,proxy

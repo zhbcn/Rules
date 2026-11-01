@@ -1,0 +1,50 @@
+# NAME: KuaiShou
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: kuaishou
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Direct/KuaiShou.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,ac.fun,proxy
+host-suffix,acfun.cn,proxy
+host-suffix,acfun.net,proxy
+host-suffix,acfunchina.cn,proxy
+host-suffix,acfunchina.com,proxy
+host-suffix,acfunchina.net,proxy
+host-suffix,aixifan.com,proxy
+host,apilog-web.acfun.cn,proxy
+host-suffix,eckwai.com,proxy
+host-suffix,ecukwai.com,proxy
+host-suffix,gifshow.com,proxy
+host-suffix,inkuai.com,proxy
+host-suffix,inkwai.com,proxy
+host-suffix,ksapisrv.com,proxy
+host-suffix,kskwai.com,proxy
+host-suffix,kspkg.com,proxy
+host-suffix,kuaishou.cn,proxy
+host-suffix,kuaishou.com,proxy
+host-suffix,kuaishouapps.com,proxy
+host-suffix,kuaishoupay.com,proxy
+host-suffix,kuaishouzt.com,proxy
+host-suffix,kwaicdn.com,proxy
+host-suffix,kwaishop.com,proxy
+host-suffix,kwaixiaodian.com,proxy
+host-suffix,kwaiying.com,proxy
+host-suffix,kwaizt.com,proxy
+host-suffix,kwimgs.com,proxy
+host-suffix,mojidoc.com,proxy
+host-suffix,qingque.cn,proxy
+host-suffix,viviv.com,proxy
+host-suffix,wskwai.com,proxy
+host-suffix,wsukwai.com,proxy
+host-suffix,yximgs.com,proxy
+host-suffix,adbkwai.com,proxy
+host-suffix,adkwai.com,proxy
+host-suffix,adukwai.com,proxy
+host-suffix,e.kuaishou.cn,proxy
+host-suffix,e.kuaishou.com,proxy
+host,log-sdk.gifshow.com,proxy
+host,wlog.kuaishou.com,proxy

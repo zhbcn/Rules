@@ -1,0 +1,20 @@
+# NAME: OKX
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: okx
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Crypto/OKX.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,okex.com,proxy
+host-suffix,okx-dns.com,proxy
+host-suffix,okx-dns1.com,proxy
+host-suffix,okx-dns2.com,proxy
+host-suffix,okx.ac,proxy
+host-suffix,okx.cab,proxy
+host-suffix,okx.com,proxy
+host-suffix,okx.com.cdn.cloudflare.net,proxy
+host-suffix,xlayer.tech,proxy
+host-suffix,oklink.com,proxy

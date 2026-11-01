@@ -1,0 +1,16 @@
+# NAME: AppleSystem
+# SOURCE: Apple official (push, activation, captive portal, time)
+# SOURCE-URL: https://support.apple.com/en-us/101555
+# SOURCE-URL: https://support.apple.com/en-us/102266
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/System/AppleSystem.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,push.apple.com,proxy
+host,captive.apple.com,proxy
+host,albert.apple.com,proxy
+host,gs.apple.com,proxy
+host,time.apple.com,proxy
+host,time-ios.apple.com,proxy

@@ -1,0 +1,17 @@
+# NAME: Etherscan
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency via ethereum) + blackmatrix7/ios_rule_script (Crypto aggregate) + custom
+# SOURCE-LIST: ethereum, rule/Clash/Crypto/Crypto.yaml (Etherscan subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Crypto/Etherscan.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,etherscan.io,proxy
+host-suffix,etherscan.com,proxy
+host-suffix,bscscan.com,proxy
+host-suffix,polygonscan.com,proxy
+host-suffix,arbiscan.io,proxy
+host-suffix,basescan.org,proxy
+host-suffix,snowtrace.io,proxy

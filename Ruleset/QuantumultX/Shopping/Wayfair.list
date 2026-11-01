@@ -1,0 +1,15 @@
+# NAME: Wayfair
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/Wayfair.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,wayfair.com,proxy
+host-suffix,wayfair.ca,proxy
+host-suffix,wayfair.co.uk,proxy
+host-suffix,wayfair.de,proxy
+host-suffix,wayfair.ie,proxy
+host-suffix,wfcdn.com,proxy

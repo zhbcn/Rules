@@ -1,0 +1,17 @@
+# NAME: MiniMax
+# SOURCE: v2fly/domain-list-community (category-ai-cn/category-ai-!cn) + custom
+# SOURCE-LIST: category-ai-cn, category-ai-!cn (MiniMax subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/AI/MiniMax.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,minimaxi.com,proxy
+host-suffix,minimax.chat,proxy
+host-suffix,minimax.io,proxy
+host-suffix,hailuoai.com,proxy
+host-suffix,xingyeai.com,proxy
+host-suffix,hailuoai.video,proxy
+host-suffix,talkie-ai.com,proxy

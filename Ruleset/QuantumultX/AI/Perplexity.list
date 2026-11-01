@@ -1,0 +1,15 @@
+# NAME: Perplexity
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: perplexity
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/AI/Perplexity.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,perplexity.ai,proxy
+host-suffix,perplexity.com,proxy
+host-suffix,pplx.ai,proxy
+host,ppl-ai-file-upload.s3.amazonaws.com,proxy
+host,pplx-res.cloudinary.com,proxy

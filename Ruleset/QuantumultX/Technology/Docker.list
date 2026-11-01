@@ -1,0 +1,16 @@
+# NAME: Docker
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: docker
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Technology/Docker.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,compose-spec.io,proxy
+host-suffix,docker.com,proxy
+host-suffix,docker.io,proxy
+host-suffix,dockerstatic.com,proxy
+host,docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com,proxy
+host,docker-pinata-support.s3.amazonaws.com,proxy

@@ -1,0 +1,39 @@
+# NAME: Zalando
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/Zalando.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,zalando.com,proxy
+host-suffix,zalando.at,proxy
+host-suffix,zalando.be,proxy
+host-suffix,zalando.bg,proxy
+host-suffix,zalando.ch,proxy
+host-suffix,zalando.co.uk,proxy
+host-suffix,zalando.cz,proxy
+host-suffix,zalando.de,proxy
+host-suffix,zalando.dk,proxy
+host-suffix,zalando.ee,proxy
+host-suffix,zalando.es,proxy
+host-suffix,zalando.fi,proxy
+host-suffix,zalando.fr,proxy
+host-suffix,zalando.gr,proxy
+host-suffix,zalando.hr,proxy
+host-suffix,zalando.hu,proxy
+host-suffix,zalando.ie,proxy
+host-suffix,zalando.it,proxy
+host-suffix,zalando.lt,proxy
+host-suffix,zalando.lu,proxy
+host-suffix,zalando.lv,proxy
+host-suffix,zalando.nl,proxy
+host-suffix,zalando.no,proxy
+host-suffix,zalando.pl,proxy
+host-suffix,zalando.pt,proxy
+host-suffix,zalando.ro,proxy
+host-suffix,zalando.se,proxy
+host-suffix,zalando.si,proxy
+host-suffix,zalando.sk,proxy
+host-suffix,ztat.net,proxy

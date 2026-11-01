@@ -1,0 +1,32 @@
+# NAME: Anthropic
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: anthropic
+# FALLBACK: blackmatrix7/ios_rule_script
+# CUSTOM: https://platform.claude.com/docs/en/api/ip-addresses (inbound only)
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/AI/Anthropic.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,anthropic.com,proxy
+host-suffix,clau.de,proxy
+host-suffix,claude.ai,proxy
+host-suffix,claude.app,proxy
+host-suffix,claude.com,proxy
+host-suffix,claudemcpclient.com,proxy
+host-suffix,claudemcpcontent.com,proxy
+host-suffix,claudeusercontent.com,proxy
+host,servd-anthropic-website.b-cdn.net,proxy
+ip-cidr,160.79.104.0/23,proxy,no-resolve
+ip6-cidr,2607:6bc0::/48,proxy,no-resolve
+host-suffix,ant.dev,proxy
+host-suffix,anthropic.team,proxy
+host-suffix,antspace.dev,proxy
+host-suffix,chatbotclaude.com,proxy
+host-suffix,claude.dev,proxy
+host-suffix,claude.new,proxy
+host-suffix,claude.site,proxy
+host-suffix,claudeacademy.com,proxy
+host-suffix,claudepages.dev,proxy
+host-suffix,claudestudio.com,proxy

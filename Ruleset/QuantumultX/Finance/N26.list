@@ -1,0 +1,13 @@
+# NAME: N26
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: n26
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Finance/N26.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,n26.com,proxy
+host-suffix,number26.de,proxy
+host-suffix,tech26.de,proxy

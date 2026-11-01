@@ -1,0 +1,22 @@
+# NAME: GoogleFCM
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: googlefcm
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Technology/GoogleFCM.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host,alt1-mtalk.google.com,proxy
+host,alt2-mtalk.google.com,proxy
+host,alt3-mtalk.google.com,proxy
+host,alt4-mtalk.google.com,proxy
+host,alt5-mtalk.google.com,proxy
+host,alt6-mtalk.google.com,proxy
+host,alt7-mtalk.google.com,proxy
+host,alt8-mtalk.google.com,proxy
+host,mtalk-dev.google.com,proxy
+host,mtalk-staging.google.com,proxy
+host,mtalk.google.com,proxy
+host,mtalk4.google.com,proxy

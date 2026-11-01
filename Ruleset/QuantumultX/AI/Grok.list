@@ -1,0 +1,30 @@
+# NAME: Grok
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# - Grok Bot / Cursor official network requirements
+# SOURCE-LIST: xai + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# SOURCE-URL: https://docs.x.ai/grok-bot/proxies
+# AUTH-SOURCE-URL: https://cursor.com/help/troubleshooting/sign-in-domains
+# GENERATED-FROM: Ruleset/Mihomo/AI/Grok.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,grok.com,proxy
+host-suffix,grok.x.com,proxy
+host-suffix,grokipedia.com,proxy
+host-suffix,grok-sandbox.com,proxy
+host-suffix,grok.me,proxy
+host-suffix,groktpcontent.com,proxy
+host-suffix,grokusercontent.com,proxy
+host-suffix,x.ai,proxy
+host-suffix,grokbot.com,proxy
+host-suffix,cursor.com,proxy
+host-suffix,cursor.sh,proxy
+host-suffix,cursor-cdn.com,proxy
+host-suffix,cursorapi.com,proxy
+host-suffix,cursorvm.com,proxy
+host-suffix,spacex.ai,proxy

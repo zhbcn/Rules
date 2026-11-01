@@ -1,0 +1,55 @@
+# NAME: RejectNoDrop
+# SOURCE: ruleset.skk.moe
+# SOURCE-LIST: non_ip/reject-no-drop.conf
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/System/RejectNoDrop.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,proxy
+host-suffix,bvmlt.top,proxy
+host-suffix,gjfzpt.cn,proxy
+host-suffix,p2cdn.com,proxy
+host-suffix,uhabo.com,proxy
+host-suffix,xycdn.com,proxy
+host-suffix,yfcdn.net,proxy
+host-suffix,yfp2p.net,proxy
+host-suffix,bsccdn.net,proxy
+host-suffix,p2p.qq.com,proxy
+host-suffix,ppio.cloud,proxy
+host-suffix,szbdyd.com,proxy
+host-suffix,saxysec.com,proxy
+host-suffix,yfcloud.com,proxy
+host-suffix,kuiniuca.com,proxy
+host-suffix,p2p.huya.com,proxy
+host-suffix,pkoplink.com,proxy
+host-suffix,cdnnodedns.cn,proxy
+host-suffix,p2ptun.qq.com,proxy
+host-suffix,tianwenca.com,proxy
+host-suffix,mountaintoys.cn,proxy
+host-suffix,nexusedgeio.com,proxy
+host-suffix,onethingpcs.com,proxy
+host-suffix,pcdn.yximgs.com,proxy
+host-suffix,ietheivaicai.com,proxy
+host,stun.douyucdn.cn,proxy
+host-suffix,mcdn.bilivideo.cn,proxy
+host,stun1.douyucdn.cn,proxy
+host-suffix,p2plog.douyucdn.cn,proxy
+host-suffix,p2perrorlog.douyucdn.cn,proxy
+host-suffix,p2pupdate.gamedl.qq.com,proxy
+host-suffix,p2pupgrade.gamedl.qq.com,proxy
+host,livewebbs2pcdn.msstatic.com,proxy
+host,qn-cdnfile1pcdn.msstatic.com,proxy
+host,upos-sz-302kodo.bilivideo.com,proxy
+host,upos-sz-302ppio.bilivideo.com,proxy
+host-keyword,-p2p.pull.yximgs.com,proxy
+host-keyword,-p2p-v2.pull.yximgs.com,proxy
+host-wildcard,p2p*.qq.com,proxy
+host-wildcard,p2p-*.douyucdn.cn,proxy
+host-wildcard,p2pchunk-*.douyucdn.cn,proxy
+host-wildcard,dyp2p-*.douyucdn.cn,proxy
+host-wildcard,p2plive-*.douyucdn.cn,proxy
+host-wildcard,stun*.douyucdn.cn,proxy
+host-wildcard,upos-sz-302*.bilivideo.com,proxy
+# UNSUPPORTED (no native equivalent): AND,((NETWORK,UDP),(DOMAIN-SUFFIX,googlevideo.com))

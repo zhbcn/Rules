@@ -1,0 +1,14 @@
+# NAME: Ethereum
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: ethereum
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Crypto/Ethereum.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,devcon.org,proxy
+host-suffix,ethereum.foundation,proxy
+host-suffix,ethereum.org,proxy
+host-suffix,etherscan.io,proxy

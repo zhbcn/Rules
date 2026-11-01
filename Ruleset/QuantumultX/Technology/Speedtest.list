@@ -1,0 +1,31 @@
+# NAME: Speedtest
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: speedtest
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Technology/Speedtest.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,cdnst.net,proxy
+host-suffix,cellmaps.com,proxy
+host-suffix,ekahau.cloud,proxy
+host-suffix,ekahau.com,proxy
+host-suffix,ookla.com,proxy
+host-suffix,ooklaserver.net,proxy
+host-suffix,pingtest.net,proxy
+host-suffix,speedtest.co,proxy
+host-suffix,speedtest.net,proxy
+host-suffix,speedtestcustom.com,proxy
+host-suffix,webtest.net,proxy
+host,www.speedtest.net.cdn.cloudflare.net,proxy
+host-suffix,ookla-speedtest-central.hgconair.hgc.com.hk,proxy
+# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^speed\.(coe|open)\.ad\.[a-z]{2,6}\.prod\.hosts\.ooklaserver\.net$
+host-suffix,speedtest.app,proxy
+host-suffix,speedtest.cc,proxy
+host-suffix,speedtest.ee,proxy
+host-suffix,speedtest.in,proxy
+host-suffix,speedtest.me,proxy
+host-suffix,speedtest.ng,proxy
+host-suffix,speedtest.tv,proxy

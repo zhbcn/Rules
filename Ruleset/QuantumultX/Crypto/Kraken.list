@@ -1,0 +1,12 @@
+# NAME: Kraken
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: kraken
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Crypto/Kraken.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,kraken.com,proxy
+host-suffix,kraken.onl,proxy

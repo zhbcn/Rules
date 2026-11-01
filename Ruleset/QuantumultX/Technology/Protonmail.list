@@ -1,0 +1,19 @@
+# NAME: Protonmail
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: protonmail
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Technology/Protonmail.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,pm.me,proxy
+host-suffix,proton.me,proxy
+host-suffix,protonmail.ch,proxy
+host-suffix,protonmail.com,proxy
+host-suffix,protonstatus.com,proxy
+host-suffix,protontech.ch,proxy
+host-suffix,protonvpn.ch,proxy
+host-suffix,protonvpn.com,proxy
+host-suffix,protonweb.com,proxy

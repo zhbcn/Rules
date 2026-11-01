@@ -10,6 +10,11 @@ from urllib.parse import unquote, urlparse
 
 import yaml
 
+if __package__:
+    from .convert_quantumultx import check_quantumultx_pairs
+else:
+    from convert_quantumultx import check_quantumultx_pairs
+
 
 REPO_MARKERS = (
     "/zhbcn/Rules/main/",
@@ -395,6 +400,7 @@ def main() -> int:
 
     check_aggregates(root, errors)
     check_mihomo_egern_pairs(root, errors)
+    checked += check_quantumultx_pairs(root, errors)
 
     url_pattern = re.compile(r"https://(?:raw\.githubusercontent\.com|github\.com)/zhbcn/Rules/[^\s\"']+")
     for config in args.config:

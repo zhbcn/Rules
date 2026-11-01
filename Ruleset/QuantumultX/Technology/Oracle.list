@@ -1,0 +1,29 @@
+# NAME: Oracle
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: oracle
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Technology/Oracle.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,oracle,proxy
+host-suffix,addthis.com,proxy
+host-suffix,addthiscdn.com,proxy
+host-suffix,addthisedge.com,proxy
+host-suffix,java,proxy
+host-suffix,java.com,proxy
+host-suffix,java.net,proxy
+host-suffix,ateam-oracle.com,proxy
+host-suffix,bronto.com,proxy
+host-suffix,covid19-rx.org,proxy
+host-suffix,covid19rx.org,proxy
+host-suffix,custhelp.com,proxy
+host-suffix,oracle.com,proxy
+host-suffix,oraclecloud.com,proxy
+host-suffix,oraclefoundation.org,proxy
+host-suffix,oracleimg.com,proxy
+host-suffix,oracleinfinity.io,proxy
+host-suffix,sun.com,proxy
+host-suffix,virtualbox.org,proxy

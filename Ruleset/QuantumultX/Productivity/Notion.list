@@ -1,0 +1,17 @@
+# NAME: Notion
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: notion
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Productivity/Notion.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,notion-static.com,proxy
+host-suffix,notion-status.com,proxy
+host-suffix,notion.com,proxy
+host-suffix,notion.new,proxy
+host-suffix,notion.site,proxy
+host-suffix,notion.so,proxy
+host-suffix,notionusercontent.com,proxy

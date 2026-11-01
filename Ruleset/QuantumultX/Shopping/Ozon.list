@@ -1,0 +1,24 @@
+# NAME: Ozon
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: ozon (shopping-only subset)
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/Ozon.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,o3.ru,proxy
+host-suffix,o3t.ru,proxy
+host-suffix,ozon.app,proxy
+host-suffix,ozon.by,proxy
+host-suffix,ozon.com,proxy
+host-suffix,ozon.com.by,proxy
+host-suffix,ozon.com.kz,proxy
+host-suffix,ozon.express,proxy
+host-suffix,ozon.global,proxy
+host-suffix,ozon.kz,proxy
+host-suffix,ozon.market,proxy
+host-suffix,ozon.ru,proxy
+host-suffix,ozone.ru,proxy
+host-suffix,ozonusercontent.com,proxy

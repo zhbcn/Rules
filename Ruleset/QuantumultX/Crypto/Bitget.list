@@ -1,0 +1,18 @@
+# NAME: Bitget
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency) + custom
+# SOURCE-LIST: category-cryptocurrency (Bitget subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Crypto/Bitget.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,bitget.com,proxy
+host-suffix,bitget.site,proxy
+host-suffix,bitgetapp.com,proxy
+host-suffix,bitgetapps.com,proxy
+host-suffix,bgstatic.com,proxy
+host-suffix,bgbstatic.com,proxy
+host-suffix,btsgtm.com,proxy
+host-suffix,bgwapi.io,proxy

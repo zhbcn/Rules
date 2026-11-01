@@ -1,0 +1,43 @@
+# NAME: Epic
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: epicgames
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Gaming/Epic.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,artstation.com,proxy
+host-suffix,artstationmedia.com,proxy
+host-suffix,3lateral.com,proxy
+host-suffix,capturingreality.com,proxy
+host-suffix,cubicmotion.com,proxy
+host-suffix,battlebreakers.com,proxy
+host-suffix,eac-cdn.com,proxy
+host-suffix,easy.ac,proxy
+host-suffix,easyanticheat.net,proxy
+host-suffix,epicgames.com,proxy
+host-suffix,epicgames.dev,proxy
+host-suffix,epicgamescdn.com,proxy
+host-suffix,fab.com,proxy
+host-suffix,fortnite.com,proxy
+host-suffix,hyprsense.com,proxy
+host-suffix,paragon.com,proxy
+host-suffix,playparagon.com,proxy
+host-suffix,quixel.com,proxy
+host-suffix,quixel.se,proxy
+host-suffix,radgametools.com,proxy
+host-suffix,realityscan.com,proxy
+host-suffix,roborecall.com,proxy
+host-suffix,shadowcomplex.com,proxy
+host-suffix,sketchfab.com,proxy
+host-suffix,spyjinx.com,proxy
+host-suffix,twinmotion.com,proxy
+host-suffix,unrealengine.com,proxy
+host-suffix,unrealtournament.com,proxy
+host-suffix,egdownload.fastly-edge.com,proxy
+host-suffix,fortnite-vod.akamaized.net,proxy
+# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com$
+# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^epicgames-download\d\.akamaized\.net$
+# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com$

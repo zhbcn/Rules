@@ -1,0 +1,20 @@
+# NAME: Lazada
+# SOURCE: v2fly/domain-list-community (alibaba aggregate) + custom
+# SOURCE-LIST: alibaba (Lazada subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/Lazada.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,lazada.com,proxy
+host-suffix,lazada.sg,proxy
+host-suffix,lazada.com.my,proxy
+host-suffix,lazada.co.id,proxy
+host-suffix,lazada.co.th,proxy
+host-suffix,lazada.com.ph,proxy
+host-suffix,lazada.vn,proxy
+host-suffix,lazcdn.com,proxy
+host-suffix,slatic.net,proxy
+host-suffix,lazadausercontent.com,proxy

@@ -1,0 +1,23 @@
+# NAME: Xunlei
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: xunlei
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Direct/Xunlei.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,8uri.cn,proxy
+host-suffix,kanimg.com,proxy
+host-suffix,sandai.net,proxy
+host-suffix,thunderurl.com,proxy
+host-suffix,xunlei.com,proxy
+host-suffix,00cdn.com,proxy
+host-suffix,88cdn.com,proxy
+host-suffix,p2cdn.com,proxy
+host-suffix,thundercdn.com,proxy
+host-suffix,xycloud.com,proxy
+host-suffix,xycdn.com,proxy
+host-suffix,guangyacdn.com,proxy
+host-suffix,guangyapan.com,proxy

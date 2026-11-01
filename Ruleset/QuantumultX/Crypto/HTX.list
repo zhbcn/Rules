@@ -1,0 +1,20 @@
+# NAME: HTX
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: huobi
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Crypto/HTX.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,htx.com,proxy
+host-suffix,hbabit.com,proxy
+host-suffix,huobi.com,proxy
+host-suffix,huobi.pro,proxy
+host-suffix,hbfile.net,proxy
+host-suffix,huobi.me,proxy
+host-suffix,huobi.sc,proxy
+host-suffix,huobiasia.vip,proxy
+host-suffix,huobigroup.com,proxy
+host-suffix,huobitoken.com,proxy

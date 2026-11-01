@@ -1,0 +1,14 @@
+# NAME: Allegro
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/Allegro.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,allegro.pl,proxy
+host-suffix,allegro.cz,proxy
+host-suffix,allegro.sk,proxy
+host-suffix,allegrostatic.com,proxy
+host-suffix,allegroimg.com,proxy

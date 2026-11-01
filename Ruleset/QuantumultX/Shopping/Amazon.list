@@ -1,0 +1,39 @@
+# NAME: Amazon
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: amazon (shopping-only subset)
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/Amazon.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,amazon.com,proxy
+host-suffix,amazon.ca,proxy
+host-suffix,amazon.com.mx,proxy
+host-suffix,amazon.com.br,proxy
+host-suffix,amazon.co.uk,proxy
+host-suffix,amazon.de,proxy
+host-suffix,amazon.fr,proxy
+host-suffix,amazon.it,proxy
+host-suffix,amazon.es,proxy
+host-suffix,amazon.nl,proxy
+host-suffix,amazon.se,proxy
+host-suffix,amazon.pl,proxy
+host-suffix,amazon.com.be,proxy
+host-suffix,amazon.ie,proxy
+host-suffix,amazon.co.jp,proxy
+host-suffix,amazon.in,proxy
+host-suffix,amazon.com.au,proxy
+host-suffix,amazon.sg,proxy
+host-suffix,amazon.ae,proxy
+host-suffix,amazon.sa,proxy
+host-suffix,amazon.eg,proxy
+host-suffix,amazon.com.tr,proxy
+host-suffix,amazon.co.za,proxy
+host-suffix,amazon.cn,proxy
+host-suffix,media-amazon.com,proxy
+host-suffix,images-amazon.com,proxy
+host-suffix,ssl-images-amazon.com,proxy
+host-suffix,amazonimages.com,proxy
+host-suffix,amzn.to,proxy

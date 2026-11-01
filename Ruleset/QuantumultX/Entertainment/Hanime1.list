@@ -1,0 +1,12 @@
+# NAME: Hanime1
+# SOURCE: v2fly/domain-list-community (category-porn) + custom
+# SOURCE-LIST: category-porn (hanime1.me) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Entertainment/Hanime1.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,hanime1.me,proxy
+host,vdownload.hembed.com,proxy

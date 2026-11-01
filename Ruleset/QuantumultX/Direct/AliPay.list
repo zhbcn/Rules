@@ -1,0 +1,30 @@
+# NAME: AliPay
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/AliPay/AliPay.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Direct/AliPay.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,alipay,proxy
+host-suffix,alipay-corp.com,proxy
+host-suffix,alipay-eco.com,proxy
+host-suffix,alipay-inc.com,proxy
+host-suffix,alipay-traffic.com,proxy
+host-suffix,alipay.cn,proxy
+host-suffix,alipay.com,proxy
+host-suffix,alipay.com.cn,proxy
+host-suffix,alipay.hk,proxy
+host-suffix,alipay.net,proxy
+host-suffix,alipaydesign.com,proxy
+host-suffix,alipaydev.com,proxy
+host-suffix,alipaydns.com,proxy
+host-suffix,alipayeshop.com,proxy
+host-suffix,alipaylog.com,proxy
+host-suffix,alipaymo.com,proxy
+host-suffix,alipayobjects.com,proxy
+host-suffix,alipayplus.com,proxy
+host-suffix,ifaa.org.cn,proxy
+host-suffix,luohanacademy.com,proxy
+host-suffix,sinopayment.com.cn,proxy

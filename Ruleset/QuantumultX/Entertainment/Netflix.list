@@ -1,0 +1,38 @@
+# NAME: Netflix
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: netflix
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Entertainment/Netflix.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,fast.com,proxy
+host-suffix,netflix.ca,proxy
+host-suffix,netflix.com,proxy
+host-suffix,netflix.net,proxy
+host-suffix,netflixinvestor.com,proxy
+host-suffix,netflixtechblog.com,proxy
+host-suffix,nflxext.com,proxy
+host-suffix,nflximg.com,proxy
+host-suffix,nflximg.net,proxy
+host-suffix,nflxsearch.net,proxy
+host-suffix,nflxso.net,proxy
+host-suffix,nflxvideo.net,proxy
+host-suffix,netflixdnstest0.com,proxy
+host-suffix,netflixdnstest1.com,proxy
+host-suffix,netflixdnstest2.com,proxy
+host-suffix,netflixdnstest3.com,proxy
+host-suffix,netflixdnstest4.com,proxy
+host-suffix,netflixdnstest5.com,proxy
+host-suffix,netflixdnstest6.com,proxy
+host-suffix,netflixdnstest7.com,proxy
+host-suffix,netflixdnstest8.com,proxy
+host-suffix,netflixdnstest9.com,proxy
+host-suffix,netflixdnstest10.com,proxy
+# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,(^|\.)apiproxy-device-prod-nlb-.+\.amazonaws\.com$
+# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,(^|\.)apiproxy-website-nlb-prod-.+\.amazonaws\.com$
+# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,(^|\.)dualstack\.apiproxy-.+\.amazonaws\.com$
+# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,(^|\.)dualstack\.ichnaea-web-.+\.amazonaws\.com$
+host-suffix,netflix.com.edgesuite.net,proxy

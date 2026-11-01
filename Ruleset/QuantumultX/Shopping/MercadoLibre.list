@@ -1,0 +1,29 @@
+# NAME: MercadoLibre
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/MercadoLibre.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,mercadolibre.com,proxy
+host-suffix,mercadolibre.cl,proxy
+host-suffix,mercadolibre.co.cr,proxy
+host-suffix,mercadolibre.com.ar,proxy
+host-suffix,mercadolibre.com.bo,proxy
+host-suffix,mercadolibre.com.co,proxy
+host-suffix,mercadolibre.com.do,proxy
+host-suffix,mercadolibre.com.ec,proxy
+host-suffix,mercadolibre.com.gt,proxy
+host-suffix,mercadolibre.com.hn,proxy
+host-suffix,mercadolibre.com.mx,proxy
+host-suffix,mercadolibre.com.ni,proxy
+host-suffix,mercadolibre.com.pa,proxy
+host-suffix,mercadolibre.com.pe,proxy
+host-suffix,mercadolibre.com.py,proxy
+host-suffix,mercadolibre.com.sv,proxy
+host-suffix,mercadolibre.com.uy,proxy
+host-suffix,mercadolibre.com.ve,proxy
+host-suffix,mercadolivre.com.br,proxy
+host-suffix,mlstatic.com,proxy

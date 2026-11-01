@@ -1,0 +1,21 @@
+# NAME: Zhipu
+# SOURCE: v2fly/domain-list-community (category-ai-cn) + custom
+# SOURCE-LIST: category-ai-cn (Zhipu subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/AI/Zhipu.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,chatglm.cn,proxy
+host-suffix,chatglm.com,proxy
+host-suffix,bigmodel.cn,proxy
+host-suffix,zhipuai.cn,proxy
+host-suffix,zhipucn.com,proxy
+host-suffix,zhipu.com,proxy
+host-suffix,zhipu.ai,proxy
+host-suffix,z.ai,proxy
+host-suffix,codegeex.cn,proxy
+host-suffix,codegeex.ai,proxy
+host-suffix,autoglm.ai,proxy

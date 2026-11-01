@@ -1,0 +1,15 @@
+# NAME: GitLab
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: gitlab
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Technology/GitLab.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,gitlab.com,proxy
+host-suffix,gitlab.io,proxy
+host-suffix,gitlab.net,proxy
+host-suffix,gitlab-static.net,proxy
+host,gitlab-assets.oss-cn-hongkong.aliyuncs.com,proxy

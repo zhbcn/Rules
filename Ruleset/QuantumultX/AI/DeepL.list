@@ -1,0 +1,10 @@
+# NAME: DeepL
+# SOURCE: DeepL official
+# SOURCE-URL: https://support.deepl.com/hc/en-us/articles/4409573020306-Troubleshooting-web-translator
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/AI/DeepL.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,deepl.com,proxy

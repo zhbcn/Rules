@@ -1,0 +1,22 @@
+# NAME: Reddit
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: reddit
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Social/Reddit.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,redd.it,proxy
+host-suffix,reddit.app.link,proxy
+host-suffix,reddit.com,proxy
+host-suffix,redditblog.com,proxy
+host-suffix,reddithelp.com,proxy
+host-suffix,redditinc.com,proxy
+host-suffix,redditmail.com,proxy
+host-suffix,redditmedia.com,proxy
+host-suffix,redditspace.com,proxy
+host-suffix,redditstatic.com,proxy
+host-suffix,redditstatus.com,proxy
+host-suffix,reddit.map.fastly.net,proxy

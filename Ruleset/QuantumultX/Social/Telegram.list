@@ -1,0 +1,31 @@
+# NAME: Telegram
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: telegram
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Social/Telegram.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,cdn-telegram.org,proxy
+host-suffix,comments.app,proxy
+host-suffix,contest.com,proxy
+host-suffix,fragment.com,proxy
+host-suffix,graph.org,proxy
+host-suffix,quiz.directory,proxy
+host-suffix,t.me,proxy
+host-suffix,tdesktop.com,proxy
+host-suffix,telega.one,proxy
+host-suffix,telegra.ph,proxy
+host-suffix,telegram-cdn.org,proxy
+host-suffix,telegram.dog,proxy
+host-suffix,telegram.me,proxy
+host-suffix,telegram.org,proxy
+host-suffix,telegram.space,proxy
+host-suffix,telesco.pe,proxy
+host-suffix,tg.dev,proxy
+host-suffix,ton.org,proxy
+host-suffix,toncenter.com,proxy
+host-suffix,tx.me,proxy
+host-suffix,usercontent.dev,proxy

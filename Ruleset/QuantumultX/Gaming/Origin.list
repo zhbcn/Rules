@@ -1,0 +1,19 @@
+# NAME: Origin
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: origin
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Gaming/Origin.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,dawngate.com,proxy
+host-suffix,eastore.com,proxy
+host-suffix,lordofultima.com,proxy
+host-suffix,origin.com,proxy
+host-suffix,origin.tv,proxy
+host,cloudsync-prod.s3.amazonaws.com,proxy
+host,origin-a.akamaihd.net,proxy
+host,rtm.tnt-ea.com,proxy
+host,ssl-lvlt.cdn.ea.com,proxy

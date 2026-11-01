@@ -1,0 +1,21 @@
+# NAME: Mail
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/Mail/Mail.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Technology/Mail.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host,apple.imap.mail.yahoo.com,proxy
+host,apple.smtp.mail.yahoo.com,proxy
+host,imap-mail.outlook.com,proxy
+host,imap.gmail.com,proxy
+host,outlook.office365.com,proxy
+host,pop.gmail.com,proxy
+host,smtp-mail.outlook.com,proxy
+host,smtp.gmail.com,proxy
+host,smtp.office365.com,proxy
+host-suffix,imap.yandex.com,proxy
+host-suffix,m.hotmail.com,proxy
+host-suffix,smtp.yandex.com,proxy

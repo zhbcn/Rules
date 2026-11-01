@@ -1,6 +1,6 @@
 # 第三方来源说明
 
-本项目会把上游规则整理、转换并保存为自己的 Mihomo 与 Egern 文件。以下是主要上游及其许可证；具体规则来源仍以每个规则文件顶部的注释为准。
+本项目会把上游规则整理、转换并保存为自己的 Mihomo、Egern 与 Quantumult X 文件。以下是主要上游及其许可证；具体规则来源仍以每个规则文件顶部的注释为准。
 
 ## v2fly/domain-list-community
 
@@ -25,6 +25,6 @@
 - 来源：https://github.com/QingRex/LoonKissSurge/tree/main/Surge/Beta
 - 文件：`广告平台拦截器.beta.sgmodule`、`HTTPDNS拦截器.beta.sgmodule`。
 - 上游标注作者：luestr；HTTPDNS 文件另标注 VirgilClyne。
-- 本项目仅提取域名/IP 条目及等价的域名逻辑条件，保存为 `System/Advertising.yaml`、`System/HTTPDNS.yaml` 配对文件；不包含上游脚本、重写或 MITM。
+- 本项目仅提取域名/IP 条目及等价的域名逻辑条件，保存为 `System/Advertising.yaml`、`System/HTTPDNS.yaml` 配对文件；Quantumult X 对应 `.list` 仅保留其原生支持的条件，不包含上游脚本、重写或 MITM。
 
 本文件只做简要归属说明，不替代各上游仓库中的完整许可证文本。

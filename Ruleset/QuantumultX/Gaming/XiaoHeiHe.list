@@ -1,0 +1,18 @@
+# NAME: XiaoHeiHe
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: xiaoheihe
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Gaming/XiaoHeiHe.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,1xhh.cn,proxy
+host-suffix,accxiaoheihe.com,proxy
+host-suffix,chat.top,proxy
+host-suffix,debugmode.cn,proxy
+host-suffix,max-c.com,proxy
+host-suffix,maxadmin.cn,proxy
+host-suffix,maxjia.com,proxy
+host-suffix,xiaoheihe.cn,proxy

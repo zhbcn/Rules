@@ -1,0 +1,21 @@
+# NAME: HeMa
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/HeMa/HeMa.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Direct/HeMa.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,freshhema.com,proxy
+host-suffix,hemaapi.cn,proxy
+host-suffix,hemamax.com,proxy
+host-suffix,hemaopen.cn,proxy
+host-suffix,hemaos.com,proxy
+host-suffix,hemashare.cn,proxy
+host-suffix,marioall.com,proxy
+host-suffix,marioin.com,proxy
+host-suffix,mariowap.com,proxy
+host-suffix,rexpos.cn,proxy
+host-suffix,rextech.cn,proxy
+host-suffix,shyhhema.com,proxy

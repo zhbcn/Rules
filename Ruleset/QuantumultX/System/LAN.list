@@ -1,0 +1,70 @@
+# NAME: LAN
+# SOURCE: ruleset.skk.moe
+# SOURCE-LIST: non_ip/lan.conf, ip/lan.conf
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/System/LAN.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,proxy
+host-suffix,lan,proxy
+host-suffix,home,proxy
+host-suffix,local,proxy
+host,unifi,proxy
+host-suffix,router,proxy
+host,pi.hole,proxy
+host,aterm.me,proxy
+host-suffix,internal,proxy
+host-suffix,home.arpa,proxy
+host,ntt.setup,proxy
+host-suffix,ui.direct,proxy
+host-suffix,tplogin.cn,proxy
+host-suffix,localdomain,proxy
+host-suffix,plex.direct,proxy
+host-suffix,tplinkap.net,proxy
+host-suffix,asusrouter.com,proxy
+host,homerouter.cpe,proxy
+host,mobile.hotspot,proxy
+host-suffix,tplinkwifi.net,proxy
+host-suffix,10.in-addr.arpa,proxy
+host,router.asus.com,proxy
+host-suffix,routerlogin.com,proxy
+host-suffix,routerlogin.net,proxy
+host-suffix,tplinkmodem.net,proxy
+host,repeater.asus.com,proxy
+host-suffix,tplinkplclogin.net,proxy
+host-suffix,tplinkrepeater.net,proxy
+host-suffix,16.172.in-addr.arpa,proxy
+host-suffix,17.172.in-addr.arpa,proxy
+host-suffix,18.172.in-addr.arpa,proxy
+host-suffix,19.172.in-addr.arpa,proxy
+host-suffix,20.172.in-addr.arpa,proxy
+host-suffix,21.172.in-addr.arpa,proxy
+host-suffix,22.172.in-addr.arpa,proxy
+host-suffix,23.172.in-addr.arpa,proxy
+host-suffix,24.172.in-addr.arpa,proxy
+host-suffix,25.172.in-addr.arpa,proxy
+host-suffix,26.172.in-addr.arpa,proxy
+host-suffix,27.172.in-addr.arpa,proxy
+host-suffix,28.172.in-addr.arpa,proxy
+host-suffix,29.172.in-addr.arpa,proxy
+host-suffix,30.172.in-addr.arpa,proxy
+host-suffix,31.172.in-addr.arpa,proxy
+host,console.gl-inet.com,proxy
+host-suffix,168.192.in-addr.arpa,proxy
+host-suffix,254.169.in-addr.arpa,proxy
+host-suffix,huaweimobilewifi.com,proxy
+host,instant.arubanetworks.com,proxy
+host,setmeup.arubanetworks.com,proxy
+ip-cidr,0.0.0.0/8,proxy
+ip-cidr,10.0.0.0/8,proxy
+ip-cidr,100.64.0.0/10,proxy
+ip-cidr,127.0.0.0/8,proxy
+ip-cidr,169.254.0.0/16,proxy
+ip-cidr,172.16.0.0/12,proxy
+ip-cidr,192.168.0.0/16,proxy
+ip-cidr,224.0.0.0/4,proxy
+ip6-cidr,::1/128,proxy
+ip6-cidr,fc00::/7,proxy
+ip6-cidr,fe80::/10,proxy

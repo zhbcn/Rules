@@ -1,0 +1,29 @@
+# NAME: MeiTuan
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: meituan
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Direct/MeiTuan.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,100.me,proxy
+host-suffix,ddcorp.net,proxy
+host-suffix,ddfresh.net,proxy
+host-suffix,ddimg.mobi,proxy
+host-suffix,ddmaicai.net,proxy
+host-suffix,ddmc.mobi,proxy
+host-suffix,dduser.mobi,proxy
+host-suffix,ddxq.mobi,proxy
+host-suffix,imaicai.mobi,proxy
+host-suffix,51ping.com,proxy
+host-suffix,baobaoaichi.cn,proxy
+host-suffix,dianping.com,proxy
+host-suffix,dpfile.com,proxy
+host-suffix,maoyan.com,proxy
+host-suffix,meituan.com,proxy
+host-suffix,meituan.net,proxy
+host-suffix,mtyun.com,proxy
+host-suffix,neixin.cn,proxy
+host-suffix,sankuai.com,proxy

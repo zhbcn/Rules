@@ -1,0 +1,28 @@
+# NAME: AppleMusic
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: apple-music
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Entertainment/AppleMusic.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,applemusic.berlin,proxy
+host-suffix,applemusic.co,proxy
+host-suffix,applemusic.com,proxy
+host-suffix,applemusic.com.au,proxy
+host-suffix,applemusic.hamburg,proxy
+host-suffix,applemusic.wang,proxy
+host-suffix,applemusicconnect.com,proxy
+host-suffix,applemusicfestival.com,proxy
+host-suffix,musickit.net,proxy
+host-suffix,wwwapplemusic.com,proxy
+host-suffix,music.apple.com,proxy
+host,amp-api-edge.music.apple.com,proxy
+host,amp-api.music.apple.com,proxy
+host,js-cdn.music.apple.com,proxy
+host,music.apple.com,proxy
+host,musicstatus.music.apple.com,proxy
+host,play.music.apple.com,proxy
+host,speedysub.music.apple.com,proxy

@@ -1,0 +1,48 @@
+# NAME: eBay
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: ebay (shopping-only subset)
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/eBay.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,ebay.com,proxy
+host-suffix,ebay.ca,proxy
+host-suffix,ebay.cn,proxy
+host-suffix,ebay.com.cn,proxy
+host-suffix,ebay.co.uk,proxy
+host-suffix,ebay.co.za,proxy
+host-suffix,ebay.de,proxy
+host-suffix,ebay.fr,proxy
+host-suffix,ebay.it,proxy
+host-suffix,ebay.es,proxy
+host-suffix,ebay.com.au,proxy
+host-suffix,ebay.com.ar,proxy
+host-suffix,ebay.com.ec,proxy
+host-suffix,ebay.com.hk,proxy
+host-suffix,ebay.com.mt,proxy
+host-suffix,ebay.com.my,proxy
+host-suffix,ebay.com.ph,proxy
+host-suffix,ebay.com.sg,proxy
+host-suffix,ebay.at,proxy
+host-suffix,ebay.be,proxy
+host-suffix,ebay.ch,proxy
+host-suffix,ebay.ie,proxy
+host-suffix,ebay.nl,proxy
+host-suffix,ebay.pl,proxy
+host-suffix,ebay.co.nz,proxy
+host-suffix,ebay.in,proxy
+host-suffix,ebay.jp,proxy
+host-suffix,ebay.lt,proxy
+host-suffix,ebay.ph,proxy
+host-suffix,ebay.pk,proxy
+host-suffix,ebay.sg,proxy
+host-suffix,ebay.vn,proxy
+host-suffix,ebaymotors.com,proxy
+host-suffix,ebaystores.com,proxy
+host-suffix,ebaystatic.com,proxy
+host-suffix,ebaystatic.cn,proxy
+host-suffix,ebayimg.com,proxy
+host-suffix,ebaycdn.net,proxy

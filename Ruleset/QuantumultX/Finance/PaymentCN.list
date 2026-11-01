@@ -1,0 +1,62 @@
+# NAME: PaymentCN
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom (pre-refactor client payment rules)
+# SOURCE-LIST: unionpay + payment subsets from alibaba, tencent, jd, douyin, mastercard, visa + retained payment domains
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Finance/PaymentCN.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,95516.com,proxy
+host-suffix,95516.net,proxy
+host-suffix,chinapay.com,proxy
+host-suffix,chinaums.com,proxy
+host-suffix,chinaunionpay.com,proxy
+host-suffix,chinaunionpay.com.cn,proxy
+host-suffix,chinaunionpay.net,proxy
+host-suffix,cup.com.cn,proxy
+host-suffix,cup62.cn,proxy
+host-suffix,unionpay.com,proxy
+host-suffix,unionpay.net,proxy
+host-suffix,unionpaysecure.com,proxy
+host-suffix,unionpayintl.cn,proxy
+host-suffix,unionpayintl.com,proxy
+host-suffix,alipay,proxy
+host-suffix,alipay-eco.com,proxy
+host-suffix,alipay.cn,proxy
+host-suffix,alipay.com,proxy
+host-suffix,alipay.com.cn,proxy
+host-suffix,alipaydns.com,proxy
+host-suffix,alipaylog.com,proxy
+host-suffix,alipayobjects.com,proxy
+host-suffix,alipayplus.com,proxy
+host-suffix,tenpay.com,proxy
+host-suffix,wechatpay.com,proxy
+host-suffix,wechatpay.cn,proxy
+host-suffix,globaltenpay.com,proxy
+host-suffix,baitiao.com,proxy
+host-suffix,chinabank.com.cn,proxy
+host-suffix,jdpay.com,proxy
+host-suffix,jdpaydns.com,proxy
+host-suffix,doupay.com,proxy
+host-suffix,douyinpay.com,proxy
+host-suffix,wangyin.com,proxy
+host-suffix,ulpay.com,proxy
+host-suffix,mastercard.cn,proxy
+host-suffix,mastercard.com.cn,proxy
+host-suffix,priceless.com.cn,proxy
+host-suffix,pricelessbeijing.cn,proxy
+host-suffix,pricelessbeijing.com.cn,proxy
+host-suffix,travelex.com.cn,proxy
+host-suffix,visa.cn,proxy
+host-suffix,visa.com.cn,proxy
+host-suffix,financialsoccer.com.cn,proxy
+host-suffix,practicalmoneyskills.cn,proxy
+host-suffix,practicalmoneyskills.com.cn,proxy
+host-suffix,visainfinite.cn,proxy
+host-suffix,visapay.cn,proxy
+host-suffix,visaplatinum.cn,proxy
+host-suffix,visaplatinum.com.cn,proxy

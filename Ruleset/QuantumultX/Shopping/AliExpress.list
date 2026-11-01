@@ -1,0 +1,19 @@
+# NAME: AliExpress
+# SOURCE: v2fly/domain-list-community (alibaba aggregate) + custom
+# SOURCE-LIST: alibaba (AliExpress subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Shopping/AliExpress.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,ae-rus.net,proxy
+host-suffix,aedns.ru,proxy
+host-suffix,aeplatform.ru,proxy
+host-suffix,aestatic.net,proxy
+host-suffix,aliexpress.com,proxy
+host-suffix,aliexpress.us,proxy
+host-suffix,aliexpress.ru,proxy
+host-suffix,aliexpress-media.com,proxy
+host,img.alicdn.com,proxy

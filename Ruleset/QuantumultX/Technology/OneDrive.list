@@ -1,0 +1,21 @@
+# NAME: OneDrive
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: onedrive
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-FROM: Ruleset/Mihomo/Technology/OneDrive.yaml
+# REGENERATE: python scripts/convert_quantumultx.py
+# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
+# NATIVE: opt-parser=false; no resource parser required.
+
+host-suffix,1drv.com,proxy
+host-suffix,1drv.ms,proxy
+host-suffix,livefilestore.com,proxy
+host-suffix,onedrive.co,proxy
+host-suffix,onedrive.co.uk,proxy
+host-suffix,onedrive.com,proxy
+host-suffix,onedrive.eu,proxy
+host-suffix,onedrive.net,proxy
+host-suffix,onedrive.org,proxy
+host-suffix,onedrive.live.com,proxy
+host-suffix,storage.live.com,proxy
