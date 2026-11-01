@@ -1,10 +1,6 @@
 # NAME: QwenInternational
 # SOURCE: existing zhbcn/Rules AI/Qwen.yaml (international product subset)
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/AI/QwenInternational.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,qwen.ai,proxy
 host-suffix,qwenlm.ai,proxy

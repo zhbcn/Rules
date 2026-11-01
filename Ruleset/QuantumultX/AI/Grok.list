@@ -8,10 +8,6 @@
 # MAINTAINED-BY: zhbcn/Rules
 # SOURCE-URL: https://docs.x.ai/grok-bot/proxies
 # AUTH-SOURCE-URL: https://cursor.com/help/troubleshooting/sign-in-domains
-# GENERATED-FROM: Ruleset/Mihomo/AI/Grok.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,grok.com,proxy
 host-suffix,grok.x.com,proxy

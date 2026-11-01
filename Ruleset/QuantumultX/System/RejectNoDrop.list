@@ -2,10 +2,6 @@
 # SOURCE: ruleset.skk.moe
 # SOURCE-LIST: non_ip/reject-no-drop.conf
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/System/RejectNoDrop.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,proxy
 host-suffix,bvmlt.top,proxy

@@ -3,10 +3,6 @@
 # SOURCE-LIST: linkedin
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Social/LinkedIn.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,bizographics.com,proxy
 host-suffix,l-0005.dc-msedge.net,proxy

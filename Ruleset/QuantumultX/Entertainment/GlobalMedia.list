@@ -2,10 +2,6 @@
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/GlobalMedia/GlobalMedia.yaml
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Entertainment/GlobalMedia.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-keyword,abematv.akamaized.net,proxy
 host-keyword,anthropic,proxy

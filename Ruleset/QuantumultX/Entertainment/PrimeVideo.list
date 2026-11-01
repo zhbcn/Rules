@@ -3,10 +3,6 @@
 # SOURCE-LIST: primevideo
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Entertainment/PrimeVideo.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host,d1v5ir2lpwr8os.cloudfront.net,proxy
 host,d22qjgkvxw22r6.cloudfront.net,proxy

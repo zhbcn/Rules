@@ -3,10 +3,6 @@
 # SOURCE-LIST: ubisoft
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Gaming/Ubisoft.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,ubi.com,proxy
 host-suffix,ubisoft.com,proxy

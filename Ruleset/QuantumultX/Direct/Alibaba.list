@@ -3,10 +3,6 @@
 # SOURCE-LIST: alibaba
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Direct/Alibaba.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,alibaba,proxy
 host-suffix,alipay,proxy

@@ -1,10 +1,6 @@
 # NAME: ByteDanceAIInternational
 # SOURCE: existing zhbcn/Rules AI/ByteDanceAI.yaml (international product subset)
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/AI/ByteDanceAIInternational.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,cici.com,proxy
 host-suffix,ciciai.com,proxy

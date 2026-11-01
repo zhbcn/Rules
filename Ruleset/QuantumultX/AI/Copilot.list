@@ -3,10 +3,6 @@
 # SOURCE-LIST: github-copilot + category-ai-!cn (Copilot subset) + existing Technology/Microsoft.yaml Copilot subset
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/AI/Copilot.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,githubcopilot.com,proxy
 host,copilot-proxy.githubusercontent.com,proxy

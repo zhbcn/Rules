@@ -2,10 +2,6 @@
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/Alibaba/Alibaba_Domain.yaml
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Direct/Alibaba_Domain.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,10029.com,proxy
 host-suffix,1688.com,proxy

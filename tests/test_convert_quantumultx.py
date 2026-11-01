@@ -46,11 +46,8 @@ class QuantumultXTest(unittest.TestCase):
 
     def test_preserves_attribution_and_removes_exact_duplicates(self):
         text = "# NAME: Example\n# SOURCE: upstream\n\npayload:\n  - DOMAIN,example.com\n  - DOMAIN,example.com\n"
-        rendered = render_filter(text, Path("Test/Example.yaml"))
-        self.assertTrue(rendered.startswith("# NAME: Example\n# SOURCE: upstream\n"))
-        self.assertIn("# GENERATED-FROM: Ruleset/Mihomo/Test/Example.yaml", rendered)
-        self.assertEqual(rendered.count("host,example.com,proxy"), 1)
-        self.assertNotIn("payload:", rendered)
+        rendered = render_filter(text)
+        self.assertEqual(rendered, "# NAME: Example\n# SOURCE: upstream\n\nhost,example.com,proxy\n")
 
     def test_checks_missing_stale_and_orphaned_filters(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -68,7 +65,7 @@ class QuantumultXTest(unittest.TestCase):
             errors = []
             check_quantumultx_pairs(root, errors)
             self.assertTrue(errors[0].startswith("PAIR MISMATCH"))
-            target.write_text(render_filter(text, Path("Example.yaml")), encoding="utf-8")
+            target.write_text(render_filter(text), encoding="utf-8")
             errors = []
             self.assertEqual(check_quantumultx_pairs(root, errors), 1)
             self.assertEqual(errors, [])

@@ -3,10 +3,6 @@
 # SOURCE-LIST: adobe
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Technology/Adobe.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host,3dns-1.adobe.com,proxy
 host,3dns-2.adobe.com,proxy

@@ -2,9 +2,5 @@
 # SOURCE: blackmatrix7/ios_rule_script (Crypto aggregate)
 # SOURCE-LIST: rule/Clash/Crypto/Crypto.yaml (Avalanche subset)
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Crypto/Avalanche.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,avax.network,proxy

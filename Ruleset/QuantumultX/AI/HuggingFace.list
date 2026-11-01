@@ -3,10 +3,6 @@
 # SOURCE-LIST: huggingface + Inference Endpoints
 # SOURCE-URL: https://huggingface.co/docs/huggingface_hub/package_reference/inference_endpoints
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/AI/HuggingFace.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,hf.co,proxy
 host-suffix,hf.space,proxy

@@ -2,10 +2,6 @@
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/Global/Global.yaml
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Technology/Global.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-keyword,amazon,proxy
 host-keyword,avoddashs,proxy

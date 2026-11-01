@@ -2,10 +2,6 @@
 # SOURCE: Microsoft official; existing Technology/Microsoft.yaml
 # SOURCE-URL: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/troubleshoot-ncsi-guidance
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/System/MicrosoftConnectivity.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host-suffix,msftconnecttest.com,proxy
 host-suffix,msftncsi.com,proxy

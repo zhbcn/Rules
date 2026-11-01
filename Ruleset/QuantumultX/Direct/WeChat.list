@@ -2,10 +2,6 @@
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/WeChat/WeChat.yaml
 # MAINTAINED-BY: zhbcn/Rules
-# GENERATED-FROM: Ruleset/Mihomo/Direct/WeChat.yaml
-# REGENERATE: python scripts/convert_quantumultx.py
-# POLICY: proxy is a placeholder; set force-policy in [filter_remote].
-# NATIVE: opt-parser=false; no resource parser required.
 
 host,apd-pcdnwxlogin.teg.tencent-cloud.net,proxy
 host,btrace.qq.com,proxy

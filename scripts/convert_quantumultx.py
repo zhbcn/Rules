@@ -40,7 +40,7 @@ def convert_rule(rule: str) -> str:
     return ",".join([RULE_TYPES[kind], parts[1], "proxy", *options])
 
 
-def render_filter(text: str, relative: Path) -> str:
+def render_filter(text: str) -> str:
     document = yaml.safe_load(text)
     headers = []
     for line in text.splitlines():
@@ -48,12 +48,6 @@ def render_filter(text: str, relative: Path) -> str:
             headers.append(line)
         elif line.strip():
             break
-    headers.extend([
-        f"# GENERATED-FROM: Ruleset/Mihomo/{relative.as_posix()}",
-        "# REGENERATE: python scripts/convert_quantumultx.py",
-        "# POLICY: proxy is a placeholder; set force-policy in [filter_remote].",
-        "# NATIVE: opt-parser=false; no resource parser required.",
-    ])
     rules = list(dict.fromkeys(convert_rule(rule) for rule in document["payload"]))
     return "\n".join([*headers, "", *rules, ""])
 
@@ -73,7 +67,7 @@ def check_quantumultx_pairs(root: Path, errors: list[str]) -> int:
         if not output.is_file():
             continue
         try:
-            expected_text = render_filter((source / relative).read_text(encoding="utf-8-sig"), relative)
+            expected_text = render_filter((source / relative).read_text(encoding="utf-8-sig"))
             if output.read_text(encoding="utf-8-sig") != expected_text:
                 errors.append(f"PAIR MISMATCH QuantumultX/{relative.with_suffix('.list').as_posix()}: regenerate filters")
         except (ValueError, KeyError, TypeError, yaml.YAMLError) as exc:
@@ -87,7 +81,7 @@ def main() -> None:
     count = 0
     for path in sorted(source.rglob("*.yaml")):
         relative = path.relative_to(source)
-        text = render_filter(path.read_text(encoding="utf-8-sig"), relative)
+        text = render_filter(path.read_text(encoding="utf-8-sig"))
         target = root / "Ruleset" / "QuantumultX" / relative.with_suffix(".list")
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(text, encoding="utf-8", newline="\n")
