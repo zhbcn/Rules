@@ -3,6 +3,7 @@
 # SOURCE-LIST: epicgames
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: ADAPTED-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,artstation.com,proxy
 host-suffix,artstationmedia.com,proxy
@@ -34,6 +35,35 @@ host-suffix,unrealengine.com,proxy
 host-suffix,unrealtournament.com,proxy
 host-suffix,egdownload.fastly-edge.com,proxy
 host-suffix,fortnite-vod.akamaized.net,proxy
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com$
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^epicgames-download\d\.akamaized\.net$
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com$
+# QX-ADAPTED (approved wildcard approximation; dynamic identifiers may contain non-digits or dots): DOMAIN-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com$
+host-wildcard,cdn0-epicgames-?*.file.myqcloud.com,proxy
+host-wildcard,cdn1-epicgames-?*.file.myqcloud.com,proxy
+host-wildcard,cdn2-epicgames-?*.file.myqcloud.com,proxy
+host-wildcard,cdn3-epicgames-?*.file.myqcloud.com,proxy
+host-wildcard,cdn4-epicgames-?*.file.myqcloud.com,proxy
+host-wildcard,cdn5-epicgames-?*.file.myqcloud.com,proxy
+host-wildcard,cdn6-epicgames-?*.file.myqcloud.com,proxy
+host-wildcard,cdn7-epicgames-?*.file.myqcloud.com,proxy
+host-wildcard,cdn8-epicgames-?*.file.myqcloud.com,proxy
+host-wildcard,cdn9-epicgames-?*.file.myqcloud.com,proxy
+host,epicgames-download0.akamaized.net,proxy
+host,epicgames-download1.akamaized.net,proxy
+host,epicgames-download2.akamaized.net,proxy
+host,epicgames-download3.akamaized.net,proxy
+host,epicgames-download4.akamaized.net,proxy
+host,epicgames-download5.akamaized.net,proxy
+host,epicgames-download6.akamaized.net,proxy
+host,epicgames-download7.akamaized.net,proxy
+host,epicgames-download8.akamaized.net,proxy
+host,epicgames-download9.akamaized.net,proxy
+# QX-ADAPTED (approved wildcard approximation; dynamic identifiers may contain non-digits or dots): DOMAIN-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com$
+host-wildcard,epicgames-download0-?*.file.myqcloud.com,proxy
+host-wildcard,epicgames-download1-?*.file.myqcloud.com,proxy
+host-wildcard,epicgames-download2-?*.file.myqcloud.com,proxy
+host-wildcard,epicgames-download3-?*.file.myqcloud.com,proxy
+host-wildcard,epicgames-download4-?*.file.myqcloud.com,proxy
+host-wildcard,epicgames-download5-?*.file.myqcloud.com,proxy
+host-wildcard,epicgames-download6-?*.file.myqcloud.com,proxy
+host-wildcard,epicgames-download7-?*.file.myqcloud.com,proxy
+host-wildcard,epicgames-download8-?*.file.myqcloud.com,proxy
+host-wildcard,epicgames-download9-?*.file.myqcloud.com,proxy

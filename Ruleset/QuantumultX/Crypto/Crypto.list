@@ -4,6 +4,7 @@
 # - custom
 # SOURCE-LIST: category-cryptocurrency + retained independent crypto rules
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,asproex.com,proxy
 host-suffix,asproexapi.com,proxy

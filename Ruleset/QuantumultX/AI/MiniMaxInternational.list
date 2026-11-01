@@ -1,6 +1,7 @@
 # NAME: MiniMaxInternational
 # SOURCE: existing zhbcn/Rules AI/MiniMax.yaml (international product subset)
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,minimax.io,proxy
 host-suffix,hailuoai.video,proxy

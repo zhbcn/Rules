@@ -3,6 +3,7 @@
 # SOURCE-LIST: adobe
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host,3dns-1.adobe.com,proxy
 host,3dns-2.adobe.com,proxy

@@ -5,6 +5,7 @@
 # SOURCE-LIST: meta (direct entries only) + Muse
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,atmeta.com,proxy
 host-suffix,llama.com,proxy

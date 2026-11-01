@@ -375,9 +375,73 @@ def check_aggregates(root: Path, errors: list[str]) -> None:
                     errors.append(f"AGGREGATE-MISSING {area}/{aggregate}: member {member} rule not in aggregate: {missing}")
 
 
+def check_quantumultx_config(text: str, label: str, errors: list[str]) -> None:
+    """Check complete-profile sections and local policy/resource wiring, not app runtime."""
+    required = {"general", "dns", "policy", "server_remote", "server_local", "filter_remote",
+                "filter_local", "rewrite_remote", "rewrite_local", "task_local", "http_backend", "mitm"}
+    sections: dict[str, list[str]] = {}
+    section = ""
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or line.startswith(("#", ";", "//")):
+            continue
+        if re.fullmatch(r"\[[a-z_]+\]", line):
+            section = line[1:-1]
+            if section in sections:
+                errors.append(f"CONFIG {label}: duplicate section [{section}]")
+            sections.setdefault(section, [])
+        else:
+            sections.setdefault(section, []).append(line)
+    for missing in sorted(required - sections.keys()):
+        errors.append(f"CONFIG {label}: missing section [{missing}]")
+    names = set()
+    dependencies = {}
+    for line in sections.get("policy", []):
+        if "=" not in line:
+            errors.append(f"CONFIG {label}: malformed policy")
+            continue
+        values = [v.strip() for v in line.split("=", 1)[1].split(",")]
+        if values[0] in names:
+            errors.append(f"CONFIG {label}: duplicate policy {values[0]}")
+        names.add(values[0])
+        dependencies[values[0]] = [v for v in values[1:] if "=" not in v]
+    builtins = {"direct", "reject", "proxy"}
+    local_nodes = {m.group(1).strip() for line in sections.get("server_local", [])
+                   if (m := re.search(r"(?:^|,)\s*tag=([^,]+)", line))}
+    allowed = names | builtins | local_nodes
+    for name, candidates in dependencies.items():
+        for candidate in candidates:
+            if candidate not in allowed:
+                errors.append(f"CONFIG {label}: {name} references unknown policy/node {candidate}")
+    def visit(name: str, ancestors: set[str]) -> None:
+        if name in ancestors:
+            errors.append(f"CONFIG {label}: policy cycle involving {name}")
+            return
+        for child in dependencies.get(name, []):
+            if child in names:
+                visit(child, ancestors | {name})
+    for name in names:
+        visit(name, set())
+    for line in sections.get("filter_remote", []):
+        options = dict(v.strip().split("=", 1) for v in line.split(",")[1:] if "=" in v)
+        if options.get("force-policy") not in allowed:
+            errors.append(f"CONFIG {label}: remote filter missing/unknown force-policy")
+        if options.get("opt-parser") != "false":
+            errors.append(f"CONFIG {label}: native remote filter must use opt-parser=false")
+    for line in sections.get("filter_local", []):
+        parts = [v.strip() for v in line.split(",")]
+        expected = 2 if parts[0] == "final" else 3
+        native_types = {"host", "host-suffix", "host-keyword", "host-wildcard", "ip-cidr",
+                        "ip6-cidr", "ip-asn", "geoip", "user-agent", "final"}
+        if parts[0] not in native_types or len(parts) != expected or parts[-1] not in allowed:
+            errors.append(f"CONFIG {label}: invalid local filter fields/policy")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, action="append", default=[])
+    parser.add_argument("--require-complete-qx", action="store_true",
+                        help="Fail if any QX collection still has a non-equivalent native condition")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     errors: list[str] = []
@@ -401,16 +465,41 @@ def main() -> int:
     check_aggregates(root, errors)
     check_mihomo_egern_pairs(root, errors)
     checked += check_quantumultx_pairs(root, errors)
+    qx_files = list((root / "Ruleset" / "QuantumultX").rglob("*.list"))
+    qx_partial = [path.relative_to(root / "Ruleset" / "QuantumultX").as_posix()
+                  for path in sorted(qx_files)
+                  if "# QX-COMPAT: PARTIAL;" in path.read_text(encoding="utf-8-sig")]
+    qx_adapted = [path.relative_to(root / "Ruleset" / "QuantumultX").as_posix()
+                  for path in sorted(qx_files)
+                  if "# QX-COMPAT: ADAPTED-DOMAIN-IP;" in path.read_text(encoding="utf-8-sig")]
+    print(f"QX COVERAGE: {len(qx_files) - len(qx_partial) - len(qx_adapted)}/{len(qx_files)} complete in native domain/IP scope; "
+          f"{len(qx_adapted)} adapted with approved scope differences; "
+          f"{len(qx_partial)} partial. This is not app-runtime validation.")
+    for relative in qx_adapted:
+        message = f"QX ADAPTED: {relative}: inspect QX-ADAPTED comments; approved approximation, not strict equivalence"
+        if args.require_complete_qx:
+            errors.append(message)
+        else:
+            print(message)
+    for relative in qx_partial:
+        message = f"QX PARTIAL: {relative}: inspect LIMITATION comments; not a fully equivalent collection"
+        if args.require_complete_qx:
+            errors.append(message)
+        else:
+            print(message)
 
     url_pattern = re.compile(r"https://(?:raw\.githubusercontent\.com|github\.com)/zhbcn/Rules/[^\s\"']+")
     for config in args.config:
         try:
             text = config.read_text(encoding="utf-8-sig")
-            document = load_yaml(text)
+            document = None if config.suffix.lower() == ".conf" else load_yaml(text)
         except Exception as exc:
             errors.append(f"CONFIG {config}: {exc}")
             continue
-        check_config_document(document, config.name, errors)
+        if config.suffix.lower() == ".conf":
+            check_quantumultx_config(text, config.name, errors)
+        else:
+            check_config_document(document, config.name, errors)
         for url in url_pattern.findall(text):
             relative = repo_path_from_url(url.rstrip("}),]"))
             if relative and not (root / relative).is_file():

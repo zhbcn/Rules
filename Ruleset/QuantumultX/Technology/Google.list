@@ -3,6 +3,7 @@
 # SOURCE-LIST: google
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,android,proxy
 host-suffix,android.com,proxy
@@ -167,8 +168,8 @@ host-suffix,play-lh.googleusercontent.com,proxy
 host-suffix,play.google.com,proxy
 host-suffix,play.googleapis.com,proxy
 host-suffix,xn--ngstr-lra8j.com,proxy
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.xn--ngstr-lra8j\.com$
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.googlevideo\.com$
+# COVERED (same-file suffix already includes this pattern): DOMAIN-REGEX,^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.xn--ngstr-lra8j\.com$
+# COVERED (same-file suffix already includes this pattern): DOMAIN-REGEX,^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.googlevideo\.com$
 host,redirector.c.play.google.com,proxy
 host-suffix,charlestonroadregistry.com,proxy
 host-suffix,crr.com,proxy

@@ -3,6 +3,7 @@
 # SOURCE-LIST: meta (Muse and shared account domains only)
 # SOURCE-URL: https://ai.meta.com/muse/
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,muse.ai,proxy
 host-suffix,metaaivm.com,proxy

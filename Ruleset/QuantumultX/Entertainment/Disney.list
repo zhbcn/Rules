@@ -3,6 +3,7 @@
 # SOURCE-LIST: disney
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,abc-studios.com,proxy
 host-suffix,abc.com,proxy
@@ -27,7 +28,14 @@ host-suffix,hotstar-cdn.net,proxy
 host-suffix,hotstar-labs.com,proxy
 host-suffix,hotstarext.com,proxy
 host-suffix,hsprepack.akamaized.net,proxy
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^hses[1-7]?\.akamaized\.net$
+host,hses.akamaized.net,proxy
+host,hses1.akamaized.net,proxy
+host,hses2.akamaized.net,proxy
+host,hses3.akamaized.net,proxy
+host,hses4.akamaized.net,proxy
+host,hses5.akamaized.net,proxy
+host,hses6.akamaized.net,proxy
+host,hses7.akamaized.net,proxy
 host-suffix,112263.com,proxy
 host-suffix,callhulu.com,proxy
 host-suffix,findyourlimits.com,proxy

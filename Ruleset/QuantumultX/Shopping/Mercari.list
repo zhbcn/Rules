@@ -2,6 +2,7 @@
 # SOURCE: custom
 # SOURCE-LIST: existing zhbcn/Rules rule
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,mercari.com,proxy
 host-suffix,mercari.jp,proxy

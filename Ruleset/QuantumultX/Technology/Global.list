@@ -2,6 +2,7 @@
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/Global/Global.yaml
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-keyword,amazon,proxy
 host-keyword,avoddashs,proxy
@@ -155,7 +156,7 @@ ip6-cidr,2001:67c:4e8::/48,proxy
 ip6-cidr,2001:b28:f23c::/47,proxy
 ip6-cidr,2001:b28:f23f::/48,proxy
 ip6-cidr,2a0a:f280::/32,proxy
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,LookupViewService
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,LookupViewService
 ip-cidr,13.251.24.0/24,proxy
 ip-cidr,13.251.41.0/24,proxy
 ip-cidr,17.252.156.0/23,proxy

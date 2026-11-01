@@ -3,6 +3,7 @@
 # SOURCE-LIST: twitter
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,ads-twitter.com,proxy
 host-suffix,cms-twdigitalassets.com,proxy

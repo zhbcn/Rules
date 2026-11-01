@@ -3,6 +3,7 @@
 # SOURCE-LIST: category-finance selected services + paypal, mastercard, visa
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,futu.cn,proxy
 host-suffix,futu.link,proxy

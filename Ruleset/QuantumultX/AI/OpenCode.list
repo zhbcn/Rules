@@ -3,6 +3,7 @@
 # SOURCE-LIST: category-ai-!cn (OpenCode only) + official supplements
 # SOURCE-URL: https://github.com/anomalyco/opencode
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,opencode.ai,proxy
 host-suffix,opncd.ai,proxy

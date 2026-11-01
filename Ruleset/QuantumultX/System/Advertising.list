@@ -3,6 +3,8 @@
 # AUTHOR: luestr
 # MAINTAINED-BY: zhbcn/Rules
 # SCOPE: Native domain/IP rules; URL, User-Agent, rewrites, scripts and MITM excluded.
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+# QX-DNS: source no-resolve is not exported; native QX DNS evaluation is not equivalent to Mihomo.
 
 host-keyword,adstrategy,proxy
 host,lf-ad-ies.bytecdn.cn,proxy
@@ -110,7 +112,7 @@ host-suffix,gdt.qq.com,proxy
 host-suffix,l.qq.com,proxy
 host-suffix,imtmp.net,proxy
 host-suffix,ugdtimg.com,proxy
-ip-cidr,47.110.187.87/32,proxy,no-resolve
+ip-cidr,47.110.187.87/32,proxy
 host-suffix,opadlink.com,proxy
 host-suffix,staevent.work,proxy
 host-suffix,openinstall.online,proxy
@@ -290,6 +292,7 @@ host-suffix,moloco.com,proxy
 host-suffix,rayjump.com,proxy
 host-suffix,rixengine.com,proxy
 host-suffix,amazon-adsystem.com,proxy
-# UNSUPPORTED (no native equivalent): AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com))
-# UNSUPPORTED (no native equivalent): AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,-normal.zijieapi.com))
-# UNSUPPORTED (no native equivalent): AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com))
+host-wildcard,*-ad-*.byteimg.com,proxy
+host-wildcard,*ads*-normal.zijieapi.com*,proxy
+host-wildcard,*-normal.zijieapi.com*ads*,proxy
+host-wildcard,*adash*.ut.taobao.com,proxy

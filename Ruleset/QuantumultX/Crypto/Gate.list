@@ -5,6 +5,7 @@
 # SOURCE-LIST: gateio + retained zhbcn/Rules domains
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,gate.com,proxy
 host-suffix,gate.io,proxy

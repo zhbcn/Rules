@@ -2,6 +2,7 @@
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/ChinaIPs/ChinaIPs_IP_No_IPv6.yaml
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 ip-cidr,1.0.1.0/24,proxy
 ip-cidr,1.0.2.0/23,proxy

@@ -3,6 +3,7 @@
 # SOURCE-LIST: line
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,gcld-line.com,proxy
 host-suffix,lin.ee,proxy

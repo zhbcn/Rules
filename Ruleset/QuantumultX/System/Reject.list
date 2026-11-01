@@ -2,6 +2,11 @@
 # SOURCE: ruleset.skk.moe
 # SOURCE-LIST: non_ip/reject.conf
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+# QX-DNS: source no-resolve is not exported; native QX DNS evaluation is not equivalent to Mihomo.
+# SCOPE-EXCLUDED (Egern URL matching; not a native domain/IP filter): /igd\.xml
+# SCOPE-EXCLUDED (Egern URL matching; not a native domain/IP filter): /\d+/resolve
+# SCOPE-EXCLUDED (Egern URL matching; not a native domain/IP filter): /\d+/sign_d
 
 host,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,proxy
 host-suffix,data,proxy
@@ -323,54 +328,54 @@ host-wildcard,mon-*.byteoversea.com,proxy
 host-wildcard,pixel*.adswizz.com,proxy
 host-wildcard,log*-normal-*.tiktokv.com,proxy
 host-wildcard,analytics-*.aasaam.com,proxy
-ip-cidr,39.97.128.148/32,proxy,no-resolve
-ip-cidr,39.97.130.51/32,proxy,no-resolve
-ip-cidr,42.81.232.18/32,proxy,no-resolve
-ip-cidr,42.187.182.106/32,proxy,no-resolve
-ip-cidr,42.187.182.123/32,proxy,no-resolve
-ip-cidr,42.187.184.154/32,proxy,no-resolve
-ip-cidr,47.100.123.169/32,proxy,no-resolve
-ip-cidr,47.101.175.206/32,proxy,no-resolve
-ip-cidr,59.82.99.47/32,proxy,no-resolve
-ip-cidr,59.111.239.61/32,proxy,no-resolve
-ip-cidr,59.111.239.62/32,proxy,no-resolve
-ip-cidr,101.35.204.35/32,proxy,no-resolve
-ip-cidr,101.124.19.122/32,proxy,no-resolve
-ip-cidr,103.37.152.97/32,proxy,no-resolve
-ip-cidr,103.37.155.60/32,proxy,no-resolve
-ip-cidr,103.224.222.208/32,proxy,no-resolve
-ip-cidr,106.11.25.31/32,proxy,no-resolve
-ip-cidr,112.64.218.119/32,proxy,no-resolve
-ip-cidr,112.65.200.117/32,proxy,no-resolve
-ip-cidr,114.110.97.97/32,proxy,no-resolve
-ip-cidr,114.116.215.110/32,proxy,no-resolve
-ip-cidr,115.236.121.51/32,proxy,no-resolve
-ip-cidr,115.236.121.195/32,proxy,no-resolve
-ip-cidr,116.63.10.31/32,proxy,no-resolve
-ip-cidr,116.63.10.135/32,proxy,no-resolve
-ip-cidr,117.144.238.29/32,proxy,no-resolve
-ip-cidr,117.185.228.108/32,proxy,no-resolve
-ip-cidr,118.89.204.198/32,proxy,no-resolve
-ip-cidr,119.29.29.98/31,proxy,no-resolve
-ip-cidr,120.46.169.234/32,proxy,no-resolve
-ip-cidr,121.36.72.124/32,proxy,no-resolve
-ip-cidr,122.9.7.134/32,proxy,no-resolve
-ip-cidr,123.151.54.50/32,proxy,no-resolve
-ip-cidr,180.76.76.112/32,proxy,no-resolve
-ip-cidr,180.76.76.200/32,proxy,no-resolve
-ip-cidr,180.76.76.220/32,proxy,no-resolve
-ip-cidr,182.254.116.117/32,proxy,no-resolve
-ip-cidr,182.254.118.119/32,proxy,no-resolve
-ip-cidr,202.90.108.13/32,proxy,no-resolve
-ip-cidr,202.90.110.46/32,proxy,no-resolve
-ip-cidr,203.107.1.0/24,proxy,no-resolve
-ip-cidr,203.119.204.66/32,proxy,no-resolve
-ip-cidr,203.119.238.194/32,proxy,no-resolve
-ip6-cidr,2402:db40:5100:1011::5/128,proxy,no-resolve
-ip6-cidr,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,proxy,no-resolve
-ip6-cidr,240e:928:1400:10::25/128,proxy,no-resolve
-ip6-cidr,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,proxy,no-resolve
-ip-cidr,101.91.140.124/32,proxy,no-resolve
-ip-cidr,101.91.140.224/32,proxy,no-resolve
-ip-cidr,122.9.13.79/32,proxy,no-resolve
-ip-cidr,122.9.15.129/32,proxy,no-resolve
+ip-cidr,39.97.128.148/32,proxy
+ip-cidr,39.97.130.51/32,proxy
+ip-cidr,42.81.232.18/32,proxy
+ip-cidr,42.187.182.106/32,proxy
+ip-cidr,42.187.182.123/32,proxy
+ip-cidr,42.187.184.154/32,proxy
+ip-cidr,47.100.123.169/32,proxy
+ip-cidr,47.101.175.206/32,proxy
+ip-cidr,59.82.99.47/32,proxy
+ip-cidr,59.111.239.61/32,proxy
+ip-cidr,59.111.239.62/32,proxy
+ip-cidr,101.35.204.35/32,proxy
+ip-cidr,101.124.19.122/32,proxy
+ip-cidr,103.37.152.97/32,proxy
+ip-cidr,103.37.155.60/32,proxy
+ip-cidr,103.224.222.208/32,proxy
+ip-cidr,106.11.25.31/32,proxy
+ip-cidr,112.64.218.119/32,proxy
+ip-cidr,112.65.200.117/32,proxy
+ip-cidr,114.110.97.97/32,proxy
+ip-cidr,114.116.215.110/32,proxy
+ip-cidr,115.236.121.51/32,proxy
+ip-cidr,115.236.121.195/32,proxy
+ip-cidr,116.63.10.31/32,proxy
+ip-cidr,116.63.10.135/32,proxy
+ip-cidr,117.144.238.29/32,proxy
+ip-cidr,117.185.228.108/32,proxy
+ip-cidr,118.89.204.198/32,proxy
+ip-cidr,119.29.29.98/31,proxy
+ip-cidr,120.46.169.234/32,proxy
+ip-cidr,121.36.72.124/32,proxy
+ip-cidr,122.9.7.134/32,proxy
+ip-cidr,123.151.54.50/32,proxy
+ip-cidr,180.76.76.112/32,proxy
+ip-cidr,180.76.76.200/32,proxy
+ip-cidr,180.76.76.220/32,proxy
+ip-cidr,182.254.116.117/32,proxy
+ip-cidr,182.254.118.119/32,proxy
+ip-cidr,202.90.108.13/32,proxy
+ip-cidr,202.90.110.46/32,proxy
+ip-cidr,203.107.1.0/24,proxy
+ip-cidr,203.119.204.66/32,proxy
+ip-cidr,203.119.238.194/32,proxy
+ip6-cidr,2402:db40:5100:1011::5/128,proxy
+ip6-cidr,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,proxy
+ip6-cidr,240e:928:1400:10::25/128,proxy
+ip6-cidr,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,proxy
+ip-cidr,101.91.140.124/32,proxy
+ip-cidr,101.91.140.224/32,proxy
+ip-cidr,122.9.13.79/32,proxy
+ip-cidr,122.9.15.129/32,proxy

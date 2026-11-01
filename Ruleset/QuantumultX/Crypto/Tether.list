@@ -2,5 +2,6 @@
 # SOURCE: blackmatrix7/ios_rule_script (Crypto aggregate)
 # SOURCE-LIST: rule/Clash/Crypto/Crypto.yaml (Tether subset)
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,tether.to,proxy

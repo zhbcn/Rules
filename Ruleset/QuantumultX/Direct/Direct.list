@@ -2,6 +2,7 @@
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/Direct/Direct.yaml
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host,ad.10010.com,proxy
 host,ad.12306.cn,proxy
@@ -234,39 +235,39 @@ host-keyword,wb_ad,proxy
 host-keyword,weather-adge.apple.com,proxy
 host-keyword,weather-edge.apple.com,proxy
 host-keyword,westlawchina,proxy
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,BaiduNetdisk_mac
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,BitComet
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,ClashX
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,DownloadService
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,Folx
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,LocalSend
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,LogiOptions
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,LogiOptionsDaemon
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,NetTransport
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,SunloginClient_Desktop
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,SunloginClient_Helper
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,Thunder
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,ThunderVIP
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,Transmission
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,UUBooster
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,WebTorrent
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,WebTorrentHelper
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,amuled
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,aria2c
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,clash
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,cloudflared
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,fdm
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,parsecd
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,privoxy
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,qBittorrent
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,qbittorrent*
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,qbittorrent-nox
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,ss-local
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,tailscaled
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,transmission-daemon
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,transmission-qt
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,trojan
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,trojan-go
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,uTorrent
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,v2ray
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,xray
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,BaiduNetdisk_mac
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,BitComet
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,ClashX
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,DownloadService
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,Folx
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,LocalSend
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,LogiOptions
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,LogiOptionsDaemon
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,NetTransport
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,SunloginClient_Desktop
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,SunloginClient_Helper
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,Thunder
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,ThunderVIP
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,Transmission
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,UUBooster
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,WebTorrent
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,WebTorrentHelper
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,amuled
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,aria2c
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,clash
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,cloudflared
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,fdm
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,parsecd
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,privoxy
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,qBittorrent
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,qbittorrent*
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,qbittorrent-nox
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,ss-local
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,tailscaled
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,transmission-daemon
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,transmission-qt
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,trojan
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,trojan-go
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,uTorrent
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,v2ray
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,xray

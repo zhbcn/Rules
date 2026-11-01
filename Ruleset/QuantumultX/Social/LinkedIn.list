@@ -3,6 +3,7 @@
 # SOURCE-LIST: linkedin
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,bizographics.com,proxy
 host-suffix,l-0005.dc-msedge.net,proxy

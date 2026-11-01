@@ -2,5 +2,6 @@
 # SOURCE: Hark official
 # SOURCE-URL: https://hark.com/
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,hark.com,proxy

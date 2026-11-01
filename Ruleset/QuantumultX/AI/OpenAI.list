@@ -3,6 +3,7 @@
 # SOURCE-LIST: openai
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: ADAPTED-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,chat.com,proxy
 host-suffix,chatgpt.com,proxy
@@ -20,7 +21,8 @@ host,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,proxy
 host,openaicom.imgix.net,proxy
 host,openaicomproductionae4b.blob.core.windows.net,proxy
 host,production-openaicom-storage.azureedge.net,proxy
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
+# QX-ADAPTED (approved wildcard approximation; dynamic identifiers may contain non-digits or dots): DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
+host-wildcard,chatgpt-async-webps-prod-?*-?*.webpubsub.azure.com,proxy
 host,browser-intake-datadoghq.com,proxy
 host,o33249.ingest.sentry.io,proxy
 host,openai.qualtrics.com,proxy

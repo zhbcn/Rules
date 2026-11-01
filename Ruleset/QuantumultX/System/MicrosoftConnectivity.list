@@ -2,6 +2,7 @@
 # SOURCE: Microsoft official; existing Technology/Microsoft.yaml
 # SOURCE-URL: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/troubleshoot-ncsi-guidance
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,msftconnecttest.com,proxy
 host-suffix,msftncsi.com,proxy

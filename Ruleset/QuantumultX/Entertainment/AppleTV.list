@@ -3,6 +3,7 @@
 # SOURCE-LIST: apple-tvplus
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host,apple-tv-plus-press.apple.com,proxy
 host,hls-amt.itunes.apple.com,proxy

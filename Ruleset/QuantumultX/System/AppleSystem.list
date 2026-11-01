@@ -3,6 +3,7 @@
 # SOURCE-URL: https://support.apple.com/en-us/101555
 # SOURCE-URL: https://support.apple.com/en-us/102266
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,push.apple.com,proxy
 host,captive.apple.com,proxy

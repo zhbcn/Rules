@@ -5,6 +5,7 @@
 # SOURCE-LIST: doubao, bytedance-ai-!cn + retained zhbcn/Rules domains
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,cici.com,proxy
 host-suffix,ciciai.com,proxy

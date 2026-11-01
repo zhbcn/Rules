@@ -2,6 +2,7 @@
 # SOURCE: blackmatrix7/ios_rule_script (Crypto aggregate) + custom
 # SOURCE-LIST: rule/Clash/Crypto/Crypto.yaml (TRONSCAN subset) + existing zhbcn/Rules rule
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,tronscan.org,proxy
 host-suffix,tronscanapi.com,proxy

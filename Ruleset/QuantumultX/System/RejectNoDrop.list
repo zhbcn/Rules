@@ -2,6 +2,7 @@
 # SOURCE: ruleset.skk.moe
 # SOURCE-LIST: non_ip/reject-no-drop.conf
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: PARTIAL; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,proxy
 host-suffix,bvmlt.top,proxy
@@ -48,4 +49,4 @@ host-wildcard,dyp2p-*.douyucdn.cn,proxy
 host-wildcard,p2plive-*.douyucdn.cn,proxy
 host-wildcard,stun*.douyucdn.cn,proxy
 host-wildcard,upos-sz-302*.bilivideo.com,proxy
-# UNSUPPORTED (no native equivalent): AND,((NETWORK,UDP),(DOMAIN-SUFFIX,googlevideo.com))
+# LIMITATION (no exact native protocol/domain conjunction): AND,((NETWORK,UDP),(DOMAIN-SUFFIX,googlevideo.com))

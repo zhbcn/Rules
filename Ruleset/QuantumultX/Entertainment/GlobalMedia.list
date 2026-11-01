@@ -2,6 +2,7 @@
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/GlobalMedia/GlobalMedia.yaml
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-keyword,abematv.akamaized.net,proxy
 host-keyword,anthropic,proxy
@@ -953,6 +954,6 @@ ip6-cidr,2620:10c:7000::/44,proxy
 ip6-cidr,2620:120:e000::/40,proxy
 ip6-cidr,2a00:86c0::/32,proxy
 ip6-cidr,2a03:5640::/32,proxy
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,com.viu.pad
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,com.viu.phone
-# UNSUPPORTED (no native equivalent): PROCESS-NAME,com.vuclip.viu
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,com.viu.pad
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,com.viu.phone
+# PLATFORM-OMITTED (iOS domain/IP filter scope): PROCESS-NAME,com.vuclip.viu

@@ -2,6 +2,7 @@
 # SOURCE: Microsoft official; v2fly microsoft update entries
 # SOURCE-URL: https://learn.microsoft.com/en-us/windows/deployment/do/delivery-optimization-proxy
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,windowsupdate.com,proxy
 host-suffix,windowsupdate.microsoft.com,proxy

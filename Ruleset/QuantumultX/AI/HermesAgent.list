@@ -3,6 +3,7 @@
 # SOURCE-LIST: vercel (skills.sh) + existing zhbcn/Rules rule
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,nousresearch.com,proxy
 host-suffix,models.dev,proxy

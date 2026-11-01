@@ -3,6 +3,7 @@
 # SOURCE-LIST: speedtest
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,cdnst.net,proxy
 host-suffix,cellmaps.com,proxy
@@ -17,7 +18,7 @@ host-suffix,speedtestcustom.com,proxy
 host-suffix,webtest.net,proxy
 host,www.speedtest.net.cdn.cloudflare.net,proxy
 host-suffix,ookla-speedtest-central.hgconair.hgc.com.hk,proxy
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,^speed\.(coe|open)\.ad\.[a-z]{2,6}\.prod\.hosts\.ooklaserver\.net$
+# COVERED (same-file suffix already includes this pattern): DOMAIN-REGEX,^speed\.(coe|open)\.ad\.[a-z]{2,6}\.prod\.hosts\.ooklaserver\.net$
 host-suffix,speedtest.app,proxy
 host-suffix,speedtest.cc,proxy
 host-suffix,speedtest.ee,proxy

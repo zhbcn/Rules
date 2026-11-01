@@ -2,6 +2,7 @@
 # SOURCE: ruleset.skk.moe
 # SOURCE-LIST: non_ip/lan.conf, ip/lan.conf
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe,proxy
 host-suffix,lan,proxy

@@ -3,6 +3,7 @@
 # SOURCE-LIST: netflix
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,fast.com,proxy
 host-suffix,netflix.ca,proxy
@@ -27,8 +28,12 @@ host-suffix,netflixdnstest7.com,proxy
 host-suffix,netflixdnstest8.com,proxy
 host-suffix,netflixdnstest9.com,proxy
 host-suffix,netflixdnstest10.com,proxy
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,(^|\.)apiproxy-device-prod-nlb-.+\.amazonaws\.com$
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,(^|\.)apiproxy-website-nlb-prod-.+\.amazonaws\.com$
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,(^|\.)dualstack\.apiproxy-.+\.amazonaws\.com$
-# UNSUPPORTED (no native equivalent): DOMAIN-REGEX,(^|\.)dualstack\.ichnaea-web-.+\.amazonaws\.com$
+host-wildcard,apiproxy-device-prod-nlb-?*.amazonaws.com,proxy
+host-wildcard,*.apiproxy-device-prod-nlb-?*.amazonaws.com,proxy
+host-wildcard,apiproxy-website-nlb-prod-?*.amazonaws.com,proxy
+host-wildcard,*.apiproxy-website-nlb-prod-?*.amazonaws.com,proxy
+host-wildcard,dualstack.apiproxy-?*.amazonaws.com,proxy
+host-wildcard,*.dualstack.apiproxy-?*.amazonaws.com,proxy
+host-wildcard,dualstack.ichnaea-web-?*.amazonaws.com,proxy
+host-wildcard,*.dualstack.ichnaea-web-?*.amazonaws.com,proxy
 host-suffix,netflix.com.edgesuite.net,proxy

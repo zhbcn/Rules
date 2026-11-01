@@ -2,5 +2,6 @@
 # SOURCE: DeepL official
 # SOURCE-URL: https://support.deepl.com/hc/en-us/articles/4409573020306-Troubleshooting-web-translator
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,deepl.com,proxy

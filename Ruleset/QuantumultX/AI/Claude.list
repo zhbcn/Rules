@@ -4,6 +4,8 @@
 # FALLBACK: blackmatrix7/ios_rule_script
 # CUSTOM: https://platform.claude.com/docs/en/api/ip-addresses (inbound only)
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+# QX-DNS: source no-resolve is not exported; native QX DNS evaluation is not equivalent to Mihomo.
 
 host-suffix,anthropic.com,proxy
 host-suffix,clau.de,proxy
@@ -14,8 +16,8 @@ host-suffix,claudemcpclient.com,proxy
 host-suffix,claudemcpcontent.com,proxy
 host-suffix,claudeusercontent.com,proxy
 host,servd-anthropic-website.b-cdn.net,proxy
-ip-cidr,160.79.104.0/23,proxy,no-resolve
-ip6-cidr,2607:6bc0::/48,proxy,no-resolve
+ip-cidr,160.79.104.0/23,proxy
+ip6-cidr,2607:6bc0::/48,proxy
 host-suffix,ant.dev,proxy
 host-suffix,anthropic.team,proxy
 host-suffix,antspace.dev,proxy

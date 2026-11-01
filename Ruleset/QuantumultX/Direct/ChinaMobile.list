@@ -3,6 +3,7 @@
 # SOURCE-LIST: chinamobile
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,10086.cn,proxy
 host-suffix,139.com,proxy

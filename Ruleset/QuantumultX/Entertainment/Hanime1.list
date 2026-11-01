@@ -3,6 +3,7 @@
 # SOURCE-LIST: category-porn (hanime1.me) + existing zhbcn/Rules rule
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,hanime1.me,proxy
 host,vdownload.hembed.com,proxy

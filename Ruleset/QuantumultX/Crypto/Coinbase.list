@@ -3,6 +3,7 @@
 # SOURCE-LIST: category-cryptocurrency (Coinbase subset) + existing zhbcn/Rules rule
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
 host-suffix,coinbase.com,proxy
 host,asset-metadata-service-production.s3.amazonaws.com,proxy
