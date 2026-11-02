@@ -205,16 +205,31 @@ class QuantumultXTest(unittest.TestCase):
                 plain+'-a.b.amazonaws.com', plain+'-.amazonaws.com',
                 'evil'+plain+'-a.amazonaws.com', plain+'-a.amazonaws.com.evil'])
 
-    def test_aws_china_enumeration_preserves_digit_classes(self):
+    def test_aws_china_suffix_adaptation_preserves_digits_and_documents_apex_scope(self):
         pattern = r'.+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$'
-        rows = convert_regex(pattern, set())
+        # The approved apex expansion must not be reported as exact conversion.
+        self.assertIsNone(convert_regex(pattern, set()))
+        import yaml
+        rendered = render_filter(yaml.safe_dump({'payload': ['DOMAIN-REGEX,' + pattern]}))
+        self.assertIn('# QX-COMPAT: ADAPTED-DOMAIN-IP;', rendered)
+        self.assertIn('additionally matches the 400 apex hostnames', rendered)
+        self.assertIn(pattern, rendered)
+        self.assertNotIn('host-wildcard,', rendered)
+        self.assertFalse(validate_filter(rendered))
+        rows = [r for r in rendered.splitlines() if r.startswith('host-suffix,')]
+        suffixes = {row.split(',')[1] for row in rows}
         self.assertEqual(len(rows), 400)
-        self.assertEqual(len(set(rows)), 400)
-        for row in rows:
-            self.assertRegex(row.split(',')[1].replace('*', 'a.b'), pattern)
-        self.assert_regex_equivalent(pattern, [
-            'a.awsdns-cn-00.biz', 'a.b.awsdns-cn-99.top', 'a.awsdns-cn-1a.biz',
-            'a.awsdns-cn-1.biz', 'awsdns-cn-00.biz', 'a.awsdns-cn-00.com.evil'])
+        self.assertEqual(len(suffixes), 400)
+        match = lambda host: any(host == suffix or host.endswith('.' + suffix) for suffix in suffixes)
+        for suffix in suffixes:
+            self.assertTrue(match(suffix))
+            self.assertNotRegex(suffix, pattern)
+            for host in ['a.' + suffix, 'a.b.' + suffix]:
+                self.assertTrue(match(host))
+                self.assertRegex(host, pattern)
+        for host in ['a.awsdns-cn-1a.biz', 'a.awsdns-cn-1.biz', 'a.awsdns-cn-100.biz',
+                     'a.awsdns-cn-00.org', 'a.awsdns-cn-00.com.evil', 'evilawsdns-cn-00.biz']:
+            self.assertFalse(match(host), host)
 
     def test_coverage_requires_reviewed_pattern_and_actual_suffix(self):
         pattern = r'.+\.awsdns-cn-[0-9][a-e0-9]\.cn$'

@@ -50,6 +50,16 @@ QX_REGEX_ADAPTATIONS = {
 }
 
 
+# Approved QX performance adaptation: enumerate digit-only suffixes instead of
+# 400 wildcards. This additionally includes each suffix's apex hostname.
+QX_SUFFIX_ADAPTATIONS = {
+    r".+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$": [
+        f"awsdns-cn-{a}{b}.{tld}"
+        for a, b, tld in itertools.product("0123456789", "0123456789", ("biz", "com", "net", "top"))
+    ],
+}
+
+
 def convert_regex(pattern: str, suffixes: set[str]) -> list[str] | None:
     """Only reviewed, exact conversions on valid DNS hostnames; never widen CDN scopes."""
     # Existing same-file suffixes already include every hostname matched here.
@@ -67,9 +77,6 @@ def convert_regex(pattern: str, suffixes: set[str]) -> list[str] | None:
         return [f"host,epicgames-download{i}.akamaized.net,proxy" for i in range(10)]
     if pattern == r"^.+-mihayo\.akamaized\.net$":
         return ["host-wildcard,?*-mihayo.akamaized.net,proxy"]
-    if pattern == r".+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$":
-        return [f"host-wildcard,*.awsdns-cn-{a}{b}.{tld},proxy"
-                for a, b, tld in itertools.product("0123456789", "0123456789", ("biz", "com", "net", "top"))]
     if pattern == r".+\.awsdns-cn-[0-9][a-e0-9]\.cn$":
         return [f"host-wildcard,*.awsdns-cn-{a}{b}.cn,proxy"
                 for a, b in itertools.product("0123456789", "abcde0123456789")]
@@ -92,6 +99,11 @@ def convert_rule(rule: str, suffixes: set[str] | None = None) -> str:
         pattern = rule.split(",", 1)[1]
         converted = convert_regex(pattern, suffixes or set())
         if converted is None:
+            if pattern in QX_SUFFIX_ADAPTATIONS:
+                return "\n".join([
+                    f"# QX-ADAPTED (approved suffix optimization; additionally matches the 400 apex hostnames): {rule}",
+                    *(f"host-suffix,{suffix},proxy" for suffix in QX_SUFFIX_ADAPTATIONS[pattern]),
+                ])
             if pattern in QX_REGEX_ADAPTATIONS:
                 return "\n".join([
                     f"# QX-ADAPTED (approved wildcard approximation; dynamic identifiers may contain non-digits or dots): {rule}",
