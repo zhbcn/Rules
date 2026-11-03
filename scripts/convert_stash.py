@@ -10,6 +10,7 @@ from dataclasses import dataclass
 import ipaddress
 from pathlib import Path
 import re
+from typing import Callable
 
 import yaml
 
@@ -170,6 +171,55 @@ def check_stash_pairs(root: Path, errors: list[str]) -> int:
     return len(actual)
 
 
+def _map_nested_rule_sets(rule: str, resolve: Callable[[str, list[str]], str]) -> str:
+    """Refresh provider references inside logical client rules, preserving grouping."""
+    if not rule.startswith(("AND,", "OR,", "NOT,")) or "RULE-SET," not in rule:
+        return rule
+
+    def children(value: str) -> list[str]:
+        if not value.startswith("(") or not value.endswith(")"):
+            raise ValueError(f"Malformed logical rule: {rule}")
+        value = value[1:-1]
+        rows = []
+        start = depth = 0
+        for index, char in enumerate(value):
+            if char == "(":
+                depth += 1
+            elif char == ")":
+                depth -= 1
+            elif char == "," and depth == 0:
+                rows.append(value[start:index].strip()[1:-1])
+                start = index + 1
+        rows.append(value[start:].strip()[1:-1])
+        return rows
+
+    def visit(expression: str) -> str:
+        kind, _, value = expression.partition(",")
+        if kind == "RULE-SET":
+            fields = value.split(",")
+            return resolve(fields[0], fields[1:])
+        if kind not in {"AND", "OR", "NOT"}:
+            return expression
+        rows = []
+        for child in children(value):
+            transformed = visit(child)
+            if kind in {"AND", "OR"} and transformed.startswith(kind + ","):
+                rows.extend(children(transformed.partition(",")[2]))
+            else:
+                rows.append(transformed)
+        rows = list(dict.fromkeys(rows))
+        if kind in {"AND", "OR"} and len(rows) == 1:
+            return rows[0]
+        return kind + ",((" + "),(".join(rows) + "))"
+
+    expression, policy = rule.rsplit(",", 1)
+    options = []
+    while policy in {"no-resolve", "no-track"}:
+        options.insert(0, policy)
+        expression, policy = expression.rsplit(",", 1)
+    return ",".join([visit(expression), policy, *options])
+
+
 def _restore_native_references(document: dict) -> dict:
     """Recover service references so an already-native profile can be refreshed."""
     result = deepcopy(document)
@@ -203,13 +253,21 @@ def _restore_native_references(document: dict) -> dict:
         aliases[name] = (base, path.stem)
     result["rule-providers"] = providers
 
+    def restore_reference(name: str, flags: list[str]) -> str:
+        if name in aliases:
+            base, part = aliases[name]
+            if part.startswith("IPNoResolve"):
+                flags = [flag for flag in flags if flag != "no-resolve"]
+            name = base
+        return ",".join(["RULE-SET", name, *flags])
+
     rules = []
     index = 0
     original = document.get("rules", [])
     while index < len(original):
         fields = original[index].split(",")
         if fields[0] != "RULE-SET" or fields[1] not in aliases:
-            rules.append(original[index])
+            rules.append(_map_nested_rule_sets(original[index], restore_reference))
             index += 1
             continue
         base = aliases[fields[1]][0]
@@ -274,11 +332,23 @@ def adapt_config(document: dict, root: Path) -> dict:
             providers[target_name] = body
             replacements[name].append((target_name, part))
     result["rule-providers"] = providers
+
+    def expand_reference(name: str, flags: list[str]) -> str:
+        if name not in replacements:
+            return ",".join(["RULE-SET", name, *flags])
+        rows = []
+        for target, part in replacements[name]:
+            options = [flag for flag in flags if flag != "no-resolve" or part.behavior != "domain"]
+            if part.no_resolve and "no-resolve" not in options:
+                options.append("no-resolve")
+            rows.append(",".join(["RULE-SET", target, *options]))
+        return rows[0] if len(rows) == 1 else "OR,((" + "),(".join(rows) + "))"
+
     rules = []
     for rule in document.get("rules", []):
         fields = rule.split(",")
         if fields[0] != "RULE-SET" or fields[1] not in replacements:
-            rules.append(rule)
+            rules.append(_map_nested_rule_sets(rule, expand_reference))
             continue
         if len(fields) < 3 or any(flag not in {"no-resolve", "no-track"} for flag in fields[3:]):
             raise ValueError(f"Unsupported RULE-SET options: {rule}")

@@ -116,6 +116,19 @@ class StashConversionTest(unittest.TestCase):
             self.assertIn("RULE-SET,Example-Classical2,AIGC,no-track", refreshed["rules"])
             self.assertIn("rule-set:Example-Classical2", refreshed["dns"]["nameserver-policy"])
 
+            # An AI-specific STUN exception must refresh its nested provider references too.
+            document["rules"].insert(0, "AND,((PROTOCOL,STUN),(RULE-SET,Example)),AIGC")
+            nested = adapt_config(document, root)
+            self.assertIn("(RULE-SET,Example-Classical2)", nested["rules"][0])
+            self.assertIn("(RULE-SET,Example-IPNoResolve,no-resolve)", nested["rules"][0])
+            self.assertEqual(adapt_config(nested, root), nested)
+
+            with source.open("a", encoding="utf-8") as output:
+                output.write("  - DOMAIN,new.example\n")
+            updated = adapt_config(nested, root)
+            self.assertIn("(RULE-SET,Example-Domain3)", updated["rules"][0])
+            self.assertEqual(adapt_config(updated, root), updated)
+
 
 if __name__ == "__main__":
     unittest.main()
