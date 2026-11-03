@@ -1,0 +1,20 @@
+# NAME: Zhipu
+# SOURCE: v2fly/domain-list-community (category-ai-cn) + custom
+# SOURCE-LIST: category-ai-cn (Zhipu subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Zhipu.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.chatglm.cn
++.chatglm.com
++.bigmodel.cn
++.zhipuai.cn
++.zhipucn.com
++.zhipu.com
++.zhipu.ai
++.z.ai
++.codegeex.cn
++.codegeex.ai
++.autoglm.ai

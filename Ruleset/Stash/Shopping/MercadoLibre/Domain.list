@@ -1,0 +1,28 @@
+# NAME: MercadoLibre
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/MercadoLibre.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.mercadolibre.com
++.mercadolibre.cl
++.mercadolibre.co.cr
++.mercadolibre.com.ar
++.mercadolibre.com.bo
++.mercadolibre.com.co
++.mercadolibre.com.do
++.mercadolibre.com.ec
++.mercadolibre.com.gt
++.mercadolibre.com.hn
++.mercadolibre.com.mx
++.mercadolibre.com.ni
++.mercadolibre.com.pa
++.mercadolibre.com.pe
++.mercadolibre.com.py
++.mercadolibre.com.sv
++.mercadolibre.com.uy
++.mercadolibre.com.ve
++.mercadolivre.com.br
++.mlstatic.com

@@ -1,0 +1,17 @@
+# NAME: Rakuten
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom (existing Rakuten Ichiba rule)
+# SOURCE-LIST: rakuten (shopping-only subset) + retained Rakuten Ichiba domains
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/Rakuten.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.rakuten.co.jp
++.rakuten.ne.jp
++.r10s.jp
++.rakuten-static.com
++.r10.to
+ichiba.faq.rakuten.net

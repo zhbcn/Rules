@@ -1,0 +1,19 @@
+# NAME: Anthropic
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: anthropic
+# FALLBACK: blackmatrix7/ios_rule_script
+# CUSTOM: https://platform.claude.com/docs/en/api/ip-addresses (inbound only)
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Anthropic.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.anthropic.com
++.clau.de
++.claude.ai
++.claude.app
++.claude.com
++.claudemcpclient.com
++.claudemcpcontent.com
++.claudeusercontent.com
+servd-anthropic-website.b-cdn.net

@@ -1,0 +1,11 @@
+# NAME: Coinbase
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency) + custom
+# SOURCE-LIST: category-cryptocurrency (Coinbase subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Crypto/Coinbase.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.coinbase.com
+asset-metadata-service-production.s3.amazonaws.com

@@ -1,0 +1,8 @@
+# NAME: ZhipuInternational
+# SOURCE: existing zhbcn/Rules AI/Zhipu.yaml (international product subset)
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/ZhipuInternational.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.z.ai

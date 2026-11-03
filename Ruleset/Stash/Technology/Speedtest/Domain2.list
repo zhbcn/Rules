@@ -1,0 +1,16 @@
+# NAME: Speedtest
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: speedtest
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Technology/Speedtest.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.speedtest.app
++.speedtest.cc
++.speedtest.ee
++.speedtest.in
++.speedtest.me
++.speedtest.ng
++.speedtest.tv

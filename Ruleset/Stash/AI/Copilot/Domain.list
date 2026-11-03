@@ -1,0 +1,19 @@
+# NAME: Copilot
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: github-copilot + category-ai-!cn (Copilot subset) + existing Technology/Microsoft.yaml Copilot subset
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Copilot.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.githubcopilot.com
+copilot-proxy.githubusercontent.com
+copilot-workspace.githubnext.com
+copilotprodattachments.blob.core.windows.net
+copilot-telemetry-service.githubusercontent.com
+copilot-telemetry.githubusercontent.com
++.copilot.com
++.copilot.microsoft.com
++.copilot.cloud.microsoft
++.copilot-stg.com

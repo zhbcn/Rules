@@ -1,0 +1,12 @@
+# NAME: Advertising
+# SOURCE: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
+# AUTHOR: luestr
+# MAINTAINED-BY: zhbcn/Rules
+# SCOPE: Native domain/IP rules; URL, User-Agent, rewrites, scripts and MITM excluded.
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/System/Advertising.yaml
+# STASH-BEHAVIOR: classical; format=text; no-resolve=false
+
+DOMAIN-KEYWORD,trace.qq.com
+DOMAIN-KEYWORD,trace.video.qq.com
+DOMAIN-KEYWORD,ad.hunyuan.tencent.com

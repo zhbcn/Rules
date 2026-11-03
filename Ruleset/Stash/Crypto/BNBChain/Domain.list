@@ -1,0 +1,10 @@
+# NAME: BNBChain
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency via binance)
+# SOURCE-LIST: binance (BNB Chain subset)
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Crypto/BNBChain.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.bnbchain.org

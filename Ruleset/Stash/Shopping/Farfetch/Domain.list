@@ -1,0 +1,17 @@
+# NAME: Farfetch
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: farfetch
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/Farfetch.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.farfetch-apps.com
++.farfetch-contents.com
++.farfetch.cn
++.farfetch.com
++.farfetch.com.cn
++.farfetch.net
++.farfetch.net.cn
++.fflnk.net

@@ -1,0 +1,14 @@
+# NAME: ByteDanceAIInternational
+# SOURCE: existing zhbcn/Rules AI/ByteDanceAI.yaml (international product subset)
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/ByteDanceAIInternational.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.cici.com
++.ciciai.com
++.ciciaicdn.com
++.dola.com
++.coze.com
++.marscode.com
++.trae.ai

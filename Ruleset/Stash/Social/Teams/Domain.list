@@ -1,0 +1,12 @@
+# NAME: Teams
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/Teams/Teams.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Social/Teams.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
+teams.events.data.microsoft.com
++.teams.cdn.live.net
++.teams.live.com
++.teams.microsoft.com

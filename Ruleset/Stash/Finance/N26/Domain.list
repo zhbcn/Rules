@@ -1,0 +1,12 @@
+# NAME: N26
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: n26
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Finance/N26.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.n26.com
++.number26.de
++.tech26.de

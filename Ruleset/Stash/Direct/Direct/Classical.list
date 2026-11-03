@@ -1,0 +1,80 @@
+# NAME: Direct
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/Direct/Direct.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Direct/Direct.yaml
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,BaiduNetdisk_mac
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,BitComet
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,ClashX
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,DownloadService
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,Folx
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,LocalSend
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,LogiOptions
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,LogiOptionsDaemon
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,NetTransport
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,SunloginClient_Desktop
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,SunloginClient_Helper
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,Thunder
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,ThunderVIP
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,Transmission
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,UUBooster
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,WebTorrent
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,WebTorrentHelper
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,amuled
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,aria2c
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,clash
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,cloudflared
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,fdm
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,parsecd
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,privoxy
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,qBittorrent
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,qbittorrent*
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,qbittorrent-nox
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,ss-local
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,tailscaled
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,transmission-daemon
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,transmission-qt
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,trojan
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,trojan-go
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,uTorrent
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,v2ray
+# PLATFORM-OMITTED (iOS process matching unavailable): PROCESS-NAME,xray
+# STASH-BEHAVIOR: classical; format=text; no-resolve=false
+
+DOMAIN-KEYWORD,amp-api.podcasts.apple.com
+DOMAIN-KEYWORD,anti-ad.net
+DOMAIN-KEYWORD,api-adservices.apple.com
+DOMAIN-KEYWORD,api.smoot.apple.cn
+DOMAIN-KEYWORD,api.smoot.apple.com
+DOMAIN-KEYWORD,aw-s.tripcdn.com
+DOMAIN-KEYWORD,ax1x.com
+DOMAIN-KEYWORD,bfzycdn.com
+DOMAIN-KEYWORD,buy.itunes.apple.com
+DOMAIN-KEYWORD,cnki.net
+DOMAIN-KEYWORD,ctc.qzs.qzone.qq.com
+DOMAIN-KEYWORD,deepdyve
+DOMAIN-KEYWORD,els-cdn
+DOMAIN-KEYWORD,elsevier
+DOMAIN-KEYWORD,ess.apple.com
+DOMAIN-KEYWORD,gsa.apple.com
+DOMAIN-KEYWORD,humb.apple.com
+DOMAIN-KEYWORD,icloud.com
+DOMAIN-KEYWORD,ls.apple.com
+DOMAIN-KEYWORD,o.lencr.org
+DOMAIN-KEYWORD,pkulaw
+DOMAIN-KEYWORD,push.apple.com
+DOMAIN-KEYWORD,readcube
+DOMAIN-KEYWORD,sciencedirect
+DOMAIN-KEYWORD,ssl.apple.com
+DOMAIN-KEYWORD,trip.com
+DOMAIN-KEYWORD,ttcdn-tos.kkimg.cc
+DOMAIN-KEYWORD,vip.ffzy-online
+DOMAIN-KEYWORD,vip.ffzy-play
+DOMAIN-KEYWORD,vip.kuaikan-cdn
+DOMAIN-KEYWORD,vip.lz-cdn
+DOMAIN-KEYWORD,wanfangdata
+DOMAIN-KEYWORD,wb_ad
+DOMAIN-KEYWORD,weather-adge.apple.com
+DOMAIN-KEYWORD,weather-edge.apple.com
+DOMAIN-KEYWORD,westlawchina

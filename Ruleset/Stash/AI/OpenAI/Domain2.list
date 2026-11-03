@@ -1,0 +1,17 @@
+# NAME: OpenAI
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: openai
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/OpenAI.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
+browser-intake-datadoghq.com
+o33249.ingest.sentry.io
+openai.qualtrics.com
++.chatgpt.livekit.cloud
++.host.livekit.cloud
++.turn.livekit.cloud
++.openai.org
+o33249.ingest.us.sentry.io

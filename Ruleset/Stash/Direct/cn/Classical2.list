@@ -1,0 +1,11 @@
+# NAME: cn
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Direct/cn.yaml
+# STASH-BEHAVIOR: classical; format=text; no-resolve=false
+
+DOMAIN-REGEX,.+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$
+DOMAIN-REGEX,.+\.awsdns-cn-[0-9][a-e0-9]\.cn$

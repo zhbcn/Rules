@@ -1,0 +1,10 @@
+# NAME: Lan
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/Lan/Lan.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Direct/Lan.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
+localhost.weixin.qq.com
+localhost.work.weixin.qq.com

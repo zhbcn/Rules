@@ -1,0 +1,13 @@
+# NAME: HuggingFace
+# SOURCE: v2fly/domain-list-community + Hugging Face official
+# SOURCE-LIST: huggingface + Inference Endpoints
+# SOURCE-URL: https://huggingface.co/docs/huggingface_hub/package_reference/inference_endpoints
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/HuggingFace.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.hf.co
++.hf.space
++.huggingface.co
++.endpoints.huggingface.cloud

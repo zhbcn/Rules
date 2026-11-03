@@ -1,0 +1,9 @@
+# NAME: XRPScan
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Crypto/XRPScan.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.xrpscan.com

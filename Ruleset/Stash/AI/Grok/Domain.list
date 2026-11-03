@@ -1,0 +1,29 @@
+# NAME: Grok
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# - Grok Bot / Cursor official network requirements
+# SOURCE-LIST: xai + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# SOURCE-URL: https://docs.x.ai/grok-bot/proxies
+# AUTH-SOURCE-URL: https://cursor.com/help/troubleshooting/sign-in-domains
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Grok.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.grok.com
++.grok.x.com
++.grokipedia.com
++.grok-sandbox.com
++.grok.me
++.groktpcontent.com
++.grokusercontent.com
++.x.ai
++.grokbot.com
++.cursor.com
++.cursor.sh
++.cursor-cdn.com
++.cursorapi.com
++.cursorvm.com
++.spacex.ai

@@ -1,0 +1,20 @@
+# NAME: OneDrive
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: onedrive
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Technology/OneDrive.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.1drv.com
++.1drv.ms
++.livefilestore.com
++.onedrive.co
++.onedrive.co.uk
++.onedrive.com
++.onedrive.eu
++.onedrive.net
++.onedrive.org
++.onedrive.live.com
++.storage.live.com

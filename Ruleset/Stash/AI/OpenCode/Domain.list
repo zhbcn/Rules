@@ -1,0 +1,12 @@
+# NAME: OpenCode
+# SOURCE: v2fly/domain-list-community + OpenCode official
+# SOURCE-LIST: category-ai-!cn (OpenCode only) + official supplements
+# SOURCE-URL: https://github.com/anomalyco/opencode
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/OpenCode.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.opencode.ai
++.opncd.ai
++.models.dev

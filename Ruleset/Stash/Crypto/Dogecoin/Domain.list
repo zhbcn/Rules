@@ -1,0 +1,10 @@
+# NAME: Dogecoin
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency)
+# SOURCE-LIST: category-cryptocurrency (Dogecoin subset)
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Crypto/Dogecoin.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.dogecoin.com

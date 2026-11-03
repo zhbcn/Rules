@@ -1,0 +1,20 @@
+# NAME: Claude
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: anthropic
+# FALLBACK: blackmatrix7/ios_rule_script
+# CUSTOM: https://platform.claude.com/docs/en/api/ip-addresses (inbound only)
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Claude.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.ant.dev
++.anthropic.team
++.antspace.dev
++.chatbotclaude.com
++.claude.dev
++.claude.new
++.claude.site
++.claudeacademy.com
++.claudepages.dev
++.claudestudio.com

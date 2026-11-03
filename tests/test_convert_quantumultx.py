@@ -103,6 +103,7 @@ class QuantumultXTest(unittest.TestCase):
                 # This fixture exercises the QX gate, not unrelated Crypto/Finance aggregation.
                 with patch.object(check_module, '__file__', str(root/'scripts/check.py')), \
                      patch.object(check_module, 'AGGREGATES', {}), \
+                     patch.object(check_module, 'check_stash_pairs', return_value=0), \
                      patch.object(sys, 'argv', ['check.py', *flags]), redirect_stdout(output):
                     result = check_module.main()
                 self.assertEqual(result, expected, output.getvalue())

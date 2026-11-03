@@ -1,0 +1,32 @@
+# NAME: Disney
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: disney
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Entertainment/Disney.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.abc-studios.com
++.abc.com
++.abcnews.com
++.edgedatg.com
++.bamgrid.com
++.bamtech.net
++.dmed.technology
++.dtci.co
++.dtci.technology
++.espn.co.uk
++.espn.com
++.espn.net
++.espncdn.com
++.espnqa.com
++.watchespn.com
+espn.api.edge.bamgrid.com
+espn.hb.omtrdc.net
+espndotcom.tt.omtrdc.net
++.hotstar.com
++.hotstar-cdn.net
++.hotstar-labs.com
++.hotstarext.com
++.hsprepack.akamaized.net

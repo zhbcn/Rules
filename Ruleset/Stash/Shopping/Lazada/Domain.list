@@ -1,0 +1,19 @@
+# NAME: Lazada
+# SOURCE: v2fly/domain-list-community (alibaba aggregate) + custom
+# SOURCE-LIST: alibaba (Lazada subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/Lazada.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.lazada.com
++.lazada.sg
++.lazada.com.my
++.lazada.co.id
++.lazada.co.th
++.lazada.com.ph
++.lazada.vn
++.lazcdn.com
++.slatic.net
++.lazadausercontent.com

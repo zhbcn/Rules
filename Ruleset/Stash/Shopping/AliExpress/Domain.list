@@ -1,0 +1,18 @@
+# NAME: AliExpress
+# SOURCE: v2fly/domain-list-community (alibaba aggregate) + custom
+# SOURCE-LIST: alibaba (AliExpress subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/AliExpress.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.ae-rus.net
++.aedns.ru
++.aeplatform.ru
++.aestatic.net
++.aliexpress.com
++.aliexpress.us
++.aliexpress.ru
++.aliexpress-media.com
+img.alicdn.com

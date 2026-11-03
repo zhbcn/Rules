@@ -1,0 +1,19 @@
+# NAME: CaiNiao
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: cainiao
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Direct/CaiNiao.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.56xiniao.com
++.cainiao-inc.com
++.cainiao.com
++.cainiao.com.cn
++.cainiaoyizhan.com
++.danniao.com
++.dianwoda.cn
++.dianwoda.com
++.guoguo-app.com
++.v6-adashx.ut.cainiao.com

@@ -1,0 +1,23 @@
+# NAME: Gate
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# SOURCE-LIST: gateio + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Crypto/Gate.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.gate.com
++.gate.io
++.gate.tv
++.gateio.ws
++.gateapi.io
++.gateapp.org
++.gatedata.org
++.gateimg.com
++.gateio.live
++.gateio.services
+gimg2.staticimgs.com
+icon.staticimgs.com

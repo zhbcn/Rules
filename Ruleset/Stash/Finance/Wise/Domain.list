@@ -1,0 +1,11 @@
+# NAME: Wise
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: wise
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Finance/Wise.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.transferwise.com
++.wise.com

@@ -1,0 +1,15 @@
+# NAME: MicrosoftUpdate
+# SOURCE: Microsoft official; v2fly microsoft update entries
+# SOURCE-URL: https://learn.microsoft.com/en-us/windows/deployment/do/delivery-optimization-proxy
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Technology/MicrosoftUpdate.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.windowsupdate.com
++.windowsupdate.microsoft.com
++.update.microsoft.com
++.dl.delivery.mp.microsoft.com
++.do.dsp.mp.microsoft.com
+officecdn.microsoft.com
+officecdn-microsoft-com.akamaized.net

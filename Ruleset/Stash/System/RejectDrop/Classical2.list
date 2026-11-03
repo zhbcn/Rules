@@ -1,0 +1,23 @@
+# NAME: RejectDrop
+# SOURCE: ruleset.skk.moe
+# SOURCE-LIST: non_ip/reject-drop.conf, ip/reject.conf
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/System/RejectDrop.yaml
+# STASH-BEHAVIOR: classical; format=text; no-resolve=false
+
+IP-ASN,1012
+IP-ASN,945
+IP-ASN,401111
+IP-ASN,62853
+IP-ASN,7719
+IP-ASN,54625
+IP-ASN,7257
+IP-ASN,18044
+IP-ASN,62489
+IP-ASN,5111
+IP-ASN,14651
+IP-ASN,7480
+IP-ASN,61302
+IP-ASN,60539
+IP-ASN,60842

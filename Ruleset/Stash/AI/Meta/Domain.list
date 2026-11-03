@@ -1,0 +1,19 @@
+# NAME: Meta
+# SOURCE:
+# - v2fly/domain-list-community (meta direct entries)
+# - Meta official
+# SOURCE-LIST: meta (direct entries only) + Muse
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Meta.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.atmeta.com
++.llama.com
++.meta.ai
++.meta.com
++.metaaivm.com
++.muse.ai
+ai.facebook.com
++.metaaiusercontent.com

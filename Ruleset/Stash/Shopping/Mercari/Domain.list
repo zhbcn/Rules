@@ -1,0 +1,12 @@
+# NAME: Mercari
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/Mercari.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.mercari.com
++.mercari.jp
++.mercdn.net
++.mercari-shops.com

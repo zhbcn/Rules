@@ -1,0 +1,21 @@
+# NAME: LinkedIn
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: linkedin
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Social/LinkedIn.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.bizographics.com
++.l-0005.dc-msedge.net
++.l-0005.l-msedge.net
++.licdn.com
++.linkedin.at
++.linkedin.com
++.lnkd.in
++.licdn.cn
++.linkedin.cn
+e122475.dscg.akamaiedge.net
+licdn.cn.cdn20.com
+linkedin.sc.omtrdc.net

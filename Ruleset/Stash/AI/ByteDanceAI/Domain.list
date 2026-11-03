@@ -1,0 +1,50 @@
+# NAME: ByteDanceAI
+# SOURCE:
+# - v2fly/domain-list-community
+# - custom
+# SOURCE-LIST: doubao, bytedance-ai-!cn + retained zhbcn/Rules domains
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/ByteDanceAI.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.cici.com
++.ciciai.com
++.ciciaicdn.com
++.dola.com
++.coze.com
++.marscode.com
++.trae.ai
++.doubao.com
++.doubao-dev.com
++.doubaocdn.com
++.building.fun
++.api-building.fun
++.dbbuilding.fun
++.butterfly-static.cn
++.butterflyai.cn
++.hi-butterfly.cn
++.coze.cn
++.coze.email
++.coze.site
++.coze-dns-01.com
++.cozeapp.net
++.cozebaas.cn
++.cozebuild.com
++.cozecdn.com
++.cozedeploy.com
++.cozefn.cn
++.cozeide.cn
++.cozesdk.com
++.cozetest.cn
++.cozetest2.cn
++.cozetest3.cn
++.instreet.com
++.maoxiangai.com
++.myparallelstory.com
++.oceancloudapi.com
++.obriccloud.com
++.obricclouddw.com
++.picpic-ai.cn
++.pixeldance.com

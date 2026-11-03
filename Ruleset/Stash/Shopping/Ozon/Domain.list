@@ -1,0 +1,23 @@
+# NAME: Ozon
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: ozon (shopping-only subset)
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/Ozon.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.o3.ru
++.o3t.ru
++.ozon.app
++.ozon.by
++.ozon.com
++.ozon.com.by
++.ozon.com.kz
++.ozon.express
++.ozon.global
++.ozon.kz
++.ozon.market
++.ozon.ru
++.ozone.ru
++.ozonusercontent.com

@@ -1,0 +1,38 @@
+# NAME: Zalando
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/Zalando.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.zalando.com
++.zalando.at
++.zalando.be
++.zalando.bg
++.zalando.ch
++.zalando.co.uk
++.zalando.cz
++.zalando.de
++.zalando.dk
++.zalando.ee
++.zalando.es
++.zalando.fi
++.zalando.fr
++.zalando.gr
++.zalando.hr
++.zalando.hu
++.zalando.ie
++.zalando.it
++.zalando.lt
++.zalando.lu
++.zalando.lv
++.zalando.nl
++.zalando.no
++.zalando.pl
++.zalando.pt
++.zalando.ro
++.zalando.se
++.zalando.si
++.zalando.sk
++.ztat.net

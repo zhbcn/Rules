@@ -1,0 +1,16 @@
+# NAME: Pinduoduo
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: pinduoduo
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Direct/Pinduoduo.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.pddcdn.com
++.pddim.com
++.pddpic.com
++.pddugc.com
++.pinduoduo.com
++.pinduoduo.net
++.yangkeduo.com

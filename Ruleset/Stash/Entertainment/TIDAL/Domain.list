@@ -1,0 +1,12 @@
+# NAME: TIDAL
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: tidal
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Entertainment/TIDAL.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.tidal.com
++.tidalhifi.com
++.wimpmusic.com

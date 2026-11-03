@@ -1,0 +1,9 @@
+# NAME: YouTubeMusic
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Entertainment/YouTubeMusic.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
+music.youtube.com

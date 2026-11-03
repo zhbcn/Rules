@@ -1,0 +1,10 @@
+# NAME: MicrosoftConnectivity
+# SOURCE: Microsoft official; existing Technology/Microsoft.yaml
+# SOURCE-URL: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/troubleshoot-ncsi-guidance
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/System/MicrosoftConnectivity.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.msftconnecttest.com
++.msftncsi.com

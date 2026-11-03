@@ -1,0 +1,9 @@
+# NAME: WeChat
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/WeChat/WeChat.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Direct/WeChat.yaml
+# STASH-BEHAVIOR: classical; format=text; no-resolve=false
+
+IP-ASN,132203

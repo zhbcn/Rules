@@ -1,0 +1,26 @@
+# NAME: BestBuy
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: bestbuy (shopping-only subset)
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/BestBuy.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.bestbuy.com
++.bestbuy.ca
++.bestbuy.cn
++.bestbuy.com.cn
++.bestbuy.com.mx
++.bestbuybusiness.com
++.bestbuyforbusiness.ca
++.bestbuyrewards.com
++.bestbuystores.com
++.bestbuytradein.com
++.bby.com
++.bbycastatic.ca
++.bbystatic.com
++.bbycontent.com
++.bbycontent.net
++.bbycloud.com
++.mybestbuy.com

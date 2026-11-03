@@ -1,0 +1,26 @@
+# NAME: HTTPDNS
+# SOURCE: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/HTTPDNS%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
+# AUTHOR: luestr, VirgilClyne
+# MAINTAINED-BY: zhbcn/Rules
+# SCOPE: Native domain/IP rules; URL, User-Agent, rewrites, scripts and MITM excluded.
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/System/HTTPDNS.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
+dotserver.douyucdn.cn
+hdns.ksyun.com
+httpdns.push.oppomobile.com
+httpdns.ocloud.oppomobile.com
+kuaishou.httpdns.pro
+httpdns.kwd.inkuai.com
+apidns.kwd.inkuai.com
+apidns-js.kwd.inkuai.com
+httpdns.meituan.com
+httpdnsmultiapi.meituan.com
+httpdnsmultiapivip.meituan.com
+httpdns.music.163.com
+httpdns.n.netease.com
+httpdns-sdk.n.netease.com
+httpdns.yunxindns.com
+lofter.httpdns.c.163.com
+music.httpdns.c.163.com

@@ -1,0 +1,34 @@
+# NAME: Dropbox
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: dropbox
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Technology/Dropbox.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.db.tt
++.dropbox-dns.com
++.dropbox.com
++.dropbox.tech
++.dropboxapi.com
++.dropboxbusiness.com
++.dropboxcaptcha.com
++.dropboxforum.com
++.dropboxforums.com
++.dropboxinsiders.com
++.dropboxmail.com
++.dropboxpartners.com
++.dropboxstatic.com
++.dropboxusercontent.com
++.getdropbox.com
+paper-attachments.s3.amazonaws.com
++.addtodropbox.com
++.dash.ai
++.docsend.com
++.dropboxexperiment.com
++.dropboxlegal.com
++.dropboxteam.com
++.hellofax.com
++.hellosign.com
+dropbox.zendesk.com

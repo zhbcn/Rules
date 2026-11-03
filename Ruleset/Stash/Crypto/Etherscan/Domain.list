@@ -1,0 +1,16 @@
+# NAME: Etherscan
+# SOURCE: v2fly/domain-list-community (category-cryptocurrency via ethereum) + blackmatrix7/ios_rule_script (Crypto aggregate) + custom
+# SOURCE-LIST: ethereum, rule/Clash/Crypto/Crypto.yaml (Etherscan subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Crypto/Etherscan.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.etherscan.io
++.etherscan.com
++.bscscan.com
++.polygonscan.com
++.arbiscan.io
++.basescan.org
++.snowtrace.io

@@ -153,5 +153,51 @@ class EgernYamlTest(unittest.TestCase):
                 ["PAIR MISMATCH Test.yaml: 1 Mihomo-only, 1 Egern-only comparable rule(s)"],
             )
 
+    def test_stash_protocol_proxy_requires_explicit_stash_validation(self):
+        document = {
+            "proxy-groups": [{"name": "Public network", "type": "select"}],
+            "rules": ["PROTOCOL,STUN,Public network", "MATCH,Public network"],
+        }
+        errors = []
+        check_config_document(document, "Stash.yaml", errors, stash=True)
+        self.assertEqual(errors, [])
+
+        errors = []
+        check_config_document(document, "Mihomo.yaml", errors)
+        self.assertEqual(errors, ["CONFIG Mihomo.yaml: unsupported Mihomo rule type PROTOCOL"])
+
+    def test_stash_protocol_rejects_invalid_protocol_and_missing_policy(self):
+        for rule, expected in (
+            ("PROTOCOL,UNKNOWN,DIRECT", "invalid Stash PROTOCOL rule"),
+            ("PROTOCOL,STUN,Missing", "rule references missing policy Missing"),
+            ("PROTOCOL,STUN", "invalid Stash PROTOCOL rule"),
+            ("PROTOCOL,STUN,DIRECT,pre-matching", "invalid Stash PROTOCOL rule"),
+        ):
+            with self.subTest(rule=rule):
+                errors = []
+                check_config_document({"rules": [rule], "proxy-groups": []}, "Stash.yaml", errors, stash=True)
+                self.assertEqual(errors, [f"CONFIG Stash.yaml: {expected}"])
+
+    def test_stash_protocol_supports_no_track_but_rejects_mihomo_only_rules(self):
+        errors = []
+        check_config_document(
+            {"proxy-groups": [], "rules": ["PROTOCOL,STUN,DIRECT,no-track", "DSCP,46,DIRECT"]},
+            "Stash.yaml", errors, stash=True,
+        )
+        self.assertEqual(errors, ["CONFIG Stash.yaml: unsupported Stash rule type DSCP"])
+
+    def test_stash_native_provider_behavior_and_format(self):
+        url = "https://raw.githubusercontent.com/zhbcn/Rules/main/Ruleset/Stash/AI/Example/Domain.list"
+        for behavior, format_, expected in (("domain", "text", False), ("classical", "yaml", True)):
+            with self.subTest(behavior=behavior):
+                document = {
+                    "proxy-groups": [{"name": "Proxy"}],
+                    "rule-providers": {"Example-Domain": {"url": url, "behavior": behavior, "format": format_}},
+                    "rules": ["RULE-SET,Example-Domain,Proxy"],
+                }
+                errors = []
+                check_config_document(document, "Stash.yaml", errors, stash=True)
+                self.assertEqual(bool(errors), expected)
+
 if __name__ == "__main__":
     unittest.main()

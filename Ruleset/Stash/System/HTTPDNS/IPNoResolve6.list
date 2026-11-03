@@ -1,0 +1,13 @@
+# NAME: HTTPDNS
+# SOURCE: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/HTTPDNS%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
+# AUTHOR: luestr, VirgilClyne
+# MAINTAINED-BY: zhbcn/Rules
+# SCOPE: Native domain/IP rules; URL, User-Agent, rewrites, scripts and MITM excluded.
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/System/HTTPDNS.yaml
+# STASH-BEHAVIOR: ipcidr; format=text; no-resolve=true
+
+39.97.130.51/32
+39.97.128.148/32
+118.89.204.0/23
+2402:4e00:1200:ed00:0:9089:6dac:96b6/128

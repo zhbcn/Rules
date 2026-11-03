@@ -1,0 +1,21 @@
+# NAME: Eleme
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: eleme
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Direct/Eleme.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.doservice.com
++.ele.me
++.ele.to
++.eleme.cn
++.eleme.io
++.elemecdn.cn
++.elemecdn.com
++.elenet.me
++.fengniaojipei.net
++.adashx.ut.ele.me
++.h-adashx.ut.ele.me
++.v6-adashx.ut.ele.me

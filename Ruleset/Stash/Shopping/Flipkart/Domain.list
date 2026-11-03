@@ -1,0 +1,12 @@
+# NAME: Flipkart
+# SOURCE: custom
+# SOURCE-LIST: existing zhbcn/Rules rule
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/Flipkart.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.flipkart.com
++.flipkart.net
++.flixcart.com
++.fkimg.com

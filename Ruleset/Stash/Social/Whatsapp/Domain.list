@@ -1,0 +1,20 @@
+# NAME: Whatsapp
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: whatsapp
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Social/Whatsapp.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.wa.me
++.whatsapp-plus.info
++.whatsapp-plus.me
++.whatsapp-plus.net
++.whatsapp.cc
++.whatsapp.com
++.whatsapp.info
++.whatsapp.net
++.whatsapp.org
++.whatsapp.tv
++.whatsappbrand.com

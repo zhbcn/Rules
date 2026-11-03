@@ -1,0 +1,39 @@
+# NAME: Epic
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: epicgames
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Gaming/Epic.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.artstation.com
++.artstationmedia.com
++.3lateral.com
++.capturingreality.com
++.cubicmotion.com
++.battlebreakers.com
++.eac-cdn.com
++.easy.ac
++.easyanticheat.net
++.epicgames.com
++.epicgames.dev
++.epicgamescdn.com
++.fab.com
++.fortnite.com
++.hyprsense.com
++.paragon.com
++.playparagon.com
++.quixel.com
++.quixel.se
++.radgametools.com
++.realityscan.com
++.roborecall.com
++.shadowcomplex.com
++.sketchfab.com
++.spyjinx.com
++.twinmotion.com
++.unrealengine.com
++.unrealtournament.com
++.egdownload.fastly-edge.com
++.fortnite-vod.akamaized.net

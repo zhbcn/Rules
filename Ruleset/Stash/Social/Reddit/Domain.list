@@ -1,0 +1,21 @@
+# NAME: Reddit
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: reddit
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Social/Reddit.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.redd.it
++.reddit.app.link
++.reddit.com
++.redditblog.com
++.reddithelp.com
++.redditinc.com
++.redditmail.com
++.redditmedia.com
++.redditspace.com
++.redditstatic.com
++.redditstatus.com
++.reddit.map.fastly.net

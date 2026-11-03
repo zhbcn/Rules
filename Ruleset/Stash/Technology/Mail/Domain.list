@@ -1,0 +1,20 @@
+# NAME: Mail
+# SOURCE: blackmatrix7/ios_rule_script
+# SOURCE-LIST: rule/Clash/Mail/Mail.yaml
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Technology/Mail.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
+apple.imap.mail.yahoo.com
+apple.smtp.mail.yahoo.com
+imap-mail.outlook.com
+imap.gmail.com
+outlook.office365.com
+pop.gmail.com
+smtp-mail.outlook.com
+smtp.gmail.com
+smtp.office365.com
++.imap.yandex.com
++.m.hotmail.com
++.smtp.yandex.com

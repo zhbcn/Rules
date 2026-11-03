@@ -1,0 +1,34 @@
+# NAME: ChinaUnicom
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: chinaunicom
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Direct/ChinaUnicom.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.unicom
++.xn--8y0a063a
++.10010.com
++.10010.com.cn
++.10155.com
++.114menhu.com
++.169ol.com
++.chinaunicom.cn
++.chinaunicom.com
++.chinaunicom.com.cn
++.chinaunicom.com.hk
++.chinaunicomglobal.com
++.cuguplus.com
++.cuniq.com
++.cuniq.sg
++.mychinaunicom.com
++.unicompayment.com
++.wo.cn
++.wo.com.cn
++.wo116114.com
++.wocloud.com.cn
++.woread.com.cn
++.wosms.cn
++.smartont.net
++.wo-adv.cn

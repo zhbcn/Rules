@@ -1,0 +1,18 @@
+# NAME: Qwen
+# SOURCE: v2fly/domain-list-community (category-ai-cn) + custom
+# SOURCE-LIST: category-ai-cn (Qwen subset) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Qwen.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.qianwen.aliyun.com
++.qianwen.com
++.qianwenai.com
++.qwen.ai
++.qwen.com
++.qwenlm.ai
++.tongyi.com
++.tongyi.aliyun.com
++.dashscope.aliyuncs.com

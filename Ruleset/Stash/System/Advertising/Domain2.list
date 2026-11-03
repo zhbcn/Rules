@@ -1,0 +1,91 @@
+# NAME: Advertising
+# SOURCE: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
+# AUTHOR: luestr
+# MAINTAINED-BY: zhbcn/Rules
+# SCOPE: Native domain/IP rules; URL, User-Agent, rewrites, scripts and MITM excluded.
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/System/Advertising.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.1rtb.net
++.1rtb.com
++.halomobi.com
++.hubcloud.com.cn
++.inmobi.cn
++.uyunad.com
++.puata.info
+gdfp.gifshow.com
+open.e.kuaishou.com
+open.e.kuaishou.cn
+adtrack.e.kuaishou.com
++.partner.gifshow.com
++.adukwai.com
++.adkwai.com
++.supersonicads.com
++.appsad.cn
++.beizi.biz
++.ad-scope.com.cn
++.adn-plus.com.cn
++.adhub.com.cn
++.adnplus.com.cn
++.adscope.com.cn
++.adscope.cn
++.adscope.xyz
++.beizi.info
++.beizi.online
++.miaozhen.com
++.admobile.top
++.tianmu.mobi
++.admobile.mobi
++.admobile.net.cn
++.popadshop.com
++.admobile.vip
++.yksdks.com
++.dutils.com
++.mob.com
++.jiguang.cn
++.jpush.cn
++.jpush.io
+afd.baidu.com
+als.baidu.com
+bgg.baidu.com
+cpro.baidustatic.com
+feed-image.baidu.com
+click-bes.baidu.com
+eclick.baidu.com
+mobads-logs.baidu.com
+mobads-pre-config.cdn.bcebos.com
+mobads.baidu.com
+nadvideo2.baidu.com
+wn.pos.baidu.com
+miniapp-ad.cdn.bcebos.com
++.union.baidu.cn
++.union.baidu.com
+adsmind.gdtimg.com
+adsmind.ugdtimg.com
+ads.privacy.qq.com
+huatuocode.huatuo.qq.com
+info4.video.qq.com
+info6.video.qq.com
+ios.bugly.qq.com
+pro.bugly.qq.com
+ios.video.mpush.qq.com
+otheve.beacon.qq.com
+pgdt.gtimg.cn
+pgdt.ugdtimg.com
+qzs.gdtimg.com
+qzs.qq.com
+rmonitor.qq.com
+sdkconfig.video.qq.com
+tmead.y.qq.com
+tmeadbak.y.qq.com
+tmeadcomm.y.qq.com
+tpns.qq.com
+wup.imtt.qq.com
+tpstelemetry.tencent.com
+stat.y.qq.com
+stat6.y.qq.com
+oth.str.mdt.qq.com
+h.trace.qq.com
+sdk.e.qq.com
+tangram.e.qq.com

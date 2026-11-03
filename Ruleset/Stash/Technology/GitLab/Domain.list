@@ -1,0 +1,14 @@
+# NAME: GitLab
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: gitlab
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Technology/GitLab.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.gitlab.com
++.gitlab.io
++.gitlab.net
++.gitlab-static.net
+gitlab-assets.oss-cn-hongkong.aliyuncs.com

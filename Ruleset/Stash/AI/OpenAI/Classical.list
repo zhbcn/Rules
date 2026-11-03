@@ -1,0 +1,10 @@
+# NAME: OpenAI
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: openai
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/OpenAI.yaml
+# STASH-BEHAVIOR: classical; format=text; no-resolve=false
+
+DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$

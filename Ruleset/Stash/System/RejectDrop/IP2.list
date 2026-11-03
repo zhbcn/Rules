@@ -1,0 +1,11 @@
+# NAME: RejectDrop
+# SOURCE: ruleset.skk.moe
+# SOURCE-LIST: non_ip/reject-drop.conf, ip/reject.conf
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/System/RejectDrop.yaml
+# STASH-BEHAVIOR: ipcidr; format=text; no-resolve=false
+
+51.77.227.97/32
+51.89.187.141/32
+194.26.232.61/32

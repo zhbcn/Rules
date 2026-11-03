@@ -1,0 +1,33 @@
+# NAME: Twitter
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: twitter
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Social/Twitter.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.ads-twitter.com
++.cms-twdigitalassets.com
++.periscope.tv
++.pscp.tv
++.t.co
++.tellapart.com
++.tweetdeck.com
++.twimg.com
++.twitpic.com
++.twitter.biz
++.twitter.com
++.twitter.jp
++.twitter.map.fastly.net
++.twittercommunity.com
++.twitterflightschool.com
++.twitterinc.com
++.twitteroauth.com
++.twitterstat.us
++.twtrdns.net
++.twttr.com
++.twttr.net
++.twvid.com
++.vine.co
++.x.com

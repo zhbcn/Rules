@@ -1,0 +1,32 @@
+# NAME: Netflix
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: netflix
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Entertainment/Netflix.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.fast.com
++.netflix.ca
++.netflix.com
++.netflix.net
++.netflixinvestor.com
++.netflixtechblog.com
++.nflxext.com
++.nflximg.com
++.nflximg.net
++.nflxsearch.net
++.nflxso.net
++.nflxvideo.net
++.netflixdnstest0.com
++.netflixdnstest1.com
++.netflixdnstest2.com
++.netflixdnstest3.com
++.netflixdnstest4.com
++.netflixdnstest5.com
++.netflixdnstest6.com
++.netflixdnstest7.com
++.netflixdnstest8.com
++.netflixdnstest9.com
++.netflixdnstest10.com

@@ -1,0 +1,12 @@
+# NAME: Costco
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: costco
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/Costco.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.costco-static.com
++.costco.com
++.costcobusinessdelivery.com

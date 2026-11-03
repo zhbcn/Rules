@@ -1,6 +1,6 @@
 # 第三方来源说明
 
-本项目会把上游规则整理、转换并保存为自己的 Mihomo、Egern 与 Quantumult X 文件。以下是主要上游及其许可证；具体规则来源仍以每个规则文件顶部的注释为准。
+本项目会把上游规则整理、转换并保存为自己的 Mihomo、Egern、Quantumult X 与 Stash 文件。以下是主要上游及其许可证；具体规则来源仍以每个规则文件顶部的注释为准。
 
 ## v2fly/domain-list-community
 

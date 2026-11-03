@@ -1,0 +1,9 @@
+# NAME: Hark
+# SOURCE: Hark official
+# SOURCE-URL: https://hark.com/
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Hark.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.hark.com

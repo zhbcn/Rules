@@ -1,0 +1,21 @@
+# NAME: XiaoHongShu
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: xiaohongshu
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Direct/XiaoHongShu.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.askdiandian.com
++.diandianlife.top
++.redelight.cn
++.rednote.com
++.rednote.com.my
++.rednotecdn.com
++.rnote.com
++.xhscdn.com
++.xhscdn.net
++.xhslink.com
++.xhsrcdn.com
++.xiaohongshu.com

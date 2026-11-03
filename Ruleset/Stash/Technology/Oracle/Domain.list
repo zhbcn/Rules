@@ -1,0 +1,28 @@
+# NAME: Oracle
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: oracle
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Technology/Oracle.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.oracle
++.addthis.com
++.addthiscdn.com
++.addthisedge.com
++.java
++.java.com
++.java.net
++.ateam-oracle.com
++.bronto.com
++.covid19-rx.org
++.covid19rx.org
++.custhelp.com
++.oracle.com
++.oraclecloud.com
++.oraclefoundation.org
++.oracleimg.com
++.oracleinfinity.io
++.sun.com
++.virtualbox.org

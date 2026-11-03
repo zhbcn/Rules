@@ -1,0 +1,12 @@
+# NAME: Anthropic
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: anthropic
+# FALLBACK: blackmatrix7/ios_rule_script
+# CUSTOM: https://platform.claude.com/docs/en/api/ip-addresses (inbound only)
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Anthropic.yaml
+# STASH-BEHAVIOR: ipcidr; format=text; no-resolve=true
+
+160.79.104.0/23
+2607:6bc0::/48

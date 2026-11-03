@@ -1,0 +1,13 @@
+# NAME: HermesAgent
+# SOURCE: v2fly/domain-list-community (vercel aggregate) + custom
+# SOURCE-LIST: vercel (skills.sh) + existing zhbcn/Rules rule
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/HermesAgent.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.nousresearch.com
++.models.dev
++.agentskills.io
++.skills.sh

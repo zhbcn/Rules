@@ -1,0 +1,47 @@
+# NAME: eBay
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: ebay (shopping-only subset)
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Shopping/eBay.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.ebay.com
++.ebay.ca
++.ebay.cn
++.ebay.com.cn
++.ebay.co.uk
++.ebay.co.za
++.ebay.de
++.ebay.fr
++.ebay.it
++.ebay.es
++.ebay.com.au
++.ebay.com.ar
++.ebay.com.ec
++.ebay.com.hk
++.ebay.com.mt
++.ebay.com.my
++.ebay.com.ph
++.ebay.com.sg
++.ebay.at
++.ebay.be
++.ebay.ch
++.ebay.ie
++.ebay.nl
++.ebay.pl
++.ebay.co.nz
++.ebay.in
++.ebay.jp
++.ebay.lt
++.ebay.ph
++.ebay.pk
++.ebay.sg
++.ebay.vn
++.ebaymotors.com
++.ebaystores.com
++.ebaystatic.com
++.ebaystatic.cn
++.ebayimg.com
++.ebaycdn.net

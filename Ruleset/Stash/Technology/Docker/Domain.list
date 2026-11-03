@@ -1,0 +1,15 @@
+# NAME: Docker
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: docker
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Technology/Docker.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.compose-spec.io
++.docker.com
++.docker.io
++.dockerstatic.com
+docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
+docker-pinata-support.s3.amazonaws.com

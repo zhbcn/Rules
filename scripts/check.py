@@ -12,8 +12,10 @@ import yaml
 
 if __package__:
     from .convert_quantumultx import check_quantumultx_pairs
+    from .convert_stash import check_stash_pairs, provider_behavior
 else:
     from convert_quantumultx import check_quantumultx_pairs
+    from convert_stash import check_stash_pairs, provider_behavior
 
 
 REPO_MARKERS = (
@@ -36,6 +38,15 @@ MIHOMO_RULE_TYPES = {
 
 MIHOMO_BUILTIN_POLICIES = {
     "DIRECT", "REJECT", "REJECT-DROP", "PASS", "COMPATIBLE", "GLOBAL",
+}
+
+# Stash's native rule surface differs from Mihomo, particularly PROTOCOL/STUN.
+STASH_RULE_TYPES = {
+    "DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD",
+    "DOMAIN-REGEX", "GEOSITE", "IP-CIDR", "IP-CIDR6", "IP-ASN", "GEOIP",
+    "NETWORK", "PROTOCOL", "DST-PORT", "SRC-IP", "SRC-PORT", "RULE-SET",
+    "PROCESS-NAME", "PROCESS-PATH", "SCRIPT", "AND", "OR", "NOT",
+    "USER-AGENT", "URL-REGEX", "MATCH",
 }
 
 EGERN_BUILTIN_POLICIES = {
@@ -157,7 +168,11 @@ def _unique_names(items: object, label: str, errors: list[str]) -> set[str]:
     return names
 
 
-def check_mihomo_config(document: dict[str, object], label: str, errors: list[str]) -> None:
+def check_mihomo_config(
+    document: dict[str, object], label: str, errors: list[str], *, stash: bool = False
+) -> None:
+    client = "Stash" if stash else "Mihomo"
+    rule_types = STASH_RULE_TYPES if stash else MIHOMO_RULE_TYPES | {"FINAL"}
     groups = document.get("proxy-groups", [])
     group_names = _unique_names(groups, f"{label} proxy-groups", errors)
     proxy_providers = document.get("proxy-providers", {}) or {}
@@ -176,8 +191,19 @@ def check_mihomo_config(document: dict[str, object], label: str, errors: list[st
             if url in provider_urls:
                 errors.append(f"CONFIG {label}: duplicate rule provider URL for {name}")
             provider_urls.add(url)
-            if repo_path_from_url(url):
-                if provider.get("type") != "http":
+            relative = repo_path_from_url(url)
+            if relative and relative.startswith("Ruleset/Stash/"):
+                if not stash:
+                    errors.append(f"CONFIG {label}: Stash-native resource requires --stash-config")
+                try:
+                    behavior = provider_behavior(Path(relative))
+                except ValueError as exc:
+                    errors.append(f"CONFIG {label}: {exc}")
+                else:
+                    if provider.get("behavior") != behavior or provider.get("format") != "text":
+                        errors.append(f"CONFIG {label}: native Stash provider {name} must use {behavior}/text")
+            elif relative:
+                if not stash and provider.get("type") != "http":
                     errors.append(f"CONFIG {label}: repository rule provider {name} must use type http")
                 if provider.get("behavior") != "classical":
                     errors.append(f"CONFIG {label}: repository rule provider {name} must use behavior classical")
@@ -202,8 +228,17 @@ def check_mihomo_config(document: dict[str, object], label: str, errors: list[st
             continue
         parts = [part.strip() for part in rule.split(",")]
         rule_type = parts[0].upper()
-        if rule_type not in MIHOMO_RULE_TYPES and rule_type != "FINAL":
-            errors.append(f"CONFIG {label}: unsupported Mihomo rule type {rule_type}")
+        if rule_type not in rule_types:
+            errors.append(f"CONFIG {label}: unsupported {client} rule type {rule_type}")
+            continue
+        if stash and rule_type == "PROTOCOL":
+            if len(parts) < 3 or any(option != "no-track" for option in parts[3:]) or parts[1].upper() not in {
+                "TCP", "UDP", "HTTP", "TLS", "QUIC", "STUN", "MTPROTO"
+            }:
+                errors.append(f"CONFIG {label}: invalid Stash PROTOCOL rule")
+                continue
+            if parts[2] not in allowed_policies:
+                errors.append(f"CONFIG {label}: rule references missing policy {parts[2]}")
             continue
         if rule_type == "RULE-SET" and len(parts) >= 3:
             if parts[1] not in rule_providers:
@@ -262,11 +297,13 @@ def check_egern_config(document: dict[str, object], label: str, errors: list[str
             errors.append(f"CONFIG {label}: rule {name or '<unnamed>'} references missing policy {policy}")
 
 
-def check_config_document(document: object, label: str, errors: list[str]) -> None:
+def check_config_document(
+    document: object, label: str, errors: list[str], *, stash: bool = False
+) -> None:
     if not isinstance(document, dict):
         errors.append(f"CONFIG {label}: top level is not a mapping")
     elif "proxy-groups" in document or "rule-providers" in document:
-        check_mihomo_config(document, label, errors)
+        check_mihomo_config(document, label, errors, stash=stash)
     elif "policy_groups" in document:
         check_egern_config(document, label, errors)
 
@@ -440,6 +477,8 @@ def check_quantumultx_config(text: str, label: str, errors: list[str]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, action="append", default=[])
+    parser.add_argument("--stash-config", type=Path, action="append", default=[],
+                        help="Check a native Stash YAML configuration, including PROTOCOL rules")
     parser.add_argument("--require-complete-qx", action="store_true",
                         help="Fail if any QX collection still has a non-equivalent native condition")
     args = parser.parse_args()
@@ -465,6 +504,7 @@ def main() -> int:
     check_aggregates(root, errors)
     check_mihomo_egern_pairs(root, errors)
     checked += check_quantumultx_pairs(root, errors)
+    checked += check_stash_pairs(root, errors)
     qx_files = list((root / "Ruleset" / "QuantumultX").rglob("*.list"))
     qx_partial = [path.relative_to(root / "Ruleset" / "QuantumultX").as_posix()
                   for path in sorted(qx_files)
@@ -489,7 +529,8 @@ def main() -> int:
             print(message)
 
     url_pattern = re.compile(r"https://(?:raw\.githubusercontent\.com|github\.com)/zhbcn/Rules/[^\s\"']+")
-    for config in args.config:
+    configs = [(path, False) for path in args.config] + [(path, True) for path in args.stash_config]
+    for config, stash in configs:
         try:
             text = config.read_text(encoding="utf-8-sig")
             document = None if config.suffix.lower() == ".conf" else load_yaml(text)
@@ -499,7 +540,7 @@ def main() -> int:
         if config.suffix.lower() == ".conf":
             check_quantumultx_config(text, config.name, errors)
         else:
-            check_config_document(document, config.name, errors)
+            check_config_document(document, config.name, errors, stash=stash)
         for url in url_pattern.findall(text):
             relative = repo_path_from_url(url.rstrip("}),]"))
             if relative and not (root / relative).is_file():
@@ -509,7 +550,7 @@ def main() -> int:
         print("\n".join(errors))
         print(f"FAILED: {len(errors)} issue(s); checked {checked} rule files")
         return 1
-    print(f"OK: checked {checked} rule files and {len(args.config)} config file(s)")
+    print(f"OK: checked {checked} rule files and {len(configs)} config file(s)")
     return 0
 
 

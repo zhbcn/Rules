@@ -1,0 +1,24 @@
+# NAME: 1Password
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: agilebits
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/Security/1Password.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.1password.com
++.1password.ca
++.1password.co
++.1password.community
++.1password.eu
++.1password.io
++.1passwordservices.com
++.1passwordusercontent.com
++.1passwordusercontent.ca
++.1passwordusercontent.eu
++.1infra.net
++.agilebits.com
++.passage.id
+1password.drift.click
++.1password.dev
