@@ -33,6 +33,9 @@ host-suffix,tracking.intl.miui.com,proxy
 host-suffix,f-log-assistant.grammarly.io,proxy
 host-suffix,f-log-extension.grammarly.io,proxy
 host-suffix,in.applicationinsights.azure.com,proxy
+host-suffix,amplitude.com,proxy
+host,api.segment.io,proxy
+host-suffix,gnar.grammarly.com,proxy
 host-wildcard,f-log*.grammarly.io,proxy
 ip-cidr,10.72.25.0/24,proxy
 ip-cidr,39.107.15.115/32,proxy

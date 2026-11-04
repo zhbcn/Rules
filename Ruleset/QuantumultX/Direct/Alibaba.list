@@ -469,3 +469,6 @@ host-suffix,retcode.taobao.com,proxy
 host-suffix,tns.simba.taobao.com,proxy
 host-suffix,track.lc.quark.cn,proxy
 host-suffix,v6-adashx.ut.taobao.com,proxy
+host-suffix,alivecdn.com,proxy
+host-suffix,mayibao.cn,proxy
+host-suffix,hmxs.cn,proxy

@@ -8394,6 +8394,30 @@ domain_suffix_set:
   - favonis.cloud
   - favonis.com
   - favonis.space
+  - allwinnertech.com
+  - cambricon.com
+  - mthreads.com
+  - southchip.com
+  - t-head.cn
+  - qiaqiafood.com
+  - busyming.com
+  - hnlshm.com
+  - zymls.com
+  - doubaoapps.com
+  - alivecdn.com
+  - mayibao.cn
+  - hmxs.cn
+  - edge-byted.com
+  - haimian.com
+  - tenpayglobal.com
+  - wesure.cn
+  - wesure100.com
+  - mnc015.mcc460.pub.3gppnetwork.org
+  - mnc000.mcc460.pub.3gppnetwork.org
+  - mnc002.mcc460.pub.3gppnetwork.org
+  - mnc004.mcc460.pub.3gppnetwork.org
+  - mnc007.mcc460.pub.3gppnetwork.org
+  - mnc011.mcc460.pub.3gppnetwork.org
 
 domain_regex_set:
   - "^.+-mihayo\\.akamaized\\.net$"

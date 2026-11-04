@@ -57,3 +57,4 @@ payload:
   - DOMAIN-SUFFIX,visapay.cn
   - DOMAIN-SUFFIX,visaplatinum.cn
   - DOMAIN-SUFFIX,visaplatinum.com.cn
+  - "DOMAIN-SUFFIX,tenpayglobal.com"

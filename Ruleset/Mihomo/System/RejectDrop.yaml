@@ -32,6 +32,9 @@ payload:
   - DOMAIN-SUFFIX,f-log-assistant.grammarly.io
   - DOMAIN-SUFFIX,f-log-extension.grammarly.io
   - DOMAIN-SUFFIX,in.applicationinsights.azure.com
+  - "DOMAIN-SUFFIX,amplitude.com"
+  - "DOMAIN,api.segment.io"
+  - "DOMAIN-SUFFIX,gnar.grammarly.com"
   - DOMAIN-WILDCARD,f-log*.grammarly.io
   - IP-CIDR,10.72.25.0/24,no-resolve
   - IP-CIDR,39.107.15.115/32,no-resolve

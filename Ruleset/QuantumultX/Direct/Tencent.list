@@ -705,3 +705,6 @@ host-suffix,trace.qq.com,proxy
 host-suffix,ugdtimg.com,proxy
 host-suffix,wit.qq.com,proxy
 host-suffix,cnb.space,proxy
+host-suffix,tenpayglobal.com,proxy
+host-suffix,wesure.cn,proxy
+host-suffix,wesure100.com,proxy

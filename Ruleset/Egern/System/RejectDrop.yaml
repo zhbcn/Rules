@@ -10,6 +10,7 @@ domain_set:
   - stat.youpin.mi.com
   - dataflow.biliapi.com
   - nom.telemetrydeck.com
+  - api.segment.io
 
 domain_suffix_set:
   - "null"
@@ -34,6 +35,8 @@ domain_suffix_set:
   - f-log-assistant.grammarly.io
   - f-log-extension.grammarly.io
   - in.applicationinsights.azure.com
+  - amplitude.com
+  - gnar.grammarly.com
 
 domain_wildcard_set:
   - f-log*.grammarly.io

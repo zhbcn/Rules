@@ -469,3 +469,6 @@ payload:
   - DOMAIN-SUFFIX,tns.simba.taobao.com
   - DOMAIN-SUFFIX,track.lc.quark.cn
   - DOMAIN-SUFFIX,v6-adashx.ut.taobao.com
+  - "DOMAIN-SUFFIX,alivecdn.com"
+  - "DOMAIN-SUFFIX,mayibao.cn"
+  - "DOMAIN-SUFFIX,hmxs.cn"
