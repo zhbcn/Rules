@@ -28,3 +28,5 @@ host-suffix,claude.site,proxy
 host-suffix,claudeacademy.com,proxy
 host-suffix,claudepages.dev,proxy
 host-suffix,claudestudio.com,proxy
+host,http-intake.logs.us5.datadoghq.com,proxy
+host,o1158394.ingest.us.sentry.io,proxy

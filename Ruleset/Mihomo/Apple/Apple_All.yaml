@@ -1831,3 +1831,4 @@ payload:
   - DOMAIN-SUFFIX,qwapi.com
   - "DOMAIN,sh-pod1-smp-device.apple.com"
   - "DOMAIN,sh-pod3-smp-device.apple.com"
+  - "DOMAIN,radio.itunes.apple.com"

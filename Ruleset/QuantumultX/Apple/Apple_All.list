@@ -1831,3 +1831,4 @@ host-suffix,iad.apple.com,proxy
 host-suffix,qwapi.com,proxy
 host,sh-pod1-smp-device.apple.com,proxy
 host,sh-pod3-smp-device.apple.com,proxy
+host,radio.itunes.apple.com,proxy
