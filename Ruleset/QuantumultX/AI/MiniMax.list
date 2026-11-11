@@ -1,6 +1,6 @@
 # NAME: MiniMax
-# SOURCE: v2fly/domain-list-community (category-ai-cn/category-ai-!cn) + custom
-# SOURCE-LIST: category-ai-cn, category-ai-!cn (MiniMax subset) + existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn, category-ai-!cn
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 # QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
@@ -12,3 +12,4 @@ host-suffix,hailuoai.com,proxy
 host-suffix,xingyeai.com,proxy
 host-suffix,hailuoai.video,proxy
 host-suffix,talkie-ai.com,proxy
+host-suffix,minimax.cn,proxy

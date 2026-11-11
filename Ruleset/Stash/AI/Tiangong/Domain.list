@@ -1,0 +1,10 @@
+# NAME: Tiangong
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/Tiangong.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.tiangong.cn

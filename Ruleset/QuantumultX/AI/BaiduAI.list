@@ -1,0 +1,13 @@
+# NAME: BaiduAI
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host-suffix,yiyan.baidu.com,proxy
+host-suffix,dumate.cn,proxy
+host-suffix,miaoda.cn,proxy
+host-suffix,mcpworld.com,proxy
+host-suffix,faxingbao.com,proxy
+host-suffix,wenxin.baidu.com,proxy

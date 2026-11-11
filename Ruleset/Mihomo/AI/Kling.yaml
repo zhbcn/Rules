@@ -1,0 +1,10 @@
+# NAME: Kling
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,kechuangai.com"
+  - "DOMAIN-SUFFIX,kling-ai.com"
+  - "DOMAIN-SUFFIX,klingai.com"

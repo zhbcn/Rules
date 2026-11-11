@@ -8526,3 +8526,19 @@ payload:
   - "DOMAIN-SUFFIX,zhichi.com"
   - "DOMAIN-SUFFIX,zhiguf.com"
   - "DOMAIN-SUFFIX,zww.com.cn"
+  - DOMAIN-SUFFIX,nia-teams.com
+  - DOMAIN-SUFFIX,qwen.com
+  - DOMAIN-SUFFIX,dashscope.aliyuncs.com
+  - DOMAIN-SUFFIX,minimax.chat
+  - DOMAIN-SUFFIX,minimax.io
+  - DOMAIN-SUFFIX,hailuoai.video
+  - DOMAIN-SUFFIX,minimax.cn
+  - DOMAIN-SUFFIX,chatglm.com
+  - DOMAIN-SUFFIX,zhipu.com
+  - DOMAIN-SUFFIX,zhipu.ai
+  - DOMAIN-SUFFIX,codegeex.cn
+  - DOMAIN-SUFFIX,codegeex.ai
+  - DOMAIN-SUFFIX,autoglm.ai
+  - DOMAIN-SUFFIX,kimi.ai
+  - DOMAIN-SUFFIX,moonshot.ai
+  - DOMAIN-SUFFIX,wenxin.baidu.com

@@ -1,6 +1,6 @@
 # NAME: Zhipu
-# SOURCE: v2fly/domain-list-community (category-ai-cn) + custom
-# SOURCE-LIST: category-ai-cn (Zhipu subset) + existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 # QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.

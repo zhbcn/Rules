@@ -1,0 +1,11 @@
+# NAME: DeepSeek
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: deepseek
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# GENERATED-BY: scripts/convert_stash.py
+# SOURCE-RULESET: Ruleset/Mihomo/AI/DeepSeek.yaml
+# STASH-BEHAVIOR: domain; format=text; no-resolve=false
+
++.deepseek.com
++.deepseeksvc.com

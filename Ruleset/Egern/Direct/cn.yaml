@@ -8525,6 +8525,22 @@ domain_suffix_set:
   - zhichi.com
   - zhiguf.com
   - zww.com.cn
+  - nia-teams.com
+  - qwen.com
+  - dashscope.aliyuncs.com
+  - minimax.chat
+  - minimax.io
+  - hailuoai.video
+  - minimax.cn
+  - chatglm.com
+  - zhipu.com
+  - zhipu.ai
+  - codegeex.cn
+  - codegeex.ai
+  - autoglm.ai
+  - kimi.ai
+  - moonshot.ai
+  - wenxin.baidu.com
 
 domain_regex_set:
   - "^.+-mihayo\\.akamaized\\.net$"

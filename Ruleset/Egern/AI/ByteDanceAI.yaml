@@ -1,8 +1,6 @@
 # NAME: ByteDanceAI
-# SOURCE:
-# - v2fly/domain-list-community
-# - custom
-# SOURCE-LIST: doubao, bytedance-ai-!cn + retained zhbcn/Rules domains
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: doubao, trae, bytedance-ai-!cn
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
@@ -47,3 +45,15 @@ domain_suffix_set:
   - picpic-ai.cn
   - pixeldance.com
   - doubaoapps.com
+  - doudou.com
+  - marscode.cn
+  - marscode.com.cn
+  - mcbaas.work
+  - mcdemo.show
+  - mchost.guru
+  - mcprev.cn
+  - tcwqqdy.guru
+  - trae.cn
+  - trae.com.cn
+  - trae.guru
+  - yoma.cn

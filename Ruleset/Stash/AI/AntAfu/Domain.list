@@ -1,6 +1,6 @@
 # NAME: AntAfu
-# SOURCE: v2fly/domain-list-community (category-ai-cn)
-# SOURCE-LIST: category-ai-cn (AntAfu subset)
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 # GENERATED-BY: scripts/convert_stash.py

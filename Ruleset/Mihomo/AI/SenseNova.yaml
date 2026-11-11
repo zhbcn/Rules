@@ -1,0 +1,14 @@
+# NAME: SenseNova
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,senseaudio.cn"
+  - "DOMAIN-SUFFIX,senseavatar.com"
+  - "DOMAIN-SUFFIX,sensecore.cn"
+  - "DOMAIN-SUFFIX,sensefoundry.cn"
+  - "DOMAIN-SUFFIX,sensenova.cn"
+  - "DOMAIN-SUFFIX,sensetime.com"
+  - "DOMAIN-SUFFIX,xiaohuanxiong.com"

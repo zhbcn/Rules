@@ -1,0 +1,9 @@
+# NAME: DeepSeek
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: deepseek
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - deepseek.com
+  - deepseeksvc.com

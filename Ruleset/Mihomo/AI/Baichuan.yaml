@@ -1,0 +1,9 @@
+# NAME: Baichuan
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,baichuan-ai.com"
+  - "DOMAIN-SUFFIX,nia-teams.com"

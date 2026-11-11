@@ -1,0 +1,9 @@
+# NAME: DeepSeek
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: deepseek
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,deepseek.com"
+  - "DOMAIN-SUFFIX,deepseeksvc.com"

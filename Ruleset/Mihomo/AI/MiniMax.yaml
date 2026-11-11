@@ -1,14 +1,15 @@
 # NAME: MiniMax
-# SOURCE: v2fly/domain-list-community (category-ai-cn/category-ai-!cn) + custom
-# SOURCE-LIST: category-ai-cn, category-ai-!cn (MiniMax subset) + existing zhbcn/Rules rule
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn, category-ai-!cn
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 
 payload:
-  - DOMAIN-SUFFIX,minimaxi.com
-  - DOMAIN-SUFFIX,minimax.chat
-  - DOMAIN-SUFFIX,minimax.io
-  - DOMAIN-SUFFIX,hailuoai.com
-  - DOMAIN-SUFFIX,xingyeai.com
-  - DOMAIN-SUFFIX,hailuoai.video
-  - DOMAIN-SUFFIX,talkie-ai.com
+  - "DOMAIN-SUFFIX,minimaxi.com"
+  - "DOMAIN-SUFFIX,minimax.chat"
+  - "DOMAIN-SUFFIX,minimax.io"
+  - "DOMAIN-SUFFIX,hailuoai.com"
+  - "DOMAIN-SUFFIX,xingyeai.com"
+  - "DOMAIN-SUFFIX,hailuoai.video"
+  - "DOMAIN-SUFFIX,talkie-ai.com"
+  - "DOMAIN-SUFFIX,minimax.cn"

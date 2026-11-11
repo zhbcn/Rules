@@ -1,0 +1,13 @@
+# NAME: BaiduAI
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,yiyan.baidu.com"
+  - "DOMAIN-SUFFIX,dumate.cn"
+  - "DOMAIN-SUFFIX,miaoda.cn"
+  - "DOMAIN-SUFFIX,mcpworld.com"
+  - "DOMAIN-SUFFIX,faxingbao.com"
+  - "DOMAIN-SUFFIX,wenxin.baidu.com"

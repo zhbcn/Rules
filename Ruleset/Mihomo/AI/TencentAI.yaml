@@ -1,0 +1,13 @@
+# NAME: TencentAI
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,codebuddy.cn"
+  - "DOMAIN-SUFFIX,workbuddy.cn"
+  - "DOMAIN-SUFFIX,hunyuan.tencent.com"
+  - "DOMAIN-SUFFIX,yuanbao.tencent.com"
+  - "DOMAIN-SUFFIX,yuanqi.tencent.com"
+  - "DOMAIN-SUFFIX,skillhub.cn"

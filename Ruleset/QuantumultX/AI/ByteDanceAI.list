@@ -1,8 +1,6 @@
 # NAME: ByteDanceAI
-# SOURCE:
-# - v2fly/domain-list-community
-# - custom
-# SOURCE-LIST: doubao, bytedance-ai-!cn + retained zhbcn/Rules domains
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: doubao, trae, bytedance-ai-!cn
 # FALLBACK: blackmatrix7/ios_rule_script
 # MAINTAINED-BY: zhbcn/Rules
 # QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
@@ -47,3 +45,15 @@ host-suffix,obricclouddw.com,proxy
 host-suffix,picpic-ai.cn,proxy
 host-suffix,pixeldance.com,proxy
 host-suffix,doubaoapps.com,proxy
+host-suffix,doudou.com,proxy
+host-suffix,marscode.cn,proxy
+host-suffix,marscode.com.cn,proxy
+host-suffix,mcbaas.work,proxy
+host-suffix,mcdemo.show,proxy
+host-suffix,mchost.guru,proxy
+host-suffix,mcprev.cn,proxy
+host-suffix,tcwqqdy.guru,proxy
+host-suffix,trae.cn,proxy
+host-suffix,trae.com.cn,proxy
+host-suffix,trae.guru,proxy
+host-suffix,yoma.cn,proxy

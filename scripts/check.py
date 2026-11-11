@@ -13,9 +13,11 @@ import yaml
 if __package__:
     from .convert_quantumultx import check_quantumultx_pairs
     from .convert_stash import check_stash_pairs, provider_behavior
+    from .sync_ai import check_ai_resources
 else:
     from convert_quantumultx import check_quantumultx_pairs
     from convert_stash import check_stash_pairs, provider_behavior
+    from sync_ai import check_ai_resources
 
 
 REPO_MARKERS = (
@@ -502,6 +504,7 @@ def main() -> int:
                 check_egern_document(document, str(path.relative_to(root)), errors)
 
     check_aggregates(root, errors)
+    check_ai_resources(root, errors)
     check_mihomo_egern_pairs(root, errors)
     checked += check_quantumultx_pairs(root, errors)
     checked += check_stash_pairs(root, errors)

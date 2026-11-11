@@ -1,0 +1,14 @@
+# NAME: SenseNova
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host-suffix,senseaudio.cn,proxy
+host-suffix,senseavatar.com,proxy
+host-suffix,sensecore.cn,proxy
+host-suffix,sensefoundry.cn,proxy
+host-suffix,sensenova.cn,proxy
+host-suffix,sensetime.com,proxy
+host-suffix,xiaohuanxiong.com,proxy

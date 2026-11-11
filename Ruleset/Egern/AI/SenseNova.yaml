@@ -1,0 +1,14 @@
+# NAME: SenseNova
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+domain_suffix_set:
+  - senseaudio.cn
+  - senseavatar.com
+  - sensecore.cn
+  - sensefoundry.cn
+  - sensenova.cn
+  - sensetime.com
+  - xiaohuanxiong.com

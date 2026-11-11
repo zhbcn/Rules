@@ -1,0 +1,13 @@
+# NAME: TencentAI
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: category-ai-cn
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host-suffix,codebuddy.cn,proxy
+host-suffix,workbuddy.cn,proxy
+host-suffix,hunyuan.tencent.com,proxy
+host-suffix,yuanbao.tencent.com,proxy
+host-suffix,yuanqi.tencent.com,proxy
+host-suffix,skillhub.cn,proxy

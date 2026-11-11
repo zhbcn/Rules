@@ -1,0 +1,10 @@
+# NAME: XiaomiAI
+# SOURCE: v2fly/domain-list-community
+# SOURCE-LIST: xiaomi-ai
+# FALLBACK: blackmatrix7/ios_rule_script
+# MAINTAINED-BY: zhbcn/Rules
+
+payload:
+  - "DOMAIN-SUFFIX,miaibox.com"
+  - "DOMAIN-SUFFIX,xiaoaiassist.com"
+  - "DOMAIN-SUFFIX,xiaomimimo.com"
