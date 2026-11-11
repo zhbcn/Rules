@@ -70,3 +70,4 @@ payload:
   - DOMAIN,productionresultssa19.blob.core.windows.net
   - DOMAIN-SUFFIX,collector.github.com
   - "DOMAIN-SUFFIX,cafe.github.com"
+  - "DOMAIN,production-copilot-host-westus.webpubsub.azure.com"

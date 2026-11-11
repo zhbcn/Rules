@@ -1,6 +1,7 @@
 # NAME: Tencent_Domain
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/Tencent/Tencent_Domain.yaml
+# EXCLUDED: in.th is a public suffix (v2fly/domain-list-community#4261).
 # MAINTAINED-BY: zhbcn/Rules
 # GENERATED-BY: scripts/convert_stash.py
 # SOURCE-RULESET: Ruleset/Mihomo/Direct/Tencent_Domain.yaml
@@ -712,7 +713,6 @@
 +.in-tencentclb.com
 +.in-tencentclb.net
 +.in-tencentclb.work
-+.in.th
 +.incentivepower.cn
 +.industryai.com.cn
 +.insightpower.cn

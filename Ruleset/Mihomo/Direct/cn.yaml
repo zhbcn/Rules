@@ -496,7 +496,6 @@ payload:
   - DOMAIN-SUFFIX,hkgcloudcs.com
   - DOMAIN-SUFFIX,ihappystudio.cn
   - DOMAIN-SUFFIX,ihappystudio.com
-  - DOMAIN-SUFFIX,in.th
   - DOMAIN-SUFFIX,ludosuperstar.cn
   - DOMAIN-SUFFIX,ludoworld.net
   - DOMAIN-SUFFIX,mahjongai.net
@@ -7387,7 +7386,6 @@ payload:
   - DOMAIN-SUFFIX,chujingapp.com
   - DOMAIN-SUFFIX,chushi.cool
   - DOMAIN-SUFFIX,chushou.tv
-  - DOMAIN-SUFFIX,chuyu.me
   - DOMAIN-SUFFIX,city8.com
   - DOMAIN-SUFFIX,cjol.com
   - DOMAIN-SUFFIX,clangcn.com
@@ -7598,7 +7596,6 @@ payload:
   - DOMAIN-SUFFIX,hiido.com
   - DOMAIN-SUFFIX,hijin.vip
   - DOMAIN-SUFFIX,hiocloud.com
-  - DOMAIN-SUFFIX,hitokoto.cn
   - DOMAIN-SUFFIX,hiyd.com
   - DOMAIN-SUFFIX,hktheone.com
   - DOMAIN-SUFFIX,hn-cbec.com

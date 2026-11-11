@@ -121,6 +121,7 @@ domain_set:
   - live.applicationinsights.azure.com
   - dc.services.visualstudio.com
   - rt.services.visualstudio.com
+  - production-copilot-host-westus.webpubsub.azure.com
 
 domain_suffix_set:
   - azure

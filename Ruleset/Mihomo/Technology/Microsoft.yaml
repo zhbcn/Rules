@@ -765,3 +765,4 @@ payload:
   - "DOMAIN-SUFFIX,telemetry.microsoft.com"
   - "DOMAIN-SUFFIX,bingstatic.com"
   - "DOMAIN-SUFFIX,msftstatic.com"
+  - "DOMAIN,production-copilot-host-westus.webpubsub.azure.com"

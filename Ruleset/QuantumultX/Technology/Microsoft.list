@@ -765,3 +765,4 @@ host-suffix,data.microsoft.com,proxy
 host-suffix,telemetry.microsoft.com,proxy
 host-suffix,bingstatic.com,proxy
 host-suffix,msftstatic.com,proxy
+host,production-copilot-host-westus.webpubsub.azure.com,proxy

@@ -15,3 +15,4 @@ payload:
   - DOMAIN-SUFFIX,copilot.microsoft.com
   - DOMAIN-SUFFIX,copilot.cloud.microsoft
   - "DOMAIN-SUFFIX,copilot-stg.com"
+  - "DOMAIN,production-copilot-host-westus.webpubsub.azure.com"

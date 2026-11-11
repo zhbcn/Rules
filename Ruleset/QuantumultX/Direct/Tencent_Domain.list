@@ -1,6 +1,7 @@
 # NAME: Tencent_Domain
 # SOURCE: blackmatrix7/ios_rule_script
 # SOURCE-LIST: rule/Clash/Tencent/Tencent_Domain.yaml
+# EXCLUDED: in.th is a public suffix (v2fly/domain-list-community#4261).
 # MAINTAINED-BY: zhbcn/Rules
 # QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
 
@@ -710,7 +711,6 @@ host-suffix,in-tencentclb.cloud,proxy
 host-suffix,in-tencentclb.com,proxy
 host-suffix,in-tencentclb.net,proxy
 host-suffix,in-tencentclb.work,proxy
-host-suffix,in.th,proxy
 host-suffix,incentivepower.cn,proxy
 host-suffix,industryai.com.cn,proxy
 host-suffix,insightpower.cn,proxy

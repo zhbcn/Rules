@@ -37,6 +37,7 @@ domain_set:
   - productionresultssa17.blob.core.windows.net
   - productionresultssa18.blob.core.windows.net
   - productionresultssa19.blob.core.windows.net
+  - production-copilot-host-westus.webpubsub.azure.com
 
 domain_suffix_set:
   - githubcopilot.com
