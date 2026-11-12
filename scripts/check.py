@@ -270,7 +270,24 @@ def check_egern_config(document: dict[str, object], label: str, errors: list[str
             continue
         group_bodies.append(body)
     group_names = _unique_names(group_bodies, f"{label} policy_groups", errors)
-    allowed_policies = group_names | EGERN_BUILTIN_POLICIES
+    proxies = document.get("proxies", [])
+    proxy_bodies: list[dict[str, object]] = []
+    if not isinstance(proxies, list):
+        errors.append(f"CONFIG {label}: proxies is not a list")
+    else:
+        for tagged in proxies:
+            if not isinstance(tagged, dict) or len(tagged) != 1:
+                errors.append(f"CONFIG {label}: malformed proxy")
+                continue
+            body = next(iter(tagged.values()))
+            if not isinstance(body, dict) or not isinstance(body.get("name"), str):
+                errors.append(f"CONFIG {label}: proxy has no string name")
+                continue
+            proxy_bodies.append(body)
+    proxy_names = _unique_names(proxy_bodies, f"{label} proxies", errors)
+    for name in sorted(group_names & proxy_names):
+        errors.append(f"CONFIG {label}: duplicate policy name: {name}")
+    allowed_policies = group_names | proxy_names | EGERN_BUILTIN_POLICIES
     for group in group_bodies:
         for policy in group.get("policies", []) or []:
             if policy not in allowed_policies:

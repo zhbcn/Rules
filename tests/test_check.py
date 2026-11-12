@@ -135,6 +135,44 @@ class EgernYamlTest(unittest.TestCase):
             ["CONFIG config.yaml: unsupported Mihomo rule type URL-REGEX"],
         )
 
+    def test_egern_local_proxy_is_a_valid_group_and_rule_policy(self):
+        document = {
+            "proxies": [{"tailscale": {"name": "Local Tailnet"}}],
+            "policy_groups": [{"select": {"name": "Proxy", "policies": ["Local Tailnet"]}}],
+            "rules": [{"default": {"policy": "Local Tailnet"}}],
+        }
+        errors = []
+        check_config_document(document, "Egern.yaml", errors)
+        self.assertEqual(errors, [])
+
+        document["proxies"] = []
+        errors = []
+        check_config_document(document, "Egern.yaml", errors)
+        self.assertEqual(errors, [
+            "CONFIG Egern.yaml: policy group Proxy references missing policy Local Tailnet",
+            "CONFIG Egern.yaml: rule <unnamed> references missing policy Local Tailnet",
+        ])
+
+    def test_egern_rejects_malformed_and_duplicate_local_proxies(self):
+        for proxies, expected in (
+            ({}, "proxies is not a list"),
+            ([{}], "malformed proxy"),
+            ([{"tailscale": {}}], "proxy has no string name"),
+            ([{"tailscale": {"name": "Local"}}] * 2, "duplicate name: Local"),
+        ):
+            with self.subTest(proxies=proxies):
+                errors = []
+                check_config_document({"proxies": proxies, "policy_groups": []}, "Egern.yaml", errors)
+                self.assertTrue(any(expected in error for error in errors), errors)
+
+    def test_egern_rejects_proxy_and_group_name_collision(self):
+        errors = []
+        check_config_document({
+            "proxies": [{"tailscale": {"name": "Proxy"}}],
+            "policy_groups": [{"select": {"name": "Proxy"}}],
+        }, "Egern.yaml", errors)
+        self.assertEqual(errors, ["CONFIG Egern.yaml: duplicate policy name: Proxy"])
+
     def test_checks_mihomo_egern_pair_semantics(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

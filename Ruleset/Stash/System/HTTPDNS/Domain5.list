@@ -1,5 +1,7 @@
 # NAME: HTTPDNS
 # SOURCE: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/HTTPDNS%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
+# SOURCE-REVISION: QingRex/LoonKissSurge@913ec005f544221e6c56a7d0ecec81c4b3b914bb
+# NORMALIZED: upstream 118.89.204.198/23 has host bits; retain canonical 118.89.204.0/23 (same network).
 # AUTHOR: luestr, VirgilClyne
 # MAINTAINED-BY: zhbcn/Rules
 # SCOPE: Native domain/IP rules; URL, User-Agent, rewrites, scripts and MITM excluded.
