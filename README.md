@@ -20,6 +20,18 @@
 
 `AI/` 中新增 DeepSeek、Kimi、BaiduAI、TencentAI、Kling、Spark、Tiangong、Baichuan、Metaso、SenseNova、XiaomiAI 独立资源。完整的服务归属、选取的上游、保留 custom、代理例外及公开验证入口统一维护在 `scripts/ai_services.json`。
 
+## NVIDIA 出口边界
+
+`Technology/NVIDIA.yaml` 保留 V2Fly 综合范围和旧 URL 兼容，不应整体绑定 DIRECT。先匹配 `Technology/NVIDIA_Direct.yaml` 走 DIRECT，其余 NVIDIA 综合集合走 Public network，且两者都应先于广义国内/全球聚合；DNS 同步按直连子集使用国内公共解析、全球余集使用经 Public network 的全球解析。
+
+直连子集仅合并两类同出口域名：V2Fly `nvidia` 的中国标记（nvidia.cn、geforce.cn、gputechconf.cn），以及驱动检查/下载（精确 gfwsl.geforce.com、services.gfe.nvidia.com 和 download.nvidia.com 后缀）。无需再拆成两个同策略资源。download 后缀涵盖 cn/us/uk/international 与 international-gfe 镜像，不把 nvidia.com 或 gfe.nvidia.com 整段直连；同一下载主机的其他文件也会直连。中国网页的全球 API、登录和第三方依赖仍按其自身域名匹配，不保证整页功能全直连。
+
+依据：V2Fly [nvidia 清单](https://github.com/v2fly/domain-list-community/blob/cb663f66025ef3be1c1c7eb367dfac5f46645ffc/data/nvidia) 的 `@cn`；[NVIDIA 官方驱动页](https://www.nvidia.com/en-us/drivers/) 的 gfDriversServicesToolkitUrlEndpoint 指向 gfwsl.geforce.com；该主机 AjaxDriverService.php 的 DriverManualLookup 实际返回 uk.download.nvidia.com 驱动链接；services.gfe.nvidia.com 是 [NVIDIA 支持论坛记录](https://www.nvidia.com/en-us/geforce/forums/user/204701/) 中的旧 GFE 更新服务，仅作精确主机兼容，不等于已验证当前 NVIDIA App 全部端点。
+
+www.nvidia.com 同时按 `/en-us/`、`/zh-cn/` 等路径承载网页，域名规则无法按语言或页面地区拆分。该主机统一归全球余集；www.nvidia.cn 及其中国域子站归直连。中国标记是可维护的归属依据，不等于中国大陆设备连通性实测。
+
+新增 NVIDIA_Direct 四格式资源须另行授权发布。发布前，五份自用配置内嵌与该集合一致的六条原生例外，并沿用已发布 NVIDIA URL，因此无需提前采用任何新资源 URL；发布后可将本地镜像替换为该资源引用并保持同样优先级。不要仅更新远程旧资源就声称设备出口已变更，仍需采用新版私密配置并验证。
+
 ## 更新与检查
 
 `sync_ai.py` 只读取指定的本地 V2Fly `data/` 快照，不主动联网，不读取订阅，也不修改客户端。它优先使用独立服务名单，聚合名单只按明确域名归属提取，保留现有 custom；删除旧条目需单独审查。源文件继续保留在原有路径。

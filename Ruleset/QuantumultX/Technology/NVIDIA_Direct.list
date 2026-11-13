@@ -1,0 +1,16 @@
+# NAME: NVIDIA_Direct
+# SOURCE: v2fly/domain-list-community/data/nvidia (@cn); NVIDIA official driver page/API
+# SOURCE-VERSION: cb663f66025ef3be1c1c7eb367dfac5f46645ffc (nvidia list last change)
+# MAINTAINED-BY: zhbcn/Rules
+# Use before NVIDIA; domain routing cannot distinguish regional paths on www.nvidia.com.
+# Driver lookup: www.nvidia.com/en-us/drivers/ references gfwsl.geforce.com.
+# DriverManualLookup returns uk.download.nvidia.com; download suffix includes regional mirrors.
+# services.gfe.nvidia.com: legacy GFE update service; exact host, not all gfe.nvidia.com.
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host-suffix,nvidia.cn,proxy
+host-suffix,geforce.cn,proxy
+host-suffix,gputechconf.cn,proxy
+host-suffix,download.nvidia.com,proxy
+host,gfwsl.geforce.com,proxy
+host,services.gfe.nvidia.com,proxy

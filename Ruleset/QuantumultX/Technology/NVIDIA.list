@@ -1,4 +1,6 @@
 # NAME: NVIDIA
+# ROUTING: comprehensive compatibility collection; use NVIDIA_Direct before this collection.
+# Global remainder uses Public network in personal configs; this list alone is not a DIRECT list.
 # SOURCE: v2fly/domain-list-community
 # SOURCE-LIST: nvidia
 # FALLBACK: blackmatrix7/ios_rule_script
