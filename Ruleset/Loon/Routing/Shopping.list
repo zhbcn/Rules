@@ -1,0 +1,287 @@
+# GENERATED-BY: scripts/convert_loon.py
+# LOON-COMPAT: NATIVE-SYNTAX
+# Policy-free native Loon rules; bind policy in [Remote Rule]. Build 1008+.
+# DOMAIN rules precede IP evaluation in Loon; not a runtime equivalence claim.
+# SOURCE-RULESET: Ruleset/Egern/Shopping/ASOS.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/AliExpress.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Allegro.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Amazon.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/BestBuy.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Costco.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Coupang.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Etsy.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Farfetch.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Flipkart.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Lazada.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/MercadoLibre.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Mercari.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Newegg.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Noon.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Ozon.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Rakuten.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/SHEIN.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Shopee.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Target.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Temu.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Walmart.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Wayfair.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/Zalando.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/eBay.yaml
+# SOURCE-RULESET: Ruleset/Egern/Shopping/iHerb.yaml
+
+DOMAIN-SUFFIX,amazon.com
+DOMAIN-SUFFIX,amazon.ca
+DOMAIN-SUFFIX,amazon.com.mx
+DOMAIN-SUFFIX,amazon.com.br
+DOMAIN-SUFFIX,amazon.co.uk
+DOMAIN-SUFFIX,amazon.de
+DOMAIN-SUFFIX,amazon.fr
+DOMAIN-SUFFIX,amazon.it
+DOMAIN-SUFFIX,amazon.es
+DOMAIN-SUFFIX,amazon.nl
+DOMAIN-SUFFIX,amazon.se
+DOMAIN-SUFFIX,amazon.pl
+DOMAIN-SUFFIX,amazon.com.be
+DOMAIN-SUFFIX,amazon.ie
+DOMAIN-SUFFIX,amazon.co.jp
+DOMAIN-SUFFIX,amazon.in
+DOMAIN-SUFFIX,amazon.com.au
+DOMAIN-SUFFIX,amazon.sg
+DOMAIN-SUFFIX,amazon.ae
+DOMAIN-SUFFIX,amazon.sa
+DOMAIN-SUFFIX,amazon.eg
+DOMAIN-SUFFIX,amazon.com.tr
+DOMAIN-SUFFIX,amazon.co.za
+DOMAIN-SUFFIX,amazon.cn
+DOMAIN-SUFFIX,media-amazon.com
+DOMAIN-SUFFIX,images-amazon.com
+DOMAIN-SUFFIX,ssl-images-amazon.com
+DOMAIN-SUFFIX,amazonimages.com
+DOMAIN-SUFFIX,amzn.to
+DOMAIN-SUFFIX,ebay.com
+DOMAIN-SUFFIX,ebay.ca
+DOMAIN-SUFFIX,ebay.cn
+DOMAIN-SUFFIX,ebay.com.cn
+DOMAIN-SUFFIX,ebay.co.uk
+DOMAIN-SUFFIX,ebay.co.za
+DOMAIN-SUFFIX,ebay.de
+DOMAIN-SUFFIX,ebay.fr
+DOMAIN-SUFFIX,ebay.it
+DOMAIN-SUFFIX,ebay.es
+DOMAIN-SUFFIX,ebay.com.au
+DOMAIN-SUFFIX,ebay.com.ar
+DOMAIN-SUFFIX,ebay.com.ec
+DOMAIN-SUFFIX,ebay.com.hk
+DOMAIN-SUFFIX,ebay.com.mt
+DOMAIN-SUFFIX,ebay.com.my
+DOMAIN-SUFFIX,ebay.com.ph
+DOMAIN-SUFFIX,ebay.com.sg
+DOMAIN-SUFFIX,ebay.at
+DOMAIN-SUFFIX,ebay.be
+DOMAIN-SUFFIX,ebay.ch
+DOMAIN-SUFFIX,ebay.ie
+DOMAIN-SUFFIX,ebay.nl
+DOMAIN-SUFFIX,ebay.pl
+DOMAIN-SUFFIX,ebay.co.nz
+DOMAIN-SUFFIX,ebay.in
+DOMAIN-SUFFIX,ebay.jp
+DOMAIN-SUFFIX,ebay.lt
+DOMAIN-SUFFIX,ebay.ph
+DOMAIN-SUFFIX,ebay.pk
+DOMAIN-SUFFIX,ebay.sg
+DOMAIN-SUFFIX,ebay.vn
+DOMAIN-SUFFIX,ebaymotors.com
+DOMAIN-SUFFIX,ebaystores.com
+DOMAIN-SUFFIX,ebaystatic.com
+DOMAIN-SUFFIX,ebaystatic.cn
+DOMAIN-SUFFIX,ebayimg.com
+DOMAIN-SUFFIX,ebaycdn.net
+DOMAIN-SUFFIX,temu.com
+DOMAIN-SUFFIX,kwcdn.com
+DOMAIN,img.alicdn.com
+DOMAIN-SUFFIX,ae-rus.net
+DOMAIN-SUFFIX,aedns.ru
+DOMAIN-SUFFIX,aeplatform.ru
+DOMAIN-SUFFIX,aestatic.net
+DOMAIN-SUFFIX,aliexpress.com
+DOMAIN-SUFFIX,aliexpress.us
+DOMAIN-SUFFIX,aliexpress.ru
+DOMAIN-SUFFIX,aliexpress-media.com
+DOMAIN-SUFFIX,shein.com
+DOMAIN-SUFFIX,ltwebstatic.com
+DOMAIN-SUFFIX,sheincdn.com
+DOMAIN-SUFFIX,walmart
+DOMAIN-SUFFIX,w-mt.co
+DOMAIN-SUFFIX,wal-mart.com
+DOMAIN-SUFFIX,wal.co
+DOMAIN-SUFFIX,walmart-content.com
+DOMAIN-SUFFIX,walmart.cn
+DOMAIN-SUFFIX,walmart.com
+DOMAIN-SUFFIX,walmart.pharmacy
+DOMAIN-SUFFIX,walmartimages.com
+DOMAIN-SUFFIX,wmt.co
+DOMAIN-SUFFIX,etsy.com
+DOMAIN-SUFFIX,etsystatic.com
+DOMAIN-SUFFIX,etsy.me
+DOMAIN-SUFFIX,shopee.cl
+DOMAIN-SUFFIX,shopee.cn
+DOMAIN-SUFFIX,shopee.co.id
+DOMAIN-SUFFIX,shopee.co.th
+DOMAIN-SUFFIX,shopee.com
+DOMAIN-SUFFIX,shopee.com.br
+DOMAIN-SUFFIX,shopee.com.co
+DOMAIN-SUFFIX,shopee.com.mx
+DOMAIN-SUFFIX,shopee.com.my
+DOMAIN-SUFFIX,shopee.es
+DOMAIN-SUFFIX,shopee.fr
+DOMAIN-SUFFIX,shopee.id
+DOMAIN-SUFFIX,shopee.in
+DOMAIN-SUFFIX,shopee.io
+DOMAIN-SUFFIX,shopee.ph
+DOMAIN-SUFFIX,shopee.sg
+DOMAIN-SUFFIX,shopee.tw
+DOMAIN-SUFFIX,shopee.vn
+DOMAIN-SUFFIX,shopeemobile.com
+DOMAIN-SUFFIX,shopeesz.com
+DOMAIN-SUFFIX,shp.ee
+DOMAIN-SUFFIX,lazada.com
+DOMAIN-SUFFIX,lazada.sg
+DOMAIN-SUFFIX,lazada.com.my
+DOMAIN-SUFFIX,lazada.co.id
+DOMAIN-SUFFIX,lazada.co.th
+DOMAIN-SUFFIX,lazada.com.ph
+DOMAIN-SUFFIX,lazada.vn
+DOMAIN-SUFFIX,lazcdn.com
+DOMAIN-SUFFIX,slatic.net
+DOMAIN-SUFFIX,lazadausercontent.com
+DOMAIN,ichiba.faq.rakuten.net
+DOMAIN-SUFFIX,rakuten.co.jp
+DOMAIN-SUFFIX,rakuten.ne.jp
+DOMAIN-SUFFIX,r10s.jp
+DOMAIN-SUFFIX,rakuten-static.com
+DOMAIN-SUFFIX,r10.to
+DOMAIN-SUFFIX,mercari.com
+DOMAIN-SUFFIX,mercari.jp
+DOMAIN-SUFFIX,mercdn.net
+DOMAIN-SUFFIX,mercari-shops.com
+DOMAIN-SUFFIX,coupang.com
+DOMAIN-SUFFIX,coupangcdn.com
+DOMAIN-SUFFIX,mercadolibre.com
+DOMAIN-SUFFIX,mercadolibre.cl
+DOMAIN-SUFFIX,mercadolibre.co.cr
+DOMAIN-SUFFIX,mercadolibre.com.ar
+DOMAIN-SUFFIX,mercadolibre.com.bo
+DOMAIN-SUFFIX,mercadolibre.com.co
+DOMAIN-SUFFIX,mercadolibre.com.do
+DOMAIN-SUFFIX,mercadolibre.com.ec
+DOMAIN-SUFFIX,mercadolibre.com.gt
+DOMAIN-SUFFIX,mercadolibre.com.hn
+DOMAIN-SUFFIX,mercadolibre.com.mx
+DOMAIN-SUFFIX,mercadolibre.com.ni
+DOMAIN-SUFFIX,mercadolibre.com.pa
+DOMAIN-SUFFIX,mercadolibre.com.pe
+DOMAIN-SUFFIX,mercadolibre.com.py
+DOMAIN-SUFFIX,mercadolibre.com.sv
+DOMAIN-SUFFIX,mercadolibre.com.uy
+DOMAIN-SUFFIX,mercadolibre.com.ve
+DOMAIN-SUFFIX,mercadolivre.com.br
+DOMAIN-SUFFIX,mlstatic.com
+DOMAIN-SUFFIX,o3.ru
+DOMAIN-SUFFIX,o3t.ru
+DOMAIN-SUFFIX,ozon.app
+DOMAIN-SUFFIX,ozon.by
+DOMAIN-SUFFIX,ozon.com
+DOMAIN-SUFFIX,ozon.com.by
+DOMAIN-SUFFIX,ozon.com.kz
+DOMAIN-SUFFIX,ozon.express
+DOMAIN-SUFFIX,ozon.global
+DOMAIN-SUFFIX,ozon.kz
+DOMAIN-SUFFIX,ozon.market
+DOMAIN-SUFFIX,ozon.ru
+DOMAIN-SUFFIX,ozone.ru
+DOMAIN-SUFFIX,ozonusercontent.com
+DOMAIN-SUFFIX,zalando.com
+DOMAIN-SUFFIX,zalando.at
+DOMAIN-SUFFIX,zalando.be
+DOMAIN-SUFFIX,zalando.bg
+DOMAIN-SUFFIX,zalando.ch
+DOMAIN-SUFFIX,zalando.co.uk
+DOMAIN-SUFFIX,zalando.cz
+DOMAIN-SUFFIX,zalando.de
+DOMAIN-SUFFIX,zalando.dk
+DOMAIN-SUFFIX,zalando.ee
+DOMAIN-SUFFIX,zalando.es
+DOMAIN-SUFFIX,zalando.fi
+DOMAIN-SUFFIX,zalando.fr
+DOMAIN-SUFFIX,zalando.gr
+DOMAIN-SUFFIX,zalando.hr
+DOMAIN-SUFFIX,zalando.hu
+DOMAIN-SUFFIX,zalando.ie
+DOMAIN-SUFFIX,zalando.it
+DOMAIN-SUFFIX,zalando.lt
+DOMAIN-SUFFIX,zalando.lu
+DOMAIN-SUFFIX,zalando.lv
+DOMAIN-SUFFIX,zalando.nl
+DOMAIN-SUFFIX,zalando.no
+DOMAIN-SUFFIX,zalando.pl
+DOMAIN-SUFFIX,zalando.pt
+DOMAIN-SUFFIX,zalando.ro
+DOMAIN-SUFFIX,zalando.se
+DOMAIN-SUFFIX,zalando.si
+DOMAIN-SUFFIX,zalando.sk
+DOMAIN-SUFFIX,ztat.net
+DOMAIN-SUFFIX,allegro.pl
+DOMAIN-SUFFIX,allegro.cz
+DOMAIN-SUFFIX,allegro.sk
+DOMAIN-SUFFIX,allegrostatic.com
+DOMAIN-SUFFIX,allegroimg.com
+DOMAIN-SUFFIX,flipkart.com
+DOMAIN-SUFFIX,flipkart.net
+DOMAIN-SUFFIX,flixcart.com
+DOMAIN-SUFFIX,fkimg.com
+DOMAIN-SUFFIX,noon.com
+DOMAIN-SUFFIX,nooncdn.com
+DOMAIN-SUFFIX,iherb.com
+DOMAIN-SUFFIX,images-iherb.com
+DOMAIN-SUFFIX,asos.com
+DOMAIN-SUFFIX,asos-media.com
+DOMAIN-SUFFIX,asosservices.com
+DOMAIN-SUFFIX,farfetch-apps.com
+DOMAIN-SUFFIX,farfetch-contents.com
+DOMAIN-SUFFIX,farfetch.cn
+DOMAIN-SUFFIX,farfetch.com
+DOMAIN-SUFFIX,farfetch.com.cn
+DOMAIN-SUFFIX,farfetch.net
+DOMAIN-SUFFIX,farfetch.net.cn
+DOMAIN-SUFFIX,fflnk.net
+DOMAIN-SUFFIX,newegg.com
+DOMAIN-SUFFIX,neweggimages.com
+DOMAIN-SUFFIX,wayfair.com
+DOMAIN-SUFFIX,wayfair.ca
+DOMAIN-SUFFIX,wayfair.co.uk
+DOMAIN-SUFFIX,wayfair.de
+DOMAIN-SUFFIX,wayfair.ie
+DOMAIN-SUFFIX,wfcdn.com
+DOMAIN-SUFFIX,target
+DOMAIN-SUFFIX,target.com
+DOMAIN-SUFFIX,targetimg1.com
+DOMAIN-SUFFIX,bestbuy.com
+DOMAIN-SUFFIX,bestbuy.ca
+DOMAIN-SUFFIX,bestbuy.cn
+DOMAIN-SUFFIX,bestbuy.com.cn
+DOMAIN-SUFFIX,bestbuy.com.mx
+DOMAIN-SUFFIX,bestbuybusiness.com
+DOMAIN-SUFFIX,bestbuyforbusiness.ca
+DOMAIN-SUFFIX,bestbuyrewards.com
+DOMAIN-SUFFIX,bestbuystores.com
+DOMAIN-SUFFIX,bestbuytradein.com
+DOMAIN-SUFFIX,bby.com
+DOMAIN-SUFFIX,bbycastatic.ca
+DOMAIN-SUFFIX,bbystatic.com
+DOMAIN-SUFFIX,bbycontent.com
+DOMAIN-SUFFIX,bbycontent.net
+DOMAIN-SUFFIX,bbycloud.com
+DOMAIN-SUFFIX,mybestbuy.com
+DOMAIN-SUFFIX,costco-static.com
+DOMAIN-SUFFIX,costco.com
+DOMAIN-SUFFIX,costcobusinessdelivery.com

@@ -1,0 +1,33 @@
+# GENERATED-BY: scripts/convert_loon.py
+# LOON-COMPAT: NATIVE-SYNTAX
+# Policy-free native Loon rules; bind policy in [Remote Rule]. Build 1008+.
+# DOMAIN rules precede IP evaluation in Loon; not a runtime equivalence claim.
+# SOURCE-RULESET: Ruleset/Egern/Direct/MeiTuan.yaml
+# SOURCE-RULESET: Ruleset/Egern/Direct/Pinduoduo.yaml
+
+DOMAIN-SUFFIX,100.me
+DOMAIN-SUFFIX,ddcorp.net
+DOMAIN-SUFFIX,ddfresh.net
+DOMAIN-SUFFIX,ddimg.mobi
+DOMAIN-SUFFIX,ddmaicai.net
+DOMAIN-SUFFIX,ddmc.mobi
+DOMAIN-SUFFIX,dduser.mobi
+DOMAIN-SUFFIX,ddxq.mobi
+DOMAIN-SUFFIX,imaicai.mobi
+DOMAIN-SUFFIX,51ping.com
+DOMAIN-SUFFIX,baobaoaichi.cn
+DOMAIN-SUFFIX,dianping.com
+DOMAIN-SUFFIX,dpfile.com
+DOMAIN-SUFFIX,maoyan.com
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,mtyun.com
+DOMAIN-SUFFIX,neixin.cn
+DOMAIN-SUFFIX,sankuai.com
+DOMAIN-SUFFIX,pddcdn.com
+DOMAIN-SUFFIX,pddim.com
+DOMAIN-SUFFIX,pddpic.com
+DOMAIN-SUFFIX,pddugc.com
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,pinduoduo.net
+DOMAIN-SUFFIX,yangkeduo.com

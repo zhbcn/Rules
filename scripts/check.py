@@ -14,10 +14,14 @@ if __package__:
     from .convert_quantumultx import check_quantumultx_pairs
     from .convert_stash import check_stash_pairs, provider_behavior
     from .sync_ai import check_ai_resources
+    from .convert_loon import check_loon_pairs
+    from .loon_config import check_config as check_loon_config
 else:
     from convert_quantumultx import check_quantumultx_pairs
     from convert_stash import check_stash_pairs, provider_behavior
     from sync_ai import check_ai_resources
+    from convert_loon import check_loon_pairs
+    from loon_config import check_config as check_loon_config
 
 
 REPO_MARKERS = (
@@ -498,6 +502,8 @@ def main() -> int:
     parser.add_argument("--config", type=Path, action="append", default=[])
     parser.add_argument("--stash-config", type=Path, action="append", default=[],
                         help="Check a native Stash YAML configuration, including PROTOCOL rules")
+    parser.add_argument("--loon-config", type=Path, action="append", default=[],
+                        help="Check a native Loon configuration without fetching subscriptions")
     parser.add_argument("--require-complete-qx", action="store_true",
                         help="Fail if any QX collection still has a non-equivalent native condition")
     args = parser.parse_args()
@@ -525,6 +531,11 @@ def main() -> int:
     check_mihomo_egern_pairs(root, errors)
     checked += check_quantumultx_pairs(root, errors)
     checked += check_stash_pairs(root, errors)
+    loon_count = (check_loon_pairs(root, errors)
+                  if (root / "scripts" / "loon_resources.json").is_file() or (root / "Ruleset" / "Loon").exists()
+                  else 0)
+    checked += loon_count
+    print(f"LOON COVERAGE: {loon_count} native routing bundles; inspect LOON-ADAPTED and SOURCE-WARNING notes; offline only")
     qx_files = list((root / "Ruleset" / "QuantumultX").rglob("*.list"))
     qx_partial = [path.relative_to(root / "Ruleset" / "QuantumultX").as_posix()
                   for path in sorted(qx_files)
@@ -566,11 +577,17 @@ def main() -> int:
             if relative and not (root / relative).is_file():
                 errors.append(f"MISSING {config.name}: {relative}")
 
+    for config in args.loon_config:
+        try:
+            errors.extend(check_loon_config(config.read_text(encoding="utf-8-sig"), root))
+        except OSError:
+            errors.append(f"CONFIG {config.name}: cannot read native Loon file")
+
     if errors:
         print("\n".join(errors))
         print(f"FAILED: {len(errors)} issue(s); checked {checked} rule files")
         return 1
-    print(f"OK: checked {checked} rule files and {len(configs)} config file(s)")
+    print(f"OK: checked {checked} rule files and {len(configs) + len(args.loon_config)} config file(s)")
     return 0
 
 

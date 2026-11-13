@@ -1,0 +1,34 @@
+# GENERATED-BY: scripts/convert_loon.py
+# LOON-COMPAT: NATIVE-SYNTAX
+# Policy-free native Loon rules; bind policy in [Remote Rule]. Build 1008+.
+# DOMAIN rules precede IP evaluation in Loon; not a runtime equivalence claim.
+# SOURCE-RULESET: Ruleset/Egern/Direct/ChinaRailway.yaml
+# SOURCE-RULESET: Ruleset/Egern/Direct/DiDi.yaml
+
+DOMAIN-SUFFIX,didi-food.com
+DOMAIN-SUFFIX,didi.cn
+DOMAIN-SUFFIX,didialift.com
+DOMAIN-SUFFIX,didiaustralia.blog
+DOMAIN-SUFFIX,didichuxing.com
+DOMAIN-SUFFIX,didiglobal.com
+DOMAIN-SUFFIX,didimobility.co.jp
+DOMAIN-SUFFIX,didistatic.com
+DOMAIN-SUFFIX,diditaxi.com.cn
+DOMAIN-SUFFIX,hongyibo.com.cn
+DOMAIN-SUFFIX,udache.com
+DOMAIN-SUFFIX,xiaojukeji.com
+DOMAIN-SUFFIX,12306.cn
+DOMAIN-SUFFIX,95306.cn
+DOMAIN-SUFFIX,95572.com
+DOMAIN-SUFFIX,china-railway.com.cn
+DOMAIN-SUFFIX,china-ric.com
+DOMAIN-SUFFIX,crct.com
+DOMAIN-SUFFIX,cre.cn
+DOMAIN-SUFFIX,crecc.com.cn
+DOMAIN-SUFFIX,creip.cn
+DOMAIN-SUFFIX,crscl.com.cn
+DOMAIN-SUFFIX,gzrailway.com.cn
+DOMAIN-SUFFIX,nntlj.com
+DOMAIN-SUFFIX,peoplerail.com
+DOMAIN-SUFFIX,rails.cn
+DOMAIN-SUFFIX,tdpress.com

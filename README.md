@@ -8,6 +8,7 @@
 | `Ruleset/Egern/` | Egern 原生维护源，与 Mihomo 配对 |
 | `Ruleset/QuantumultX/` | 由 Mihomo 源生成；策略由客户端 `force-policy` 指定 |
 | `Ruleset/Stash/` | 由 Mihomo 源按 domain / ipcidr / classical 顺序生成 |
+| `Ruleset/Loon/Routing/` | 按已审阅的顺序，从 Egern 维护源生成原生无策略规则分段 |
 
 ## AI 规则如何分布
 
@@ -48,6 +49,30 @@ python scripts/check.py
 `check.py` 同时检查服务与 ChinaAI/cn 聚合是否一致、代理例外是否误入直连集合，以及四种资源的生成一致性。同步脚本本身不刷新上游；调用者应先取得并记录所用的上游版本。新增 Stash 组件或改变分型时，应先生成配置候选并发布资源，再采用候选。
 
 客户端另用 `check.py --config <文件>` 检查；Stash 使用 `--stash-config`。私密配置、订阅、节点凭据和设备证据不放入本仓库。
+
+## Loon 原生资源与候选配置
+
+`loon_resources.json` 只保存当前需要的48个有序规则分段及公开匹配条件，引用147份现有Egern维护源；不保存策略、订阅或私人基础连接。`convert_loon.py` 离线生成 `Ruleset/Loon/Routing/*.list`，不把Egern YAML或Stash域名列表冒充Loon规则，也不额外生成全部服务的第五格式。每段由私密配置的 `[Remote Rule]` 绑定策略；前置例外、拦截及业务集合放在同一远程层级，按清单顺序排列。修改成员或顺序需审阅清单，配置生成器会拒绝与源配置不一致的清单。
+
+```sh
+python scripts/convert_loon.py
+python scripts/convert_loon.py --check
+python scripts/loon_config.py --source '<私密Egern.yaml>' --output '<私密Loon.conf>'
+python scripts/loon_config.py --source '<私密Egern.yaml>' --output '<私密Loon.conf>' --check
+python scripts/check.py --loon-config '<私密Loon.conf>'
+```
+
+两个生成器均不联网。配置生成器只在显式指定私密输入时读取订阅，拒绝将私密输入或输出放在本公开仓库；不转换、不获取节点。原样订阅放在 `[Remote Proxy]`，用原生 `[Remote Filter]` 筛选，TLS/UDP等字段使用 `default` 保留订阅原值，禁用资源解析器。没有验证返回内容前不能声称机场支持原生Loon；URI/Base64、Loon文本及分区格式与Clash YAML不能混为一谈。旧缓存节点不进入新配置。
+
+配置生成器默认输出关闭远程规则和两路订阅的候选：`enabled=false` 不代表资源或机场已完成验证，不能直接作为活动配置采用。规则发布并核实公开URL后，可显式用 `--enable-remote-rules` 生成仅启用远程规则的版本；节点订阅仍可保持关闭。另外取得机场请求授权并确认原生返回格式及关键节点参数后，才可用 `--enable-subscriptions`。这两个选项本身不发请求，也不能代替授权或设备验证。不要为规则更新误刷机场订阅。
+
+Loon规则使用原生DOMAIN、DOMAIN-SUFFIX、DOMAIN-KEYWORD、DOMAIN-WILDCARD、IP、IP-ASN、协议和嵌套逻辑，IP的no-resolve边界保留。DOMAIN-WILDCARD要求Build1008+，节点server-dns要求Build996+，另须设备版本支持所用节点协议及Tailscale。OpenAI及Epic的3种动态编号条件沿用既有获准通配适配，标记 `LOON-ADAPTED`，不声称严格等价；Google两条正则被同源后缀覆盖。Egern源Speedtest正则已截断，明确标记 `SOURCE-WARNING`，没有捏造修复。遇到其他未审阅正则或类型直接报错，不能静默丢弃。Reject的3条URL规则保留；HTTPS路径在未解密时不能据此保证拦截，本配置不启用MITM。
+
+Loon会先匹配域名、再求值IP，本地规则又先于远程规则，不能宣称与Egern全条件等价。私密配置仅把基础连接、DNS目标IP及私人IP留本地，并排除STUN，以免遮住源配置最前面的STUN分流；FINAL仍为兜底。远程资源全部位于同一层级。
+
+业务DNS使用从源显式展开、去除冗余后的Host映射，节点DNS另用server-dns；Host只采用已文档化单端点写法，不冒充原多上游组。ChinaMax远程DNS集合没有原生Host集合绑定，不批量下载或假称已覆盖；Apple/system例外保留，内部DoH出口、Host通配优先级、DNS失败回退和Tailscale DNS仍需设备验证。静态检查、生成一致性、客户端加载和设备真实流量分别报告。
+
+语法依据：[Loon官网](https://loonapp.org/)、[官方原生示例](https://github.com/Loon0x00/LoonExampleConfig/blob/master/example2.lcf)、[订阅](https://nsloon.app/en/docs/Node/subscription/)、[规则优先级](https://nsloon.app/en/docs/Rule/)、[通配规则](https://nsloon.app/en/docs/Rule/domain_rule)、[逻辑规则](https://nsloon.app/en/docs/Rule/logic_rule)、[节点及server-dns](https://nsloon.app/en/docs/Node/)、[DNS](https://nsloon.app/en/docs/DNS/)。本次官网首页正文未能直接取得，语法核查使用官方维护者文档与实际下载的原生示例。
 
 ## 直连探测与判断边界
 

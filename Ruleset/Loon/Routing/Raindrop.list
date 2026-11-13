@@ -1,0 +1,7 @@
+# GENERATED-BY: scripts/convert_loon.py
+# LOON-COMPAT: NATIVE-SYNTAX
+# Policy-free native Loon rules; bind policy in [Remote Rule]. Build 1008+.
+# DOMAIN rules precede IP evaluation in Loon; not a runtime equivalence claim.
+# SOURCE-RULESET: Ruleset/Egern/Productivity/Raindrop.yaml
+
+DOMAIN-SUFFIX,raindrop.io

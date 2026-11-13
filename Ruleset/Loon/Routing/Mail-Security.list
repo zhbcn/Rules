@@ -1,0 +1,50 @@
+# GENERATED-BY: scripts/convert_loon.py
+# LOON-COMPAT: NATIVE-SYNTAX
+# Policy-free native Loon rules; bind policy in [Remote Rule]. Build 1008+.
+# DOMAIN rules precede IP evaluation in Loon; not a runtime equivalence claim.
+# SOURCE-RULESET: Ruleset/Egern/Security/1Password.yaml
+# SOURCE-RULESET: Ruleset/Egern/Security/Bitwarden.yaml
+# SOURCE-RULESET: Ruleset/Egern/Technology/Mail.yaml
+# SOURCE-RULESET: Ruleset/Egern/Technology/Protonmail.yaml
+
+DOMAIN,apple.imap.mail.yahoo.com
+DOMAIN,apple.smtp.mail.yahoo.com
+DOMAIN,imap-mail.outlook.com
+DOMAIN,imap.gmail.com
+DOMAIN,outlook.office365.com
+DOMAIN,pop.gmail.com
+DOMAIN,smtp-mail.outlook.com
+DOMAIN,smtp.gmail.com
+DOMAIN,smtp.office365.com
+DOMAIN-SUFFIX,imap.yandex.com
+DOMAIN-SUFFIX,m.hotmail.com
+DOMAIN-SUFFIX,smtp.yandex.com
+DOMAIN-SUFFIX,pm.me
+DOMAIN-SUFFIX,proton.me
+DOMAIN-SUFFIX,protonmail.ch
+DOMAIN-SUFFIX,protonmail.com
+DOMAIN-SUFFIX,protonstatus.com
+DOMAIN-SUFFIX,protontech.ch
+DOMAIN-SUFFIX,protonvpn.ch
+DOMAIN-SUFFIX,protonvpn.com
+DOMAIN-SUFFIX,protonweb.com
+DOMAIN,1password.drift.click
+DOMAIN-SUFFIX,1password.com
+DOMAIN-SUFFIX,1password.ca
+DOMAIN-SUFFIX,1password.co
+DOMAIN-SUFFIX,1password.community
+DOMAIN-SUFFIX,1password.eu
+DOMAIN-SUFFIX,1password.io
+DOMAIN-SUFFIX,1passwordservices.com
+DOMAIN-SUFFIX,1passwordusercontent.com
+DOMAIN-SUFFIX,1passwordusercontent.ca
+DOMAIN-SUFFIX,1passwordusercontent.eu
+DOMAIN-SUFFIX,1infra.net
+DOMAIN-SUFFIX,agilebits.com
+DOMAIN-SUFFIX,passage.id
+DOMAIN-SUFFIX,1password.dev
+DOMAIN-SUFFIX,bitwarden.com
+DOMAIN-SUFFIX,bitwarden.eu
+DOMAIN-SUFFIX,bitwarden.net
+DOMAIN-SUFFIX,btwrdn.co
+DOMAIN-SUFFIX,btwrdn.com
