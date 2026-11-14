@@ -66,7 +66,9 @@ python scripts/check.py --loon-config '<私密Loon.conf>'
 
 配置生成器默认输出关闭远程规则和两路订阅的候选：`enabled=false` 不代表资源或机场已完成验证，不能直接作为活动配置采用。规则发布并核实公开URL后，可显式用 `--enable-remote-rules` 生成仅启用远程规则的版本；节点订阅仍可保持关闭。另外取得机场请求授权并确认原生返回格式及关键节点参数后，才可用 `--enable-subscriptions`。这两个选项本身不发请求，也不能代替授权或设备验证。不要为规则更新误刷机场订阅。
 
-Loon规则使用原生DOMAIN、DOMAIN-SUFFIX、DOMAIN-KEYWORD、DOMAIN-WILDCARD、IP、IP-ASN、协议和嵌套逻辑，IP的no-resolve边界保留。DOMAIN-WILDCARD要求Build1008+，节点server-dns要求Build996+，另须设备版本支持所用节点协议及Tailscale。OpenAI及Epic的3种动态编号条件沿用既有获准通配适配，标记 `LOON-ADAPTED`，不声称严格等价；Google两条正则被同源后缀覆盖。Egern源Speedtest正则已截断，明确标记 `SOURCE-WARNING`，没有捏造修复。遇到其他未审阅正则或类型直接报错，不能静默丢弃。Reject的3条URL规则保留；HTTPS路径在未解密时不能据此保证拦截，本配置不启用MITM。
+Loon 配置不携带本地节点：Egern 中的 Tailscale 不迁移，因此不生成 `[Proxy]` 段，相关策略组选项按名剔除；组若因此无可用成员则生成器报错，不静默输出空组。未启用 MITM 时不写 `[MitM]` 段（Loon 默认不解密），`proxy-test-url`、`internet-test-url` 取自 Egern 的测速字段。远程规则列表由公开仓库按原顺序发布，策略只在本私密文件绑定。
+
+Loon规则使用原生DOMAIN、DOMAIN-SUFFIX、DOMAIN-KEYWORD、DOMAIN-WILDCARD、IP、IP-ASN、协议和嵌套逻辑，IP的no-resolve边界保留。DOMAIN-WILDCARD要求Build1008+，节点server-dns要求Build996+，另须设备版本支持订阅所用节点协议。OpenAI及Epic的3种动态编号条件沿用既有获准通配适配，标记 `LOON-ADAPTED`，不声称严格等价；Google两条正则被同源后缀覆盖。Egern源Speedtest正则已截断，明确标记 `SOURCE-WARNING`，没有捏造修复。遇到其他未审阅正则或类型直接报错，不能静默丢弃。Reject的3条URL规则保留；HTTPS路径在未解密时不能据此保证拦截，本配置不启用MITM。
 
 Loon会先匹配域名、再求值IP，本地规则又先于远程规则，不能宣称与Egern全条件等价。私密配置仅把基础连接、DNS目标IP及私人IP留本地，并排除STUN，以免遮住源配置最前面的STUN分流；FINAL仍为兜底。远程资源全部位于同一层级。
 

@@ -42,6 +42,8 @@ def example_config():
         "allow_external_connections": False, "close_connections_on_policy_change": False,
         "hijack_dns": ["*:53"], "bypass_tunnel_proxy": ["192.168.0.0/16"], "real_ip_domains": ["*.local"],
         "geoip_db_url": "https://example.com/country.mmdb", "asn_db_url": "https://example.com/asn.mmdb",
+        "proxy_latency_test_url": "http://example.com/generate_204",
+        "direct_latency_test_url": "http://example.com/direct_204",
         "dns": {"bootstrap": ["system"], "upstreams": {"Ash": ["https://example.com/dns-query"],
                 "China": ["system", "https://223.5.5.5/dns-query"], "Global": ["https://1.1.1.1/dns-query"],
                 "AIGC": ["https://1.0.0.1/dns-query"]},
@@ -151,13 +153,22 @@ class LoonConversionTests(unittest.TestCase):
         text, summary = build_config(document, ROOT)
         area = sections(text)
         self.assertEqual(summary["cached_provider_nodes"], 0)
-        self.assertEqual(len(area["Proxy"]), 1)
+        self.assertEqual(summary["omitted_local_proxies"], ["Tailnet Example"])
+        self.assertNotIn("Proxy", area)
+        self.assertNotIn("MitM", area)
+        self.assertNotIn("Tailnet Example", text)
         self.assertEqual(len(area["Remote Proxy"]), 2)
         self.assertTrue(all("enabled=false" in x for x in area["Remote Proxy"] + area["Remote Rule"]))
         self.assertEqual(check_config(text, ROOT), [])
         actual_url = area["Remote Proxy"][0].split(" = ", 1)[1].split(",", 1)[0]
         self.assertEqual(actual_url, document["policy_groups"][-1]["external"]["urls"][0])
         self.assertNotIn("flag=", actual_url)
+
+    def test_group_left_without_members_after_omitting_local_proxy_fails(self):
+        document = example_config()
+        document["policy_groups"].append({"select": {"name": "Tailnet only", "policies": ["Tailnet Example"]}})
+        with self.assertRaises(ValueError):
+            build_config(document, ROOT)
 
     def test_private_local_exceptions_do_not_mask_earlier_stun_rules(self):
         text, _ = build_config(example_config(), ROOT)

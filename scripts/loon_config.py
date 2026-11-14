@@ -25,7 +25,7 @@ GENERAL_FIELDS = {
     "real-ip", "hijack-dns", "allow-wifi-access", "wifi-access-http-port",
     "wifi-access-socks5-port", "disconnect-on-policy-change", "disable-stun",
     "udp-fallback-mode", "domain-reject-mode", "sni-sniffing", "interface-mode",
-    "geoip-url", "ipasn-url",
+    "geoip-url", "ipasn-url", "proxy-test-url", "internet-test-url",
 }
 
 
@@ -131,13 +131,13 @@ def build_config(document: dict, root: Path, *, remote_rules: bool = False,
     if urlsplit(urls[0]).hostname != "static01.flowaccess.org":
         raise ValueError("Ash source host changed; review source order")
     hosts, gaps = build_hosts(document, root)
-    out = ["# Loon native candidate built from the current main Egern configuration.",
-           "# Verify rule publication before enabling rules; verify native responses separately before enabling subscriptions.",
-           "# No cached provider nodes, resource parser, MITM, scripts, plugins, rewrites or automatic tests.",
-           "# Requires Build 1008+ for native DOMAIN-WILDCARD; Tailscale support also required.",
-           "# Loon domain-before-IP and local-before-remote behavior differs from Egern.",
+    out = ["# Loon native configuration built from the current main Egern configuration.",
+           "# Native Loon only: [Remote Proxy] subscriptions parsed by Loon itself (no resource parser),",
+           "# policy-free remote rule lists bound here, native [Host] DNS maps. No Tailscale node.",
+           "# Requires Build 1008+ for native DOMAIN-WILDCARD and Build 996+ for subscription server-dns.",
+           "# Loon evaluates domain rules before IP rules and local rules before remote rules, unlike Egern.",
            "# DNS Host maps choose one endpoint; ChinaMax DNS sets and DNS egress remain unverified.",
-           "# Never update Ash merely to test this candidate; current task did not authorize a request.", "", "[General]"]
+           "# Never update Ash merely to test this file; no subscription was requested while building it.", "", "[General]"]
     general = {
         "ip-mode": "dual" if document["ipv6"] else "v4-only",
         "ipv6-vif": "auto" if document["ipv6"] else "off",
@@ -154,20 +154,17 @@ def build_config(document: dict, root: Path, *, remote_rules: bool = False,
         "disable-stun": "false", "udp-fallback-mode": "REJECT", "domain-reject-mode": "Request",
         "sni-sniffing": "true", "interface-mode": "auto",
         "geoip-url": document["geoip_db_url"], "ipasn-url": document["asn_db_url"],
+        "proxy-test-url": document["proxy_latency_test_url"],
+        "internet-test-url": document["direct_latency_test_url"],
     }
     out += [key + " = " + value for key, value in general.items()]
-    out += ["", "[Proxy]"]
-    if len(document["proxies"]) != 1 or "tailscale" not in document["proxies"][0]:
-        raise ValueError("Local proxy types changed; no automatic protocol substitution")
-    tailscale = document["proxies"][0]["tailscale"]
-    if not tailscale.get("interactive_login"):
-        raise ValueError("Tailscale authentication requires manual review")
-    ts = ["tailscale", "exit-node=none", "path-mode=" + ("derp" if tailscale.get("derp_only") else "auto"),
-          "magic-dns=" + str(tailscale.get("auto_add_magic_dns_rule", True)).lower(),
-          "accept-dns=false", "ip-mode=" + ("prefer-v6" if tailscale.get("prefer_ipv6") else "v4-only"),
-          "udp=true", "block-quic=false"]
-    out += [tailscale["name"] + " = " + ",".join(ts), "", "[Remote Proxy]",
-            "# Native response format is UNVERIFIED for both URLs. Disabled until authorized verification."]
+    # Loon adaptation drops local proxies: the source's only local node is Tailscale, which is
+    # intentionally not carried over. No cached provider nodes are emitted either.
+    for proxy in document["proxies"]:
+        if len(proxy) != 1 or "tailscale" not in proxy:
+            raise ValueError("Local proxy types changed; no automatic protocol substitution")
+    omitted = {proxy["tailscale"]["name"] for proxy in document["proxies"]}
+    out += ["", "[Remote Proxy]", "# Native Loon subscription parsing; response format is not pre-verified."]
     for label, url in zip(labels, urls):
         dns = document["dns"]["upstreams"]["Ash" if label == "Ash" else "China"]
         out += [label + " = " + url + ",parser-enabled=false,udp=default,block-quic=default,fast-open=default,skip-cert-verify=default,enabled=" + str(subscriptions).lower() + ",server-dns=" + quote(",".join(dns))]
@@ -189,6 +186,9 @@ def build_config(document: dict, root: Path, *, remote_rules: bool = False,
             members = list(group["policies"])
             if group["name"] == "Public network":
                 members = ["日本"] + [x for x in members if x != "日本"]
+            members = [x for x in members if x not in omitted]
+            if not members:
+                raise ValueError("Policy group only referenced omitted local proxies: " + group["name"])
         out += [group["name"] + " = select," + ",".join(members) + (",img-url=" + group["icon"] if group.get("icon") else "")]
     out += ["", "[Rule]", "# Only private bootstrap, explicit resolver egress, personal IPs and FINAL stay local.",
             "# Exclude STUN here: source STUN routing precedes every private local exception."]
@@ -205,16 +205,17 @@ def build_config(document: dict, root: Path, *, remote_rules: bool = False,
                 guarded = Rule("AND", children=(Rule("NOT", children=(Rule("PROTOCOL", "STUN"),)), rule))
                 out += [local_line(guarded, spec["policy"])]
                 local_count += 1
-    out += ["", "[Remote Rule]", "# PLANNED URLS: disabled until public resources are published and independently verified.",
-            "# Order follows Egern. Binding policy stays in this private file, not in public resources."]
+    out += ["", "[Remote Rule]", "# Policy is bound here; the public rule lists carry no policy. Order follows Egern.",
+            "# enabled=" + str(remote_rules).lower() + " is a builder flag, not a runtime availability check."]
     for item in resources:
         policy = next(iter(document["rules"][item["source_index"] - 1].values()))["policy"]
         out += [REMOTE_BASE + item["file"] + ",policy=" + policy + ",tag=" + Path(item["file"]).stem + ",enabled=" + str(remote_rules).lower()]
     out += ["", "[Host]", "# Materialized explicit business DNS; redundant same-endpoint descendants removed."]
     out += [key + " = server:" + value for key, value in hosts.items()]
-    out += ["", "[Mitm]", "enable = false", ""]
-    return "\n".join(out), {"remote_resources": len(resources), "subscriptions": len(urls), "local_rules_without_final": local_count,
+    # No [MitM] section: Loon keeps MITM off unless hostname/ca-p12 are configured.
+    return "\n".join(out) + "\n", {"remote_resources": len(resources), "subscriptions": len(urls), "local_rules_without_final": local_count,
                               "host_maps": len(hosts), "dns_gaps": gaps, "cached_provider_nodes": 0,
+                              "omitted_local_proxies": sorted(omitted),
                               "remote_rules_enabled": remote_rules, "subscriptions_enabled": subscriptions}
 
 
@@ -242,12 +243,14 @@ def check_config(text: str, root: Path) -> list[str]:
     errors = []
     try:
         area = sections(text)
-        if set(area) != {"General", "Proxy", "Remote Proxy", "Remote Filter", "Proxy Group", "Rule", "Remote Rule", "Host", "Mitm"}:
+        required = {"General", "Remote Proxy", "Remote Filter", "Proxy Group", "Rule", "Remote Rule", "Host"}
+        optional = {"Proxy", "MitM", "MITM"}
+        if not required <= set(area) or set(area) - required - optional:
             raise ValueError("Unexpected section set")
         if {x.split("=", 1)[0].strip() for x in area["General"]} != GENERAL_FIELDS:
             raise ValueError("Unexpected General fields")
-        names = {x.split("=", 1)[0].strip() for key in ("Proxy", "Remote Proxy", "Remote Filter", "Proxy Group") for x in area[key]}
-        expected_count = sum(len(area[x]) for x in ("Proxy", "Remote Proxy", "Remote Filter", "Proxy Group"))
+        names = {x.split("=", 1)[0].strip() for key in ("Proxy", "Remote Proxy", "Remote Filter", "Proxy Group") if key in area for x in area[key]}
+        expected_count = sum(len(area[x]) for x in ("Proxy", "Remote Proxy", "Remote Filter", "Proxy Group") if x in area)
         if len(names) != expected_count:
             raise ValueError("Duplicate policy/filter/node name")
         dependencies = {}
@@ -310,8 +313,11 @@ def check_config(text: str, root: Path) -> list[str]:
                 raise ValueError("Subscription must preserve node settings without parser")
             if not options.get("server-dns", "").startswith('"'):
                 raise ValueError("Node DNS list must be quoted")
-        if area["Mitm"] != ["enable = false"]:
-            raise ValueError("MITM must be disabled")
+        mitm = area.get("MitM") or area.get("MITM")
+        if mitm:
+            for line in mitm:
+                if line.split("=", 1)[0].strip() not in {"hostname", "ca-p12", "ca-passphrase", "skip-server-cert-verify"}:
+                    raise ValueError("Unreviewed MITM setting")
         for line in area["Host"]:
             key, value = line.split("=", 1)
             if not key.strip() or not value.strip().startswith("server:"):
