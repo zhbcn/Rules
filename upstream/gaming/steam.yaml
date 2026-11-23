@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: v2fly
   ref: steam
+  commit: dfa5b1c2258289bdbee70d06352cca23b9bdac7f
 rules:
   domain:
   - a4e8s8k3.map2.ssl.hwcdn.net

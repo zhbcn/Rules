@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: v2fly
   ref: reddit
+  commit: dfa5b1c2258289bdbee70d06352cca23b9bdac7f
 rules:
   domain_suffix:
   - redd.it

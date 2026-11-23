@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: v2fly
   ref: cn
+  commit: dfa5b1c2258289bdbee70d06352cca23b9bdac7f
 rules:
   domain:
   - account-cn.alibabacloud.com
@@ -16,7 +17,9 @@ rules:
   - api.blipsandchitz.me
   - apilog-web.acfun.cn
   - app.moegirl.org.cn
+  - bytedance.map.fastly.net
   - cn.alibabacloud.com
+  - community.oneplus.com
   - ctdsb.clouddiffuse.xyz
   - cueme-api.quark.cn
   - end-api.shallow.ink
@@ -48,6 +51,8 @@ rules:
   - ntp7.aliyun.com
   - opencourse.pku.edu.cn
   - p1-juejin.byteimg.com
+  - p16-tiktok-dm-sticker-sign-sg.ibyteimg.com
+  - p16-tiktokcdn-com.akamaized.net
   - p2-juejin.byteimg.com
   - p3-ad-sign.byteimg.com
   - p3-juejin.byteimg.com
@@ -61,6 +66,10 @@ rules:
   - p8-juejin.byteimg.com
   - p9-ad-sign.byteimg.com
   - p9-juejin.byteimg.com
+  - roovza-launches.appsflyersdk.com
+  - roovza.inapps.appsflyersdk.com
+  - roovza.launches.appsflyersdk.com
+  - roovza.skadsdk.appsflyersdk.com
   - rtlog3-applog-hl.fqnovel.com
   - rtlog3-applog.fqnovel.com
   - rtlog5-applog-hl.fqnovel.com
@@ -72,6 +81,8 @@ rules:
   - time.amazonaws.cn
   - time.izatcloud.net
   - time.xtracloud.net
+  - upos-hz-mirrorakam.akamaized.net
+  - wetv.qq.com
   - wlog.kuaishou.com
   - xtratime.qcomgeo2.com
   - ykimg.alicdn.com
@@ -170,6 +181,7 @@ rules:
   - 16rd.com
   - 17173.com
   - 17173cdn.com
+  - 172.com
   - 172mix.com
   - 178.com
   - 178linux.com
@@ -201,9 +213,12 @@ rules:
   - 1kkk.com
   - 1nongjing.com
   - 1ppt.com
+  - 1qianbao.com
   - 1ting.com
   - 1tyy.cn
   - 1xhh.cn
+  - 1y.com
+  - 1ycdn.com
   - 1zhe.com
   - 20130123.com
   - 21cn.com
@@ -325,6 +340,7 @@ rules:
   - 3yx.com
   - 40017.cn
   - 4008-517-517.cn
+  - 4008000000.com
   - 4008117117.com
   - 40407.com
   - 423down.com
@@ -430,6 +446,7 @@ rules:
   - 58pic.com
   - 58uxd.com
   - 58v5.cn
+  - 58wos.com.cn
   - 58xinghuo.cn
   - 58xinghuo.com
   - 58xueche.com
@@ -565,6 +582,7 @@ rules:
   - abchina.com
   - abdf002.com
   - abhouses.com
+  - aboutmcdonalds.com
   - ac.fun
   - acadn.cn
   - acadn.com
@@ -692,7 +710,16 @@ rules:
   - adx.36kr.com
   - adx.xiaodutv.com
   - adxvip.com
+  - ae-ad-1.myhuaweicloud.com
+  - ae-rus.net
+  - aedns.ru
   - aegis.qq.com
+  - aeplatform.ru
+  - aestatic.net
+  - af-east-201.myhuaweicloud.com
+  - af-north-1.myhuaweicloud.com
+  - af-south-1.myhuaweicloud.com
+  - af-west-202.myhuaweicloud.com
   - afd.baidu.com
   - afdconf.baidu.com
   - afdian.com
@@ -736,9 +763,37 @@ rules:
   - aiqicha.com
   - air-matters.com
   - airchangan.com
+  - airchina.ae
+  - airchina.at
+  - airchina.ca
+  - airchina.ch
   - airchina.cn
+  - airchina.co.id
+  - airchina.co.in
+  - airchina.co.th
+  - airchina.co.uk
   - airchina.com
+  - airchina.com.au
+  - airchina.com.br
   - airchina.com.cn
+  - airchina.com.my
+  - airchina.com.ph
+  - airchina.com.tw
+  - airchina.de
+  - airchina.dk
+  - airchina.es
+  - airchina.fr
+  - airchina.gr
+  - airchina.hk
+  - airchina.hu
+  - airchina.it
+  - airchina.jp
+  - airchina.kr
+  - airchina.nz
+  - airchina.se
+  - airchina.sg
+  - airchina.us
+  - airchina.vn
   - airchinacargo.com
   - airchinagroup.com
   - airchinalimited.cn
@@ -759,10 +814,17 @@ rules:
   - aiyunxiao.com
   - aizgtc.com
   - aizhan.com
+  - ajkimg.com
   - ajzq.com
+  - ak-p.tripcdn.com
+  - ak-s-cw.tripcdn.com
+  - ak-s.tripcdn.com
   - aka815.net
+  - akatest.tripcdn.com
   - aki-game.com
+  - aki-game.net
   - aki-game2.com
+  - aki-game2.net
   - akikocorp.cn
   - akspeedy.com
   - aldwx.com
@@ -779,6 +841,13 @@ rules:
   - alibabacapital.com
   - alibabachengdun.com
   - alibabachengdun.net
+  - alibabacloud.co.in
+  - alibabacloud.com
+  - alibabacloud.com.au
+  - alibabacloud.com.hk
+  - alibabacloud.com.my
+  - alibabacloud.com.sg
+  - alibabacloud.com.tw
   - alibabacorp.com
   - alibabadesign.com
   - alibabadns.com
@@ -792,18 +861,21 @@ rules:
   - alibabaued.com
   - alibabausercontent.com
   - alicdn.com
+  - alicloud.com
   - alicloudapi.com
   - alicloudccp.com
   - alidayu.com
   - alidns.com
   - aliexpress-media.com
   - aliexpress.com
+  - aliexpress.ru
   - alifanyi.com
   - aligames.com
   - aligenie.com
   - aligfwaf.com
   - alihealth.cn
   - alihealth.com.cn
+  - alihealth.hk
   - alihive.com
   - aliimg.com
   - alikmd.com
@@ -822,8 +894,10 @@ rules:
   - alipay.cn
   - alipay.com
   - alipay.com.cn
+  - alipay.hk
   - alipaydns.com
   - alipaylog.com
+  - alipaymo.com
   - alipayobjects.com
   - alipayplus.com
   - aliplus.com
@@ -906,7 +980,10 @@ rules:
   - anixplayer.net
   - anjuke.com
   - anjukestatic.com
+  - anker-in.com
+  - anker.com
   - anker.com.cn
+  - ankersolix.com
   - ankerwork.cn
   - anlaiye.com
   - anlaiye.com.cn
@@ -938,6 +1015,44 @@ rules:
   - aoshu.com
   - aotrip.net
   - aoyou.com
+  - ap-bangkok.myqcloud.com
+  - ap-bangkok.tencentcos.cn
+  - ap-bangkok.tencentcos.com
+  - ap-bangkok.tencentcos.com.cn
+  - ap-hongkong.myqcloud.com
+  - ap-hongkong.tencentcos.cn
+  - ap-hongkong.tencentcos.com
+  - ap-hongkong.tencentcos.com.cn
+  - ap-jakarta.myqcloud.com
+  - ap-jakarta.tencentcos.cn
+  - ap-jakarta.tencentcos.com
+  - ap-jakarta.tencentcos.com.cn
+  - ap-mumbai.myqcloud.com
+  - ap-mumbai.tencentcos.cn
+  - ap-mumbai.tencentcos.com
+  - ap-mumbai.tencentcos.com.cn
+  - ap-northeast-201.myhuaweicloud.com
+  - ap-seoul.myqcloud.com
+  - ap-seoul.tencentcos.cn
+  - ap-seoul.tencentcos.com
+  - ap-seoul.tencentcos.com.cn
+  - ap-singapore.myqcloud.com
+  - ap-singapore.tencentcos.cn
+  - ap-singapore.tencentcos.com
+  - ap-singapore.tencentcos.com.cn
+  - ap-southeast-1.aliyuncs.com
+  - ap-southeast-1.myhuaweicloud.com
+  - ap-southeast-2.myhuaweicloud.com
+  - ap-southeast-201.myhuaweicloud.com
+  - ap-southeast-202.myhuaweicloud.com
+  - ap-southeast-203.myhuaweicloud.com
+  - ap-southeast-3.myhuaweicloud.com
+  - ap-southeast-4.myhuaweicloud.com
+  - ap-southeast-5.myhuaweicloud.com
+  - ap-tokyo.myqcloud.com
+  - ap-tokyo.tencentcos.cn
+  - ap-tokyo.tencentcos.com
+  - ap-tokyo.tencentcos.com.cn
   - apaas-zone-test.com
   - apabi.com
   - apcdns.net
@@ -971,8 +1086,14 @@ rules:
   - arco.design
   - ark-doc-resources.cn
   - ark.letv.com
+  - arknights.com
+  - arknights.com.cn
   - arpun.com
   - arrow.cn
+  - as-south-0.myhuaweicloud.com
+  - as-south-201.myhuaweicloud.com
+  - as-south-205.myhuaweicloud.com
+  - as-south-207.myhuaweicloud.com
   - asczwa.com
   - asczxcefsv.com
   - asfiovnxocqpcry.com.cn
@@ -993,21 +1114,25 @@ rules:
   - atomgit.com
   - atticus.vip
   - audid.umeng.com
+  - aufit-air.com
   - aurorapush.cn
   - auto-validation.com
-  - autoglm.ai
   - autohome.com
   - autohome.com.cn
   - autohome.tel
   - autoimg.cn
   - autoimg.com.cn
   - autonavi.com
+  - aux-global.com
   - aux-home.com
+  - auxair.com
   - auxauto.com.cn
+  - auxcac.cn
   - auxcss.com
   - auxgroup.com
   - auxshop.cn
   - auxshop.com
+  - auxsmart.com
   - auxsmart.com.cn
   - auxsol.com
   - auxsolar.com.cn
@@ -1019,6 +1144,9 @@ rules:
   - avicfund.cn
   - avicsec.com
   - avlyun.com
+  - aw-d.tripcdn.com
+  - aw-p.tripcdn.com
+  - aw-s.tripcdn.com
   - awemeughun.com
   - awemeuglang.com
   - awemeugsoul.com
@@ -1076,6 +1204,9 @@ rules:
   - baikevod.com
   - baimiao.tech
   - baimiaoapp.com
+  - baishan.com
+  - baishancdnx.cn
+  - baishancloud.com
   - baishinetwork.com
   - baitiao.com
   - baixing.com
@@ -1244,6 +1375,7 @@ rules:
   - bilibili.cn
   - bilibili.com
   - bilibili.net
+  - bilibili.tv
   - bilibiligame.cn
   - bilibiligame.co
   - bilibiligame.net
@@ -1261,6 +1393,7 @@ rules:
   - biligame.net
   - biligo.com
   - biliimg.com
+  - biliintl.com
   - bilivideo.cn
   - bilivideo.com
   - bilivideo.net
@@ -1315,6 +1448,7 @@ rules:
   - bocgi.com
   - bocgins.com
   - bochaai.com
+  - bochk.com
   - bocichina.cn
   - bocichina.com
   - bocichina.com.cn
@@ -1436,6 +1570,7 @@ rules:
   - bytedance.org
   - bytedanceapi.com
   - bytedancehermestest.com
+  - bytedapm.com
   - bytedcdn.com
   - bytedeliver.com
   - bytedgames.com
@@ -1457,6 +1592,7 @@ rules:
   - bytefcdnrd.com
   - bytegecko.com
   - bytegeckoext.com
+  - byteglb.com
   - bytegoofy.com
   - bytegqpo.net
   - bytegrowth.com
@@ -1481,6 +1617,8 @@ rules:
   - byteoc.com
   - byteorg.com
   - byteorge.com
+  - byteoversea.com
+  - byteoversea.net
   - byteplus-api-test.com
   - byteplus-api-test.com.cn
   - byteplus-api.com.cn
@@ -1519,8 +1657,11 @@ rules:
   - c-ctrip.com
   - c-nfa.jd.com
   - c-t.work
+  - c.mi.com
   - c.sayhi.360.cn
   - c.uaa.iqiyi.com
+  - ca-east-201.myhuaweicloud.com
+  - ca.file.myqcloud.com
   - caac.gov.cn
   - cabbagebox.com
   - cache4ever.com
@@ -1551,6 +1692,8 @@ rules:
   - caocaokeji.cn
   - caoliao.net
   - capcut.cn
+  - capcut.com
+  - capcutcdn-us.com
   - capitalonline.net
   - cardbaobao.com
   - carnoc.com
@@ -1572,8 +1715,10 @@ rules:
   - ccbfund.com.cn
   - ccbfutures.cn
   - ccbfutures.com
+  - ccbintl.com.hk
   - ccbleasing.com
   - ccblife-test.com.cn
+  - ccbseoul.com
   - ccbtrust.com.cn
   - ccbxt.com
   - ccf.org.cn
@@ -1805,7 +1950,6 @@ rules:
   - chatdrama.cn
   - chatdrama.net
   - chatglm.cn
-  - chatglm.com
   - chatqidian.cn
   - chatqidian.net
   - chattext.cn
@@ -1898,12 +2042,16 @@ rules:
   - chinatea.com.cn
   - chinatelecom-h.com
   - chinatelecom.com.cn
+  - chinatelecomglobal.com
+  - chinatelecomhk.com
   - chinatowercom.cn
   - chinatranslation.net
   - chinaums.com
   - chinaunicom.cn
   - chinaunicom.com
   - chinaunicom.com.cn
+  - chinaunicom.com.hk
+  - chinaunicomglobal.com
   - chinaunionpay.com
   - chinaunionpay.com.cn
   - chinaunionpay.net
@@ -1940,6 +2088,7 @@ rules:
   - chugou360.com
   - chuimg.com
   - chujingapp.com
+  - chunithm.wahlap.com
   - chunyu.mobi
   - chunyuyisheng.com
   - chushi.cool
@@ -1950,6 +2099,9 @@ rules:
   - cibntv.net
   - cicc.com
   - ciccwm.com
+  - cici.com
+  - ciciai.com
+  - ciciaicdn.com
   - cidp.com.cn
   - cignacmb-ipmi.com
   - cignacmb.com
@@ -1965,6 +2117,7 @@ rules:
   - citiciam.com
   - citicifh.com
   - citicprufunds.com.cn
+  - citics.com.hk
   - citicsf.com
   - citv.net.cn
   - city8.com
@@ -2098,11 +2251,13 @@ rules:
   - cmbchina.biz
   - cmbchina.cn
   - cmbchina.com
+  - cmbi.com.hk
   - cmbimg.cn
   - cmbimg.com
   - cmbt.cn
   - cmbuat.com
   - cmburl.cn
+  - cmbwinglungbank.com
   - cmcc-cs.cn
   - cmcm.com
   - cmcmcdn.com
@@ -2125,6 +2280,7 @@ rules:
   - cn-guangzhou.aliyuncs.com
   - cn-ha.mqtt.io.mi.com
   - cn-hangzhou.aliyuncs.com
+  - cn-hongkong.aliyuncs.com
   - cn-shanghai.aliyuncs.com
   - cn.pool.ntp.org
   - cnanzhi.com
@@ -2134,6 +2290,7 @@ rules:
   - cnblogs.com
   - cnblogs.vip
   - cnca.cn
+  - cncbinternational.com
   - cncn.com
   - cncnimg.cn
   - cncqcloud.com
@@ -2180,8 +2337,6 @@ rules:
   - code666.com
   - codebuddy.cn
   - codechina.net
-  - codegeex.ai
-  - codegeex.cn
   - codeloop.top
   - coding.me
   - coding.net
@@ -2216,8 +2371,12 @@ rules:
   - coolsite.vip
   - coros.com
   - cosbj.myqcloud.com
+  - cosca.myqcloud.com
   - coscd.myqcloud.com
+  - cosger.myqcloud.com
   - cosgz.myqcloud.com
+  - coshk.myqcloud.com
+  - cossgp.myqcloud.com
   - cossh.myqcloud.com
   - costj.myqcloud.com
   - countsheep.cn
@@ -2226,6 +2385,7 @@ rules:
   - cowtransfer.com
   - coze-dns-01.com
   - coze.cn
+  - coze.com
   - coze.email
   - coze.site
   - cozeapp.net
@@ -2283,6 +2443,7 @@ rules:
   - csair.com
   - csbew.com
   - csc108.com
+  - csci.hk
   - csco.com.cn
   - csdl.ac.cn
   - csdn.com
@@ -2316,6 +2477,11 @@ rules:
   - ctdsb.net
   - ctecdn.cn
   - ctecx.cn
+  - ctexcel.ca
+  - ctexcel.com
+  - ctexcel.com.hk
+  - ctexcel.fr
+  - ctexcel.us
   - ctfile.com
   - ctfund.com
   - ctgcdn.com
@@ -2332,8 +2498,15 @@ rules:
   - ctovcdn.com
   - ctrender.com
   - ctrip.cn
+  - ctrip.co.id
+  - ctrip.co.kr
+  - ctrip.co.th
   - ctrip.com
+  - ctrip.com.hk
+  - ctrip.my
+  - ctrip.sg
   - ctripbiz.com
+  - ctripbuy.hk
   - ctripgslb.cn
   - ctripgslb.com
   - ctripgslb.com.cn
@@ -2371,7 +2544,10 @@ rules:
   - cubead.com
   - cueme.cn
   - cugbonline.cn
+  - cuguplus.com
   - cunchuhulian-ln.cn
+  - cuniq.com
+  - cuniq.sg
   - cup.com.cn
   - cup62.cn
   - cupid.iqiyi.com
@@ -2427,7 +2603,6 @@ rules:
   - daojia.com
   - daotudashi.com
   - daovoice.io
-  - dashscope.aliyuncs.com
   - data.mistat.india.xiaomi.com
   - data.mistat.intl.xiaomi.com
   - data.mistat.rus.xiaomi.com
@@ -2452,6 +2627,7 @@ rules:
   - dbankcdn.com
   - dbankcloud.cn
   - dbankcloud.com
+  - dbankcloud.ru
   - dbankedge.cn
   - dbankedge.net
   - dbbuilding.fun
@@ -2504,6 +2680,8 @@ rules:
   - deepepg.com
   - deepin.cn
   - deepin.com
+  - deepin.io
+  - deepin.org
   - deepin.org.cn
   - deepinos.org
   - deepseek.com
@@ -2557,9 +2735,13 @@ rules:
   - dida365.com
   - didachuxing.com
   - didapinche.com
+  - didi-food.com
   - didi.cn
   - didialift.com
+  - didiaustralia.blog
   - didichuxing.com
+  - didiglobal.com
+  - didimobility.co.jp
   - didistatic.com
   - diditaxi.com.cn
   - dig.bdurl.net
@@ -2653,6 +2835,7 @@ rules:
   - doh.iqiyi.com
   - doh.ptqy.gitv.tv
   - doh.pub
+  - dola.com
   - donews.com
   - dongao.com
   - dongchedi.com
@@ -2713,6 +2896,7 @@ rules:
   - draftstatic.com
   - dratio.com
   - drcnet.com.cn
+  - dreamcast.hk
   - dreame.tech
   - dreams-travel.com
   - drivergenius.com
@@ -2802,6 +2986,7 @@ rules:
   - e.stat.ykimg.com
   - e0n.cn
   - eagsen.com
+  - easebar.com
   - easec.com.cn
   - easemob.com
   - easesale.com
@@ -2829,6 +3014,7 @@ rules:
   - ebtrust.com
   - eceshi.com
   - echargenet.com
+  - echooai.com
   - ecitic.com
   - ecjobhome.com
   - eckwai.com
@@ -2890,6 +3076,7 @@ rules:
   - emr-volces.com
   - ems.com.cn
   - ems.youku.com
+  - emsec.hk
   - emumax.com
   - englibrary.com
   - enterdesk.com
@@ -2907,9 +3094,12 @@ rules:
   - erp321.net
   - ersjk.com
   - esgcc.com.cn
+  - esp32.com
   - esp8266.cn
+  - esp8266.com
   - esp8266.com.cn
   - espressif.cn
+  - espressif.com
   - espressif.com.cn
   - essence.com.cn
   - essurl.com
@@ -2918,8 +3108,26 @@ rules:
   - et0731.com
   - etao.com
   - ets100.com
+  - eu-central-201.myhuaweicloud.com
+  - eu-central-202.myhuaweicloud.com
+  - eu-frankfurt.myqcloud.com
+  - eu-frankfurt.tencentcos.cn
+  - eu-frankfurt.tencentcos.com
+  - eu-frankfurt.tencentcos.com.cn
+  - eu-moscow.myqcloud.com
+  - eu-moscow.tencentcos.cn
+  - eu-moscow.tencentcos.com
+  - eu-moscow.tencentcos.com.cn
+  - eu-north-201.myhuaweicloud.com
+  - eu-west-0.myhuaweicloud.com
+  - eu-west-1.myhuaweicloud.com
+  - eu-west-101.myhuaweicloud.com
+  - eu-west-201.myhuaweicloud.com
   - euads-o.api.leiniao.com
+  - eufy.com
   - eufycn.com
+  - eufylife.com
+  - eufymake.com
   - eufymake.com.cn
   - everbright.com
   - evolife.cn
@@ -2972,8 +3180,10 @@ rules:
   - favonis.cloud
   - favonis.com
   - favonis.space
+  - faw-vw.com
   - faw.cn
   - faxingbao.com
+  - fazhipro.com
   - fbank.com
   - fbstatic.cn
   - fcapp.run
@@ -3068,6 +3278,7 @@ rules:
   - fjsen.com
   - flgff.cn
   - fliggy.com
+  - fliggy.hk
   - flowus.cn
   - flxdns.cn
   - flxdns.com
@@ -3282,6 +3493,7 @@ rules:
   - gelonghui.com
   - geossl.cn
   - gepush.com
+  - ger.file.myqcloud.com
   - getfeishu.cn
   - getfeishu.com
   - getsays.cn
@@ -3331,6 +3543,7 @@ rules:
   - gjzq.com.cn
   - gk100.com
   - gkzq.com.cn
+  - global.market.xiaomi.com
   - globalcdn.cn
   - globalrdp.cn
   - globalssh.cn
@@ -3405,6 +3618,10 @@ rules:
   - growthsharebounce.cn
   - growthsharequestion.cn
   - growthsharetubular.cn
+  - gryphline.cn
+  - gryphline.com
+  - gryphline.com.cn
+  - gryphline.net
   - grzq.com
   - gsadds.com
   - gsctyiptv.cn
@@ -3499,7 +3716,6 @@ rules:
   - haier.net
   - haiersmarthomes.com
   - hailuoai.com
-  - hailuoai.video
   - haimian.com
   - hainanairlines.com
   - haishun.com
@@ -3540,6 +3756,10 @@ rules:
   - happyelements.com
   - happyhlddz.com
   - happyhorse.cn
+  - happymeal.co.nz
+  - happymeal.com
+  - happymeal.com.au
+  - happymealdigital.com
   - happyshrimp.cn
   - harmonyos.com
   - haydaypop.cn
@@ -3601,7 +3821,10 @@ rules:
   - hftfund.com
   - hfx.net
   - hfzq.com.cn
+  - hg-cdn.com
+  - hgto.cc
   - hhtravel.com
+  - hhtravel.com.tw
   - hi-butterfly.cn
   - hiaiabc.com
   - hiascend.cn
@@ -3642,6 +3865,8 @@ rules:
   - hiyd.com
   - hjapi.com
   - hjfile.cn
+  - hk.file.myqcloud.com
+  - hk.weibo.com
   - hkgcloudcs.com
   - hkmanga.com
   - hktheone.com
@@ -3774,6 +3999,8 @@ rules:
   - huaweiapaas.com
   - huaweicloud-dns.cn
   - huaweicloud-dns.com
+  - huaweicloud-dns.net
+  - huaweicloud-dns.org
   - huaweicloud-idme.cn
   - huaweicloud-idme.com
   - huaweicloud-koophone.cn
@@ -3887,9 +4114,15 @@ rules:
   - hxsd.com
   - hxzq.cn
   - hybiome.com
+  - hycdn.cn
+  - hycdn.com
   - hydun.com
   - hypercachenet.com
   - hypercachenode.com
+  - hypergryph.cn
+  - hypergryph.com
+  - hypergryph.com.cn
+  - hypergryph.net
   - hytung.cn
   - hzchengdun.com
   - hzchengdun.net
@@ -3921,20 +4154,68 @@ rules:
   - iboxpay.com
   - ibuychem.com
   - ibytedapm.com
+  - ibytedtos.com
+  - ibyteimg.com
   - ibytepluses-test.com
   - ibytepluses.com.cn
   - ica-alliance.org
   - icaidao.com
   - icbc
+  - icbc-at.com
+  - icbc-cz.com
+  - icbc-ltd.com
+  - icbc-uk.com
+  - icbc-us.com
+  - icbc.ae
+  - icbc.be
+  - icbc.co.id
+  - icbc.co.jp
+  - icbc.co.kr
+  - icbc.co.nl
+  - icbc.com.au
   - icbc.com.cn
+  - icbc.com.es
+  - icbc.com.kh
+  - icbc.com.kw
+  - icbc.com.la
+  - icbc.com.mm
+  - icbc.com.mo
+  - icbc.com.mx
+  - icbc.com.pe
+  - icbc.com.pk
+  - icbc.com.qa
+  - icbc.com.sg
+  - icbc.com.vn
+  - icbc.de
+  - icbc.eu
+  - icbc.lu
+  - icbcalmaty.kz
+  - icbcasia.com
+  - icbcbr.com.br
   - icbccs.com.cn
   - icbccstz.com.cn
+  - icbci.com.hk
   - icbcina.com
+  - icbcindia.com
+  - icbcit.com
+  - icbclondon.com
   - icbcmanila.com.cn
+  - icbcme.ae
+  - icbcmoscow.ru
+  - icbcmy.com
+  - icbcnz.com
+  - icbcpanama.com
+  - icbcparis.fr
+  - icbcpl.com
   - icbcstandard.com
   - icbcstandardbank.com
   - icbcstandardresources.com
   - icbcstandardsecurities.com
+  - icbcswiss.com
+  - icbcthai.com
+  - icbkfs.com
+  - icbkus.com
+  - icc.link
   - iccvlog.com
   - iceo.com.cn
   - ichangtou.com
@@ -4065,6 +4346,7 @@ rules:
   - inte.sogou.com
   - inte.sogoucdn.com
   - intime.com.cn
+  - intltencentcos.com
   - intsig.com
   - intsig.net
   - ioppo.com.cn
@@ -4088,6 +4370,7 @@ rules:
   - ipshu.com
   - ipshudi.com
   - ipssh.net
+  - iq.com
   - iqilu.com
   - iqiyi.com
   - iqiyipic.com
@@ -4207,8 +4490,12 @@ rules:
   - jd-ex.com.cn
   - jd-ex.net
   - jd.cn
+  - jd.co.th
   - jd.com
   - jd.com.cn
+  - jd.hk
+  - jd.id
+  - jd.ru
   - jd.shop
   - jdair.net
   - jdallianz.com
@@ -4562,7 +4849,6 @@ rules:
   - kgtest.cn
   - kidsccshow.com
   - kimg.cn
-  - kimi.ai
   - kimi.com
   - kimiss.com
   - kimxz.com
@@ -4688,10 +4974,13 @@ rules:
   - kunlunwe.com
   - kuqin.com
   - kurobbs.com
+  - kurogame-service.com
   - kurogame.com
+  - kurogame.net
   - kurogame.xyz
   - kurogames-ads.com
   - kurogames.com
+  - kurogames.net
   - kuwo.cn
   - kuyin123.com
   - kuyinxiu.com
@@ -4705,6 +4994,9 @@ rules:
   - kwimgs.com
   - kych5.com
   - kysec.cn
+  - la-north-2.myhuaweicloud.com
+  - la-north-205.myhuaweicloud.com
+  - la-south-2.myhuaweicloud.com
   - labycore.cn
   - lackvc.cn
   - lady8844.com
@@ -4815,6 +5107,7 @@ rules:
   - leelen.com
   - leetcode-cn.com
   - leetcode.cn
+  - lefile.cn
   - lehuipay.com
   - leigod.cn
   - leigod.com
@@ -4836,6 +5129,8 @@ rules:
   - lenovocust.cn
   - lenovoeservice.com
   - lenovofile.com
+  - lenovofoundation.cn
+  - lenovofuturecenter.com
   - lenovogame.com
   - lenovoimage.cn
   - lenovoimage.com
@@ -4854,6 +5149,7 @@ rules:
   - letv.com
   - letvcdn.com
   - letvimg.com
+  - levelinfinite.com
   - leyuansu.com
   - lf126.net
   - lf127.net
@@ -4985,6 +5281,7 @@ rules:
   - lufaxcdn.com
   - lufunds.com
   - luhua.cn
+  - lujincaifu.com
   - lulian.cn
   - lumiai.com
   - lunwengo.net
@@ -5044,6 +5341,7 @@ rules:
   - maiche.com
   - mail4399.com
   - maimai.cn
+  - maimai.wahlap.com
   - maimemo.com
   - maimemostatus.com
   - maindown4399.com
@@ -5074,6 +5372,7 @@ rules:
   - marketing.alibaba.com
   - markji.com
   - marscode.cn
+  - marscode.com
   - marscode.com.cn
   - mashangfangxin.com
   - mashort.cn
@@ -5096,10 +5395,44 @@ rules:
   - mcbaas.work
   - mcbang.com
   - mcbbs.net
+  - mcd-holdings.co.jp
   - mcd.cn
+  - mcd.com
   - mcdchina.net
+  - mcdelivery.co.id
+  - mcdelivery.co.in
+  - mcdelivery.co.kr
+  - mcdelivery.com.au
+  - mcdelivery.com.my
+  - mcdelivery.com.ph
+  - mcdelivery.com.sg
+  - mcdelivery.com.tw
   - mcdemo.show
+  - mcdindia.com
+  - mcdindonesia.com
+  - mcdonalds-online.com
+  - mcdonalds.be
+  - mcdonalds.ca
+  - mcdonalds.co.id
+  - mcdonalds.co.jp
+  - mcdonalds.co.kr
+  - mcdonalds.co.nz
+  - mcdonalds.co.uk
+  - mcdonalds.com
+  - mcdonalds.com.au
   - mcdonalds.com.cn
+  - mcdonalds.com.hk
+  - mcdonalds.com.lb
+  - mcdonalds.com.my
+  - mcdonalds.com.ph
+  - mcdonalds.com.tw
+  - mcdonalds.hk
+  - mcdonalds.it
+  - mcdonalds.no
+  - mcdonalds.se
+  - mcdonaldsapps.com
+  - mcdonaldsarabia.com
+  - mcdonaldsparties.co.nz
   - mchost.guru
   - mcmod.cn
   - mcndata.cn
@@ -5111,6 +5444,10 @@ rules:
   - mdeer.com
   - mdpda.com
   - mdt.qq.com
+  - me-east-1.myhuaweicloud.com
+  - me-east-205.myhuaweicloud.com
+  - me-east-208.myhuaweicloud.com
+  - me-east-209.myhuaweicloud.com
   - me1.ltd
   - me4399.com
   - mechina.org
@@ -5217,11 +5554,9 @@ rules:
   - mincdn.com
   - mindspore.cn
   - mingxuan.store
+  - mingyuanfund.com
   - mingyuanyun.com
   - minhangshi.com
-  - minimax.chat
-  - minimax.cn
-  - minimax.io
   - minimaxi.com
   - minitiao.com
   - mioffice.cn
@@ -5299,7 +5634,6 @@ rules:
   - monitor.uu.qq.com
   - mooc.cn
   - moocollege.com
-  - moonshot.ai
   - moonshot.cn
   - moonvy.com
   - moonvy.cool
@@ -5347,8 +5681,10 @@ rules:
   - mumayi.com
   - mumbuy365.com
   - muomou.com
+  - muscdn.com
   - music.httpdns.c.163.com
   - music.qq.com
+  - musical.ly
   - muwai.com
   - muyewx.com
   - muzhiwan.com
@@ -5359,7 +5695,9 @@ rules:
   - mxbc.net
   - mxhichina.com
   - my-imcloud.com
+  - my-kualalumpur-1.myhuaweicloud.com
   - my-qcloud.com
+  - my.weibo.com
   - my4399.com
   - my7v.com
   - myalicdn.com
@@ -5387,6 +5725,7 @@ rules:
   - myhwclouds.com.cn
   - myhwclouds.net
   - myimis.com
+  - myip.la
   - mykuaidi.com
   - myoppo.com
   - mypaas.com
@@ -5414,6 +5753,20 @@ rules:
   - mzyyzl.com
   - n.cn
   - n0q.cn
+  - na-ashburn.myqcloud.com
+  - na-ashburn.tencentcos.cn
+  - na-ashburn.tencentcos.com
+  - na-ashburn.tencentcos.com.cn
+  - na-east-0.myhuaweicloud.com
+  - na-mexico-1.myhuaweicloud.com
+  - na-siliconvalley.myqcloud.com
+  - na-siliconvalley.tencentcos.cn
+  - na-siliconvalley.tencentcos.com
+  - na-siliconvalley.tencentcos.com.cn
+  - na-toronto.myqcloud.com
+  - na-toronto.tencentcos.cn
+  - na-toronto.tencentcos.com
+  - na-toronto.tencentcos.com.cn
   - nadianshi.com
   - nagcloudcs.com
   - naixuecha.com
@@ -5494,6 +5847,7 @@ rules:
   - nicezhuanye.com
   - nihaoafrica.org
   - nihaorwanda.cn
+  - nikke-en.com
   - nikkigames.cn
   - nikkigames.com.cn
   - ninebot.com
@@ -5557,6 +5911,7 @@ rules:
   - oceancloudapi.com
   - oceanengine.com
   - ocfund.cn
+  - octavedge.com
   - ocwms.com
   - oeeee.com
   - oend.net
@@ -5643,11 +5998,21 @@ rules:
   - osbdf.com
   - oschina.net
   - oshwhub.com
+  - oss-ap-northeast-1.aliyuncs.com
+  - oss-ap-northeast-2.aliyuncs.com
+  - oss-ap-south-1.aliyuncs.com
+  - oss-ap-southeast-1.aliyuncs.com
+  - oss-ap-southeast-2.aliyuncs.com
+  - oss-ap-southeast-3.aliyuncs.com
+  - oss-ap-southeast-5.aliyuncs.com
+  - oss-ap-southeast-6.aliyuncs.com
+  - oss-ap-southeast-7.aliyuncs.com
   - oss-cn-beijing.aliyuncs.com
   - oss-cn-chengdu.aliyuncs.com
   - oss-cn-guangzhou.aliyuncs.com
   - oss-cn-hangzhou.aliyuncs.com
   - oss-cn-heyuan.aliyuncs.com
+  - oss-cn-hongkong.aliyuncs.com
   - oss-cn-huhehaote.aliyuncs.com
   - oss-cn-nanjing.aliyuncs.com
   - oss-cn-qingdao.aliyuncs.com
@@ -5655,12 +6020,19 @@ rules:
   - oss-cn-shenzhen.aliyuncs.com
   - oss-cn-wulanchabu.aliyuncs.com
   - oss-cn-zhangjiakou.aliyuncs.com
+  - oss-enet.aliyuncs.com
+  - oss-eu-central-1.aliyuncs.com
+  - oss-eu-west-1.aliyuncs.com
+  - oss-me-east-1.aliyuncs.com
+  - oss-us-east-1.aliyuncs.com
+  - oss-us-west-1.aliyuncs.com
   - ottcn.com
   - oupeng.com
   - ourdvsss.com
   - ourjiangsu.com
   - ourl.co
   - ourschool.cc
+  - overseas.weibo.com
   - ovscdns.com
   - ovscdns.net
   - owsgo.com
@@ -5672,7 +6044,9 @@ rules:
   - p2peye.com
   - p4p.sina.com.cn
   - p5w.net
+  - pacfc.com
   - pacmantwo.com
+  - pafoundation.org.cn
   - pagescube.cn
   - pagescube.com
   - paidaojia.cn
@@ -5742,6 +6116,7 @@ rules:
   - pglstatp-toutiao.com
   - pgyer.com
   - pgzs.com
+  - ph.com.cn
   - pharmacodia.com
   - phfund.com.cn
   - philanthropy.xin
@@ -5764,8 +6139,10 @@ rules:
   - pimlog.baidu.com
   - pinduoduo.com
   - pinduoduo.net
+  - pingan.cn
   - pingan.com
   - pingan.com.cn
+  - pingan.com.hk
   - pingcap.cn
   - pingcap.com
   - pingcode.com
@@ -6006,6 +6383,7 @@ rules:
   - qpb.sohu.com
   - qpb1.sohu.com
   - qpic.cn
+  - qpmcn.com
   - qq.cn.com
   - qq.com
   - qq.com.cn
@@ -6059,7 +6437,6 @@ rules:
   - qweather.net
   - qweatherapi.com
   - qwen.ai
-  - qwen.com
   - qwenlm.ai
   - qwps.cn
   - qy.net
@@ -6092,6 +6469,9 @@ rules:
   - redenmc.com
   - redmagic.com
   - rednet.cn
+  - rednote.com
+  - rednote.com.my
+  - rednotecdn.com
   - registry.aliyuncs.com
   - reke.at.sohu.com
   - renren-inc.com
@@ -6139,6 +6519,9 @@ rules:
   - rt-mart.com.cn
   - rtbasia.com
   - rtx.com.cn
+  - ru-moscow-1.myhuaweicloud.com
+  - ru-northwest-2.myhuaweicloud.com
+  - ru-northwest-201.myhuaweicloud.com
   - ruan8.com
   - ruanmei.com
   - ruby-china.org
@@ -6147,6 +6530,8 @@ rules:
   - ruguoapp.com
   - ruijie.com.cn
   - ruiwen.com
+  - rumt-sg.com
+  - rumt-us.com
   - rumt-zh.com
   - runningcheese.com
   - runoob.com
@@ -6160,7 +6545,13 @@ rules:
   - s.so.360.cn
   - s.union.360.cn
   - s0n.cn
+  - sa-brazil-1.myhuaweicloud.com
+  - sa-saopaulo.myqcloud.com
+  - sa-saopaulo.tencentcos.cn
+  - sa-saopaulo.tencentcos.com
+  - sa-saopaulo.tencentcos.com.cn
   - sa.sina.cn
+  - saasfz.com
   - saasops.tech
   - saayaa.com
   - saduck.top
@@ -6178,6 +6569,7 @@ rules:
   - sanweihou.com
   - sanwen.net
   - sanxing.com
+  - sanxingelectric.com
   - sao.cn
   - saolife.com
   - saraba1st.com
@@ -6185,6 +6577,8 @@ rules:
   - saxyit.com
   - sbeacon.sina.com.cn
   - sbsjk.com
+  - sbux.com.my
+  - sbuxcard.com
   - sc96655.com
   - scbaijia.com
   - sccreator.cn
@@ -6273,8 +6667,10 @@ rules:
   - sffix.cn
   - sfgy.org
   - sg.cn
+  - sg.weibo.com
   - sgamer.com
   - sgcc.com.cn
+  - sgp.file.myqcloud.com
   - sgsic.com
   - sgtmos.com
   - sgyeyou.com
@@ -6324,6 +6720,7 @@ rules:
   - shimonote.com
   - shineacc.com
   - shinescan.tech
+  - shinflow.com
   - shipin520.com
   - shipxy.com
   - shixiseng.com
@@ -6398,6 +6795,9 @@ rules:
   - sjwyx.com
   - skillhub.cn
   - skimit.net
+  - skland.com
+  - skland.net
+  - skport.com
   - sksight.com
   - skycn.com
   - skydweller.cn
@@ -6474,6 +6874,7 @@ rules:
   - soufunimg.com
   - soulapp.cn
   - soulteary.com
+  - soundcore.com
   - soundcore.com.cn
   - souqian.com
   - southchip.com
@@ -6489,6 +6890,8 @@ rules:
   - spdb.com.cn
   - speedifyvolcai.com
   - speedifyvolcaiv2.com
+  - speedtest.hk.chinamobile.com
+  - speedtestbb.hk.chinamobile.com
   - speedws.info
   - speedws.org
   - speiyou.com
@@ -6520,7 +6923,71 @@ rules:
   - stage1st.com
   - starbaby.cc
   - starbaby.com
+  - starbucks-stars.com
+  - starbucks.ad
+  - starbucks.at
+  - starbucks.be
+  - starbucks.bg
+  - starbucks.ca
+  - starbucks.ch
+  - starbucks.co.id
+  - starbucks.co.jp
+  - starbucks.co.nz
+  - starbucks.co.th
+  - starbucks.co.uk
+  - starbucks.co.za
+  - starbucks.com
+  - starbucks.com.ar
+  - starbucks.com.bn
   - starbucks.com.cn
+  - starbucks.com.co
+  - starbucks.com.cy
+  - starbucks.com.gr
+  - starbucks.com.hk
+  - starbucks.com.kh
+  - starbucks.com.kz
+  - starbucks.com.mx
+  - starbucks.com.my
+  - starbucks.com.pe
+  - starbucks.com.sg
+  - starbucks.com.tr
+  - starbucks.com.uy
+  - starbucks.de
+  - starbucks.dk
+  - starbucks.es
+  - starbucks.fr
+  - starbucks.hu
+  - starbucks.ie
+  - starbucks.in
+  - starbucks.it
+  - starbucks.nl
+  - starbucks.no
+  - starbucks.ph
+  - starbucks.pl
+  - starbucks.pt
+  - starbucks.rs
+  - starbucks.ru
+  - starbucks.se
+  - starbucks.tt
+  - starbucks.vn
+  - starbucksathome.com
+  - starbucksavie.ca
+  - starbuckscard.ph
+  - starbuckscardb2b.com
+  - starbuckscoffee.cz
+  - starbuckscoffeegear.com
+  - starbuckscoffeegearstore.com
+  - starbucksforlife.ca
+  - starbucksforlife.com
+  - starbuckspoq.com
+  - starbucksreserve.com
+  - starbucksrewardsstarland.ca
+  - starbucksrewardsstarland.com
+  - starbucksromania.ro
+  - starbucksrtd.com
+  - starbucksslovakia.sk
+  - starbuckssummergame.ca
+  - starbuckssummergame.com
   - starlakelab.com
   - starworldgames.com
   - stat.m.jd.com
@@ -6667,6 +7134,7 @@ rules:
   - tapnow.top
   - taptap.cn
   - taptap.com
+  - taptap.io
   - taptapdada.com
   - tb.cn
   - tbcache.com
@@ -6773,11 +7241,14 @@ rules:
   - tencent-cloud.net
   - tencent-gcloud.com
   - tencent.cn
+  - tencent.co.id
   - tencent.com
   - tencent.com.cn
+  - tencent.com.hk
   - tencent.design
   - tencent.net
   - tencent.net.cn
+  - tencentads.com
   - tencentapps.com
   - tencentbyod.com
   - tencentcdb.cn
@@ -6807,6 +7278,7 @@ rules:
   - tencentdms.com
   - tencenteiam.com
   - tencentelasticsearch.com
+  - tencentgames.com
   - tencentid.com
   - tencentidentity.com
   - tencentmiying.com
@@ -6842,10 +7314,12 @@ rules:
   - tfzq.com
   - tgbus.com
   - tggfl.com
+  - tgk-wcaime.wahlap.com
   - tgovcloud.com
   - tgpro.top
   - tgprocs.net
   - th-music.com
+  - th.weibo.com
   - thecover.cn
   - theduapp.cn
   - theduapp.com
@@ -6855,6 +7329,7 @@ rules:
   - thelarkcloud.com
   - themisweeps.com
   - thepaper.cn
+  - thepoizon.ru
   - theta.sogoucdn.com
   - theworld.cn
   - thfund.com.cn
@@ -6910,6 +7385,32 @@ rules:
   - tiexue.net
   - tieyou.com
   - tigeek.net.cn
+  - tik-tokapi.com
+  - tiktok-minis.com
+  - tiktok-row.net
+  - tiktok.com
+  - tiktokcdn-eu.com
+  - tiktokcdn-us.com
+  - tiktokcdn-us.com.edgesuite.net
+  - tiktokcdn.com
+  - tiktokcdn.com.akamaized.net
+  - tiktokcdn.com.edgesuite.net
+  - tiktokd.net
+  - tiktokd.org
+  - tiktokeu-cdn.com
+  - tiktokglobalshopv.com
+  - tiktokminis.us
+  - tiktokrow-cdn.com
+  - tiktokshop.com
+  - tiktokstaticb.com
+  - tiktokv.com
+  - tiktokv.com.edgekey.net
+  - tiktokv.com.edgesuite.net
+  - tiktokv.eu
+  - tiktokv.us
+  - tiktokvapp.com
+  - tiktokw.eu
+  - tiktokw.us
   - tikv.org
   - timatrix.com.cn
   - timbrd.com
@@ -6940,6 +7441,8 @@ rules:
   - tm7sg.cn
   - tmall
   - tmall.com
+  - tmall.hk
+  - tmall.ru
   - tmalltv.com
   - tmcdn.net
   - tmead.y.qq.com
@@ -7026,6 +7529,7 @@ rules:
   - tr-test-ali.net
   - tr-test.net
   - tr-testboe.net
+  - tr-west-1.myhuaweicloud.com
   - trace.qq.com
   - track.lc.quark.cn
   - track.sohu.com
@@ -7037,16 +7541,19 @@ rules:
   - trackserver.shuxinyc.com
   - tracup.com
   - trademessenger.com
+  - trae.ai
   - trae.cn
   - trae.com.cn
   - trae.guru
   - traveldaily.cn
   - travelsky.com.cn
   - travelskymobile.cn
+  - trip.com
   - tripcdn.cn
   - tripcdn.com
   - tritoninfo.net
   - trjcn.com
+  - trpcdn.com
   - trpcdn.net
   - trunktech.com
   - trustasia.cn
@@ -7063,12 +7570,16 @@ rules:
   - ttbyte.cn
   - ttbyte.com
   - ttbyte.net
+  - ttcdn-us.com
   - ttgslb.com
   - ttgtm.com
   - ttjisu.com
+  - ttlivecdn.com
+  - ttoverseaus.net
   - ttpod.com
   - ttshitu.com
   - ttwebview.com
+  - ttwstatic.com
   - ttxsapp.com.cn
   - tuchong.com
   - tudou.com
@@ -7092,6 +7603,7 @@ rules:
   - tvcc.com.cn
   - tvmao.com
   - tvzhe.com
+  - tw.weibo.com
   - twscholar.com
   - twyx.cn
   - twyxh.com
@@ -7238,6 +7750,8 @@ rules:
   - urselect.com
   - urtc.com.cn
   - urumqi-air.com
+  - us-east-1.myhuaweicloud.com
+  - us.weibo.com
   - useso.com
   - uslk.net
   - utoken.umeng.com
@@ -7332,6 +7846,7 @@ rules:
   - vivo.cn
   - vivo.com
   - vivo.com.cn
+  - vivoglobal.com
   - vlabimg.com
   - vlabstatic.com
   - vlabvod.com
@@ -7503,6 +8018,7 @@ rules:
   - vzuu.com
   - w.cnzz.com
   - wahaha.com.cn
+  - wahlap.net
   - waifushangcheng.com
   - wali.com
   - wallstcn.com
@@ -7553,6 +8069,7 @@ rules:
   - webankcdn.net
   - webgame163.com
   - webmasterhome.cn
+  - webnovel.com
   - weboss.hk
   - webportal.top
   - webterren.com
@@ -7597,12 +8114,13 @@ rules:
   - wenxiaozhan.com
   - wenxiaozhan.net
   - wenxin-ge.com
-  - wenxin.baidu.com
   - werepository.com.cn
   - west.cn
   - west95582.com
   - wesure.cn
   - wesure100.com
+  - wetv.vip
+  - wetvinfo.com
   - weui.io
   - wework-studio.com
   - wf.pub
@@ -8086,6 +8604,7 @@ rules:
   - yinxiang.com
   - yinyuetai.com
   - yinzhaowang.com
+  - yiqianbao.com
   - yiqifa.com
   - yiqifa.org
   - yisou.com
@@ -8138,7 +8657,9 @@ rules:
   - youjiao.com
   - youke.co
   - youku.com
+  - youku.tv
   - youkuhonor.com
+  - youkuplay.com
   - youlai.cn
   - youliancloud.cn
   - youpin.cn
@@ -8166,6 +8687,8 @@ rules:
   - yoyou.com
   - ypppt.com
   - yqb.com
+  - yqbimg.net
+  - yqbmall.com
   - yrz.name
   - ys7.com
   - ysepay.com
@@ -8357,6 +8880,8 @@ rules:
   - zhanzhang.net
   - zhaodanji.com
   - zhaokao.net
+  - zhaoliangji.com
+  - zhaoliangjipc.com
   - zhaomi.cn
   - zhaomishijie.com
   - zhaopin.cn
@@ -8385,8 +8910,6 @@ rules:
   - zhiliaowenda.com.cn
   - zhimg.com
   - zhipin.com
-  - zhipu.ai
-  - zhipu.com
   - zhipuai.cn
   - zhipucn.com
   - zhisheng.com

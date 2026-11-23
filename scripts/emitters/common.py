@@ -24,6 +24,13 @@ DOMAIN_AND_RULES: dict[str, list[str]] = {
         "*-normal.zijieapi.com*ads*",
     ],
     "AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com))": ["*adash*.ut.taobao.com"],
+    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,bytedance.com))": ["*tnc*.bytedance.com"],
+    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,capcutapi.com))": ["*tnc*.capcutapi.com"],
+    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,isnssdk.com))": ["*tnc*.isnssdk.com"],
+    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,sgsnssdk.com))": ["*tnc*.sgsnssdk.com"],
+    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,snssdk.com))": ["*tnc*.snssdk.com"],
+    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,toutiaoapi.com))": ["*tnc*.toutiaoapi.com"],
+    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,zijieapi.com))": ["*tnc*.zijieapi.com"],
 }
 
 APPROVED_WILDCARD_REGEX_ADAPTATIONS: dict[str, list[str]] = {

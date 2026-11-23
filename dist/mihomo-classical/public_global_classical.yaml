@@ -4,3 +4,4 @@ payload:
   - 'DOMAIN-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com$'
   - 'DOMAIN-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com$'
   - 'DOMAIN-REGEX,^epicgames-download\d\.akamaized\.net$'
+  - 'DOMAIN-REGEX,^speed\.(coe|open)\.ad\.[a-z]{2,6}\.prod\.hosts\.ooklaserver\.net$'

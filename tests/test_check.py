@@ -112,6 +112,27 @@ and_set:
             self.assertTrue(any("HOST-IP-ALLOWLIST" in e and "203.0.113.10/32" in e for e in errors))
             self.assertFalse(any("ok.yaml" in e for e in errors))
 
+    def test_rejects_empty_canonical_source(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "upstream" / "direct").mkdir(parents=True)
+            (root / "custom" / "services").mkdir(parents=True)
+            (root / "upstream" / "direct" / "empty.yaml").write_text(
+                "schema: zhbcn-rules/v1\nname: Empty\nkind: upstream\nsource:\n  provider: test\nrules: {}\n",
+                encoding="utf-8",
+            )
+            (root / "sources.json").write_text(
+                json.dumps({"version": 1, "providers": {}, "sources": [{"id": "d/e", "target": "upstream/direct/empty.yaml"}]}),
+                encoding="utf-8",
+            )
+            (root / "bundles.json").write_text(
+                json.dumps({"version": 1, "schema": "zhbcn-bundles/v1", "raw_base": "https://example.com", "bundles": []}),
+                encoding="utf-8",
+            )
+            errors: list[str] = []
+            check_sources_and_bundles(root, errors)
+            self.assertTrue(any("canonical source has 0 rules" in e and "empty.yaml" in e for e in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

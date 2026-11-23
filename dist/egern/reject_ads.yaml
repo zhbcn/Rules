@@ -305,3 +305,31 @@ and_set:
     match: ads
   - !domain_keyword
     match: -normal.zijieapi.com
+- - !domain_keyword
+    match: tnc
+  - !domain_suffix
+    match: bytedance.com
+- - !domain_keyword
+    match: tnc
+  - !domain_suffix
+    match: capcutapi.com
+- - !domain_keyword
+    match: tnc
+  - !domain_suffix
+    match: isnssdk.com
+- - !domain_keyword
+    match: tnc
+  - !domain_suffix
+    match: sgsnssdk.com
+- - !domain_keyword
+    match: tnc
+  - !domain_suffix
+    match: snssdk.com
+- - !domain_keyword
+    match: tnc
+  - !domain_suffix
+    match: toutiaoapi.com
+- - !domain_keyword
+    match: tnc
+  - !domain_suffix
+    match: zijieapi.com

@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: v2fly
   ref: docker
+  commit: dfa5b1c2258289bdbee70d06352cca23b9bdac7f
 rules:
   domain:
   - docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com

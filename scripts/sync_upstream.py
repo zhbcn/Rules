@@ -10,10 +10,13 @@ All outputs are normalized to zhbcn-rules/v1 with PROCESS-* stripped and logged.
 from __future__ import annotations
 
 import argparse
+import ipaddress
 import json
 from pathlib import Path
 import re
 import sys
+import time
+from urllib.error import HTTPError, URLError
 from urllib.parse import quote
 from urllib.request import Request, urlopen
 
@@ -40,12 +43,70 @@ V2FLY_PREFIX_MAP = {
     "regexp": "domain_regex",
 }
 SIMPLE_V2FLY_REF_RE = re.compile(r"^[a-z0-9!_-]+$")
+SIMPLE_PATH_REF_RE = re.compile(r"^[^\s,+()]+$")
+
+
+def _split_top_level_parens(text: str) -> list[str]:
+    parts: list[str] = []
+    start = 0
+    depth = 0
+    for idx, ch in enumerate(text):
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth -= 1
+        elif ch == "," and depth == 0:
+            parts.append(text[start:idx].strip())
+            start = idx + 1
+    parts.append(text[start:].strip())
+    return parts
+
+
+def _normalize_and_exprs(rest: str) -> list[str]:
+    """Strip Surge-only trailing policy/extended-matching and flatten nested OR children."""
+    expr = rest.strip()
+    if expr.startswith("((") and not expr.endswith("))"):
+        last_paren = expr.rfind("))")
+        if last_paren != -1:
+            expr = expr[: last_paren + 2]
+    expr = re.sub(r",\s*extended-matching(?=\s*\))", "", expr, flags=re.IGNORECASE)
+    if not (expr.startswith("(") and expr.endswith(")")):
+        return [expr]
+    children = _split_top_level_parens(expr[1:-1].strip())
+    expanded: list[list[str]] = []
+    for child in children:
+        if child.upper().startswith("(OR,(") and child.endswith("))"):
+            or_inner = child[4:-1].strip()
+            if or_inner.startswith("(") and or_inner.endswith(")"):
+                expanded.append(_split_top_level_parens(or_inner[1:-1].strip()))
+                continue
+        expanded.append([child])
+    out: list[str] = []
+    from itertools import product
+    for combo in product(*expanded):
+        out.append("(" + ",".join(combo) + ")")
+    return out
+
+
+def _is_simple_ref(provider: str, ref: str) -> bool:
+    """Return True if ref points to a single fetchable upstream item rather than a composite/subset note."""
+    pattern = SIMPLE_V2FLY_REF_RE if provider == "v2fly" else SIMPLE_PATH_REF_RE
+    return bool(pattern.fullmatch(ref))
 
 
 def _http_get(url: str) -> str:
     req = Request(url, headers={"User-Agent": "zhbcn-Rules-sync/1.0"})
-    with urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8-sig")
+    for attempt in range(3):
+        try:
+            with urlopen(req, timeout=30) as resp:
+                return resp.read().decode("utf-8-sig")
+        except HTTPError:
+            raise
+        except (URLError, TimeoutError):
+            if attempt == 2:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+    raise AssertionError("unreachable")
 
 
 def update_provider_commits(sources_path: Path) -> dict[str, tuple[str, str]]:
@@ -85,11 +146,18 @@ def parse_clash_or_list_lines(lines: list[str]) -> tuple[RuleSet, list[str]]:
             line = line[2:].strip().strip("'\"")
         kind, sep, rest = line.partition(",")
         if not sep:
-            # Pure domain-list line (e.g. Sukka domainset)
+            # Pure domain-list line (e.g. Sukka domainset) or bare IP-CIDR list (e.g. Clash ipcidr)
             if line.startswith("+."):
                 rs.add("domain_suffix", line[2:])
             elif line.startswith("."):
                 rs.add("domain_suffix", line[1:])
+            elif "/" in line:
+                try:
+                    net = ipaddress.ip_network(line, strict=False)
+                except ValueError:
+                    pass
+                else:
+                    rs.add("ip_cidr" if net.version == 4 else "ip_cidr6", str(net))
             elif re.fullmatch(r"[a-zA-Z0-9._-]+", line):
                 rs.add("domain", line)
             continue
@@ -100,14 +168,8 @@ def parse_clash_or_list_lines(lines: list[str]) -> tuple[RuleSet, list[str]]:
             continue
 
         if kind_u == "AND":
-            # Strip trailing policy if Surge/sgmodule style: AND,((...)),REJECT
-            expr = rest.strip()
-            if expr.startswith("((") and not expr.endswith("))"):
-                # Trim trailing ,POLICY
-                last_paren = expr.rfind("))")
-                if last_paren != -1:
-                    expr = expr[: last_paren + 2]
-            rs.add("and", expr)
+            for normalized in _normalize_and_exprs(rest):
+                rs.add("and", normalized)
             continue
 
         if kind_u == "DOMAIN-REGEX":
@@ -204,6 +266,9 @@ def sync_source_entry(
     if provider not in providers:
         return "skipped_non_upstream", 0, []
 
+    if not _is_simple_ref(provider, ref):
+        return "skipped_composite_ref", 0, []
+
     pinfo = providers[provider]
     commit = pinfo["commit"]
     raw_base = pinfo["raw_base"].format(commit=commit)
@@ -212,8 +277,6 @@ def sync_source_entry(
     stripped: list[str] = []
 
     if provider == "v2fly":
-        if not SIMPLE_V2FLY_REF_RE.fullmatch(ref):
-            return "skipped_composite_ref", 0, []
         if v2fly_data:
             conv = V2FlyConverter(v2fly_data)
             rules = conv.read(ref)
@@ -263,6 +326,10 @@ def sync_source_entry(
             return "skipped_no_input", 0, []
 
     assert rs is not None
+    if rs.count() == 0:
+        raise ValueError(
+            f"Upstream source {entry['id']!r} ({provider}: {ref}) parsed to 0 rules; refusing to write empty ruleset"
+        )
     source_meta = {"provider": provider, "ref": ref, "commit": commit}
     if check_only:
         existing = target_path.read_text(encoding="utf-8-sig") if target_path.is_file() else ""

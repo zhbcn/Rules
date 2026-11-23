@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: v2fly
   ref: anthropic
+  commit: dfa5b1c2258289bdbee70d06352cca23b9bdac7f
 rules:
   domain:
   - http-intake.logs.us5.datadoghq.com
@@ -28,7 +29,3 @@ rules:
   - claudepages.dev
   - claudestudio.com
   - claudeusercontent.com
-  ip_cidr:
-  - 160.79.104.0/23
-  ip_cidr6:
-  - 2607:6bc0::/48

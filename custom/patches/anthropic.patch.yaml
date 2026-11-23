@@ -1,0 +1,9 @@
+schema: zhbcn-patch/v1
+target: upstream/ai/anthropic.yaml
+notes: Retain Anthropic official IPv4/IPv6 CIDR prefixes not present in v2fly domain-list-community.
+remove: {}
+add:
+  ip_cidr:
+  - 160.79.104.0/23
+  ip_cidr6:
+  - 2607:6bc0::/48

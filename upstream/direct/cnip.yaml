@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: blackmatrix7
   ref: rule/Clash/ChinaIPs/ChinaIPs_IP_No_IPv6.yaml
+  commit: 0b6897dc17e0c513d25449c935a9694818e32f0c
 rules:
   ip_cidr:
   - 1.0.1.0/24

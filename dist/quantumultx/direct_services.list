@@ -225,6 +225,8 @@ host-suffix,189smarthome.com,proxy
 host-suffix,1browser.net,proxy
 host-suffix,1huizhan.com,proxy
 host-suffix,1xhh.cn,proxy
+host-suffix,1y.com,proxy
+host-suffix,1ycdn.com,proxy
 host-suffix,2-class.com,proxy
 host-suffix,21cn.com,proxy
 host-suffix,21jingji.com,proxy
@@ -4666,7 +4668,6 @@ host-suffix,sao-tencentclb.cloud,proxy
 host-suffix,sao-tencentclb.com,proxy
 host-suffix,sao-tencentclb.net,proxy
 host-suffix,sao-tencentclb.work,proxy
-host-suffix,saxyit.com,proxy
 host-suffix,sbhimalayanml.com,proxy
 host-suffix,sccreator.cn,proxy
 host-suffix,sccreators.cn,proxy

@@ -226,6 +226,8 @@ domain_suffix_set:
 - 1browser.net
 - 1huizhan.com
 - 1xhh.cn
+- 1y.com
+- 1ycdn.com
 - 2-class.com
 - 21cn.com
 - 21jingji.com
@@ -4667,7 +4669,6 @@ domain_suffix_set:
 - sao-tencentclb.com
 - sao-tencentclb.net
 - sao-tencentclb.work
-- saxyit.com
 - sbhimalayanml.com
 - sccreator.cn
 - sccreators.cn

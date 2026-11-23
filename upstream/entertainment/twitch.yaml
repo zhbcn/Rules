@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: v2fly
   ref: twitch
+  commit: dfa5b1c2258289bdbee70d06352cca23b9bdac7f
 rules:
   domain:
   - d1g1f25tn8m2e6.cloudfront.net

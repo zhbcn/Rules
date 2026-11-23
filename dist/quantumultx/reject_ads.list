@@ -295,3 +295,17 @@ host-wildcard,*adash*.ut.taobao.com,proxy
 # QX-ADAPTED (approved domain AND): AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,-normal.zijieapi.com))
 host-wildcard,*ads*-normal.zijieapi.com*,proxy
 host-wildcard,*-normal.zijieapi.com*ads*,proxy
+# QX-ADAPTED (approved domain AND): AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,bytedance.com))
+host-wildcard,*tnc*.bytedance.com,proxy
+# QX-ADAPTED (approved domain AND): AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,capcutapi.com))
+host-wildcard,*tnc*.capcutapi.com,proxy
+# QX-ADAPTED (approved domain AND): AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,isnssdk.com))
+host-wildcard,*tnc*.isnssdk.com,proxy
+# QX-ADAPTED (approved domain AND): AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,sgsnssdk.com))
+host-wildcard,*tnc*.sgsnssdk.com,proxy
+# QX-ADAPTED (approved domain AND): AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,snssdk.com))
+host-wildcard,*tnc*.snssdk.com,proxy
+# QX-ADAPTED (approved domain AND): AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,toutiaoapi.com))
+host-wildcard,*tnc*.toutiaoapi.com,proxy
+# QX-ADAPTED (approved domain AND): AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,zijieapi.com))
+host-wildcard,*tnc*.zijieapi.com,proxy

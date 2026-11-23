@@ -121,6 +121,8 @@ def check_sources_and_bundles(root: Path, errors: list[str]) -> tuple[int, int]:
             expected_kind = "upstream" if rel.startswith("upstream/") else "custom"
             if doc.get("kind") != expected_kind:
                 errors.append(f"{rel}: expected kind={expected_kind!r}, got {doc.get('kind')!r}")
+            if rs.count() == 0:
+                errors.append(f"{rel}: canonical source has 0 rules (empty ruleset)")
             # Duplicate check per field
             for fname in RULE_FIELDS:
                 vals = rs.get_field(fname)

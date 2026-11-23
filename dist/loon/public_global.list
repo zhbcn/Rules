@@ -2670,3 +2670,4 @@ DOMAIN,epicgames-download6.akamaized.net
 DOMAIN,epicgames-download7.akamaized.net
 DOMAIN,epicgames-download8.akamaized.net
 DOMAIN,epicgames-download9.akamaized.net
+# COVERED (same-bundle suffix): DOMAIN-REGEX,^speed\.(coe|open)\.ad\.[a-z]{2,6}\.prod\.hosts\.ooklaserver\.net$

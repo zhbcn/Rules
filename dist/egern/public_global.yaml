@@ -2644,3 +2644,4 @@ domain_regex_set:
 - ^cdn\d-epicgames-\d+\.file\.myqcloud\.com$
 - ^epicgames-download\d-\d+\.file\.myqcloud\.com$
 - ^epicgames-download\d\.akamaized\.net$
+- ^speed\.(coe|open)\.ad\.[a-z]{2,6}\.prod\.hosts\.ooklaserver\.net$

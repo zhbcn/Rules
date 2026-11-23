@@ -4,7 +4,7 @@
     "v2fly": {
       "repo": "v2fly/domain-list-community",
       "branch": "master",
-      "commit": "777d056afe68b2643c1ef15f80e7bde3dfa149b1",
+      "commit": "dfa5b1c2258289bdbee70d06352cca23b9bdac7f",
       "raw_base": "https://raw.githubusercontent.com/v2fly/domain-list-community/{commit}/data"
     },
     "blackmatrix7": {
@@ -16,7 +16,7 @@
     "sukka": {
       "repo": "SukkaLab/ruleset.skk.moe",
       "branch": "master",
-      "commit": "c852f05fe00181871397037e8dba1442b0d7134f",
+      "commit": "7e6c2b32f9b900adc4366fc3d1a82e0925a98bd1",
       "raw_base": "https://raw.githubusercontent.com/SukkaLab/ruleset.skk.moe/{commit}/List"
     },
     "qingrex": {

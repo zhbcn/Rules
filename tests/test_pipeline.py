@@ -7,7 +7,7 @@ from scripts.emitters.egern import emit_egern
 from scripts.emitters.loon import emit_loon
 from scripts.emitters.quantumultx import emit_quantumultx
 from scripts.schema import RuleSet
-from scripts.sync_upstream import parse_clash_yaml_text, parse_sgmodule_text
+from scripts.sync_upstream import _is_simple_ref, parse_clash_or_list_lines, parse_clash_yaml_text, parse_sgmodule_text, sync_source_entry
 
 
 class SchemaAndPipelineTest(unittest.TestCase):
@@ -117,15 +117,72 @@ class SchemaAndPipelineTest(unittest.TestCase):
 name = test
 [Rule]
 DOMAIN,ads.example.com,REJECT
-AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
+AND,((DOMAIN-KEYWORD,-ad-,extended-matching),(DOMAIN-SUFFIX,byteimg.com,extended-matching)),REJECT
+AND,((DOMAIN-KEYWORD,tnc,extended-matching),(OR,((DOMAIN-SUFFIX,a.com,extended-matching),(DOMAIN-SUFFIX,b.com,extended-matching)))),REJECT
 PROCESS-NAME,foo,DIRECT
 [MITM]
 hostname = *
 """
         rs2, stripped2 = parse_sgmodule_text(sgmodule)
         self.assertEqual(rs2.domain, ["ads.example.com"])
-        self.assertEqual(rs2.and_rules, ["((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com))"])
+        self.assertEqual(
+            rs2.and_rules,
+            [
+                "((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com))",
+                "((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,a.com))",
+                "((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,b.com))",
+            ],
+        )
         self.assertEqual(stripped2, ["PROCESS-NAME,foo,DIRECT"])
+
+    def test_sync_upstream_skips_composite_refs_across_providers(self):
+        self.assertTrue(_is_simple_ref("v2fly", "anthropic"))
+        self.assertFalse(_is_simple_ref("v2fly", "category-cryptocurrency (Bitcoin subset)"))
+        self.assertTrue(_is_simple_ref("qingrex", "广告平台拦截器.beta.sgmodule"))
+        self.assertFalse(_is_simple_ref("blackmatrix7", "rule/Clash/Crypto/Crypto.yaml (Avalanche subset)"))
+        self.assertFalse(_is_simple_ref("sukka", "non_ip/lan.conf, ip/lan.conf"))
+
+        providers = {
+            "blackmatrix7": {"commit": "deadbeef", "raw_base": "https://example.invalid/{commit}"},
+            "sukka": {"commit": "deadbeef", "raw_base": "https://example.invalid/{commit}"},
+        }
+        for provider, ref in (
+            ("blackmatrix7", "rule/Clash/Crypto/Crypto.yaml (Avalanche subset)"),
+            ("sukka", "non_ip/lan.conf, ip/lan.conf"),
+        ):
+            status, count, stripped = sync_source_entry(
+                Path("."),
+                providers,
+                {"provider": provider, "ref": ref, "target": "upstream/x.yaml", "name": "x"},
+                remote=True,
+            )
+            self.assertEqual((status, count, stripped), ("skipped_composite_ref", 0, []))
+
+    def test_sync_upstream_parses_bare_cidrs_and_rejects_zero_rules(self):
+        rs, stripped = parse_clash_or_list_lines([
+            "payload:",
+            "  - '1.0.1.0/24'",
+            "  - '2001:db8::/32'",
+            "  - '+.example.com'",
+        ])
+        self.assertEqual(rs.ip_cidr, ["1.0.1.0/24"])
+        self.assertEqual(rs.ip_cidr6, ["2001:db8::/32"])
+        self.assertEqual(rs.domain_suffix, ["example.com"])
+        self.assertEqual(stripped, [])
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            bm7_dir = root / "bm7"
+            bm7_dir.mkdir()
+            (bm7_dir / "empty.yaml").write_text("payload:\n  - '# only comment'\n", encoding="utf-8")
+            providers = {"blackmatrix7": {"commit": "deadbeef", "raw_base": "https://example.invalid/{commit}"}}
+            with self.assertRaises(ValueError):
+                sync_source_entry(
+                    root,
+                    providers,
+                    {"id": "direct/empty", "provider": "blackmatrix7", "ref": "empty.yaml", "target": "upstream/empty.yaml", "name": "Empty"},
+                    bm7_dir=bm7_dir,
+                )
 
 
 if __name__ == "__main__":

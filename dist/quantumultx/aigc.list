@@ -95,6 +95,7 @@ host-suffix,geller-pa.googleapis.com,proxy
 host-suffix,gemini.google,proxy
 host-suffix,gemini.google.com,proxy
 host-suffix,gemini.gstatic.com,proxy
+host-suffix,gemma.ai,proxy
 host-suffix,generativeai.google,proxy
 host-suffix,generativelanguage.googleapis.com,proxy
 host-suffix,githubcopilot.com,proxy

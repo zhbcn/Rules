@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: v2fly
   ref: google
+  commit: dfa5b1c2258289bdbee70d06352cca23b9bdac7f
 rules:
   domain:
   - 2mdn-cn.net
@@ -469,6 +470,7 @@ rules:
   - gemini.google
   - gemini.google.com
   - gemini.gstatic.com
+  - gemma.ai
   - generativeai.google
   - generativelanguage.googleapis.com
   - gerritcodereview.com

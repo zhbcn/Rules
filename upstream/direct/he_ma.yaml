@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: blackmatrix7
   ref: rule/Clash/HeMa/HeMa.yaml
+  commit: 0b6897dc17e0c513d25449c935a9694818e32f0c
 rules:
   domain_suffix:
   - freshhema.com

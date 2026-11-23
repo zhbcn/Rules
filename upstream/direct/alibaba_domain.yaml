@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: blackmatrix7
   ref: rule/Clash/Alibaba/Alibaba_Domain.yaml
+  commit: 0b6897dc17e0c513d25449c935a9694818e32f0c
 rules:
   domain_suffix:
   - 10029.com

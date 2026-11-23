@@ -38,7 +38,7 @@
       "platform": "all",
       "dns_bound": false,
       "source_count": 1,
-      "canonical_rule_count": 289,
+      "canonical_rule_count": 296,
       "artifacts": {
         "mihomo": {
           "domain_mrs": "dist/mihomo-stash/reject_ads_domain.mrs",
@@ -389,7 +389,7 @@
       "platform": "all",
       "dns_bound": true,
       "source_count": 15,
-      "canonical_rule_count": 153,
+      "canonical_rule_count": 154,
       "artifacts": {
         "mihomo": {
           "domain_mrs": "dist/mihomo-stash/aigc_domain.mrs",
@@ -423,7 +423,7 @@
       "platform": "all",
       "dns_bound": true,
       "source_count": 16,
-      "canonical_rule_count": 112,
+      "canonical_rule_count": 135,
       "artifacts": {
         "mihomo": {
           "domain_mrs": "dist/mihomo-stash/china_ai_domain.mrs",
@@ -480,7 +480,7 @@
       "platform": "all",
       "dns_bound": true,
       "source_count": 3,
-      "canonical_rule_count": 1831,
+      "canonical_rule_count": 1701,
       "artifacts": {
         "mihomo": {
           "domain_mrs": "dist/mihomo-stash/apple_domain.mrs",
@@ -539,7 +539,7 @@
       "platform": "all",
       "dns_bound": true,
       "source_count": 1,
-      "canonical_rule_count": 1123,
+      "canonical_rule_count": 1124,
       "artifacts": {
         "mihomo": {
           "domain_mrs": "dist/mihomo-stash/google_domain.mrs",
@@ -623,7 +623,7 @@
       "platform": "all",
       "dns_bound": true,
       "source_count": 36,
-      "canonical_rule_count": 7008,
+      "canonical_rule_count": 7009,
       "artifacts": {
         "mihomo": {
           "domain_mrs": "dist/mihomo-stash/direct_services_domain.mrs",
@@ -654,7 +654,7 @@
       "platform": "all",
       "dns_bound": false,
       "source_count": 66,
-      "canonical_rule_count": 2640,
+      "canonical_rule_count": 2641,
       "artifacts": {
         "mihomo": {
           "domain_mrs": "dist/mihomo-stash/public_global_domain.mrs",
@@ -682,7 +682,7 @@
       "platform": "all",
       "dns_bound": true,
       "source_count": 3,
-      "canonical_rule_count": 22709,
+      "canonical_rule_count": 23224,
       "artifacts": {
         "mihomo": {
           "domain_mrs": "dist/mihomo-stash/direct_cn_domain.mrs",

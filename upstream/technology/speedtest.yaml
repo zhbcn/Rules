@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: v2fly
   ref: speedtest
+  commit: dfa5b1c2258289bdbee70d06352cca23b9bdac7f
 rules:
   domain:
   - www.speedtest.net.cdn.cloudflare.net
@@ -28,4 +29,4 @@ rules:
   - speedtestcustom.com
   - webtest.net
   domain_regex:
-  - ^speed\.(coe|open)\.ad\.[a-z]{2
+  - ^speed\.(coe|open)\.ad\.[a-z]{2,6}\.prod\.hosts\.ooklaserver\.net$

@@ -4,6 +4,7 @@ kind: upstream
 source:
   provider: sukka
   ref: non_ip/reject.conf
+  commit: 7e6c2b32f9b900adc4366fc3d1a82e0925a98bd1
 rules:
   domain:
   - 7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
