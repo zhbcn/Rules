@@ -1,0 +1,9 @@
+schema: zhbcn-rules/v1
+name: Hark
+kind: custom
+source:
+  provider: official
+  ref: https://hark.com/
+rules:
+  domain_suffix:
+  - hark.com

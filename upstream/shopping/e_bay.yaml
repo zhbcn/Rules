@@ -1,0 +1,46 @@
+schema: zhbcn-rules/v1
+name: eBay
+kind: upstream
+source:
+  provider: v2fly
+  ref: ebay (shopping-only subset)
+rules:
+  domain_suffix:
+  - ebay.at
+  - ebay.be
+  - ebay.ca
+  - ebay.ch
+  - ebay.cn
+  - ebay.co.nz
+  - ebay.co.uk
+  - ebay.co.za
+  - ebay.com
+  - ebay.com.ar
+  - ebay.com.au
+  - ebay.com.cn
+  - ebay.com.ec
+  - ebay.com.hk
+  - ebay.com.mt
+  - ebay.com.my
+  - ebay.com.ph
+  - ebay.com.sg
+  - ebay.de
+  - ebay.es
+  - ebay.fr
+  - ebay.ie
+  - ebay.in
+  - ebay.it
+  - ebay.jp
+  - ebay.lt
+  - ebay.nl
+  - ebay.ph
+  - ebay.pk
+  - ebay.pl
+  - ebay.sg
+  - ebay.vn
+  - ebaycdn.net
+  - ebayimg.com
+  - ebaymotors.com
+  - ebaystatic.cn
+  - ebaystatic.com
+  - ebaystores.com

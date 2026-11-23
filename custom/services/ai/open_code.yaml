@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: OpenCode
+kind: custom
+source:
+  provider: v2fly
+  ref: category-ai-!cn (OpenCode only) + official supplements
+rules:
+  domain_suffix:
+  - models.dev
+  - opencode.ai
+  - opncd.ai

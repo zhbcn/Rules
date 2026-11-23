@@ -1,0 +1,20 @@
+# BUNDLE: gov_cn
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host-suffix,91huayi.cn,proxy
+host-suffix,91huayi.com,proxy
+host-suffix,91huayi.net,proxy
+host-suffix,gov.cn,proxy
+host-suffix,heart301.cn,proxy
+host-suffix,henancme.net,proxy
+host-suffix,huayi.cn,proxy
+host-suffix,huayiweibo.com,proxy
+host-suffix,huayiyuan.com,proxy
+host-suffix,robot301.net,proxy
+host-suffix,roboticsurg301.net,proxy
+host-suffix,scncrc.com,proxy
+host-suffix,shiyanma.org.cn,proxy
+host-suffix,sqpx.org,proxy
+host-suffix,wsglw.com,proxy
+host-suffix,wsglw.net,proxy
+host-suffix,xn--zfr164b,proxy

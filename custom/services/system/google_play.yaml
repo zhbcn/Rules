@@ -1,0 +1,21 @@
+schema: zhbcn-rules/v1
+name: GooglePlay
+kind: custom
+source:
+  provider: official
+  ref: Google Play Store & services core domains
+notes: Android Google Play priority set; Technology/Google remains intact for iOS/Windows.
+rules:
+  domain:
+  - android.clients.google.com
+  - play-fe.googleapis.com
+  - play-lh.googleusercontent.com
+  - playatoms-pa.googleapis.com
+  - redirector.c.play.google.com
+  domain_suffix:
+  - googleplay.com
+  - gvt1.com
+  - gvt2.com
+  - gvt3.com
+  - play.google.com
+  - play.googleapis.com

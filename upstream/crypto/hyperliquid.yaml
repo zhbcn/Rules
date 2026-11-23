@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Hyperliquid
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-cryptocurrency (Hyperliquid subset) + existing zhbcn/Rules rule
+rules:
+  domain_suffix:
+  - hyperfoundation.org
+  - hyperliquid.xyz

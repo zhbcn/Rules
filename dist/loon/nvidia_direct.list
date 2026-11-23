@@ -1,0 +1,9 @@
+# BUNDLE: nvidia_direct
+# FORMAT: loon-list (policy-free; bind via [Remote Rule] policy=...)
+
+DOMAIN,gfwsl.geforce.com
+DOMAIN,services.gfe.nvidia.com
+DOMAIN-SUFFIX,download.nvidia.com
+DOMAIN-SUFFIX,geforce.cn
+DOMAIN-SUFFIX,gputechconf.cn
+DOMAIN-SUFFIX,nvidia.cn

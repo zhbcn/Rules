@@ -1,0 +1,15 @@
+schema: zhbcn-rules/v1
+name: AppleSystem
+kind: custom
+source:
+  provider: official
+  ref: https://support.apple.com/en-us/101555
+rules:
+  domain:
+  - albert.apple.com
+  - captive.apple.com
+  - gs.apple.com
+  - time-ios.apple.com
+  - time.apple.com
+  domain_suffix:
+  - push.apple.com

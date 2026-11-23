@@ -1,0 +1,15 @@
+schema: zhbcn-rules/v1
+name: SenseNova
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - senseaudio.cn
+  - senseavatar.com
+  - sensecore.cn
+  - sensefoundry.cn
+  - sensenova.cn
+  - sensetime.com
+  - xiaohuanxiong.com

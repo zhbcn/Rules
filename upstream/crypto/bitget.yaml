@@ -1,0 +1,16 @@
+schema: zhbcn-rules/v1
+name: Bitget
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-cryptocurrency (Bitget subset) + existing zhbcn/Rules rule
+rules:
+  domain_suffix:
+  - bgbstatic.com
+  - bgstatic.com
+  - bgwapi.io
+  - bitget.com
+  - bitget.site
+  - bitgetapp.com
+  - bitgetapps.com
+  - btsgtm.com

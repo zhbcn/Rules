@@ -1,0 +1,16 @@
+schema: zhbcn-rules/v1
+name: XiaoHeiHe
+kind: upstream
+source:
+  provider: v2fly
+  ref: xiaoheihe
+rules:
+  domain_suffix:
+  - 1xhh.cn
+  - accxiaoheihe.com
+  - chat.top
+  - debugmode.cn
+  - max-c.com
+  - maxadmin.cn
+  - maxjia.com
+  - xiaoheihe.cn

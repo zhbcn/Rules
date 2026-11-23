@@ -1,0 +1,4 @@
+# BUNDLE: direct_services
+# FORMAT: mihomo-classical (non-MRS remainder only)
+payload:
+  - 'IP-ASN,132203,no-resolve'

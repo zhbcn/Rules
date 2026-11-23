@@ -1,0 +1,14 @@
+schema: zhbcn-rules/v1
+name: MastercardCN
+kind: upstream
+source:
+  provider: v2fly
+  ref: mastercard @cn
+rules:
+  domain_suffix:
+  - mastercard.cn
+  - mastercard.com.cn
+  - priceless.com.cn
+  - pricelessbeijing.cn
+  - pricelessbeijing.com.cn
+  - travelex.com.cn

@@ -1,0 +1,15 @@
+schema: zhbcn-rules/v1
+name: Etherscan
+kind: upstream
+source:
+  provider: v2fly
+  ref: ethereum, rule/Clash/Crypto/Crypto.yaml (Etherscan subset) + existing zhbcn/Rules rule
+rules:
+  domain_suffix:
+  - arbiscan.io
+  - basescan.org
+  - bscscan.com
+  - etherscan.com
+  - etherscan.io
+  - polygonscan.com
+  - snowtrace.io

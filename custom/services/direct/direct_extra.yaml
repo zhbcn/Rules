@@ -1,0 +1,15 @@
+schema: zhbcn-rules/v1
+name: DirectExtra
+kind: custom
+source:
+  provider: custom
+  ref: Personal domestic direct domain additions
+notes: Domestic direct domains consolidated from client inline rules.
+rules:
+  domain_suffix:
+  - bdstatic.cn
+  - doupay.com
+  - ecombdpage.com
+  - qweather.com
+  - qweather.net
+  - qweatherapi.com

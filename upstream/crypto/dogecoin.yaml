@@ -1,0 +1,9 @@
+schema: zhbcn-rules/v1
+name: Dogecoin
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-cryptocurrency (Dogecoin subset)
+rules:
+  domain_suffix:
+  - dogecoin.com

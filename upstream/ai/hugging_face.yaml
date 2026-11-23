@@ -1,0 +1,12 @@
+schema: zhbcn-rules/v1
+name: HuggingFace
+kind: upstream
+source:
+  provider: v2fly
+  ref: huggingface + Inference Endpoints
+rules:
+  domain_suffix:
+  - endpoints.huggingface.cloud
+  - hf.co
+  - hf.space
+  - huggingface.co

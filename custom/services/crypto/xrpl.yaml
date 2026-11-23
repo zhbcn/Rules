@@ -1,0 +1,9 @@
+schema: zhbcn-rules/v1
+name: XRPL
+kind: custom
+source:
+  provider: custom
+  ref: custom
+rules:
+  domain_suffix:
+  - xrpl.org

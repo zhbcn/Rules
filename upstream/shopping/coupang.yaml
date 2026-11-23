@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Coupang
+kind: upstream
+source:
+  provider: v2fly
+  ref: coupang
+rules:
+  domain_suffix:
+  - coupang.com
+  - coupangcdn.com

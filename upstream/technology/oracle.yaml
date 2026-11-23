@@ -1,0 +1,27 @@
+schema: zhbcn-rules/v1
+name: Oracle
+kind: upstream
+source:
+  provider: v2fly
+  ref: oracle
+rules:
+  domain_suffix:
+  - addthis.com
+  - addthiscdn.com
+  - addthisedge.com
+  - ateam-oracle.com
+  - bronto.com
+  - covid19-rx.org
+  - covid19rx.org
+  - custhelp.com
+  - java
+  - java.com
+  - java.net
+  - oracle
+  - oracle.com
+  - oraclecloud.com
+  - oraclefoundation.org
+  - oracleimg.com
+  - oracleinfinity.io
+  - sun.com
+  - virtualbox.org

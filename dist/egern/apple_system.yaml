@@ -1,0 +1,11 @@
+# BUNDLE: apple_system
+# FORMAT: egern-yaml (native)
+
+domain_set:
+- albert.apple.com
+- captive.apple.com
+- gs.apple.com
+- time-ios.apple.com
+- time.apple.com
+domain_suffix_set:
+- push.apple.com

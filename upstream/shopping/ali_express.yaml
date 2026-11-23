@@ -1,0 +1,18 @@
+schema: zhbcn-rules/v1
+name: AliExpress
+kind: upstream
+source:
+  provider: v2fly
+  ref: alibaba (AliExpress subset) + existing zhbcn/Rules rule
+rules:
+  domain:
+  - img.alicdn.com
+  domain_suffix:
+  - ae-rus.net
+  - aedns.ru
+  - aeplatform.ru
+  - aestatic.net
+  - aliexpress-media.com
+  - aliexpress.com
+  - aliexpress.ru
+  - aliexpress.us

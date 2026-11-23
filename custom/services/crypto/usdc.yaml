@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: USDC
+kind: custom
+source:
+  provider: custom
+  ref: custom
+rules:
+  domain_suffix:
+  - circle.com
+  - usdc.com

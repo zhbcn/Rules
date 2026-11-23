@@ -1,0 +1,16 @@
+# BUNDLE: google_play
+# FORMAT: egern-yaml (native)
+
+domain_set:
+- android.clients.google.com
+- play-fe.googleapis.com
+- play-lh.googleusercontent.com
+- playatoms-pa.googleapis.com
+- redirector.c.play.google.com
+domain_suffix_set:
+- googleplay.com
+- gvt1.com
+- gvt2.com
+- gvt3.com
+- play.google.com
+- play.googleapis.com

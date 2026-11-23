@@ -1,0 +1,6 @@
+# BUNDLE: ms_connectivity
+# FORMAT: egern-yaml (native)
+
+domain_suffix_set:
+- msftconnecttest.com
+- msftncsi.com

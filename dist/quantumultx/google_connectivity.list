@@ -1,0 +1,8 @@
+# BUNDLE: google_connectivity
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host,clients1.google.com,proxy
+host,clients3.google.com,proxy
+host,connectivitycheck.android.com,proxy
+host,connectivitycheck.google.com,proxy
+host,connectivitycheck.gstatic.com,proxy

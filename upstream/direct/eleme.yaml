@@ -1,0 +1,20 @@
+schema: zhbcn-rules/v1
+name: Eleme
+kind: upstream
+source:
+  provider: v2fly
+  ref: eleme
+rules:
+  domain_suffix:
+  - adashx.ut.ele.me
+  - doservice.com
+  - ele.me
+  - ele.to
+  - eleme.cn
+  - eleme.io
+  - elemecdn.cn
+  - elemecdn.com
+  - elenet.me
+  - fengniaojipei.net
+  - h-adashx.ut.ele.me
+  - v6-adashx.ut.ele.me

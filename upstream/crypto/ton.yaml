@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: TON
+kind: upstream
+source:
+  provider: v2fly
+  ref: telegram (TON subset)
+rules:
+  domain_suffix:
+  - ton.org
+  - toncenter.com

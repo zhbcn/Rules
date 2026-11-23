@@ -1,0 +1,14 @@
+schema: zhbcn-rules/v1
+name: GitLab
+kind: upstream
+source:
+  provider: v2fly
+  ref: gitlab
+rules:
+  domain:
+  - gitlab-assets.oss-cn-hongkong.aliyuncs.com
+  domain_suffix:
+  - gitlab-static.net
+  - gitlab.com
+  - gitlab.io
+  - gitlab.net

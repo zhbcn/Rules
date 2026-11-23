@@ -1,0 +1,12 @@
+schema: zhbcn-rules/v1
+name: Kimi
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn, category-ai-!cn
+rules:
+  domain_suffix:
+  - kimi.ai
+  - kimi.com
+  - moonshot.ai
+  - moonshot.cn

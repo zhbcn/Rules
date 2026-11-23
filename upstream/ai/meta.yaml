@@ -1,0 +1,17 @@
+schema: zhbcn-rules/v1
+name: Meta
+kind: upstream
+source:
+  provider: v2fly
+  ref: meta (direct entries only) + Muse
+rules:
+  domain:
+  - ai.facebook.com
+  domain_suffix:
+  - atmeta.com
+  - llama.com
+  - meta.ai
+  - meta.com
+  - metaaiusercontent.com
+  - metaaivm.com
+  - muse.ai

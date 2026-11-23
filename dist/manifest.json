@@ -1,0 +1,742 @@
+{
+  "schema": "zhbcn-manifest/v1",
+  "raw_base": "https://raw.githubusercontent.com/zhbcn/Rules/main/dist",
+  "bundle_count": 25,
+  "bundles": {
+    "lan": {
+      "id": "lan",
+      "description": "局域网与本机保留地址",
+      "category": "infrastructure",
+      "platform": "all",
+      "dns_bound": false,
+      "source_count": 1,
+      "canonical_rule_count": 61,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/lan_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/lan_ipcidr.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/lan_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/lan_ipcidr.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/lan.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/lan.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/lan.list"
+        }
+      }
+    },
+    "reject_ads": {
+      "id": "reject_ads",
+      "description": "广告拦截集合",
+      "category": "reject",
+      "platform": "all",
+      "dns_bound": false,
+      "source_count": 1,
+      "canonical_rule_count": 289,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/reject_ads_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/reject_ads_ipcidr.mrs",
+          "classical_yaml": "dist/mihomo-classical/reject_ads_classical.yaml"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/reject_ads_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/reject_ads_ipcidr.mrs",
+          "classical_list": "dist/stash-classical/reject_ads_classical.list"
+        },
+        "egern": {
+          "yaml": "dist/egern/reject_ads.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/reject_ads.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/reject_ads.list"
+        }
+      }
+    },
+    "reject_httpdns": {
+      "id": "reject_httpdns",
+      "description": "HTTPDNS 拦截集合",
+      "category": "reject",
+      "platform": "all",
+      "dns_bound": false,
+      "source_count": 1,
+      "canonical_rule_count": 123,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/reject_httpdns_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/reject_httpdns_ipcidr.mrs",
+          "classical_yaml": "dist/mihomo-classical/reject_httpdns_classical.yaml"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/reject_httpdns_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/reject_httpdns_ipcidr.mrs",
+          "classical_list": "dist/stash-classical/reject_httpdns_classical.list"
+        },
+        "egern": {
+          "yaml": "dist/egern/reject_httpdns.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/reject_httpdns.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/reject_httpdns.list"
+        }
+      }
+    },
+    "reject_general": {
+      "id": "reject_general",
+      "description": "通用拦截集合",
+      "category": "reject",
+      "platform": "all",
+      "dns_bound": false,
+      "source_count": 1,
+      "canonical_rule_count": 374,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/reject_general_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/reject_general_ipcidr.mrs",
+          "classical_yaml": "dist/mihomo-classical/reject_general_classical.yaml"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/reject_general_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/reject_general_ipcidr.mrs",
+          "classical_list": "dist/stash-classical/reject_general_classical.list"
+        },
+        "egern": {
+          "yaml": "dist/egern/reject_general.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/reject_general.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/reject_general.list"
+        }
+      }
+    },
+    "apple_system": {
+      "id": "apple_system",
+      "description": "iOS/Apple 系统基础设施（APNs/激活/校时/Captive）",
+      "category": "os_infra",
+      "platform": "ios",
+      "dns_bound": true,
+      "source_count": 1,
+      "canonical_rule_count": 6,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/apple_system_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/apple_system_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/apple_system_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/apple_system_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/apple_system.yaml",
+          "dns_yaml": "dist/egern/apple_system.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/apple_system.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/apple_system.list"
+        }
+      }
+    },
+    "ms_connectivity": {
+      "id": "ms_connectivity",
+      "description": "Windows 联网检测基础设施",
+      "category": "os_infra",
+      "platform": "windows",
+      "dns_bound": true,
+      "source_count": 1,
+      "canonical_rule_count": 2,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/ms_connectivity_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/ms_connectivity_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/ms_connectivity_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/ms_connectivity_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/ms_connectivity.yaml",
+          "dns_yaml": "dist/egern/ms_connectivity.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/ms_connectivity.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/ms_connectivity.list"
+        }
+      }
+    },
+    "ms_update": {
+      "id": "ms_update",
+      "description": "Windows 更新与 Office CDN 基础设施",
+      "category": "os_infra",
+      "platform": "windows",
+      "dns_bound": true,
+      "source_count": 1,
+      "canonical_rule_count": 7,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/ms_update_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/ms_update_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/ms_update_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/ms_update_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/ms_update.yaml",
+          "dns_yaml": "dist/egern/ms_update.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/ms_update.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/ms_update.list"
+        }
+      }
+    },
+    "google_connectivity": {
+      "id": "google_connectivity",
+      "description": "Android 系统联网检测基础设施",
+      "category": "os_infra",
+      "platform": "android",
+      "dns_bound": true,
+      "source_count": 1,
+      "canonical_rule_count": 5,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/google_connectivity_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/google_connectivity_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/google_connectivity_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/google_connectivity_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/google_connectivity.yaml",
+          "dns_yaml": "dist/egern/google_connectivity.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/google_connectivity.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/google_connectivity.list"
+        }
+      }
+    },
+    "google_fcm": {
+      "id": "google_fcm",
+      "description": "Android FCM 推送基础设施",
+      "category": "os_infra",
+      "platform": "android",
+      "dns_bound": true,
+      "source_count": 1,
+      "canonical_rule_count": 12,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/google_fcm_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/google_fcm_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/google_fcm_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/google_fcm_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/google_fcm.yaml",
+          "dns_yaml": "dist/egern/google_fcm.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/google_fcm.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/google_fcm.list"
+        }
+      }
+    },
+    "google_play": {
+      "id": "google_play",
+      "description": "Android Google Play 商店与服务优先集合",
+      "category": "os_infra",
+      "platform": "android",
+      "dns_bound": true,
+      "source_count": 1,
+      "canonical_rule_count": 11,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/google_play_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/google_play_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/google_play_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/google_play_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/google_play.yaml",
+          "dns_yaml": "dist/egern/google_play.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/google_play.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/google_play.list"
+        }
+      }
+    },
+    "gov_cn": {
+      "id": "gov_cn",
+      "description": "中国政务网站直连集合",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 2,
+      "canonical_rule_count": 17,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/gov_cn_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/gov_cn_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/gov_cn_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/gov_cn_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/gov_cn.yaml",
+          "dns_yaml": "dist/egern/gov_cn.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/gov_cn.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/gov_cn.list"
+        }
+      }
+    },
+    "nvidia_direct": {
+      "id": "nvidia_direct",
+      "description": "NVIDIA 中国站与驱动下载直连子集",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 1,
+      "canonical_rule_count": 6,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/nvidia_direct_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/nvidia_direct_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/nvidia_direct_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/nvidia_direct_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/nvidia_direct.yaml",
+          "dns_yaml": "dist/egern/nvidia_direct.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/nvidia_direct.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/nvidia_direct.list"
+        }
+      }
+    },
+    "nvidia_global": {
+      "id": "nvidia_global",
+      "description": "NVIDIA 全球服务余集",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 1,
+      "canonical_rule_count": 66,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/nvidia_global_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/nvidia_global_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/nvidia_global_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/nvidia_global_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/nvidia_global.yaml",
+          "dns_yaml": "dist/egern/nvidia_global.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/nvidia_global.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/nvidia_global.list"
+        }
+      }
+    },
+    "aigc": {
+      "id": "aigc",
+      "description": "海外 AI / AIGC 专项出口与 DNS 集合",
+      "category": "ai",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 15,
+      "canonical_rule_count": 153,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/aigc_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/aigc_ipcidr.mrs",
+          "classical_yaml": "dist/mihomo-classical/aigc_classical.yaml",
+          "dns_mrs": "dist/mihomo-stash/aigc_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/aigc_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/aigc_ipcidr.mrs",
+          "classical_list": "dist/stash-classical/aigc_classical.list",
+          "dns_mrs": "dist/mihomo-stash/aigc_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/aigc.yaml",
+          "dns_yaml": "dist/egern/aigc_domain.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/aigc.list",
+          "stun_list": "dist/loon/aigc_stun.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/aigc.list"
+        }
+      }
+    },
+    "china_ai": {
+      "id": "china_ai",
+      "description": "国产 AI 国内与可直连全球域名聚合（排除代理例外）",
+      "category": "ai",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 16,
+      "canonical_rule_count": 112,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/china_ai_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/china_ai_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/china_ai_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/china_ai_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/china_ai.yaml",
+          "dns_yaml": "dist/egern/china_ai.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/china_ai.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/china_ai.list"
+        }
+      }
+    },
+    "telegram": {
+      "id": "telegram",
+      "description": "Telegram 域名与官方数据中心 IPv4 段",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": false,
+      "source_count": 2,
+      "canonical_rule_count": 30,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/telegram_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/telegram_ipcidr.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/telegram_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/telegram_ipcidr.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/telegram.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/telegram.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/telegram.list"
+        }
+      }
+    },
+    "apple": {
+      "id": "apple",
+      "description": "Apple 综合服务与音视频媒体（Apple_All + AppleMusic + AppleTV）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 3,
+      "canonical_rule_count": 1831,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/apple_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/apple_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/apple_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/apple_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/apple.yaml",
+          "dns_yaml": "dist/egern/apple.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/apple.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/apple.list"
+        }
+      }
+    },
+    "streaming": {
+      "id": "streaming",
+      "description": "海外流媒体专项集合（含 YouTube/TikTok/Netflix/Disney/Spotify 等）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": false,
+      "source_count": 14,
+      "canonical_rule_count": 2447,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/streaming_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/streaming_ipcidr.mrs",
+          "classical_yaml": "dist/mihomo-classical/streaming_classical.yaml"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/streaming_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/streaming_ipcidr.mrs",
+          "classical_list": "dist/stash-classical/streaming_classical.list"
+        },
+        "egern": {
+          "yaml": "dist/egern/streaming.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/streaming.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/streaming.list"
+        }
+      }
+    },
+    "google": {
+      "id": "google",
+      "description": "Google 综合服务（Android 走独立 Google 服务组，他端走 Public network）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 1,
+      "canonical_rule_count": 1123,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/google_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/google_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/google_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/google_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/google.yaml",
+          "dns_yaml": "dist/egern/google.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/google.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/google.list"
+        }
+      }
+    },
+    "finance": {
+      "id": "finance",
+      "description": "海外金融服务聚合",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": false,
+      "source_count": 5,
+      "canonical_rule_count": 744,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/finance_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/finance_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/finance.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/finance.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/finance.list"
+        }
+      }
+    },
+    "crypto": {
+      "id": "crypto",
+      "description": "加密货币与交易所聚合（含独立 DNS 域名集）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 51,
+      "canonical_rule_count": 309,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/crypto_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/crypto_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/crypto_domain.mrs",
+          "dns_mrs": "dist/mihomo-stash/crypto_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/crypto.yaml",
+          "dns_yaml": "dist/egern/crypto.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/crypto.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/crypto.list"
+        }
+      }
+    },
+    "direct_services": {
+      "id": "direct_services",
+      "description": "国内明确直连业务集合（国内支付/大厂/运营商/SteamCN/迅雷/Raindrop）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 36,
+      "canonical_rule_count": 7008,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/direct_services_domain.mrs",
+          "classical_yaml": "dist/mihomo-classical/direct_services_classical.yaml",
+          "dns_mrs": "dist/mihomo-stash/direct_services_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/direct_services_domain.mrs",
+          "classical_list": "dist/stash-classical/direct_services_classical.list",
+          "dns_mrs": "dist/mihomo-stash/direct_services_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/direct_services.yaml",
+          "dns_yaml": "dist/egern/direct_services_domain.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/direct_services.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/direct_services.list"
+        }
+      }
+    },
+    "public_global": {
+      "id": "public_global",
+      "description": "海外常规代理集合（开发办公/电商/社交/游戏/邮箱安全/共享CDN）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": false,
+      "source_count": 66,
+      "canonical_rule_count": 2640,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/public_global_domain.mrs",
+          "classical_yaml": "dist/mihomo-classical/public_global_classical.yaml"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/public_global_domain.mrs",
+          "classical_list": "dist/stash-classical/public_global_classical.list"
+        },
+        "egern": {
+          "yaml": "dist/egern/public_global.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/public_global.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/public_global.list"
+        }
+      }
+    },
+    "direct_cn": {
+      "id": "direct_cn",
+      "description": "国内广义兜底直连与国内 DNS 域名集合（Direct + cn + cnip）",
+      "category": "fallback",
+      "platform": "all",
+      "dns_bound": true,
+      "source_count": 3,
+      "canonical_rule_count": 22709,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/direct_cn_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/direct_cn_ipcidr.mrs",
+          "classical_yaml": "dist/mihomo-classical/direct_cn_classical.yaml",
+          "dns_mrs": "dist/mihomo-stash/direct_cn_domain.mrs"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/direct_cn_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/direct_cn_ipcidr.mrs",
+          "classical_list": "dist/stash-classical/direct_cn_classical.list",
+          "dns_mrs": "dist/mihomo-stash/direct_cn_domain.mrs"
+        },
+        "egern": {
+          "yaml": "dist/egern/direct_cn.yaml",
+          "dns_yaml": "dist/egern/direct_cn_domain.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/direct_cn.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/direct_cn.list"
+        }
+      }
+    },
+    "global_fallback": {
+      "id": "global_fallback",
+      "description": "海外广义兜底代理集合（Global_Domain + Global）",
+      "category": "fallback",
+      "platform": "all",
+      "dns_bound": false,
+      "source_count": 2,
+      "canonical_rule_count": 35277,
+      "artifacts": {
+        "mihomo": {
+          "domain_mrs": "dist/mihomo-stash/global_fallback_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/global_fallback_ipcidr.mrs",
+          "classical_yaml": "dist/mihomo-classical/global_fallback_classical.yaml"
+        },
+        "stash": {
+          "domain_mrs": "dist/mihomo-stash/global_fallback_domain.mrs",
+          "ipcidr_mrs": "dist/mihomo-stash/global_fallback_ipcidr.mrs",
+          "classical_list": "dist/stash-classical/global_fallback_classical.list"
+        },
+        "egern": {
+          "yaml": "dist/egern/global_fallback.yaml"
+        },
+        "loon": {
+          "list": "dist/loon/global_fallback.list"
+        },
+        "quantumultx": {
+          "list": "dist/quantumultx/global_fallback.list"
+        }
+      }
+    }
+  }
+}

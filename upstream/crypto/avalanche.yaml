@@ -1,0 +1,9 @@
+schema: zhbcn-rules/v1
+name: Avalanche
+kind: upstream
+source:
+  provider: blackmatrix7
+  ref: rule/Clash/Crypto/Crypto.yaml (Avalanche subset)
+rules:
+  domain_suffix:
+  - avax.network

@@ -1,0 +1,9 @@
+schema: zhbcn-rules/v1
+name: Tiangong
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - tiangong.cn

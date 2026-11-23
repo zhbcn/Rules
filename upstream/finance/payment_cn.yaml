@@ -1,0 +1,59 @@
+schema: zhbcn-rules/v1
+name: PaymentCN
+kind: upstream
+source:
+  provider: v2fly
+  ref: unionpay + payment subsets from alibaba, tencent, jd, douyin, mastercard, visa + retained payment domains
+rules:
+  domain_suffix:
+  - 95516.com
+  - 95516.net
+  - alipay
+  - alipay-eco.com
+  - alipay.cn
+  - alipay.com
+  - alipay.com.cn
+  - alipaydns.com
+  - alipaylog.com
+  - alipayobjects.com
+  - alipayplus.com
+  - baitiao.com
+  - chinabank.com.cn
+  - chinapay.com
+  - chinaums.com
+  - chinaunionpay.com
+  - chinaunionpay.com.cn
+  - chinaunionpay.net
+  - cup.com.cn
+  - cup62.cn
+  - doupay.com
+  - douyinpay.com
+  - financialsoccer.com.cn
+  - globaltenpay.com
+  - jdpay.com
+  - jdpaydns.com
+  - mastercard.cn
+  - mastercard.com.cn
+  - practicalmoneyskills.cn
+  - practicalmoneyskills.com.cn
+  - priceless.com.cn
+  - pricelessbeijing.cn
+  - pricelessbeijing.com.cn
+  - tenpay.com
+  - tenpayglobal.com
+  - travelex.com.cn
+  - ulpay.com
+  - unionpay.com
+  - unionpay.net
+  - unionpayintl.cn
+  - unionpayintl.com
+  - unionpaysecure.com
+  - visa.cn
+  - visa.com.cn
+  - visainfinite.cn
+  - visapay.cn
+  - visaplatinum.cn
+  - visaplatinum.com.cn
+  - wangyin.com
+  - wechatpay.cn
+  - wechatpay.com

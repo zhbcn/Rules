@@ -1,0 +1,1509 @@
+{
+  "schema": "zhbcn-build-report/v1",
+  "bundle_count": 25,
+  "totals": {
+    "mihomo": {
+      "emitted": 75359,
+      "adapted": 0,
+      "skipped": 3
+    },
+    "stash": {
+      "emitted": 75359,
+      "adapted": 0,
+      "skipped": 3
+    },
+    "egern": {
+      "emitted": 75362,
+      "adapted": 0,
+      "skipped": 0
+    },
+    "loon": {
+      "emitted": 75402,
+      "adapted": 12,
+      "skipped": 0
+    },
+    "quantumultx": {
+      "emitted": 75796,
+      "adapted": 15,
+      "skipped": 3
+    }
+  },
+  "bundles": {
+    "lan": {
+      "canonical_rule_count": 61,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 61,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/lan_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/lan_ipcidr.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 61,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/lan_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/lan_ipcidr.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 61,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/lan.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 61,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/lan.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 61,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/lan.list"
+          }
+        }
+      }
+    },
+    "reject_ads": {
+      "canonical_rule_count": 289,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 289,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/reject_ads_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/reject_ads_ipcidr.mrs",
+            "classical_yaml": "dist/mihomo-classical/reject_ads_classical.yaml"
+          }
+        },
+        "stash": {
+          "emitted": 289,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/reject_ads_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/reject_ads_ipcidr.mrs",
+            "classical_list": "dist/stash-classical/reject_ads_classical.list"
+          }
+        },
+        "egern": {
+          "emitted": 289,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/reject_ads.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 289,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/reject_ads.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 290,
+          "adapted": 3,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/reject_ads.list"
+          },
+          "adapted_details": [
+            {
+              "rule": "AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com))",
+              "reason": "qx_approved_and_to_wildcard",
+              "output_count": 1
+            },
+            {
+              "rule": "AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com))",
+              "reason": "qx_approved_and_to_wildcard",
+              "output_count": 1
+            },
+            {
+              "rule": "AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,-normal.zijieapi.com))",
+              "reason": "qx_approved_and_to_wildcard",
+              "output_count": 2
+            }
+          ]
+        }
+      }
+    },
+    "reject_httpdns": {
+      "canonical_rule_count": 123,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/reject_httpdns_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/reject_httpdns_ipcidr.mrs",
+            "classical_yaml": "dist/mihomo-classical/reject_httpdns_classical.yaml"
+          }
+        },
+        "stash": {
+          "emitted": 123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/reject_httpdns_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/reject_httpdns_ipcidr.mrs",
+            "classical_list": "dist/stash-classical/reject_httpdns_classical.list"
+          }
+        },
+        "egern": {
+          "emitted": 123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/reject_httpdns.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/reject_httpdns.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/reject_httpdns.list"
+          }
+        }
+      }
+    },
+    "reject_general": {
+      "canonical_rule_count": 374,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 371,
+          "adapted": 0,
+          "skipped": 3,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/reject_general_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/reject_general_ipcidr.mrs",
+            "classical_yaml": "dist/mihomo-classical/reject_general_classical.yaml"
+          },
+          "skipped_details": [
+            {
+              "rule": "URL-REGEX,/\\d+/resolve",
+              "reason": "unsupported_url_regex_in_mihomo"
+            },
+            {
+              "rule": "URL-REGEX,/\\d+/sign_d",
+              "reason": "unsupported_url_regex_in_mihomo"
+            },
+            {
+              "rule": "URL-REGEX,/igd\\.xml",
+              "reason": "unsupported_url_regex_in_mihomo"
+            }
+          ]
+        },
+        "stash": {
+          "emitted": 371,
+          "adapted": 0,
+          "skipped": 3,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/reject_general_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/reject_general_ipcidr.mrs",
+            "classical_list": "dist/stash-classical/reject_general_classical.list"
+          },
+          "skipped_details": [
+            {
+              "rule": "URL-REGEX,/\\d+/resolve",
+              "reason": "unsupported_url_regex_in_stash"
+            },
+            {
+              "rule": "URL-REGEX,/\\d+/sign_d",
+              "reason": "unsupported_url_regex_in_stash"
+            },
+            {
+              "rule": "URL-REGEX,/igd\\.xml",
+              "reason": "unsupported_url_regex_in_stash"
+            }
+          ]
+        },
+        "egern": {
+          "emitted": 374,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/reject_general.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 374,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/reject_general.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 371,
+          "adapted": 0,
+          "skipped": 3,
+          "artifacts": {
+            "list": "dist/quantumultx/reject_general.list"
+          },
+          "skipped_details": [
+            {
+              "rule": "URL-REGEX,/\\d+/resolve",
+              "reason": "unsupported_url_regex_in_qx"
+            },
+            {
+              "rule": "URL-REGEX,/\\d+/sign_d",
+              "reason": "unsupported_url_regex_in_qx"
+            },
+            {
+              "rule": "URL-REGEX,/igd\\.xml",
+              "reason": "unsupported_url_regex_in_qx"
+            }
+          ]
+        }
+      }
+    },
+    "apple_system": {
+      "canonical_rule_count": 6,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/apple_system_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/apple_system_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/apple_system_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/apple_system_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/apple_system.yaml",
+            "dns_yaml": "dist/egern/apple_system.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/apple_system.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/apple_system.list"
+          }
+        }
+      }
+    },
+    "ms_connectivity": {
+      "canonical_rule_count": 2,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 2,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/ms_connectivity_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/ms_connectivity_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 2,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/ms_connectivity_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/ms_connectivity_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 2,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/ms_connectivity.yaml",
+            "dns_yaml": "dist/egern/ms_connectivity.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 2,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/ms_connectivity.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 2,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/ms_connectivity.list"
+          }
+        }
+      }
+    },
+    "ms_update": {
+      "canonical_rule_count": 7,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 7,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/ms_update_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/ms_update_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 7,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/ms_update_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/ms_update_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 7,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/ms_update.yaml",
+            "dns_yaml": "dist/egern/ms_update.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 7,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/ms_update.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 7,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/ms_update.list"
+          }
+        }
+      }
+    },
+    "google_connectivity": {
+      "canonical_rule_count": 5,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 5,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/google_connectivity_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/google_connectivity_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 5,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/google_connectivity_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/google_connectivity_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 5,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/google_connectivity.yaml",
+            "dns_yaml": "dist/egern/google_connectivity.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 5,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/google_connectivity.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 5,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/google_connectivity.list"
+          }
+        }
+      }
+    },
+    "google_fcm": {
+      "canonical_rule_count": 12,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 12,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/google_fcm_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/google_fcm_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 12,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/google_fcm_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/google_fcm_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 12,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/google_fcm.yaml",
+            "dns_yaml": "dist/egern/google_fcm.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 12,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/google_fcm.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 12,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/google_fcm.list"
+          }
+        }
+      }
+    },
+    "google_play": {
+      "canonical_rule_count": 11,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 11,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/google_play_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/google_play_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 11,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/google_play_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/google_play_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 11,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/google_play.yaml",
+            "dns_yaml": "dist/egern/google_play.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 11,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/google_play.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 11,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/google_play.list"
+          }
+        }
+      }
+    },
+    "gov_cn": {
+      "canonical_rule_count": 17,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 17,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/gov_cn_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/gov_cn_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 17,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/gov_cn_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/gov_cn_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 17,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/gov_cn.yaml",
+            "dns_yaml": "dist/egern/gov_cn.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 17,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/gov_cn.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 17,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/gov_cn.list"
+          }
+        }
+      }
+    },
+    "nvidia_direct": {
+      "canonical_rule_count": 6,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/nvidia_direct_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/nvidia_direct_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/nvidia_direct_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/nvidia_direct_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/nvidia_direct.yaml",
+            "dns_yaml": "dist/egern/nvidia_direct.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/nvidia_direct.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 6,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/nvidia_direct.list"
+          }
+        }
+      }
+    },
+    "nvidia_global": {
+      "canonical_rule_count": 66,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 66,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/nvidia_global_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/nvidia_global_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 66,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/nvidia_global_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/nvidia_global_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 66,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/nvidia_global.yaml",
+            "dns_yaml": "dist/egern/nvidia_global.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 66,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/nvidia_global.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 66,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/nvidia_global.list"
+          }
+        }
+      }
+    },
+    "aigc": {
+      "canonical_rule_count": 153,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 153,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/aigc_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/aigc_ipcidr.mrs",
+            "classical_yaml": "dist/mihomo-classical/aigc_classical.yaml",
+            "dns_mrs": "dist/mihomo-stash/aigc_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 153,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/aigc_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/aigc_ipcidr.mrs",
+            "classical_list": "dist/stash-classical/aigc_classical.list",
+            "dns_mrs": "dist/mihomo-stash/aigc_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 153,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/aigc.yaml",
+            "dns_yaml": "dist/egern/aigc_domain.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 153,
+          "adapted": 1,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/aigc.list",
+            "stun_list": "dist/loon/aigc_stun.list"
+          },
+          "adapted_details": [
+            {
+              "rule": "DOMAIN-REGEX,^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$",
+              "reason": "loon_approved_wildcard_adaptation",
+              "output_count": 1
+            }
+          ]
+        },
+        "quantumultx": {
+          "emitted": 153,
+          "adapted": 1,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/aigc.list"
+          },
+          "adapted_details": [
+            {
+              "rule": "DOMAIN-REGEX,^chatgpt-async-webps-prod-\\S+-\\d+\\.webpubsub\\.azure\\.com$",
+              "reason": "qx_approved_wildcard_adaptation",
+              "output_count": 1
+            }
+          ]
+        }
+      }
+    },
+    "china_ai": {
+      "canonical_rule_count": 112,
+      "excluded_count": 8,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 112,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/china_ai_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/china_ai_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 112,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/china_ai_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/china_ai_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 112,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/china_ai.yaml",
+            "dns_yaml": "dist/egern/china_ai.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 112,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/china_ai.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 112,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/china_ai.list"
+          }
+        }
+      }
+    },
+    "telegram": {
+      "canonical_rule_count": 30,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 30,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/telegram_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/telegram_ipcidr.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 30,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/telegram_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/telegram_ipcidr.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 30,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/telegram.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 30,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/telegram.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 30,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/telegram.list"
+          }
+        }
+      }
+    },
+    "apple": {
+      "canonical_rule_count": 1831,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 1831,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/apple_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/apple_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 1831,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/apple_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/apple_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 1831,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/apple.yaml",
+            "dns_yaml": "dist/egern/apple.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 1831,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/apple.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 1831,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/apple.list"
+          }
+        }
+      }
+    },
+    "streaming": {
+      "canonical_rule_count": 2447,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 2447,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/streaming_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/streaming_ipcidr.mrs",
+            "classical_yaml": "dist/mihomo-classical/streaming_classical.yaml"
+          }
+        },
+        "stash": {
+          "emitted": 2447,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/streaming_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/streaming_ipcidr.mrs",
+            "classical_list": "dist/stash-classical/streaming_classical.list"
+          }
+        },
+        "egern": {
+          "emitted": 2447,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/streaming.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 2458,
+          "adapted": 5,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/streaming.list"
+          },
+          "adapted_details": [
+            {
+              "rule": "DOMAIN-REGEX,(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$",
+              "reason": "loon_wildcard_equivalent",
+              "output_count": 2
+            },
+            {
+              "rule": "DOMAIN-REGEX,(^|\\.)apiproxy-website-nlb-prod-.+\\.amazonaws\\.com$",
+              "reason": "loon_wildcard_equivalent",
+              "output_count": 2
+            },
+            {
+              "rule": "DOMAIN-REGEX,(^|\\.)dualstack\\.apiproxy-.+\\.amazonaws\\.com$",
+              "reason": "loon_wildcard_equivalent",
+              "output_count": 2
+            },
+            {
+              "rule": "DOMAIN-REGEX,(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$",
+              "reason": "loon_wildcard_equivalent",
+              "output_count": 2
+            },
+            {
+              "rule": "DOMAIN-REGEX,^hses[1-7]?\\.akamaized\\.net$",
+              "reason": "loon_exact_domain_enumeration",
+              "output_count": 8
+            }
+          ]
+        },
+        "quantumultx": {
+          "emitted": 2458,
+          "adapted": 5,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/streaming.list"
+          },
+          "adapted_details": [
+            {
+              "rule": "DOMAIN-REGEX,(^|\\.)apiproxy-device-prod-nlb-.+\\.amazonaws\\.com$",
+              "reason": "qx_wildcard_equivalent",
+              "output_count": 2
+            },
+            {
+              "rule": "DOMAIN-REGEX,(^|\\.)apiproxy-website-nlb-prod-.+\\.amazonaws\\.com$",
+              "reason": "qx_wildcard_equivalent",
+              "output_count": 2
+            },
+            {
+              "rule": "DOMAIN-REGEX,(^|\\.)dualstack\\.apiproxy-.+\\.amazonaws\\.com$",
+              "reason": "qx_wildcard_equivalent",
+              "output_count": 2
+            },
+            {
+              "rule": "DOMAIN-REGEX,(^|\\.)dualstack\\.ichnaea-web-.+\\.amazonaws\\.com$",
+              "reason": "qx_wildcard_equivalent",
+              "output_count": 2
+            },
+            {
+              "rule": "DOMAIN-REGEX,^hses[1-7]?\\.akamaized\\.net$",
+              "reason": "qx_exact_host_enumeration",
+              "output_count": 8
+            }
+          ]
+        }
+      }
+    },
+    "google": {
+      "canonical_rule_count": 1123,
+      "excluded_count": 0,
+      "patches_applied": [
+        {
+          "patch": "custom/patches/google.patch.yaml",
+          "target": "upstream/technology/google.yaml",
+          "added": 0,
+          "removed": 2
+        }
+      ],
+      "clients": {
+        "mihomo": {
+          "emitted": 1123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/google_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/google_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 1123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/google_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/google_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 1123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/google.yaml",
+            "dns_yaml": "dist/egern/google.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 1123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/google.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 1123,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/google.list"
+          }
+        }
+      }
+    },
+    "finance": {
+      "canonical_rule_count": 744,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 744,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/finance_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 744,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/finance_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 744,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/finance.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 744,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/finance.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 744,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/finance.list"
+          }
+        }
+      }
+    },
+    "crypto": {
+      "canonical_rule_count": 309,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 309,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/crypto_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/crypto_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 309,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/crypto_domain.mrs",
+            "dns_mrs": "dist/mihomo-stash/crypto_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 309,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/crypto.yaml",
+            "dns_yaml": "dist/egern/crypto.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 309,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/crypto.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 309,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/crypto.list"
+          }
+        }
+      }
+    },
+    "direct_services": {
+      "canonical_rule_count": 7008,
+      "excluded_count": 0,
+      "patches_applied": [
+        {
+          "patch": "custom/patches/tencent_domain.patch.yaml",
+          "target": "upstream/direct/tencent_domain.yaml",
+          "added": 0,
+          "removed": 0
+        }
+      ],
+      "clients": {
+        "mihomo": {
+          "emitted": 7008,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/direct_services_domain.mrs",
+            "classical_yaml": "dist/mihomo-classical/direct_services_classical.yaml",
+            "dns_mrs": "dist/mihomo-stash/direct_services_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 7008,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/direct_services_domain.mrs",
+            "classical_list": "dist/stash-classical/direct_services_classical.list",
+            "dns_mrs": "dist/mihomo-stash/direct_services_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 7008,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/direct_services.yaml",
+            "dns_yaml": "dist/egern/direct_services_domain.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 7008,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/direct_services.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 7008,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/direct_services.list"
+          }
+        }
+      }
+    },
+    "public_global": {
+      "canonical_rule_count": 2640,
+      "excluded_count": 0,
+      "patches_applied": [
+        {
+          "patch": "custom/patches/speedtest.patch.yaml",
+          "target": "upstream/technology/speedtest.yaml",
+          "added": 0,
+          "removed": 1
+        }
+      ],
+      "clients": {
+        "mihomo": {
+          "emitted": 2640,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/public_global_domain.mrs",
+            "classical_yaml": "dist/mihomo-classical/public_global_classical.yaml"
+          }
+        },
+        "stash": {
+          "emitted": 2640,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/public_global_domain.mrs",
+            "classical_list": "dist/stash-classical/public_global_classical.list"
+          }
+        },
+        "egern": {
+          "emitted": 2640,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/public_global.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 2667,
+          "adapted": 3,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/public_global.list"
+          },
+          "adapted_details": [
+            {
+              "rule": "DOMAIN-REGEX,^cdn\\d-epicgames-\\d+\\.file\\.myqcloud\\.com$",
+              "reason": "loon_approved_wildcard_adaptation",
+              "output_count": 10
+            },
+            {
+              "rule": "DOMAIN-REGEX,^epicgames-download\\d-\\d+\\.file\\.myqcloud\\.com$",
+              "reason": "loon_approved_wildcard_adaptation",
+              "output_count": 10
+            },
+            {
+              "rule": "DOMAIN-REGEX,^epicgames-download\\d\\.akamaized\\.net$",
+              "reason": "loon_exact_domain_enumeration",
+              "output_count": 10
+            }
+          ]
+        },
+        "quantumultx": {
+          "emitted": 2667,
+          "adapted": 3,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/public_global.list"
+          },
+          "adapted_details": [
+            {
+              "rule": "DOMAIN-REGEX,^cdn\\d-epicgames-\\d+\\.file\\.myqcloud\\.com$",
+              "reason": "qx_approved_wildcard_adaptation",
+              "output_count": 10
+            },
+            {
+              "rule": "DOMAIN-REGEX,^epicgames-download\\d-\\d+\\.file\\.myqcloud\\.com$",
+              "reason": "qx_approved_wildcard_adaptation",
+              "output_count": 10
+            },
+            {
+              "rule": "DOMAIN-REGEX,^epicgames-download\\d\\.akamaized\\.net$",
+              "reason": "qx_exact_host_enumeration",
+              "output_count": 10
+            }
+          ]
+        }
+      }
+    },
+    "direct_cn": {
+      "canonical_rule_count": 22709,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 22709,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/direct_cn_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/direct_cn_ipcidr.mrs",
+            "classical_yaml": "dist/mihomo-classical/direct_cn_classical.yaml",
+            "dns_mrs": "dist/mihomo-stash/direct_cn_domain.mrs"
+          }
+        },
+        "stash": {
+          "emitted": 22709,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/direct_cn_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/direct_cn_ipcidr.mrs",
+            "classical_list": "dist/stash-classical/direct_cn_classical.list",
+            "dns_mrs": "dist/mihomo-stash/direct_cn_domain.mrs"
+          }
+        },
+        "egern": {
+          "emitted": 22709,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/direct_cn.yaml",
+            "dns_yaml": "dist/egern/direct_cn_domain.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 22711,
+          "adapted": 3,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/direct_cn.list"
+          },
+          "adapted_details": [
+            {
+              "rule": "DOMAIN-REGEX,.+\\.awsdns-cn-[0-9][0-9]\\.(biz|com|net|top)$",
+              "reason": "loon_wildcard_equivalent",
+              "output_count": 4
+            },
+            {
+              "rule": "DOMAIN-REGEX,.+\\.awsdns-cn-[0-9][a-e0-9]\\.cn$",
+              "reason": "covered_by_same_bundle_suffix",
+              "output_count": 0
+            },
+            {
+              "rule": "DOMAIN-REGEX,^.+-mihayo\\.akamaized\\.net$",
+              "reason": "loon_wildcard_equivalent",
+              "output_count": 1
+            }
+          ]
+        },
+        "quantumultx": {
+          "emitted": 23107,
+          "adapted": 3,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/direct_cn.list"
+          },
+          "adapted_details": [
+            {
+              "rule": "DOMAIN-REGEX,.+\\.awsdns-cn-[0-9][0-9]\\.(biz|com|net|top)$",
+              "reason": "qx_approved_suffix_optimization",
+              "output_count": 400
+            },
+            {
+              "rule": "DOMAIN-REGEX,.+\\.awsdns-cn-[0-9][a-e0-9]\\.cn$",
+              "reason": "covered_by_same_bundle_suffix",
+              "output_count": 0
+            },
+            {
+              "rule": "DOMAIN-REGEX,^.+-mihayo\\.akamaized\\.net$",
+              "reason": "qx_wildcard_equivalent",
+              "output_count": 1
+            }
+          ]
+        }
+      }
+    },
+    "global_fallback": {
+      "canonical_rule_count": 35277,
+      "excluded_count": 0,
+      "patches_applied": [],
+      "clients": {
+        "mihomo": {
+          "emitted": 35277,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/global_fallback_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/global_fallback_ipcidr.mrs",
+            "classical_yaml": "dist/mihomo-classical/global_fallback_classical.yaml"
+          }
+        },
+        "stash": {
+          "emitted": 35277,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "domain_mrs": "dist/mihomo-stash/global_fallback_domain.mrs",
+            "ipcidr_mrs": "dist/mihomo-stash/global_fallback_ipcidr.mrs",
+            "classical_list": "dist/stash-classical/global_fallback_classical.list"
+          }
+        },
+        "egern": {
+          "emitted": 35277,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "yaml": "dist/egern/global_fallback.yaml"
+          }
+        },
+        "loon": {
+          "emitted": 35277,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/loon/global_fallback.list"
+          }
+        },
+        "quantumultx": {
+          "emitted": 35277,
+          "adapted": 0,
+          "skipped": 0,
+          "artifacts": {
+            "list": "dist/quantumultx/global_fallback.list"
+          }
+        }
+      }
+    }
+  }
+}

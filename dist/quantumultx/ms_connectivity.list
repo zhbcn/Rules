@@ -1,0 +1,5 @@
+# BUNDLE: ms_connectivity
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host-suffix,msftconnecttest.com,proxy
+host-suffix,msftncsi.com,proxy

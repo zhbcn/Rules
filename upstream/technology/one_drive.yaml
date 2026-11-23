@@ -1,0 +1,19 @@
+schema: zhbcn-rules/v1
+name: OneDrive
+kind: upstream
+source:
+  provider: v2fly
+  ref: onedrive
+rules:
+  domain_suffix:
+  - 1drv.com
+  - 1drv.ms
+  - livefilestore.com
+  - onedrive.co
+  - onedrive.co.uk
+  - onedrive.com
+  - onedrive.eu
+  - onedrive.live.com
+  - onedrive.net
+  - onedrive.org
+  - storage.live.com

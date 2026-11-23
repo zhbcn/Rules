@@ -1,0 +1,22 @@
+schema: zhbcn-rules/v1
+name: Ozon
+kind: upstream
+source:
+  provider: v2fly
+  ref: ozon (shopping-only subset)
+rules:
+  domain_suffix:
+  - o3.ru
+  - o3t.ru
+  - ozon.app
+  - ozon.by
+  - ozon.com
+  - ozon.com.by
+  - ozon.com.kz
+  - ozon.express
+  - ozon.global
+  - ozon.kz
+  - ozon.market
+  - ozon.ru
+  - ozone.ru
+  - ozonusercontent.com

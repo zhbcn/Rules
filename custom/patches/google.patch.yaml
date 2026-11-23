@@ -1,0 +1,8 @@
+schema: zhbcn-patch/v1
+target: upstream/technology/google.yaml
+notes: Remove 2 regexes already covered by googlevideo.com & xn--ngstr-lra8j.com suffixes so Google compiles to 100% pure domain .mrs.
+remove:
+  domain_regex:
+  - ^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.googlevideo\.com$
+  - ^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.xn--ngstr-lra8j\.com$
+add: {}

@@ -1,0 +1,20 @@
+schema: zhbcn-rules/v1
+name: Copilot
+kind: upstream
+source:
+  provider: v2fly
+  ref: github-copilot + category-ai-!cn (Copilot subset) + existing Technology/Microsoft.yaml Copilot subset
+rules:
+  domain:
+  - copilot-proxy.githubusercontent.com
+  - copilot-telemetry-service.githubusercontent.com
+  - copilot-telemetry.githubusercontent.com
+  - copilot-workspace.githubnext.com
+  - copilotprodattachments.blob.core.windows.net
+  - production-copilot-host-westus.webpubsub.azure.com
+  domain_suffix:
+  - copilot-stg.com
+  - copilot.cloud.microsoft
+  - copilot.com
+  - copilot.microsoft.com
+  - githubcopilot.com

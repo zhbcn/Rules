@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: TRONSCAN
+kind: upstream
+source:
+  provider: blackmatrix7
+  ref: rule/Clash/Crypto/Crypto.yaml (TRONSCAN subset) + existing zhbcn/Rules rule
+rules:
+  domain_suffix:
+  - tronscan.org
+  - tronscanapi.com

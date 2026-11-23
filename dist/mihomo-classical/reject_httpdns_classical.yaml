@@ -1,0 +1,5 @@
+# BUNDLE: reject_httpdns
+# FORMAT: mihomo-classical (non-MRS remainder only)
+payload:
+  - 'DOMAIN-KEYWORD,httpdns'
+  - 'DOMAIN-KEYWORD,httpsdns'

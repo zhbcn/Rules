@@ -1,0 +1,38 @@
+schema: zhbcn-rules/v1
+name: Zalando
+kind: custom
+source:
+  provider: custom
+  ref: custom
+rules:
+  domain_suffix:
+  - zalando.at
+  - zalando.be
+  - zalando.bg
+  - zalando.ch
+  - zalando.co.uk
+  - zalando.com
+  - zalando.cz
+  - zalando.de
+  - zalando.dk
+  - zalando.ee
+  - zalando.es
+  - zalando.fi
+  - zalando.fr
+  - zalando.gr
+  - zalando.hr
+  - zalando.hu
+  - zalando.ie
+  - zalando.it
+  - zalando.lt
+  - zalando.lu
+  - zalando.lv
+  - zalando.nl
+  - zalando.no
+  - zalando.pl
+  - zalando.pt
+  - zalando.ro
+  - zalando.se
+  - zalando.si
+  - zalando.sk
+  - ztat.net

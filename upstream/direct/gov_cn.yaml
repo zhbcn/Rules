@@ -1,0 +1,24 @@
+schema: zhbcn-rules/v1
+name: GovCN
+kind: upstream
+source:
+  provider: blackmatrix7
+  ref: rule/Clash/GovCN/GovCN.yaml
+rules:
+  domain_suffix:
+  - 91huayi.cn
+  - 91huayi.com
+  - 91huayi.net
+  - gov.cn
+  - heart301.cn
+  - henancme.net
+  - huayi.cn
+  - huayiweibo.com
+  - huayiyuan.com
+  - robot301.net
+  - roboticsurg301.net
+  - scncrc.com
+  - shiyanma.org.cn
+  - sqpx.org
+  - wsglw.com
+  - wsglw.net

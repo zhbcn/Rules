@@ -1,0 +1,6 @@
+# BUNDLE: public_global
+# FORMAT: mihomo-classical (non-MRS remainder only)
+payload:
+  - 'DOMAIN-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com$'
+  - 'DOMAIN-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com$'
+  - 'DOMAIN-REGEX,^epicgames-download\d\.akamaized\.net$'

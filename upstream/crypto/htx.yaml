@@ -1,0 +1,18 @@
+schema: zhbcn-rules/v1
+name: HTX
+kind: upstream
+source:
+  provider: v2fly
+  ref: huobi
+rules:
+  domain_suffix:
+  - hbabit.com
+  - hbfile.net
+  - htx.com
+  - huobi.com
+  - huobi.me
+  - huobi.pro
+  - huobi.sc
+  - huobiasia.vip
+  - huobigroup.com
+  - huobitoken.com

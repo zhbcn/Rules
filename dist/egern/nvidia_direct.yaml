@@ -1,0 +1,11 @@
+# BUNDLE: nvidia_direct
+# FORMAT: egern-yaml (native)
+
+domain_set:
+- gfwsl.geforce.com
+- services.gfe.nvidia.com
+domain_suffix_set:
+- download.nvidia.com
+- geforce.cn
+- gputechconf.cn
+- nvidia.cn

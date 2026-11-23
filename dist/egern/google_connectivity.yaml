@@ -1,0 +1,9 @@
+# BUNDLE: google_connectivity
+# FORMAT: egern-yaml (native)
+
+domain_set:
+- clients1.google.com
+- clients3.google.com
+- connectivitycheck.android.com
+- connectivitycheck.google.com
+- connectivitycheck.gstatic.com

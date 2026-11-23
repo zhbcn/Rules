@@ -1,0 +1,9 @@
+# BUNDLE: apple_system
+# FORMAT: loon-list (policy-free; bind via [Remote Rule] policy=...)
+
+DOMAIN,albert.apple.com
+DOMAIN,captive.apple.com
+DOMAIN,gs.apple.com
+DOMAIN,time-ios.apple.com
+DOMAIN,time.apple.com
+DOMAIN-SUFFIX,push.apple.com

@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: MicrosoftConnectivity
+kind: custom
+source:
+  provider: official
+  ref: https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/troubleshoot-ncsi-guidance
+rules:
+  domain_suffix:
+  - msftconnecttest.com
+  - msftncsi.com

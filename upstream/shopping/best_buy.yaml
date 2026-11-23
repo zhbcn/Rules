@@ -1,0 +1,25 @@
+schema: zhbcn-rules/v1
+name: BestBuy
+kind: upstream
+source:
+  provider: v2fly
+  ref: bestbuy (shopping-only subset)
+rules:
+  domain_suffix:
+  - bby.com
+  - bbycastatic.ca
+  - bbycloud.com
+  - bbycontent.com
+  - bbycontent.net
+  - bbystatic.com
+  - bestbuy.ca
+  - bestbuy.cn
+  - bestbuy.com
+  - bestbuy.com.cn
+  - bestbuy.com.mx
+  - bestbuybusiness.com
+  - bestbuyforbusiness.ca
+  - bestbuyrewards.com
+  - bestbuystores.com
+  - bestbuytradein.com
+  - mybestbuy.com

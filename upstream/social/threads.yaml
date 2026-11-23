@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Threads
+kind: upstream
+source:
+  provider: v2fly
+  ref: threads
+rules:
+  domain_suffix:
+  - threads.com
+  - threads.net

@@ -1,0 +1,13 @@
+schema: zhbcn-rules/v1
+name: Bitwarden
+kind: upstream
+source:
+  provider: v2fly
+  ref: bitwarden
+rules:
+  domain_suffix:
+  - bitwarden.com
+  - bitwarden.eu
+  - bitwarden.net
+  - btwrdn.co
+  - btwrdn.com

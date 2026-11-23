@@ -1,0 +1,13 @@
+schema: zhbcn-rules/v1
+name: Teams
+kind: upstream
+source:
+  provider: blackmatrix7
+  ref: rule/Clash/Teams/Teams.yaml
+rules:
+  domain:
+  - teams.events.data.microsoft.com
+  domain_suffix:
+  - teams.cdn.live.net
+  - teams.live.com
+  - teams.microsoft.com

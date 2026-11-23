@@ -1,0 +1,18 @@
+schema: zhbcn-rules/v1
+name: CaiNiao
+kind: upstream
+source:
+  provider: v2fly
+  ref: cainiao
+rules:
+  domain_suffix:
+  - 56xiniao.com
+  - cainiao-inc.com
+  - cainiao.com
+  - cainiao.com.cn
+  - cainiaoyizhan.com
+  - danniao.com
+  - dianwoda.cn
+  - dianwoda.com
+  - guoguo-app.com
+  - v6-adashx.ut.cainiao.com

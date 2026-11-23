@@ -1,0 +1,3 @@
+# BUNDLE: aigc
+# FORMAT: stash-classical (non-MRS remainder only)
+DOMAIN-REGEX,^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$

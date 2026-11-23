@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: EtherFi
+kind: custom
+source:
+  provider: custom
+  ref: custom
+rules:
+  domain:
+  - etherfi.gitbook.io
+  domain_suffix:
+  - ether.fi

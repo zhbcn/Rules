@@ -1,0 +1,5 @@
+# BUNDLE: public_global
+# FORMAT: stash-classical (non-MRS remainder only)
+DOMAIN-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com$
+DOMAIN-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com$
+DOMAIN-REGEX,^epicgames-download\d\.akamaized\.net$

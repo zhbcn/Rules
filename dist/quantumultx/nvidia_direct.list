@@ -1,0 +1,9 @@
+# BUNDLE: nvidia_direct
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host,gfwsl.geforce.com,proxy
+host,services.gfe.nvidia.com,proxy
+host-suffix,download.nvidia.com,proxy
+host-suffix,geforce.cn,proxy
+host-suffix,gputechconf.cn,proxy
+host-suffix,nvidia.cn,proxy

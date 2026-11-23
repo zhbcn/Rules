@@ -1,0 +1,14 @@
+schema: zhbcn-rules/v1
+name: BaiduAI
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - dumate.cn
+  - faxingbao.com
+  - mcpworld.com
+  - miaoda.cn
+  - wenxin.baidu.com
+  - yiyan.baidu.com

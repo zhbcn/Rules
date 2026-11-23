@@ -1,0 +1,15 @@
+schema: zhbcn-rules/v1
+name: Pinduoduo
+kind: upstream
+source:
+  provider: v2fly
+  ref: pinduoduo
+rules:
+  domain_suffix:
+  - pddcdn.com
+  - pddim.com
+  - pddpic.com
+  - pddugc.com
+  - pinduoduo.com
+  - pinduoduo.net
+  - yangkeduo.com

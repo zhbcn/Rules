@@ -1,0 +1,12 @@
+schema: zhbcn-rules/v1
+name: Ethereum
+kind: upstream
+source:
+  provider: v2fly
+  ref: ethereum
+rules:
+  domain_suffix:
+  - devcon.org
+  - ethereum.foundation
+  - ethereum.org
+  - etherscan.io

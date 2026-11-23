@@ -1,0 +1,18 @@
+schema: zhbcn-rules/v1
+name: Lazada
+kind: upstream
+source:
+  provider: v2fly
+  ref: alibaba (Lazada subset) + existing zhbcn/Rules rule
+rules:
+  domain_suffix:
+  - lazada.co.id
+  - lazada.co.th
+  - lazada.com
+  - lazada.com.my
+  - lazada.com.ph
+  - lazada.sg
+  - lazada.vn
+  - lazadausercontent.com
+  - lazcdn.com
+  - slatic.net

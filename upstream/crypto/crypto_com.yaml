@@ -1,0 +1,12 @@
+schema: zhbcn-rules/v1
+name: CryptoCom
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-cryptocurrency (Crypto.com subset) + existing zhbcn/Rules rule
+rules:
+  domain:
+  - crypto-exchange.onelink.me
+  - crypto.onelink.me
+  domain_suffix:
+  - crypto.com

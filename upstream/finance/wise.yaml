@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Wise
+kind: upstream
+source:
+  provider: v2fly
+  ref: wise
+rules:
+  domain_suffix:
+  - transferwise.com
+  - wise.com

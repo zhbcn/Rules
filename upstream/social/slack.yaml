@@ -1,0 +1,19 @@
+schema: zhbcn-rules/v1
+name: Slack
+kind: upstream
+source:
+  provider: v2fly
+  ref: slack
+rules:
+  domain_suffix:
+  - slack-core.com
+  - slack-edge.com
+  - slack-files.com
+  - slack-imgs.com
+  - slack-msgs.com
+  - slack-redir.net
+  - slack.com
+  - slackb.com
+  - slackcertified.com
+  - slackdemo.com
+  - slackhq.com

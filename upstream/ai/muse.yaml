@@ -1,0 +1,12 @@
+schema: zhbcn-rules/v1
+name: Muse
+kind: upstream
+source:
+  provider: v2fly
+  ref: meta (Muse and shared account domains only)
+rules:
+  domain_suffix:
+  - meta.ai
+  - meta.com
+  - metaaivm.com
+  - muse.ai

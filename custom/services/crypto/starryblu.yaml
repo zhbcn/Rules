@@ -1,0 +1,13 @@
+schema: zhbcn-rules/v1
+name: Starryblu
+kind: custom
+source:
+  provider: custom
+  ref: custom
+rules:
+  domain:
+  - panda-common-bucket.oss-cn-hangzhou.aliyuncs.com
+  - starryblu-public.oss-accelerate.aliyuncs.com
+  domain_suffix:
+  - starryblu.com
+  - wotransfer.com

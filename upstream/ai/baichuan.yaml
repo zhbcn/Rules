@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Baichuan
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - baichuan-ai.com
+  - nia-teams.com

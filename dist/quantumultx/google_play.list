@@ -1,0 +1,14 @@
+# BUNDLE: google_play
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host,android.clients.google.com,proxy
+host,play-fe.googleapis.com,proxy
+host,play-lh.googleusercontent.com,proxy
+host,playatoms-pa.googleapis.com,proxy
+host,redirector.c.play.google.com,proxy
+host-suffix,googleplay.com,proxy
+host-suffix,gvt1.com,proxy
+host-suffix,gvt2.com,proxy
+host-suffix,gvt3.com,proxy
+host-suffix,play.google.com,proxy
+host-suffix,play.googleapis.com,proxy

@@ -1,0 +1,19 @@
+schema: zhbcn-rules/v1
+name: Zhipu
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - autoglm.ai
+  - bigmodel.cn
+  - chatglm.cn
+  - chatglm.com
+  - codegeex.ai
+  - codegeex.cn
+  - z.ai
+  - zhipu.ai
+  - zhipu.com
+  - zhipuai.cn
+  - zhipucn.com

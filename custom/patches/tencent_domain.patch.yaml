@@ -1,0 +1,7 @@
+schema: zhbcn-patch/v1
+target: upstream/direct/tencent_domain.yaml
+notes: Exclude public suffix in.th per THIRD_PARTY_NOTICES.md review.
+remove:
+  domain_suffix:
+  - in.th
+add: {}

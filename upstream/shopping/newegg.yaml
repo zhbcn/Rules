@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Newegg
+kind: upstream
+source:
+  provider: v2fly
+  ref: newegg
+rules:
+  domain_suffix:
+  - newegg.com
+  - neweggimages.com

@@ -1,0 +1,486 @@
+{
+  "version": 1,
+  "schema": "zhbcn-bundles/v1",
+  "raw_base": "https://raw.githubusercontent.com/zhbcn/Rules/main/dist",
+  "bundles": [
+    {
+      "id": "lan",
+      "description": "局域网与本机保留地址",
+      "category": "infrastructure",
+      "platform": "all",
+      "dns_bound": false,
+      "sources": [
+        "upstream/system/lan.yaml"
+      ]
+    },
+    {
+      "id": "reject_ads",
+      "description": "广告拦截集合",
+      "category": "reject",
+      "platform": "all",
+      "dns_bound": false,
+      "sources": [
+        "upstream/system/advertising.yaml"
+      ]
+    },
+    {
+      "id": "reject_httpdns",
+      "description": "HTTPDNS 拦截集合",
+      "category": "reject",
+      "platform": "all",
+      "dns_bound": false,
+      "sources": [
+        "upstream/system/httpdns.yaml"
+      ]
+    },
+    {
+      "id": "reject_general",
+      "description": "通用拦截集合",
+      "category": "reject",
+      "platform": "all",
+      "dns_bound": false,
+      "sources": [
+        "upstream/system/reject.yaml"
+      ]
+    },
+    {
+      "id": "apple_system",
+      "description": "iOS/Apple 系统基础设施（APNs/激活/校时/Captive）",
+      "category": "os_infra",
+      "platform": "ios",
+      "dns_bound": true,
+      "sources": [
+        "custom/services/system/apple_system.yaml"
+      ]
+    },
+    {
+      "id": "ms_connectivity",
+      "description": "Windows 联网检测基础设施",
+      "category": "os_infra",
+      "platform": "windows",
+      "dns_bound": true,
+      "sources": [
+        "custom/services/system/microsoft_connectivity.yaml"
+      ]
+    },
+    {
+      "id": "ms_update",
+      "description": "Windows 更新与 Office CDN 基础设施",
+      "category": "os_infra",
+      "platform": "windows",
+      "dns_bound": true,
+      "sources": [
+        "custom/services/technology/microsoft_update.yaml"
+      ]
+    },
+    {
+      "id": "google_connectivity",
+      "description": "Android 系统联网检测基础设施",
+      "category": "os_infra",
+      "platform": "android",
+      "dns_bound": true,
+      "sources": [
+        "custom/services/system/google_connectivity.yaml"
+      ]
+    },
+    {
+      "id": "google_fcm",
+      "description": "Android FCM 推送基础设施",
+      "category": "os_infra",
+      "platform": "android",
+      "dns_bound": true,
+      "sources": [
+        "upstream/technology/google_fcm.yaml"
+      ]
+    },
+    {
+      "id": "google_play",
+      "description": "Android Google Play 商店与服务优先集合",
+      "category": "os_infra",
+      "platform": "android",
+      "dns_bound": true,
+      "sources": [
+        "custom/services/system/google_play.yaml"
+      ]
+    },
+    {
+      "id": "gov_cn",
+      "description": "中国政务网站直连集合",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "sources": [
+        "upstream/direct/gov_cn.yaml",
+        "custom/services/direct/gov_cn_extra.yaml"
+      ]
+    },
+    {
+      "id": "nvidia_direct",
+      "description": "NVIDIA 中国站与驱动下载直连子集",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "sources": [
+        "custom/services/technology/nvidia_direct.yaml"
+      ]
+    },
+    {
+      "id": "nvidia_global",
+      "description": "NVIDIA 全球服务余集",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "sources": [
+        "upstream/technology/nvidia.yaml"
+      ]
+    },
+    {
+      "id": "aigc",
+      "description": "海外 AI / AIGC 专项出口与 DNS 集合",
+      "category": "ai",
+      "platform": "all",
+      "dns_bound": true,
+      "emit_loon_stun": true,
+      "loon_stun_sources": [
+        "upstream/ai/anthropic.yaml",
+        "upstream/ai/claude.yaml",
+        "upstream/ai/open_ai.yaml"
+      ],
+      "sources": [
+        "upstream/ai/copilot.yaml",
+        "upstream/ai/anthropic.yaml",
+        "upstream/ai/claude.yaml",
+        "upstream/ai/gemini.yaml",
+        "upstream/ai/muse.yaml",
+        "upstream/ai/meta.yaml",
+        "upstream/ai/open_ai.yaml",
+        "upstream/ai/grok.yaml",
+        "upstream/ai/perplexity.yaml",
+        "upstream/ai/manus.yaml",
+        "custom/services/ai/hark.yaml",
+        "upstream/ai/hermes_agent.yaml",
+        "upstream/ai/byte_dance_ai_international.yaml",
+        "custom/services/ai/open_code.yaml",
+        "custom/services/ai/aigc_extra.yaml"
+      ]
+    },
+    {
+      "id": "china_ai",
+      "description": "国产 AI 国内与可直连全球域名聚合（排除代理例外）",
+      "category": "ai",
+      "platform": "all",
+      "dns_bound": true,
+      "exclude_domains": [
+        "talkie-ai.com",
+        "cici.com",
+        "ciciai.com",
+        "ciciaicdn.com",
+        "dola.com",
+        "coze.com",
+        "marscode.com",
+        "trae.ai"
+      ],
+      "sources": [
+        "upstream/ai/ant_afu.yaml",
+        "upstream/ai/baichuan.yaml",
+        "upstream/ai/baidu_ai.yaml",
+        "upstream/ai/byte_dance_ai.yaml",
+        "upstream/ai/deep_seek.yaml",
+        "upstream/ai/kimi.yaml",
+        "upstream/ai/kling.yaml",
+        "upstream/ai/metaso.yaml",
+        "upstream/ai/mini_max.yaml",
+        "upstream/ai/qwen.yaml",
+        "upstream/ai/sense_nova.yaml",
+        "upstream/ai/spark.yaml",
+        "upstream/ai/tencent_ai.yaml",
+        "upstream/ai/tiangong.yaml",
+        "upstream/ai/xiaomi_ai.yaml",
+        "upstream/ai/zhipu.yaml"
+      ]
+    },
+    {
+      "id": "telegram",
+      "description": "Telegram 域名与官方数据中心 IPv4 段",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": false,
+      "sources": [
+        "upstream/social/telegram.yaml",
+        "custom/services/social/telegram_dc.yaml"
+      ]
+    },
+    {
+      "id": "apple",
+      "description": "Apple 综合服务与音视频媒体（Apple_All + AppleMusic + AppleTV）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "sources": [
+        "upstream/apple/apple_all.yaml",
+        "upstream/entertainment/apple_music.yaml",
+        "upstream/entertainment/apple_tv.yaml"
+      ]
+    },
+    {
+      "id": "streaming",
+      "description": "海外流媒体专项集合（含 YouTube/TikTok/Netflix/Disney/Spotify 等）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": false,
+      "sources": [
+        "upstream/entertainment/tik_tok.yaml",
+        "upstream/entertainment/you_tube.yaml",
+        "upstream/entertainment/you_tube_music.yaml",
+        "upstream/entertainment/netflix.yaml",
+        "upstream/entertainment/disney.yaml",
+        "upstream/entertainment/spotify.yaml",
+        "upstream/entertainment/tidal.yaml",
+        "upstream/entertainment/twitch.yaml",
+        "upstream/entertainment/hbo.yaml",
+        "upstream/entertainment/hulu.yaml",
+        "upstream/entertainment/prime_video.yaml",
+        "upstream/entertainment/hanime1.yaml",
+        "upstream/entertainment/global_media_domain.yaml",
+        "upstream/entertainment/global_media.yaml"
+      ]
+    },
+    {
+      "id": "google",
+      "description": "Google 综合服务（Android 走独立 Google 服务组，他端走 Public network）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "sources": [
+        "upstream/technology/google.yaml"
+      ]
+    },
+    {
+      "id": "finance",
+      "description": "海外金融服务聚合",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": false,
+      "sources": [
+        "upstream/finance/category_finance.yaml",
+        "upstream/finance/mastercard_cn.yaml",
+        "upstream/finance/n26.yaml",
+        "upstream/finance/pay_pal.yaml",
+        "upstream/finance/wise.yaml"
+      ]
+    },
+    {
+      "id": "crypto",
+      "description": "加密货币与交易所聚合（含独立 DNS 域名集）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "sources": [
+        "custom/services/crypto/aptos.yaml",
+        "custom/services/crypto/aptos_explorer.yaml",
+        "upstream/crypto/avalanche.yaml",
+        "upstream/crypto/bnb_chain.yaml",
+        "upstream/crypto/binance.yaml",
+        "upstream/crypto/bitcoin.yaml",
+        "custom/services/crypto/bitcoin_cash.yaml",
+        "upstream/crypto/bitget.yaml",
+        "upstream/crypto/blockchair.yaml",
+        "custom/services/crypto/blockscout.yaml",
+        "upstream/crypto/bybit.yaml",
+        "custom/services/crypto/cardano.yaml",
+        "custom/services/crypto/chainlink.yaml",
+        "upstream/crypto/coinbase.yaml",
+        "upstream/crypto/category_cryptocurrency.yaml",
+        "upstream/crypto/crypto_com.yaml",
+        "upstream/crypto/dogecoin.yaml",
+        "custom/services/crypto/ether_fi.yaml",
+        "upstream/crypto/ethereum.yaml",
+        "upstream/crypto/etherscan.yaml",
+        "upstream/crypto/gate.yaml",
+        "upstream/crypto/htx.yaml",
+        "upstream/crypto/hyperliquid.yaml",
+        "custom/services/crypto/krak.yaml",
+        "upstream/crypto/kraken.yaml",
+        "upstream/crypto/mexc.yaml",
+        "custom/services/crypto/mempool.yaml",
+        "custom/services/crypto/monero.yaml",
+        "custom/services/crypto/near.yaml",
+        "upstream/crypto/okx.yaml",
+        "custom/services/crypto/poke_pay.yaml",
+        "custom/services/crypto/polkadot.yaml",
+        "custom/services/crypto/polygon.yaml",
+        "custom/services/crypto/savo.yaml",
+        "upstream/crypto/safe_pal.yaml",
+        "upstream/crypto/solana.yaml",
+        "custom/services/crypto/solscan.yaml",
+        "custom/services/crypto/starryblu.yaml",
+        "custom/services/crypto/stellar.yaml",
+        "custom/services/crypto/sui.yaml",
+        "custom/services/crypto/sui_scan.yaml",
+        "upstream/crypto/ton.yaml",
+        "custom/services/crypto/ton_viewer.yaml",
+        "custom/services/crypto/tron.yaml",
+        "upstream/crypto/tronscan.yaml",
+        "upstream/crypto/tether.yaml",
+        "custom/services/crypto/usdc.yaml",
+        "upstream/crypto/uniswap.yaml",
+        "custom/services/crypto/xrpl.yaml",
+        "custom/services/crypto/xrp_scan.yaml",
+        "custom/services/crypto/zcash.yaml"
+      ]
+    },
+    {
+      "id": "direct_services",
+      "description": "国内明确直连业务集合（国内支付/大厂/运营商/SteamCN/迅雷/Raindrop）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": true,
+      "sources": [
+        "upstream/finance/payment_cn.yaml",
+        "upstream/direct/ali_pay.yaml",
+        "upstream/direct/baidu.yaml",
+        "upstream/direct/byte_dance.yaml",
+        "upstream/direct/dou_yin.yaml",
+        "upstream/direct/jing_dong.yaml",
+        "upstream/direct/alibaba_domain.yaml",
+        "upstream/direct/alibaba.yaml",
+        "upstream/direct/cai_niao.yaml",
+        "upstream/direct/ding_talk.yaml",
+        "upstream/direct/eleme.yaml",
+        "upstream/direct/he_ma.yaml",
+        "upstream/direct/tencent_domain.yaml",
+        "upstream/direct/tencent.yaml",
+        "upstream/direct/we_chat.yaml",
+        "upstream/direct/xiao_hong_shu.yaml",
+        "upstream/direct/mei_tuan.yaml",
+        "upstream/direct/pinduoduo.yaml",
+        "upstream/direct/di_di.yaml",
+        "upstream/direct/china_railway.yaml",
+        "upstream/direct/china_media.yaml",
+        "upstream/direct/bili_bili.yaml",
+        "upstream/direct/net_ease.yaml",
+        "upstream/direct/kuai_shou.yaml",
+        "upstream/direct/zhihu.yaml",
+        "upstream/gaming/xiao_hei_he.yaml",
+        "upstream/direct/xiao_mi.yaml",
+        "upstream/direct/huawei.yaml",
+        "upstream/security/kaspersky.yaml",
+        "upstream/direct/china_mobile.yaml",
+        "upstream/direct/china_telecom.yaml",
+        "upstream/direct/china_unicom.yaml",
+        "upstream/gaming/steam_cn.yaml",
+        "upstream/direct/xunlei.yaml",
+        "custom/services/productivity/raindrop.yaml",
+        "custom/services/direct/direct_extra.yaml"
+      ]
+    },
+    {
+      "id": "public_global",
+      "description": "海外常规代理集合（开发办公/电商/社交/游戏/邮箱安全/共享CDN）",
+      "category": "routing",
+      "platform": "all",
+      "dns_bound": false,
+      "sources": [
+        "upstream/ai/hugging_face.yaml",
+        "custom/services/ai/deep_l.yaml",
+        "upstream/technology/microsoft.yaml",
+        "upstream/technology/cloudflare.yaml",
+        "upstream/technology/git_hub.yaml",
+        "upstream/technology/git_lab.yaml",
+        "upstream/technology/docker.yaml",
+        "upstream/technology/figma.yaml",
+        "upstream/productivity/notion.yaml",
+        "upstream/technology/one_drive.yaml",
+        "upstream/technology/dropbox.yaml",
+        "upstream/technology/adobe.yaml",
+        "upstream/technology/oracle.yaml",
+        "upstream/technology/mozilla.yaml",
+        "upstream/technology/speedtest.yaml",
+        "upstream/technology/mail.yaml",
+        "upstream/technology/protonmail.yaml",
+        "upstream/security/1_password.yaml",
+        "upstream/security/bitwarden.yaml",
+        "upstream/technology/wikipedia.yaml",
+        "custom/services/shopping/asos.yaml",
+        "upstream/shopping/ali_express.yaml",
+        "custom/services/shopping/allegro.yaml",
+        "upstream/shopping/amazon.yaml",
+        "upstream/shopping/best_buy.yaml",
+        "upstream/shopping/costco.yaml",
+        "upstream/shopping/coupang.yaml",
+        "custom/services/shopping/etsy.yaml",
+        "upstream/shopping/farfetch.yaml",
+        "custom/services/shopping/flipkart.yaml",
+        "upstream/shopping/lazada.yaml",
+        "custom/services/shopping/mercado_libre.yaml",
+        "custom/services/shopping/mercari.yaml",
+        "upstream/shopping/newegg.yaml",
+        "custom/services/shopping/noon.yaml",
+        "upstream/shopping/ozon.yaml",
+        "upstream/shopping/rakuten.yaml",
+        "custom/services/shopping/shein.yaml",
+        "upstream/shopping/shopee.yaml",
+        "upstream/shopping/target.yaml",
+        "custom/services/shopping/temu.yaml",
+        "upstream/shopping/walmart.yaml",
+        "custom/services/shopping/wayfair.yaml",
+        "custom/services/shopping/zalando.yaml",
+        "upstream/shopping/e_bay.yaml",
+        "custom/services/shopping/i_herb.yaml",
+        "upstream/social/discord.yaml",
+        "upstream/social/facebook.yaml",
+        "upstream/social/instagram.yaml",
+        "upstream/social/line.yaml",
+        "upstream/social/linked_in.yaml",
+        "upstream/social/reddit.yaml",
+        "upstream/social/slack.yaml",
+        "upstream/social/teams.yaml",
+        "upstream/social/threads.yaml",
+        "upstream/social/twitter.yaml",
+        "upstream/social/whatsapp.yaml",
+        "upstream/gaming/ea.yaml",
+        "upstream/gaming/epic.yaml",
+        "upstream/gaming/origin.yaml",
+        "upstream/gaming/riot.yaml",
+        "upstream/gaming/sony.yaml",
+        "upstream/gaming/steam.yaml",
+        "upstream/gaming/ubisoft.yaml",
+        "upstream/gaming/xbox.yaml",
+        "custom/services/technology/public_extra.yaml"
+      ]
+    },
+    {
+      "id": "direct_cn",
+      "description": "国内广义兜底直连与国内 DNS 域名集合（Direct + cn + cnip）",
+      "category": "fallback",
+      "platform": "all",
+      "dns_bound": true,
+      "exclude_domains": [
+        "talkie-ai.com",
+        "cici.com",
+        "ciciai.com",
+        "ciciaicdn.com",
+        "dola.com",
+        "coze.com",
+        "marscode.com",
+        "trae.ai"
+      ],
+      "sources": [
+        "upstream/direct/direct.yaml",
+        "upstream/direct/cn.yaml",
+        "upstream/direct/cnip.yaml"
+      ]
+    },
+    {
+      "id": "global_fallback",
+      "description": "海外广义兜底代理集合（Global_Domain + Global）",
+      "category": "fallback",
+      "platform": "all",
+      "dns_bound": false,
+      "sources": [
+        "upstream/technology/global_domain.yaml",
+        "upstream/technology/global.yaml"
+      ]
+    }
+  ]
+}

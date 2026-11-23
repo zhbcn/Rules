@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: Target
+kind: upstream
+source:
+  provider: v2fly
+  ref: target
+rules:
+  domain_suffix:
+  - target
+  - target.com
+  - targetimg1.com

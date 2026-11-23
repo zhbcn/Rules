@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: AIGCExtra
+kind: custom
+source:
+  provider: custom
+  ref: Personal AIGC proxy exceptions
+notes: MiniMax Talkie international exception routed to AIGC.
+rules:
+  domain_suffix:
+  - talkie-ai.com

@@ -1,0 +1,15 @@
+schema: zhbcn-rules/v1
+name: Rakuten
+kind: upstream
+source:
+  provider: v2fly
+  ref: rakuten (shopping-only subset) + retained Rakuten Ichiba domains
+rules:
+  domain:
+  - ichiba.faq.rakuten.net
+  domain_suffix:
+  - r10.to
+  - r10s.jp
+  - rakuten-static.com
+  - rakuten.co.jp
+  - rakuten.ne.jp

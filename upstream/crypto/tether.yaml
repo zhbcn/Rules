@@ -1,0 +1,9 @@
+schema: zhbcn-rules/v1
+name: Tether
+kind: upstream
+source:
+  provider: blackmatrix7
+  ref: rule/Clash/Crypto/Crypto.yaml (Tether subset)
+rules:
+  domain_suffix:
+  - tether.to

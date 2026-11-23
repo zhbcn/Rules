@@ -1,0 +1,9 @@
+schema: zhbcn-patch/v1
+target: upstream/technology/speedtest.yaml
+reason: >
+  Remove truncated upstream regex '^speed\.(coe|open)\.ad\.[a-z]{2' which is
+  malformed (split at comma in '{2,6}') and already covered by 'ooklaserver.net'
+  in domain_suffix.
+remove:
+  domain_regex:
+  - ^speed\.(coe|open)\.ad\.[a-z]{2

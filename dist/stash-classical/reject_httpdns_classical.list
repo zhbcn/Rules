@@ -1,0 +1,4 @@
+# BUNDLE: reject_httpdns
+# FORMAT: stash-classical (non-MRS remainder only)
+DOMAIN-KEYWORD,httpdns
+DOMAIN-KEYWORD,httpsdns

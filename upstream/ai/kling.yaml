@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: Kling
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - kechuangai.com
+  - kling-ai.com
+  - klingai.com

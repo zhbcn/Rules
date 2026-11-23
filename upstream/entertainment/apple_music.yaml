@@ -1,0 +1,27 @@
+schema: zhbcn-rules/v1
+name: AppleMusic
+kind: upstream
+source:
+  provider: v2fly
+  ref: apple-music
+rules:
+  domain:
+  - amp-api-edge.music.apple.com
+  - amp-api.music.apple.com
+  - js-cdn.music.apple.com
+  - music.apple.com
+  - musicstatus.music.apple.com
+  - play.music.apple.com
+  - speedysub.music.apple.com
+  domain_suffix:
+  - applemusic.berlin
+  - applemusic.co
+  - applemusic.com
+  - applemusic.com.au
+  - applemusic.hamburg
+  - applemusic.wang
+  - applemusicconnect.com
+  - applemusicfestival.com
+  - music.apple.com
+  - musickit.net
+  - wwwapplemusic.com

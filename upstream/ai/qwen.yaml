@@ -1,0 +1,17 @@
+schema: zhbcn-rules/v1
+name: Qwen
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - dashscope.aliyuncs.com
+  - qianwen.aliyun.com
+  - qianwen.com
+  - qianwenai.com
+  - qwen.ai
+  - qwen.com
+  - qwenlm.ai
+  - tongyi.aliyun.com
+  - tongyi.com

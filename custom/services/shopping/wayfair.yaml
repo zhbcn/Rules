@@ -1,0 +1,14 @@
+schema: zhbcn-rules/v1
+name: Wayfair
+kind: custom
+source:
+  provider: custom
+  ref: custom
+rules:
+  domain_suffix:
+  - wayfair.ca
+  - wayfair.co.uk
+  - wayfair.com
+  - wayfair.de
+  - wayfair.ie
+  - wfcdn.com

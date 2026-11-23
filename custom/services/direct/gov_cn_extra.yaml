@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: GovCNExtra
+kind: custom
+source:
+  provider: custom
+  ref: Chinese government IDN TLD (.政务)
+notes: Punycode TLD for .政务.
+rules:
+  domain_suffix:
+  - xn--zfr164b

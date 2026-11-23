@@ -1,0 +1,19 @@
+schema: zhbcn-rules/v1
+name: DingTalk
+kind: upstream
+source:
+  provider: v2fly
+  ref: dingtalk
+rules:
+  domain_suffix:
+  - ddurl.to
+  - dingding.xin
+  - dingstore.cn
+  - dingtalk.cn
+  - dingtalk.com
+  - dingtalk.net
+  - dingtalkapps.com
+  - dingtalkcloud.com
+  - laiwang.com
+  - lwurl.to
+  - ztna-dingtalk.com

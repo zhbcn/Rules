@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: Costco
+kind: upstream
+source:
+  provider: v2fly
+  ref: costco
+rules:
+  domain_suffix:
+  - costco-static.com
+  - costco.com
+  - costcobusinessdelivery.com

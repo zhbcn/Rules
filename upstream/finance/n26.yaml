@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: N26
+kind: upstream
+source:
+  provider: v2fly
+  ref: n26
+rules:
+  domain_suffix:
+  - n26.com
+  - number26.de
+  - tech26.de

@@ -1,0 +1,9 @@
+schema: zhbcn-rules/v1
+name: Spark
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - xinghuo.xfyun.cn

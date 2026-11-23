@@ -1,0 +1,14 @@
+# BUNDLE: google_play
+# FORMAT: loon-list (policy-free; bind via [Remote Rule] policy=...)
+
+DOMAIN,android.clients.google.com
+DOMAIN,play-fe.googleapis.com
+DOMAIN,play-lh.googleusercontent.com
+DOMAIN,playatoms-pa.googleapis.com
+DOMAIN,redirector.c.play.google.com
+DOMAIN-SUFFIX,googleplay.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,play.google.com
+DOMAIN-SUFFIX,play.googleapis.com

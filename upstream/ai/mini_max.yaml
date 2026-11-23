@@ -1,0 +1,16 @@
+schema: zhbcn-rules/v1
+name: MiniMax
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn, category-ai-!cn
+rules:
+  domain_suffix:
+  - hailuoai.com
+  - hailuoai.video
+  - minimax.chat
+  - minimax.cn
+  - minimax.io
+  - minimaxi.com
+  - talkie-ai.com
+  - xingyeai.com

@@ -1,0 +1,9 @@
+# BUNDLE: apple_system
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host,albert.apple.com,proxy
+host,captive.apple.com,proxy
+host,gs.apple.com,proxy
+host,time-ios.apple.com,proxy
+host,time.apple.com,proxy
+host-suffix,push.apple.com,proxy

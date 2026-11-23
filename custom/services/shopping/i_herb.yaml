@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: iHerb
+kind: custom
+source:
+  provider: custom
+  ref: custom
+rules:
+  domain_suffix:
+  - iherb.com
+  - images-iherb.com

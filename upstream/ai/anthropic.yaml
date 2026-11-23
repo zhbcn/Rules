@@ -1,0 +1,34 @@
+schema: zhbcn-rules/v1
+name: Anthropic
+kind: upstream
+source:
+  provider: v2fly
+  ref: anthropic
+rules:
+  domain:
+  - http-intake.logs.us5.datadoghq.com
+  - o1158394.ingest.us.sentry.io
+  - servd-anthropic-website.b-cdn.net
+  domain_suffix:
+  - ant.dev
+  - anthropic.com
+  - anthropic.team
+  - antspace.dev
+  - chatbotclaude.com
+  - clau.de
+  - claude.ai
+  - claude.app
+  - claude.com
+  - claude.dev
+  - claude.new
+  - claude.site
+  - claudeacademy.com
+  - claudemcpclient.com
+  - claudemcpcontent.com
+  - claudepages.dev
+  - claudestudio.com
+  - claudeusercontent.com
+  ip_cidr:
+  - 160.79.104.0/23
+  ip_cidr6:
+  - 2607:6bc0::/48

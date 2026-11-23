@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Bitcoin
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-cryptocurrency (Bitcoin subset)
+rules:
+  domain_suffix:
+  - bitcoin.org
+  - bitcoincore.org

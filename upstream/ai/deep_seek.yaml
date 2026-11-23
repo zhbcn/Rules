@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: DeepSeek
+kind: upstream
+source:
+  provider: v2fly
+  ref: deepseek
+rules:
+  domain_suffix:
+  - deepseek.com
+  - deepseeksvc.com

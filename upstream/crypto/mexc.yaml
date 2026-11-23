@@ -1,0 +1,16 @@
+schema: zhbcn-rules/v1
+name: MEXC
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-cryptocurrency (MEXC subset) + existing zhbcn/Rules rule
+rules:
+  domain:
+  - images.mocortech.com
+  - mexcdevelop.github.io
+  - public.mocortech.com
+  - static.mocortech.com
+  domain_suffix:
+  - mexc.co
+  - mexc.com
+  - mexcsensors.com

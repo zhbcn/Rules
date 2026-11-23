@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: SHEIN
+kind: custom
+source:
+  provider: custom
+  ref: custom
+rules:
+  domain_suffix:
+  - ltwebstatic.com
+  - shein.com
+  - sheincdn.com

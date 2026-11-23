@@ -1,0 +1,14 @@
+schema: zhbcn-rules/v1
+name: TencentAI
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - codebuddy.cn
+  - hunyuan.tencent.com
+  - skillhub.cn
+  - workbuddy.cn
+  - yuanbao.tencent.com
+  - yuanqi.tencent.com

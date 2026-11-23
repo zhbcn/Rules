@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Solana
+kind: upstream
+source:
+  provider: blackmatrix7
+  ref: rule/Clash/Crypto/Crypto.yaml (Solana subset) + existing zhbcn/Rules rule
+rules:
+  domain_suffix:
+  - solana.com
+  - solana.org

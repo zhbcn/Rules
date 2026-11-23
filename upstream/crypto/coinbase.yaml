@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: Coinbase
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-cryptocurrency (Coinbase subset) + existing zhbcn/Rules rule
+rules:
+  domain:
+  - asset-metadata-service-production.s3.amazonaws.com
+  domain_suffix:
+  - coinbase.com

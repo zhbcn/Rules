@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: Hanime1
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-porn (hanime1.me) + existing zhbcn/Rules rule
+rules:
+  domain:
+  - vdownload.hembed.com
+  domain_suffix:
+  - hanime1.me

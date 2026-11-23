@@ -1,0 +1,1431 @@
+{
+  "version": 1,
+  "providers": {
+    "v2fly": {
+      "repo": "v2fly/domain-list-community",
+      "branch": "master",
+      "commit": "777d056afe68b2643c1ef15f80e7bde3dfa149b1",
+      "raw_base": "https://raw.githubusercontent.com/v2fly/domain-list-community/{commit}/data"
+    },
+    "blackmatrix7": {
+      "repo": "blackmatrix7/ios_rule_script",
+      "branch": "master",
+      "commit": "0b6897dc17e0c513d25449c935a9694818e32f0c",
+      "raw_base": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/{commit}"
+    },
+    "sukka": {
+      "repo": "SukkaLab/ruleset.skk.moe",
+      "branch": "master",
+      "commit": "c852f05fe00181871397037e8dba1442b0d7134f",
+      "raw_base": "https://raw.githubusercontent.com/SukkaLab/ruleset.skk.moe/{commit}/List"
+    },
+    "qingrex": {
+      "repo": "QingRex/LoonKissSurge",
+      "branch": "main",
+      "commit": "913ec005f544221e6c56a7d0ecec81c4b3b914bb",
+      "raw_base": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/{commit}/Surge/Beta"
+    }
+  },
+  "sources": [
+    {
+      "id": "ai/ant_afu",
+      "name": "AntAfu",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/ant_afu.yaml",
+      "legacy_path": "AI/AntAfu.yaml"
+    },
+    {
+      "id": "ai/anthropic",
+      "name": "Anthropic",
+      "provider": "v2fly",
+      "ref": "anthropic",
+      "target": "upstream/ai/anthropic.yaml",
+      "legacy_path": "AI/Anthropic.yaml"
+    },
+    {
+      "id": "ai/baichuan",
+      "name": "Baichuan",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/baichuan.yaml",
+      "legacy_path": "AI/Baichuan.yaml"
+    },
+    {
+      "id": "ai/baidu_ai",
+      "name": "BaiduAI",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/baidu_ai.yaml",
+      "legacy_path": "AI/BaiduAI.yaml"
+    },
+    {
+      "id": "ai/byte_dance_ai",
+      "name": "ByteDanceAI",
+      "provider": "v2fly",
+      "ref": "doubao, trae, bytedance-ai-!cn",
+      "target": "upstream/ai/byte_dance_ai.yaml",
+      "legacy_path": "AI/ByteDanceAI.yaml"
+    },
+    {
+      "id": "ai/byte_dance_ai_international",
+      "name": "ByteDanceAIInternational",
+      "provider": "official",
+      "ref": "curated",
+      "target": "upstream/ai/byte_dance_ai_international.yaml",
+      "legacy_path": "AI/ByteDanceAIInternational.yaml"
+    },
+    {
+      "id": "ai/claude",
+      "name": "Claude",
+      "provider": "v2fly",
+      "ref": "anthropic",
+      "target": "upstream/ai/claude.yaml",
+      "legacy_path": "AI/Claude.yaml"
+    },
+    {
+      "id": "ai/copilot",
+      "name": "Copilot",
+      "provider": "v2fly",
+      "ref": "github-copilot + category-ai-!cn (Copilot subset) + existing Technology/Microsoft.yaml Copilot subset",
+      "target": "upstream/ai/copilot.yaml",
+      "legacy_path": "AI/Copilot.yaml"
+    },
+    {
+      "id": "ai/deep_seek",
+      "name": "DeepSeek",
+      "provider": "v2fly",
+      "ref": "deepseek",
+      "target": "upstream/ai/deep_seek.yaml",
+      "legacy_path": "AI/DeepSeek.yaml"
+    },
+    {
+      "id": "ai/gemini",
+      "name": "Gemini",
+      "provider": "v2fly",
+      "ref": "google-gemini",
+      "target": "upstream/ai/gemini.yaml",
+      "legacy_path": "AI/Gemini.yaml"
+    },
+    {
+      "id": "ai/grok",
+      "name": "Grok",
+      "provider": "v2fly",
+      "ref": "xai + retained zhbcn/Rules domains",
+      "target": "upstream/ai/grok.yaml",
+      "legacy_path": "AI/Grok.yaml"
+    },
+    {
+      "id": "ai/hermes_agent",
+      "name": "HermesAgent",
+      "provider": "v2fly",
+      "ref": "vercel (skills.sh) + existing zhbcn/Rules rule",
+      "target": "upstream/ai/hermes_agent.yaml",
+      "legacy_path": "AI/HermesAgent.yaml"
+    },
+    {
+      "id": "ai/hugging_face",
+      "name": "HuggingFace",
+      "provider": "v2fly",
+      "ref": "huggingface + Inference Endpoints",
+      "target": "upstream/ai/hugging_face.yaml",
+      "legacy_path": "AI/HuggingFace.yaml"
+    },
+    {
+      "id": "ai/kimi",
+      "name": "Kimi",
+      "provider": "v2fly",
+      "ref": "category-ai-cn, category-ai-!cn",
+      "target": "upstream/ai/kimi.yaml",
+      "legacy_path": "AI/Kimi.yaml"
+    },
+    {
+      "id": "ai/kling",
+      "name": "Kling",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/kling.yaml",
+      "legacy_path": "AI/Kling.yaml"
+    },
+    {
+      "id": "ai/manus",
+      "name": "Manus",
+      "provider": "v2fly",
+      "ref": "manus",
+      "target": "upstream/ai/manus.yaml",
+      "legacy_path": "AI/Manus.yaml"
+    },
+    {
+      "id": "ai/meta",
+      "name": "Meta",
+      "provider": "v2fly",
+      "ref": "meta (direct entries only) + Muse",
+      "target": "upstream/ai/meta.yaml",
+      "legacy_path": "AI/Meta.yaml"
+    },
+    {
+      "id": "ai/metaso",
+      "name": "Metaso",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/metaso.yaml",
+      "legacy_path": "AI/Metaso.yaml"
+    },
+    {
+      "id": "ai/mini_max",
+      "name": "MiniMax",
+      "provider": "v2fly",
+      "ref": "category-ai-cn, category-ai-!cn",
+      "target": "upstream/ai/mini_max.yaml",
+      "legacy_path": "AI/MiniMax.yaml"
+    },
+    {
+      "id": "ai/muse",
+      "name": "Muse",
+      "provider": "v2fly",
+      "ref": "meta (Muse and shared account domains only)",
+      "target": "upstream/ai/muse.yaml",
+      "legacy_path": "AI/Muse.yaml"
+    },
+    {
+      "id": "ai/open_ai",
+      "name": "OpenAI",
+      "provider": "v2fly",
+      "ref": "openai",
+      "target": "upstream/ai/open_ai.yaml",
+      "legacy_path": "AI/OpenAI.yaml"
+    },
+    {
+      "id": "ai/perplexity",
+      "name": "Perplexity",
+      "provider": "v2fly",
+      "ref": "perplexity",
+      "target": "upstream/ai/perplexity.yaml",
+      "legacy_path": "AI/Perplexity.yaml"
+    },
+    {
+      "id": "ai/qwen",
+      "name": "Qwen",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/qwen.yaml",
+      "legacy_path": "AI/Qwen.yaml"
+    },
+    {
+      "id": "ai/sense_nova",
+      "name": "SenseNova",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/sense_nova.yaml",
+      "legacy_path": "AI/SenseNova.yaml"
+    },
+    {
+      "id": "ai/spark",
+      "name": "Spark",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/spark.yaml",
+      "legacy_path": "AI/Spark.yaml"
+    },
+    {
+      "id": "ai/tencent_ai",
+      "name": "TencentAI",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/tencent_ai.yaml",
+      "legacy_path": "AI/TencentAI.yaml"
+    },
+    {
+      "id": "ai/tiangong",
+      "name": "Tiangong",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/tiangong.yaml",
+      "legacy_path": "AI/Tiangong.yaml"
+    },
+    {
+      "id": "ai/xiaomi_ai",
+      "name": "XiaomiAI",
+      "provider": "v2fly",
+      "ref": "xiaomi-ai",
+      "target": "upstream/ai/xiaomi_ai.yaml",
+      "legacy_path": "AI/XiaomiAI.yaml"
+    },
+    {
+      "id": "ai/zhipu",
+      "name": "Zhipu",
+      "provider": "v2fly",
+      "ref": "category-ai-cn",
+      "target": "upstream/ai/zhipu.yaml",
+      "legacy_path": "AI/Zhipu.yaml"
+    },
+    {
+      "id": "apple/apple_all",
+      "name": "Apple_All",
+      "provider": "v2fly",
+      "ref": "apple",
+      "target": "upstream/apple/apple_all.yaml",
+      "legacy_path": "Apple/Apple_All.yaml"
+    },
+    {
+      "id": "crypto/avalanche",
+      "name": "Avalanche",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Crypto/Crypto.yaml (Avalanche subset)",
+      "target": "upstream/crypto/avalanche.yaml",
+      "legacy_path": "Crypto/Avalanche.yaml"
+    },
+    {
+      "id": "crypto/binance",
+      "name": "Binance",
+      "provider": "v2fly",
+      "ref": "binance",
+      "target": "upstream/crypto/binance.yaml",
+      "legacy_path": "Crypto/Binance.yaml"
+    },
+    {
+      "id": "crypto/bitcoin",
+      "name": "Bitcoin",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency (Bitcoin subset)",
+      "target": "upstream/crypto/bitcoin.yaml",
+      "legacy_path": "Crypto/Bitcoin.yaml"
+    },
+    {
+      "id": "crypto/bitget",
+      "name": "Bitget",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency (Bitget subset) + existing zhbcn/Rules rule",
+      "target": "upstream/crypto/bitget.yaml",
+      "legacy_path": "Crypto/Bitget.yaml"
+    },
+    {
+      "id": "crypto/blockchair",
+      "name": "Blockchair",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency + rule/Clash/Crypto/Crypto.yaml (Blockchair subset)",
+      "target": "upstream/crypto/blockchair.yaml",
+      "legacy_path": "Crypto/Blockchair.yaml"
+    },
+    {
+      "id": "crypto/bnb_chain",
+      "name": "BNBChain",
+      "provider": "v2fly",
+      "ref": "binance (BNB Chain subset)",
+      "target": "upstream/crypto/bnb_chain.yaml",
+      "legacy_path": "Crypto/BNBChain.yaml"
+    },
+    {
+      "id": "crypto/bybit",
+      "name": "Bybit",
+      "provider": "v2fly",
+      "ref": "bybit",
+      "target": "upstream/crypto/bybit.yaml",
+      "legacy_path": "Crypto/Bybit.yaml"
+    },
+    {
+      "id": "crypto/coinbase",
+      "name": "Coinbase",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency (Coinbase subset) + existing zhbcn/Rules rule",
+      "target": "upstream/crypto/coinbase.yaml",
+      "legacy_path": "Crypto/Coinbase.yaml"
+    },
+    {
+      "id": "crypto/category_cryptocurrency",
+      "name": "Crypto",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency + retained independent crypto rules",
+      "target": "upstream/crypto/category_cryptocurrency.yaml",
+      "legacy_path": "Crypto/Crypto.yaml"
+    },
+    {
+      "id": "crypto/crypto_com",
+      "name": "CryptoCom",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency (Crypto.com subset) + existing zhbcn/Rules rule",
+      "target": "upstream/crypto/crypto_com.yaml",
+      "legacy_path": "Crypto/CryptoCom.yaml"
+    },
+    {
+      "id": "crypto/dogecoin",
+      "name": "Dogecoin",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency (Dogecoin subset)",
+      "target": "upstream/crypto/dogecoin.yaml",
+      "legacy_path": "Crypto/Dogecoin.yaml"
+    },
+    {
+      "id": "crypto/ethereum",
+      "name": "Ethereum",
+      "provider": "v2fly",
+      "ref": "ethereum",
+      "target": "upstream/crypto/ethereum.yaml",
+      "legacy_path": "Crypto/Ethereum.yaml"
+    },
+    {
+      "id": "crypto/etherscan",
+      "name": "Etherscan",
+      "provider": "v2fly",
+      "ref": "ethereum, rule/Clash/Crypto/Crypto.yaml (Etherscan subset) + existing zhbcn/Rules rule",
+      "target": "upstream/crypto/etherscan.yaml",
+      "legacy_path": "Crypto/Etherscan.yaml"
+    },
+    {
+      "id": "crypto/gate",
+      "name": "Gate",
+      "provider": "v2fly",
+      "ref": "gateio + retained zhbcn/Rules domains",
+      "target": "upstream/crypto/gate.yaml",
+      "legacy_path": "Crypto/Gate.yaml"
+    },
+    {
+      "id": "crypto/htx",
+      "name": "HTX",
+      "provider": "v2fly",
+      "ref": "huobi",
+      "target": "upstream/crypto/htx.yaml",
+      "legacy_path": "Crypto/HTX.yaml"
+    },
+    {
+      "id": "crypto/hyperliquid",
+      "name": "Hyperliquid",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency (Hyperliquid subset) + existing zhbcn/Rules rule",
+      "target": "upstream/crypto/hyperliquid.yaml",
+      "legacy_path": "Crypto/Hyperliquid.yaml"
+    },
+    {
+      "id": "crypto/kraken",
+      "name": "Kraken",
+      "provider": "v2fly",
+      "ref": "kraken",
+      "target": "upstream/crypto/kraken.yaml",
+      "legacy_path": "Crypto/Kraken.yaml"
+    },
+    {
+      "id": "crypto/mexc",
+      "name": "MEXC",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency (MEXC subset) + existing zhbcn/Rules rule",
+      "target": "upstream/crypto/mexc.yaml",
+      "legacy_path": "Crypto/MEXC.yaml"
+    },
+    {
+      "id": "crypto/okx",
+      "name": "OKX",
+      "provider": "v2fly",
+      "ref": "okx",
+      "target": "upstream/crypto/okx.yaml",
+      "legacy_path": "Crypto/OKX.yaml"
+    },
+    {
+      "id": "crypto/safe_pal",
+      "name": "SafePal",
+      "provider": "v2fly",
+      "ref": "safepal",
+      "target": "upstream/crypto/safe_pal.yaml",
+      "legacy_path": "Crypto/SafePal.yaml"
+    },
+    {
+      "id": "crypto/solana",
+      "name": "Solana",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Crypto/Crypto.yaml (Solana subset) + existing zhbcn/Rules rule",
+      "target": "upstream/crypto/solana.yaml",
+      "legacy_path": "Crypto/Solana.yaml"
+    },
+    {
+      "id": "crypto/tether",
+      "name": "Tether",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Crypto/Crypto.yaml (Tether subset)",
+      "target": "upstream/crypto/tether.yaml",
+      "legacy_path": "Crypto/Tether.yaml"
+    },
+    {
+      "id": "crypto/ton",
+      "name": "TON",
+      "provider": "v2fly",
+      "ref": "telegram (TON subset)",
+      "target": "upstream/crypto/ton.yaml",
+      "legacy_path": "Crypto/TON.yaml"
+    },
+    {
+      "id": "crypto/tronscan",
+      "name": "TRONSCAN",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Crypto/Crypto.yaml (TRONSCAN subset) + existing zhbcn/Rules rule",
+      "target": "upstream/crypto/tronscan.yaml",
+      "legacy_path": "Crypto/TRONSCAN.yaml"
+    },
+    {
+      "id": "crypto/uniswap",
+      "name": "Uniswap",
+      "provider": "v2fly",
+      "ref": "category-cryptocurrency (Uniswap subset)",
+      "target": "upstream/crypto/uniswap.yaml",
+      "legacy_path": "Crypto/Uniswap.yaml"
+    },
+    {
+      "id": "direct/alibaba",
+      "name": "Alibaba",
+      "provider": "v2fly",
+      "ref": "alibaba",
+      "target": "upstream/direct/alibaba.yaml",
+      "legacy_path": "Direct/Alibaba.yaml"
+    },
+    {
+      "id": "direct/alibaba_domain",
+      "name": "Alibaba_Domain",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Alibaba/Alibaba_Domain.yaml",
+      "target": "upstream/direct/alibaba_domain.yaml",
+      "legacy_path": "Direct/Alibaba_Domain.yaml"
+    },
+    {
+      "id": "direct/ali_pay",
+      "name": "AliPay",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/AliPay/AliPay.yaml",
+      "target": "upstream/direct/ali_pay.yaml",
+      "legacy_path": "Direct/AliPay.yaml"
+    },
+    {
+      "id": "direct/baidu",
+      "name": "Baidu",
+      "provider": "v2fly",
+      "ref": "baidu",
+      "target": "upstream/direct/baidu.yaml",
+      "legacy_path": "Direct/Baidu.yaml"
+    },
+    {
+      "id": "direct/bili_bili",
+      "name": "BiliBili",
+      "provider": "v2fly",
+      "ref": "bilibili",
+      "target": "upstream/direct/bili_bili.yaml",
+      "legacy_path": "Direct/BiliBili.yaml"
+    },
+    {
+      "id": "direct/byte_dance",
+      "name": "ByteDance",
+      "provider": "v2fly",
+      "ref": "bytedance",
+      "target": "upstream/direct/byte_dance.yaml",
+      "legacy_path": "Direct/ByteDance.yaml"
+    },
+    {
+      "id": "direct/cai_niao",
+      "name": "CaiNiao",
+      "provider": "v2fly",
+      "ref": "cainiao",
+      "target": "upstream/direct/cai_niao.yaml",
+      "legacy_path": "Direct/CaiNiao.yaml"
+    },
+    {
+      "id": "direct/china_media",
+      "name": "ChinaMedia",
+      "provider": "v2fly",
+      "ref": "category-media-cn",
+      "target": "upstream/direct/china_media.yaml",
+      "legacy_path": "Direct/ChinaMedia.yaml"
+    },
+    {
+      "id": "direct/china_mobile",
+      "name": "ChinaMobile",
+      "provider": "v2fly",
+      "ref": "chinamobile",
+      "target": "upstream/direct/china_mobile.yaml",
+      "legacy_path": "Direct/ChinaMobile.yaml"
+    },
+    {
+      "id": "direct/china_railway",
+      "name": "ChinaRailway",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/12306/12306.yaml",
+      "target": "upstream/direct/china_railway.yaml",
+      "legacy_path": "Direct/ChinaRailway.yaml"
+    },
+    {
+      "id": "direct/china_telecom",
+      "name": "ChinaTelecom",
+      "provider": "v2fly",
+      "ref": "chinatelecom",
+      "target": "upstream/direct/china_telecom.yaml",
+      "legacy_path": "Direct/ChinaTelecom.yaml"
+    },
+    {
+      "id": "direct/china_unicom",
+      "name": "ChinaUnicom",
+      "provider": "v2fly",
+      "ref": "chinaunicom",
+      "target": "upstream/direct/china_unicom.yaml",
+      "legacy_path": "Direct/ChinaUnicom.yaml"
+    },
+    {
+      "id": "direct/cn",
+      "name": "cn",
+      "provider": "v2fly",
+      "ref": "cn",
+      "target": "upstream/direct/cn.yaml",
+      "legacy_path": "Direct/cn.yaml"
+    },
+    {
+      "id": "direct/cnip",
+      "name": "cnip",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/ChinaIPs/ChinaIPs_IP_No_IPv6.yaml",
+      "target": "upstream/direct/cnip.yaml",
+      "legacy_path": "Direct/cnip.yaml"
+    },
+    {
+      "id": "direct/di_di",
+      "name": "DiDi",
+      "provider": "v2fly",
+      "ref": "didi",
+      "target": "upstream/direct/di_di.yaml",
+      "legacy_path": "Direct/DiDi.yaml"
+    },
+    {
+      "id": "direct/ding_talk",
+      "name": "DingTalk",
+      "provider": "v2fly",
+      "ref": "dingtalk",
+      "target": "upstream/direct/ding_talk.yaml",
+      "legacy_path": "Direct/DingTalk.yaml"
+    },
+    {
+      "id": "direct/direct",
+      "name": "Direct",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Direct/Direct.yaml",
+      "target": "upstream/direct/direct.yaml",
+      "legacy_path": "Direct/Direct.yaml"
+    },
+    {
+      "id": "direct/dou_yin",
+      "name": "DouYin",
+      "provider": "v2fly",
+      "ref": "douyin",
+      "target": "upstream/direct/dou_yin.yaml",
+      "legacy_path": "Direct/DouYin.yaml"
+    },
+    {
+      "id": "direct/eleme",
+      "name": "Eleme",
+      "provider": "v2fly",
+      "ref": "eleme",
+      "target": "upstream/direct/eleme.yaml",
+      "legacy_path": "Direct/Eleme.yaml"
+    },
+    {
+      "id": "direct/gov_cn",
+      "name": "GovCN",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/GovCN/GovCN.yaml",
+      "target": "upstream/direct/gov_cn.yaml",
+      "legacy_path": "Direct/GovCN.yaml"
+    },
+    {
+      "id": "direct/he_ma",
+      "name": "HeMa",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/HeMa/HeMa.yaml",
+      "target": "upstream/direct/he_ma.yaml",
+      "legacy_path": "Direct/HeMa.yaml"
+    },
+    {
+      "id": "direct/huawei",
+      "name": "Huawei",
+      "provider": "v2fly",
+      "ref": "huawei",
+      "target": "upstream/direct/huawei.yaml",
+      "legacy_path": "Direct/Huawei.yaml"
+    },
+    {
+      "id": "direct/jing_dong",
+      "name": "JingDong",
+      "provider": "v2fly",
+      "ref": "jd",
+      "target": "upstream/direct/jing_dong.yaml",
+      "legacy_path": "Direct/JingDong.yaml"
+    },
+    {
+      "id": "direct/kuai_shou",
+      "name": "KuaiShou",
+      "provider": "v2fly",
+      "ref": "kuaishou",
+      "target": "upstream/direct/kuai_shou.yaml",
+      "legacy_path": "Direct/KuaiShou.yaml"
+    },
+    {
+      "id": "direct/mei_tuan",
+      "name": "MeiTuan",
+      "provider": "v2fly",
+      "ref": "meituan",
+      "target": "upstream/direct/mei_tuan.yaml",
+      "legacy_path": "Direct/MeiTuan.yaml"
+    },
+    {
+      "id": "direct/net_ease",
+      "name": "NetEase",
+      "provider": "v2fly",
+      "ref": "netease",
+      "target": "upstream/direct/net_ease.yaml",
+      "legacy_path": "Direct/NetEase.yaml"
+    },
+    {
+      "id": "direct/pinduoduo",
+      "name": "Pinduoduo",
+      "provider": "v2fly",
+      "ref": "pinduoduo",
+      "target": "upstream/direct/pinduoduo.yaml",
+      "legacy_path": "Direct/Pinduoduo.yaml"
+    },
+    {
+      "id": "direct/tencent",
+      "name": "Tencent",
+      "provider": "v2fly",
+      "ref": "tencent",
+      "target": "upstream/direct/tencent.yaml",
+      "legacy_path": "Direct/Tencent.yaml"
+    },
+    {
+      "id": "direct/tencent_domain",
+      "name": "Tencent_Domain",
+      "provider": "v2fly",
+      "ref": "rule/Clash/Tencent/Tencent_Domain.yaml",
+      "target": "upstream/direct/tencent_domain.yaml",
+      "legacy_path": "Direct/Tencent_Domain.yaml"
+    },
+    {
+      "id": "direct/we_chat",
+      "name": "WeChat",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/WeChat/WeChat.yaml",
+      "target": "upstream/direct/we_chat.yaml",
+      "legacy_path": "Direct/WeChat.yaml"
+    },
+    {
+      "id": "direct/xiao_hong_shu",
+      "name": "XiaoHongShu",
+      "provider": "v2fly",
+      "ref": "xiaohongshu",
+      "target": "upstream/direct/xiao_hong_shu.yaml",
+      "legacy_path": "Direct/XiaoHongShu.yaml"
+    },
+    {
+      "id": "direct/xiao_mi",
+      "name": "XiaoMi",
+      "provider": "v2fly",
+      "ref": "xiaomi",
+      "target": "upstream/direct/xiao_mi.yaml",
+      "legacy_path": "Direct/XiaoMi.yaml"
+    },
+    {
+      "id": "direct/xunlei",
+      "name": "Xunlei",
+      "provider": "v2fly",
+      "ref": "xunlei",
+      "target": "upstream/direct/xunlei.yaml",
+      "legacy_path": "Direct/Xunlei.yaml"
+    },
+    {
+      "id": "direct/zhihu",
+      "name": "Zhihu",
+      "provider": "v2fly",
+      "ref": "zhihu",
+      "target": "upstream/direct/zhihu.yaml",
+      "legacy_path": "Direct/Zhihu.yaml"
+    },
+    {
+      "id": "entertainment/apple_music",
+      "name": "AppleMusic",
+      "provider": "v2fly",
+      "ref": "apple-music",
+      "target": "upstream/entertainment/apple_music.yaml",
+      "legacy_path": "Entertainment/AppleMusic.yaml"
+    },
+    {
+      "id": "entertainment/apple_tv",
+      "name": "AppleTV",
+      "provider": "v2fly",
+      "ref": "apple-tvplus",
+      "target": "upstream/entertainment/apple_tv.yaml",
+      "legacy_path": "Entertainment/AppleTV.yaml"
+    },
+    {
+      "id": "entertainment/disney",
+      "name": "Disney",
+      "provider": "v2fly",
+      "ref": "disney",
+      "target": "upstream/entertainment/disney.yaml",
+      "legacy_path": "Entertainment/Disney.yaml"
+    },
+    {
+      "id": "entertainment/global_media",
+      "name": "GlobalMedia",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/GlobalMedia/GlobalMedia.yaml",
+      "target": "upstream/entertainment/global_media.yaml",
+      "legacy_path": "Entertainment/GlobalMedia.yaml"
+    },
+    {
+      "id": "entertainment/global_media_domain",
+      "name": "GlobalMedia_Domain",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/GlobalMedia/GlobalMedia_Domain.yaml",
+      "target": "upstream/entertainment/global_media_domain.yaml",
+      "legacy_path": "Entertainment/GlobalMedia_Domain.yaml"
+    },
+    {
+      "id": "entertainment/hanime1",
+      "name": "Hanime1",
+      "provider": "v2fly",
+      "ref": "category-porn (hanime1.me) + existing zhbcn/Rules rule",
+      "target": "upstream/entertainment/hanime1.yaml",
+      "legacy_path": "Entertainment/Hanime1.yaml"
+    },
+    {
+      "id": "entertainment/hbo",
+      "name": "HBO",
+      "provider": "v2fly",
+      "ref": "hbo",
+      "target": "upstream/entertainment/hbo.yaml",
+      "legacy_path": "Entertainment/HBO.yaml"
+    },
+    {
+      "id": "entertainment/hulu",
+      "name": "Hulu",
+      "provider": "v2fly",
+      "ref": "hulu",
+      "target": "upstream/entertainment/hulu.yaml",
+      "legacy_path": "Entertainment/Hulu.yaml"
+    },
+    {
+      "id": "entertainment/netflix",
+      "name": "Netflix",
+      "provider": "v2fly",
+      "ref": "netflix",
+      "target": "upstream/entertainment/netflix.yaml",
+      "legacy_path": "Entertainment/Netflix.yaml"
+    },
+    {
+      "id": "entertainment/prime_video",
+      "name": "PrimeVideo",
+      "provider": "v2fly",
+      "ref": "primevideo",
+      "target": "upstream/entertainment/prime_video.yaml",
+      "legacy_path": "Entertainment/PrimeVideo.yaml"
+    },
+    {
+      "id": "entertainment/spotify",
+      "name": "Spotify",
+      "provider": "v2fly",
+      "ref": "spotify",
+      "target": "upstream/entertainment/spotify.yaml",
+      "legacy_path": "Entertainment/Spotify.yaml"
+    },
+    {
+      "id": "entertainment/tidal",
+      "name": "TIDAL",
+      "provider": "v2fly",
+      "ref": "tidal",
+      "target": "upstream/entertainment/tidal.yaml",
+      "legacy_path": "Entertainment/TIDAL.yaml"
+    },
+    {
+      "id": "entertainment/tik_tok",
+      "name": "TikTok",
+      "provider": "v2fly",
+      "ref": "tiktok",
+      "target": "upstream/entertainment/tik_tok.yaml",
+      "legacy_path": "Entertainment/TikTok.yaml"
+    },
+    {
+      "id": "entertainment/twitch",
+      "name": "Twitch",
+      "provider": "v2fly",
+      "ref": "twitch",
+      "target": "upstream/entertainment/twitch.yaml",
+      "legacy_path": "Entertainment/Twitch.yaml"
+    },
+    {
+      "id": "entertainment/you_tube",
+      "name": "YouTube",
+      "provider": "v2fly",
+      "ref": "youtube",
+      "target": "upstream/entertainment/you_tube.yaml",
+      "legacy_path": "Entertainment/YouTube.yaml"
+    },
+    {
+      "id": "entertainment/you_tube_music",
+      "name": "YouTubeMusic",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/YouTubeMusic/YouTubeMusic.yaml",
+      "target": "upstream/entertainment/you_tube_music.yaml",
+      "legacy_path": "Entertainment/YouTubeMusic.yaml"
+    },
+    {
+      "id": "finance/category_finance",
+      "name": "Finance",
+      "provider": "v2fly",
+      "ref": "category-finance selected services + paypal, mastercard, visa",
+      "target": "upstream/finance/category_finance.yaml",
+      "legacy_path": "Finance/Finance.yaml"
+    },
+    {
+      "id": "finance/mastercard_cn",
+      "name": "MastercardCN",
+      "provider": "v2fly",
+      "ref": "mastercard @cn",
+      "target": "upstream/finance/mastercard_cn.yaml",
+      "legacy_path": "Finance/MastercardCN.yaml"
+    },
+    {
+      "id": "finance/n26",
+      "name": "N26",
+      "provider": "v2fly",
+      "ref": "n26",
+      "target": "upstream/finance/n26.yaml",
+      "legacy_path": "Finance/N26.yaml"
+    },
+    {
+      "id": "finance/payment_cn",
+      "name": "PaymentCN",
+      "provider": "v2fly",
+      "ref": "unionpay + payment subsets from alibaba, tencent, jd, douyin, mastercard, visa + retained payment domains",
+      "target": "upstream/finance/payment_cn.yaml",
+      "legacy_path": "Finance/PaymentCN.yaml"
+    },
+    {
+      "id": "finance/pay_pal",
+      "name": "PayPal",
+      "provider": "v2fly",
+      "ref": "paypal",
+      "target": "upstream/finance/pay_pal.yaml",
+      "legacy_path": "Finance/PayPal.yaml"
+    },
+    {
+      "id": "finance/wise",
+      "name": "Wise",
+      "provider": "v2fly",
+      "ref": "wise",
+      "target": "upstream/finance/wise.yaml",
+      "legacy_path": "Finance/Wise.yaml"
+    },
+    {
+      "id": "gaming/ea",
+      "name": "EA",
+      "provider": "v2fly",
+      "ref": "ea",
+      "target": "upstream/gaming/ea.yaml",
+      "legacy_path": "Gaming/EA.yaml"
+    },
+    {
+      "id": "gaming/epic",
+      "name": "Epic",
+      "provider": "v2fly",
+      "ref": "epicgames",
+      "target": "upstream/gaming/epic.yaml",
+      "legacy_path": "Gaming/Epic.yaml"
+    },
+    {
+      "id": "gaming/origin",
+      "name": "Origin",
+      "provider": "v2fly",
+      "ref": "origin",
+      "target": "upstream/gaming/origin.yaml",
+      "legacy_path": "Gaming/Origin.yaml"
+    },
+    {
+      "id": "gaming/riot",
+      "name": "Riot",
+      "provider": "v2fly",
+      "ref": "riot",
+      "target": "upstream/gaming/riot.yaml",
+      "legacy_path": "Gaming/Riot.yaml"
+    },
+    {
+      "id": "gaming/sony",
+      "name": "Sony",
+      "provider": "v2fly",
+      "ref": "sony",
+      "target": "upstream/gaming/sony.yaml",
+      "legacy_path": "Gaming/Sony.yaml"
+    },
+    {
+      "id": "gaming/steam",
+      "name": "Steam",
+      "provider": "v2fly",
+      "ref": "steam",
+      "target": "upstream/gaming/steam.yaml",
+      "legacy_path": "Gaming/Steam.yaml"
+    },
+    {
+      "id": "gaming/steam_cn",
+      "name": "SteamCN",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/SteamCN/SteamCN.yaml",
+      "target": "upstream/gaming/steam_cn.yaml",
+      "legacy_path": "Gaming/SteamCN.yaml"
+    },
+    {
+      "id": "gaming/ubisoft",
+      "name": "Ubisoft",
+      "provider": "v2fly",
+      "ref": "ubisoft",
+      "target": "upstream/gaming/ubisoft.yaml",
+      "legacy_path": "Gaming/Ubisoft.yaml"
+    },
+    {
+      "id": "gaming/xbox",
+      "name": "Xbox",
+      "provider": "v2fly",
+      "ref": "xbox",
+      "target": "upstream/gaming/xbox.yaml",
+      "legacy_path": "Gaming/Xbox.yaml"
+    },
+    {
+      "id": "gaming/xiao_hei_he",
+      "name": "XiaoHeiHe",
+      "provider": "v2fly",
+      "ref": "xiaoheihe",
+      "target": "upstream/gaming/xiao_hei_he.yaml",
+      "legacy_path": "Gaming/XiaoHeiHe.yaml"
+    },
+    {
+      "id": "productivity/notion",
+      "name": "Notion",
+      "provider": "v2fly",
+      "ref": "notion",
+      "target": "upstream/productivity/notion.yaml",
+      "legacy_path": "Productivity/Notion.yaml"
+    },
+    {
+      "id": "security/1_password",
+      "name": "1Password",
+      "provider": "v2fly",
+      "ref": "agilebits",
+      "target": "upstream/security/1_password.yaml",
+      "legacy_path": "Security/1Password.yaml"
+    },
+    {
+      "id": "security/bitwarden",
+      "name": "Bitwarden",
+      "provider": "v2fly",
+      "ref": "bitwarden",
+      "target": "upstream/security/bitwarden.yaml",
+      "legacy_path": "Security/Bitwarden.yaml"
+    },
+    {
+      "id": "security/kaspersky",
+      "name": "Kaspersky",
+      "provider": "v2fly",
+      "ref": "kaspersky",
+      "target": "upstream/security/kaspersky.yaml",
+      "legacy_path": "Security/Kaspersky.yaml"
+    },
+    {
+      "id": "shopping/ali_express",
+      "name": "AliExpress",
+      "provider": "v2fly",
+      "ref": "alibaba (AliExpress subset) + existing zhbcn/Rules rule",
+      "target": "upstream/shopping/ali_express.yaml",
+      "legacy_path": "Shopping/AliExpress.yaml"
+    },
+    {
+      "id": "shopping/amazon",
+      "name": "Amazon",
+      "provider": "v2fly",
+      "ref": "amazon (shopping-only subset)",
+      "target": "upstream/shopping/amazon.yaml",
+      "legacy_path": "Shopping/Amazon.yaml"
+    },
+    {
+      "id": "shopping/best_buy",
+      "name": "BestBuy",
+      "provider": "v2fly",
+      "ref": "bestbuy (shopping-only subset)",
+      "target": "upstream/shopping/best_buy.yaml",
+      "legacy_path": "Shopping/BestBuy.yaml"
+    },
+    {
+      "id": "shopping/costco",
+      "name": "Costco",
+      "provider": "v2fly",
+      "ref": "costco",
+      "target": "upstream/shopping/costco.yaml",
+      "legacy_path": "Shopping/Costco.yaml"
+    },
+    {
+      "id": "shopping/coupang",
+      "name": "Coupang",
+      "provider": "v2fly",
+      "ref": "coupang",
+      "target": "upstream/shopping/coupang.yaml",
+      "legacy_path": "Shopping/Coupang.yaml"
+    },
+    {
+      "id": "shopping/e_bay",
+      "name": "eBay",
+      "provider": "v2fly",
+      "ref": "ebay (shopping-only subset)",
+      "target": "upstream/shopping/e_bay.yaml",
+      "legacy_path": "Shopping/eBay.yaml"
+    },
+    {
+      "id": "shopping/farfetch",
+      "name": "Farfetch",
+      "provider": "v2fly",
+      "ref": "farfetch",
+      "target": "upstream/shopping/farfetch.yaml",
+      "legacy_path": "Shopping/Farfetch.yaml"
+    },
+    {
+      "id": "shopping/lazada",
+      "name": "Lazada",
+      "provider": "v2fly",
+      "ref": "alibaba (Lazada subset) + existing zhbcn/Rules rule",
+      "target": "upstream/shopping/lazada.yaml",
+      "legacy_path": "Shopping/Lazada.yaml"
+    },
+    {
+      "id": "shopping/newegg",
+      "name": "Newegg",
+      "provider": "v2fly",
+      "ref": "newegg",
+      "target": "upstream/shopping/newegg.yaml",
+      "legacy_path": "Shopping/Newegg.yaml"
+    },
+    {
+      "id": "shopping/ozon",
+      "name": "Ozon",
+      "provider": "v2fly",
+      "ref": "ozon (shopping-only subset)",
+      "target": "upstream/shopping/ozon.yaml",
+      "legacy_path": "Shopping/Ozon.yaml"
+    },
+    {
+      "id": "shopping/rakuten",
+      "name": "Rakuten",
+      "provider": "v2fly",
+      "ref": "rakuten (shopping-only subset) + retained Rakuten Ichiba domains",
+      "target": "upstream/shopping/rakuten.yaml",
+      "legacy_path": "Shopping/Rakuten.yaml"
+    },
+    {
+      "id": "shopping/shopee",
+      "name": "Shopee",
+      "provider": "v2fly",
+      "ref": "shopee",
+      "target": "upstream/shopping/shopee.yaml",
+      "legacy_path": "Shopping/Shopee.yaml"
+    },
+    {
+      "id": "shopping/target",
+      "name": "Target",
+      "provider": "v2fly",
+      "ref": "target",
+      "target": "upstream/shopping/target.yaml",
+      "legacy_path": "Shopping/Target.yaml"
+    },
+    {
+      "id": "shopping/walmart",
+      "name": "Walmart",
+      "provider": "v2fly",
+      "ref": "walmart",
+      "target": "upstream/shopping/walmart.yaml",
+      "legacy_path": "Shopping/Walmart.yaml"
+    },
+    {
+      "id": "social/discord",
+      "name": "Discord",
+      "provider": "v2fly",
+      "ref": "discord",
+      "target": "upstream/social/discord.yaml",
+      "legacy_path": "Social/Discord.yaml"
+    },
+    {
+      "id": "social/facebook",
+      "name": "Facebook",
+      "provider": "v2fly",
+      "ref": "facebook",
+      "target": "upstream/social/facebook.yaml",
+      "legacy_path": "Social/Facebook.yaml"
+    },
+    {
+      "id": "social/instagram",
+      "name": "Instagram",
+      "provider": "v2fly",
+      "ref": "instagram",
+      "target": "upstream/social/instagram.yaml",
+      "legacy_path": "Social/Instagram.yaml"
+    },
+    {
+      "id": "social/line",
+      "name": "Line",
+      "provider": "v2fly",
+      "ref": "line",
+      "target": "upstream/social/line.yaml",
+      "legacy_path": "Social/Line.yaml"
+    },
+    {
+      "id": "social/linked_in",
+      "name": "LinkedIn",
+      "provider": "v2fly",
+      "ref": "linkedin",
+      "target": "upstream/social/linked_in.yaml",
+      "legacy_path": "Social/LinkedIn.yaml"
+    },
+    {
+      "id": "social/reddit",
+      "name": "Reddit",
+      "provider": "v2fly",
+      "ref": "reddit",
+      "target": "upstream/social/reddit.yaml",
+      "legacy_path": "Social/Reddit.yaml"
+    },
+    {
+      "id": "social/slack",
+      "name": "Slack",
+      "provider": "v2fly",
+      "ref": "slack",
+      "target": "upstream/social/slack.yaml",
+      "legacy_path": "Social/Slack.yaml"
+    },
+    {
+      "id": "social/teams",
+      "name": "Teams",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Teams/Teams.yaml",
+      "target": "upstream/social/teams.yaml",
+      "legacy_path": "Social/Teams.yaml"
+    },
+    {
+      "id": "social/telegram",
+      "name": "Telegram",
+      "provider": "v2fly",
+      "ref": "telegram",
+      "target": "upstream/social/telegram.yaml",
+      "legacy_path": "Social/Telegram.yaml"
+    },
+    {
+      "id": "social/threads",
+      "name": "Threads",
+      "provider": "v2fly",
+      "ref": "threads",
+      "target": "upstream/social/threads.yaml",
+      "legacy_path": "Social/Threads.yaml"
+    },
+    {
+      "id": "social/twitter",
+      "name": "Twitter",
+      "provider": "v2fly",
+      "ref": "twitter",
+      "target": "upstream/social/twitter.yaml",
+      "legacy_path": "Social/Twitter.yaml"
+    },
+    {
+      "id": "social/whatsapp",
+      "name": "Whatsapp",
+      "provider": "v2fly",
+      "ref": "whatsapp",
+      "target": "upstream/social/whatsapp.yaml",
+      "legacy_path": "Social/Whatsapp.yaml"
+    },
+    {
+      "id": "system/advertising",
+      "name": "Advertising",
+      "provider": "qingrex",
+      "ref": "广告平台拦截器.beta.sgmodule",
+      "target": "upstream/system/advertising.yaml",
+      "legacy_path": "System/Advertising.yaml"
+    },
+    {
+      "id": "system/httpdns",
+      "name": "HTTPDNS",
+      "provider": "qingrex",
+      "ref": "HTTPDNS拦截器.beta.sgmodule",
+      "target": "upstream/system/httpdns.yaml",
+      "legacy_path": "System/HTTPDNS.yaml"
+    },
+    {
+      "id": "system/lan",
+      "name": "LAN",
+      "provider": "sukka",
+      "ref": "non_ip/lan.conf, ip/lan.conf",
+      "target": "upstream/system/lan.yaml",
+      "legacy_path": "System/LAN.yaml"
+    },
+    {
+      "id": "system/reject",
+      "name": "Reject",
+      "provider": "sukka",
+      "ref": "non_ip/reject.conf",
+      "target": "upstream/system/reject.yaml",
+      "legacy_path": "System/Reject.yaml"
+    },
+    {
+      "id": "technology/adobe",
+      "name": "Adobe",
+      "provider": "v2fly",
+      "ref": "adobe",
+      "target": "upstream/technology/adobe.yaml",
+      "legacy_path": "Technology/Adobe.yaml"
+    },
+    {
+      "id": "technology/cloudflare",
+      "name": "Cloudflare",
+      "provider": "v2fly",
+      "ref": "cloudflare",
+      "target": "upstream/technology/cloudflare.yaml",
+      "legacy_path": "Technology/Cloudflare.yaml"
+    },
+    {
+      "id": "technology/docker",
+      "name": "Docker",
+      "provider": "v2fly",
+      "ref": "docker",
+      "target": "upstream/technology/docker.yaml",
+      "legacy_path": "Technology/Docker.yaml"
+    },
+    {
+      "id": "technology/dropbox",
+      "name": "Dropbox",
+      "provider": "v2fly",
+      "ref": "dropbox",
+      "target": "upstream/technology/dropbox.yaml",
+      "legacy_path": "Technology/Dropbox.yaml"
+    },
+    {
+      "id": "technology/figma",
+      "name": "Figma",
+      "provider": "v2fly",
+      "ref": "figma",
+      "target": "upstream/technology/figma.yaml",
+      "legacy_path": "Technology/Figma.yaml"
+    },
+    {
+      "id": "technology/git_hub",
+      "name": "GitHub",
+      "provider": "v2fly",
+      "ref": "github",
+      "target": "upstream/technology/git_hub.yaml",
+      "legacy_path": "Technology/GitHub.yaml"
+    },
+    {
+      "id": "technology/git_lab",
+      "name": "GitLab",
+      "provider": "v2fly",
+      "ref": "gitlab",
+      "target": "upstream/technology/git_lab.yaml",
+      "legacy_path": "Technology/GitLab.yaml"
+    },
+    {
+      "id": "technology/global",
+      "name": "Global",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Global/Global.yaml",
+      "target": "upstream/technology/global.yaml",
+      "legacy_path": "Technology/Global.yaml"
+    },
+    {
+      "id": "technology/global_domain",
+      "name": "Global_Domain",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Global/Global_Domain.yaml",
+      "target": "upstream/technology/global_domain.yaml",
+      "legacy_path": "Technology/Global_Domain.yaml"
+    },
+    {
+      "id": "technology/google",
+      "name": "Google",
+      "provider": "v2fly",
+      "ref": "google",
+      "target": "upstream/technology/google.yaml",
+      "legacy_path": "Technology/Google.yaml"
+    },
+    {
+      "id": "technology/google_fcm",
+      "name": "GoogleFCM",
+      "provider": "v2fly",
+      "ref": "googlefcm",
+      "target": "upstream/technology/google_fcm.yaml",
+      "legacy_path": "Technology/GoogleFCM.yaml"
+    },
+    {
+      "id": "technology/mail",
+      "name": "Mail",
+      "provider": "blackmatrix7",
+      "ref": "rule/Clash/Mail/Mail.yaml",
+      "target": "upstream/technology/mail.yaml",
+      "legacy_path": "Technology/Mail.yaml"
+    },
+    {
+      "id": "technology/microsoft",
+      "name": "Microsoft",
+      "provider": "v2fly",
+      "ref": "microsoft",
+      "target": "upstream/technology/microsoft.yaml",
+      "legacy_path": "Technology/Microsoft.yaml"
+    },
+    {
+      "id": "technology/mozilla",
+      "name": "Mozilla",
+      "provider": "v2fly",
+      "ref": "mozilla",
+      "target": "upstream/technology/mozilla.yaml",
+      "legacy_path": "Technology/Mozilla.yaml"
+    },
+    {
+      "id": "technology/nvidia",
+      "name": "NVIDIA",
+      "provider": "v2fly",
+      "ref": "nvidia",
+      "target": "upstream/technology/nvidia.yaml",
+      "legacy_path": "Technology/NVIDIA.yaml"
+    },
+    {
+      "id": "technology/one_drive",
+      "name": "OneDrive",
+      "provider": "v2fly",
+      "ref": "onedrive",
+      "target": "upstream/technology/one_drive.yaml",
+      "legacy_path": "Technology/OneDrive.yaml"
+    },
+    {
+      "id": "technology/oracle",
+      "name": "Oracle",
+      "provider": "v2fly",
+      "ref": "oracle",
+      "target": "upstream/technology/oracle.yaml",
+      "legacy_path": "Technology/Oracle.yaml"
+    },
+    {
+      "id": "technology/protonmail",
+      "name": "Protonmail",
+      "provider": "v2fly",
+      "ref": "protonmail",
+      "target": "upstream/technology/protonmail.yaml",
+      "legacy_path": "Technology/Protonmail.yaml"
+    },
+    {
+      "id": "technology/speedtest",
+      "name": "Speedtest",
+      "provider": "v2fly",
+      "ref": "speedtest",
+      "target": "upstream/technology/speedtest.yaml",
+      "legacy_path": "Technology/Speedtest.yaml"
+    },
+    {
+      "id": "technology/wikipedia",
+      "name": "Wikipedia",
+      "provider": "v2fly",
+      "ref": "wikimedia",
+      "target": "upstream/technology/wikipedia.yaml",
+      "legacy_path": "Technology/Wikipedia.yaml"
+    }
+  ]
+}

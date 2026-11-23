@@ -1,0 +1,10 @@
+# BUNDLE: ms_update
+# QX-COMPAT: COMPLETE-DOMAIN-IP; proxy is a placeholder; use force-policy and opt-parser=false.
+
+host,officecdn-microsoft-com.akamaized.net,proxy
+host,officecdn.microsoft.com,proxy
+host-suffix,dl.delivery.mp.microsoft.com,proxy
+host-suffix,do.dsp.mp.microsoft.com,proxy
+host-suffix,update.microsoft.com,proxy
+host-suffix,windowsupdate.com,proxy
+host-suffix,windowsupdate.microsoft.com,proxy

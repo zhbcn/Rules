@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Noon
+kind: custom
+source:
+  provider: custom
+  ref: custom
+rules:
+  domain_suffix:
+  - noon.com
+  - nooncdn.com

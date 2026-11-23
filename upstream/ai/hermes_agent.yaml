@@ -1,0 +1,12 @@
+schema: zhbcn-rules/v1
+name: HermesAgent
+kind: upstream
+source:
+  provider: v2fly
+  ref: vercel (skills.sh) + existing zhbcn/Rules rule
+rules:
+  domain_suffix:
+  - agentskills.io
+  - models.dev
+  - nousresearch.com
+  - skills.sh

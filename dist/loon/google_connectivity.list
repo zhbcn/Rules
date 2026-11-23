@@ -1,0 +1,8 @@
+# BUNDLE: google_connectivity
+# FORMAT: loon-list (policy-free; bind via [Remote Rule] policy=...)
+
+DOMAIN,clients1.google.com
+DOMAIN,clients3.google.com
+DOMAIN,connectivitycheck.android.com
+DOMAIN,connectivitycheck.google.com
+DOMAIN,connectivitycheck.gstatic.com

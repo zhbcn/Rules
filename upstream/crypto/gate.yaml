@@ -1,0 +1,21 @@
+schema: zhbcn-rules/v1
+name: Gate
+kind: upstream
+source:
+  provider: v2fly
+  ref: gateio + retained zhbcn/Rules domains
+rules:
+  domain:
+  - gimg2.staticimgs.com
+  - icon.staticimgs.com
+  domain_suffix:
+  - gate.com
+  - gate.io
+  - gate.tv
+  - gateapi.io
+  - gateapp.org
+  - gatedata.org
+  - gateimg.com
+  - gateio.live
+  - gateio.services
+  - gateio.ws

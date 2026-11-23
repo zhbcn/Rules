@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: XiaomiAI
+kind: upstream
+source:
+  provider: v2fly
+  ref: xiaomi-ai
+rules:
+  domain_suffix:
+  - miaibox.com
+  - xiaoaiassist.com
+  - xiaomimimo.com

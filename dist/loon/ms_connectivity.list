@@ -1,0 +1,5 @@
+# BUNDLE: ms_connectivity
+# FORMAT: loon-list (policy-free; bind via [Remote Rule] policy=...)
+
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,msftncsi.com

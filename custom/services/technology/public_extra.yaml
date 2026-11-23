@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: PublicExtra
+kind: custom
+source:
+  provider: custom
+  ref: Shared CDN routed to Public network
+notes: Shared CDN prioritized for Public network rather than Anthropic/Claude or Direct.
+rules:
+  domain:
+  - cdn.jsdelivr.net

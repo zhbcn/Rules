@@ -1,0 +1,14 @@
+schema: zhbcn-rules/v1
+name: GoogleConnectivity
+kind: custom
+source:
+  provider: official
+  ref: AOSP captive portal & connectivity check hosts
+notes: Android OS connectivity check endpoints; prioritized before Google bundle on Android.
+rules:
+  domain:
+  - clients1.google.com
+  - clients3.google.com
+  - connectivitycheck.android.com
+  - connectivitycheck.google.com
+  - connectivitycheck.gstatic.com

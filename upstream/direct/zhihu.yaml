@@ -1,0 +1,14 @@
+schema: zhbcn-rules/v1
+name: Zhihu
+kind: upstream
+source:
+  provider: v2fly
+  ref: zhihu
+rules:
+  domain_suffix:
+  - crash2.zhihu.com
+  - laiyagushi.com
+  - vzuu.com
+  - zhihu-web-analytics.zhihu.com
+  - zhihu.com
+  - zhimg.com

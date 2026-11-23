@@ -1,0 +1,15 @@
+schema: zhbcn-rules/v1
+name: NVIDIA_Direct
+kind: custom
+source:
+  provider: v2fly
+  ref: ''
+rules:
+  domain:
+  - gfwsl.geforce.com
+  - services.gfe.nvidia.com
+  domain_suffix:
+  - download.nvidia.com
+  - geforce.cn
+  - gputechconf.cn
+  - nvidia.cn

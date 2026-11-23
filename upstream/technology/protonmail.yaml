@@ -1,0 +1,17 @@
+schema: zhbcn-rules/v1
+name: Protonmail
+kind: upstream
+source:
+  provider: v2fly
+  ref: protonmail
+rules:
+  domain_suffix:
+  - pm.me
+  - proton.me
+  - protonmail.ch
+  - protonmail.com
+  - protonstatus.com
+  - protontech.ch
+  - protonvpn.ch
+  - protonvpn.com
+  - protonweb.com

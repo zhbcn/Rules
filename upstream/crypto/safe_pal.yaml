@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: SafePal
+kind: upstream
+source:
+  provider: v2fly
+  ref: safepal
+rules:
+  domain_suffix:
+  - isafepal.com
+  - safepal.com

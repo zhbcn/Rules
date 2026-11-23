@@ -1,0 +1,23 @@
+schema: zhbcn-rules/v1
+name: Grok
+kind: upstream
+source:
+  provider: v2fly
+  ref: xai + retained zhbcn/Rules domains
+rules:
+  domain_suffix:
+  - cursor-cdn.com
+  - cursor.com
+  - cursor.sh
+  - cursorapi.com
+  - cursorvm.com
+  - grok-sandbox.com
+  - grok.com
+  - grok.me
+  - grok.x.com
+  - grokbot.com
+  - grokipedia.com
+  - groktpcontent.com
+  - grokusercontent.com
+  - spacex.ai
+  - x.ai

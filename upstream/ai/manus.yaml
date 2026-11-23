@@ -1,0 +1,10 @@
+schema: zhbcn-rules/v1
+name: Manus
+kind: upstream
+source:
+  provider: v2fly
+  ref: manus
+rules:
+  domain_suffix:
+  - manus.im
+  - manuscdn.com

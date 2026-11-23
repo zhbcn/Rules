@@ -1,0 +1,11 @@
+schema: zhbcn-rules/v1
+name: Metaso
+kind: upstream
+source:
+  provider: v2fly
+  ref: category-ai-cn
+rules:
+  domain_suffix:
+  - meta.law
+  - metaso.cn
+  - xiezuocat.com

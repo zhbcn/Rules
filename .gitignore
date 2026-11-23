@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.local/
+.tmp/
+*.tmp
+*.temp
+*.bak
+*.orig
+*~
+
+# 本地维护规范
+AGENTS.md
+CLAUDE.md

@@ -1,0 +1,16 @@
+schema: zhbcn-rules/v1
+name: Farfetch
+kind: upstream
+source:
+  provider: v2fly
+  ref: farfetch
+rules:
+  domain_suffix:
+  - farfetch-apps.com
+  - farfetch-contents.com
+  - farfetch.cn
+  - farfetch.com
+  - farfetch.com.cn
+  - farfetch.net
+  - farfetch.net.cn
+  - fflnk.net

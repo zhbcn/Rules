@@ -1,0 +1,12 @@
+# BUNDLE: ms_update
+# FORMAT: egern-yaml (native)
+
+domain_set:
+- officecdn-microsoft-com.akamaized.net
+- officecdn.microsoft.com
+domain_suffix_set:
+- dl.delivery.mp.microsoft.com
+- do.dsp.mp.microsoft.com
+- update.microsoft.com
+- windowsupdate.com
+- windowsupdate.microsoft.com
