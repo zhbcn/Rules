@@ -32,7 +32,9 @@
 从仓库根目录使用全局 Python 3.14（先执行 `python -m pip install -r requirements.txt` 安装 PyYAML）：
 
 ```powershell
-# 1. 编译 22 个 Bundle 到五端 dist/（自动探测本机 verge-mihomo.exe / mihomo）
+# 1. 编译 22 个 Bundle 到五端 dist/（自动探测本机 verge-mihomo.exe / mihomo；
+#    跨环境或独立 Worktree 可通过环境变量 MIHOMO_BIN 或 --mihomo-bin 显式指定）
+# $env:MIHOMO_BIN = "<path-to-mihomo>"
 python scripts/build.py
 python scripts/build.py --check
 
@@ -44,6 +46,8 @@ python -m unittest discover -s tests
 python scripts/sync_upstream.py --update-commits --remote
 python scripts/sync_upstream.py --v2fly-data <path> --bm7-dir <path>
 ```
+
+> **跨仓 / 独立 Worktree 联调说明**：在本地私密配置仓库中渲染配置或执行推送前门禁时，请通过 `$env:RULES_REPO_ROOT = "<Rules工作树路径>"` 或 `--rules-root "<Rules工作树路径>"` 显式指向当前 `Rules` 工作树运行 `render.py` 与 `check_contract.py`。
 
 ## AI 与 NVIDIA 边界
 
