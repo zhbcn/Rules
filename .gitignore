@@ -11,6 +11,3 @@ __pycache__/
 # 本地维护规范
 AGENTS.md
 CLAUDE.md
-
-# AI 协作临时交接目录
-.ai-tmp/
