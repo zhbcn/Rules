@@ -14,36 +14,6 @@
       ]
     },
     {
-      "id": "reject_ads",
-      "description": "广告拦截集合",
-      "category": "reject",
-      "platform": "all",
-      "dns_bound": false,
-      "sources": [
-        "upstream/system/advertising.yaml"
-      ]
-    },
-    {
-      "id": "reject_httpdns",
-      "description": "HTTPDNS 拦截集合",
-      "category": "reject",
-      "platform": "all",
-      "dns_bound": false,
-      "sources": [
-        "upstream/system/httpdns.yaml"
-      ]
-    },
-    {
-      "id": "reject_general",
-      "description": "通用拦截集合",
-      "category": "reject",
-      "platform": "all",
-      "dns_bound": false,
-      "sources": [
-        "upstream/system/reject.yaml"
-      ]
-    },
-    {
       "id": "apple_system",
       "description": "iOS/Apple 系统基础设施（APNs/激活/校时/Captive）",
       "category": "os_infra",

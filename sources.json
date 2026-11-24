@@ -18,12 +18,6 @@
       "branch": "master",
       "commit": "7e6c2b32f9b900adc4366fc3d1a82e0925a98bd1",
       "raw_base": "https://raw.githubusercontent.com/SukkaLab/ruleset.skk.moe/{commit}/List"
-    },
-    "qingrex": {
-      "repo": "QingRex/LoonKissSurge",
-      "branch": "main",
-      "commit": "913ec005f544221e6c56a7d0ecec81c4b3b914bb",
-      "raw_base": "https://raw.githubusercontent.com/QingRex/LoonKissSurge/{commit}/Surge/Beta"
     }
   },
   "sources": [
@@ -1236,36 +1230,12 @@
       "legacy_path": "Social/Whatsapp.yaml"
     },
     {
-      "id": "system/advertising",
-      "name": "Advertising",
-      "provider": "qingrex",
-      "ref": "广告平台拦截器.beta.sgmodule",
-      "target": "upstream/system/advertising.yaml",
-      "legacy_path": "System/Advertising.yaml"
-    },
-    {
-      "id": "system/httpdns",
-      "name": "HTTPDNS",
-      "provider": "qingrex",
-      "ref": "HTTPDNS拦截器.beta.sgmodule",
-      "target": "upstream/system/httpdns.yaml",
-      "legacy_path": "System/HTTPDNS.yaml"
-    },
-    {
       "id": "system/lan",
       "name": "LAN",
       "provider": "sukka",
       "ref": "non_ip/lan.conf, ip/lan.conf",
       "target": "upstream/system/lan.yaml",
       "legacy_path": "System/LAN.yaml"
-    },
-    {
-      "id": "system/reject",
-      "name": "Reject",
-      "provider": "sukka",
-      "ref": "non_ip/reject.conf",
-      "target": "upstream/system/reject.yaml",
-      "legacy_path": "System/Reject.yaml"
     },
     {
       "id": "technology/adobe",

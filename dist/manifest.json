@@ -1,7 +1,7 @@
 {
   "schema": "zhbcn-manifest/v1",
   "raw_base": "https://raw.githubusercontent.com/zhbcn/Rules/main/dist",
-  "bundle_count": 25,
+  "bundle_count": 22,
   "bundles": {
     "lan": {
       "id": "lan",
@@ -28,96 +28,6 @@
         },
         "quantumultx": {
           "list": "dist/quantumultx/lan.list"
-        }
-      }
-    },
-    "reject_ads": {
-      "id": "reject_ads",
-      "description": "广告拦截集合",
-      "category": "reject",
-      "platform": "all",
-      "dns_bound": false,
-      "source_count": 1,
-      "canonical_rule_count": 296,
-      "artifacts": {
-        "mihomo": {
-          "domain_mrs": "dist/mihomo-stash/reject_ads_domain.mrs",
-          "ipcidr_mrs": "dist/mihomo-stash/reject_ads_ipcidr.mrs",
-          "classical_yaml": "dist/mihomo-classical/reject_ads_classical.yaml"
-        },
-        "stash": {
-          "domain_mrs": "dist/mihomo-stash/reject_ads_domain.mrs",
-          "ipcidr_mrs": "dist/mihomo-stash/reject_ads_ipcidr.mrs",
-          "classical_list": "dist/stash-classical/reject_ads_classical.list"
-        },
-        "egern": {
-          "yaml": "dist/egern/reject_ads.yaml"
-        },
-        "loon": {
-          "list": "dist/loon/reject_ads.list"
-        },
-        "quantumultx": {
-          "list": "dist/quantumultx/reject_ads.list"
-        }
-      }
-    },
-    "reject_httpdns": {
-      "id": "reject_httpdns",
-      "description": "HTTPDNS 拦截集合",
-      "category": "reject",
-      "platform": "all",
-      "dns_bound": false,
-      "source_count": 1,
-      "canonical_rule_count": 123,
-      "artifacts": {
-        "mihomo": {
-          "domain_mrs": "dist/mihomo-stash/reject_httpdns_domain.mrs",
-          "ipcidr_mrs": "dist/mihomo-stash/reject_httpdns_ipcidr.mrs",
-          "classical_yaml": "dist/mihomo-classical/reject_httpdns_classical.yaml"
-        },
-        "stash": {
-          "domain_mrs": "dist/mihomo-stash/reject_httpdns_domain.mrs",
-          "ipcidr_mrs": "dist/mihomo-stash/reject_httpdns_ipcidr.mrs",
-          "classical_list": "dist/stash-classical/reject_httpdns_classical.list"
-        },
-        "egern": {
-          "yaml": "dist/egern/reject_httpdns.yaml"
-        },
-        "loon": {
-          "list": "dist/loon/reject_httpdns.list"
-        },
-        "quantumultx": {
-          "list": "dist/quantumultx/reject_httpdns.list"
-        }
-      }
-    },
-    "reject_general": {
-      "id": "reject_general",
-      "description": "通用拦截集合",
-      "category": "reject",
-      "platform": "all",
-      "dns_bound": false,
-      "source_count": 1,
-      "canonical_rule_count": 374,
-      "artifacts": {
-        "mihomo": {
-          "domain_mrs": "dist/mihomo-stash/reject_general_domain.mrs",
-          "ipcidr_mrs": "dist/mihomo-stash/reject_general_ipcidr.mrs",
-          "classical_yaml": "dist/mihomo-classical/reject_general_classical.yaml"
-        },
-        "stash": {
-          "domain_mrs": "dist/mihomo-stash/reject_general_domain.mrs",
-          "ipcidr_mrs": "dist/mihomo-stash/reject_general_ipcidr.mrs",
-          "classical_list": "dist/stash-classical/reject_general_classical.list"
-        },
-        "egern": {
-          "yaml": "dist/egern/reject_general.yaml"
-        },
-        "loon": {
-          "list": "dist/loon/reject_general.list"
-        },
-        "quantumultx": {
-          "list": "dist/quantumultx/reject_general.list"
         }
       }
     },

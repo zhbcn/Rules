@@ -53,10 +53,7 @@ FORBIDDEN_COUPLING_TOKENS: tuple[str, ...] = (
 ALLOWED_UPSTREAM_HOST_CIDR_FILES: frozenset[str] = frozenset({
     "upstream/direct/cnip.yaml",
     "upstream/entertainment/global_media.yaml",
-    "upstream/system/advertising.yaml",
-    "upstream/system/httpdns.yaml",
     "upstream/system/lan.yaml",
-    "upstream/system/reject.yaml",
     "upstream/technology/global.yaml",
 })
 ALLOWED_CUSTOM_HOST_CIDRS: frozenset[str] = frozenset()
