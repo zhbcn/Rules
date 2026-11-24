@@ -75,6 +75,11 @@ def build_to_dir(root: Path, dist_dir: Path, mihomo_bin: Path) -> tuple[dict, di
             "category": bundle.meta.get("category", ""),
             "platform": bundle.meta.get("platform", "all"),
             "dns_bound": bool(bundle.meta.get("dns_bound", False)),
+            "capabilities": {
+                "has_ip_asn": bool(bundle.ruleset.ip_asn),
+                "has_ip": bundle.ruleset.has_ip_or_asn(),
+                "has_classical": bundle.ruleset.has_classical_only(),
+            },
             "source_count": len(bundle.meta.get("sources") or []),
             "canonical_rule_count": bundle.ruleset.count(),
             "artifacts": {
@@ -91,6 +96,7 @@ def build_to_dir(root: Path, dist_dir: Path, mihomo_bin: Path) -> tuple[dict, di
 
     manifest = {
         "schema": "zhbcn-manifest/v1",
+        "artifact_root": "dist",
         "raw_base": raw_base,
         "bundle_count": len(bundles),
         "bundles": manifest_bundles,

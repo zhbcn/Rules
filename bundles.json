@@ -217,7 +217,7 @@
     },
     {
       "id": "google",
-      "description": "Google 综合服务（Android 走独立 Google 服务组，他端走 Public network）",
+      "description": "Google 综合服务集合",
       "category": "routing",
       "platform": "all",
       "dns_bound": true,

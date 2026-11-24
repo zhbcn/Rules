@@ -1,5 +1,6 @@
 {
   "schema": "zhbcn-manifest/v1",
+  "artifact_root": "dist",
   "raw_base": "https://raw.githubusercontent.com/zhbcn/Rules/main/dist",
   "bundle_count": 22,
   "bundles": {
@@ -9,6 +10,11 @@
       "category": "infrastructure",
       "platform": "all",
       "dns_bound": false,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": true,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 61,
       "artifacts": {
@@ -37,6 +43,11 @@
       "category": "os_infra",
       "platform": "ios",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 6,
       "artifacts": {
@@ -66,6 +77,11 @@
       "category": "os_infra",
       "platform": "windows",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 2,
       "artifacts": {
@@ -95,6 +111,11 @@
       "category": "os_infra",
       "platform": "windows",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 7,
       "artifacts": {
@@ -124,6 +145,11 @@
       "category": "os_infra",
       "platform": "android",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 5,
       "artifacts": {
@@ -153,6 +179,11 @@
       "category": "os_infra",
       "platform": "android",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 12,
       "artifacts": {
@@ -182,6 +213,11 @@
       "category": "os_infra",
       "platform": "android",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 11,
       "artifacts": {
@@ -211,6 +247,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 2,
       "canonical_rule_count": 17,
       "artifacts": {
@@ -240,6 +281,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 6,
       "artifacts": {
@@ -269,6 +315,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 66,
       "artifacts": {
@@ -298,6 +349,11 @@
       "category": "ai",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": true,
+        "has_classical": true
+      },
       "source_count": 15,
       "canonical_rule_count": 154,
       "artifacts": {
@@ -332,6 +388,11 @@
       "category": "ai",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 16,
       "canonical_rule_count": 135,
       "artifacts": {
@@ -361,6 +422,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": false,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": true,
+        "has_classical": false
+      },
       "source_count": 2,
       "canonical_rule_count": 30,
       "artifacts": {
@@ -389,6 +455,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 3,
       "canonical_rule_count": 1701,
       "artifacts": {
@@ -418,6 +489,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": false,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": true,
+        "has_classical": true
+      },
       "source_count": 14,
       "canonical_rule_count": 2447,
       "artifacts": {
@@ -444,10 +520,15 @@
     },
     "google": {
       "id": "google",
-      "description": "Google 综合服务（Android 走独立 Google 服务组，他端走 Public network）",
+      "description": "Google 综合服务集合",
       "category": "routing",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 1,
       "canonical_rule_count": 1124,
       "artifacts": {
@@ -477,6 +558,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": false,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 5,
       "canonical_rule_count": 744,
       "artifacts": {
@@ -503,6 +589,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": false
+      },
       "source_count": 51,
       "canonical_rule_count": 309,
       "artifacts": {
@@ -532,6 +623,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": true,
+        "has_ip": true,
+        "has_classical": true
+      },
       "source_count": 36,
       "canonical_rule_count": 7009,
       "artifacts": {
@@ -563,6 +659,11 @@
       "category": "routing",
       "platform": "all",
       "dns_bound": false,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": false,
+        "has_classical": true
+      },
       "source_count": 66,
       "canonical_rule_count": 2641,
       "artifacts": {
@@ -591,6 +692,11 @@
       "category": "fallback",
       "platform": "all",
       "dns_bound": true,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": true,
+        "has_classical": true
+      },
       "source_count": 3,
       "canonical_rule_count": 23224,
       "artifacts": {
@@ -624,6 +730,11 @@
       "category": "fallback",
       "platform": "all",
       "dns_bound": false,
+      "capabilities": {
+        "has_ip_asn": false,
+        "has_ip": true,
+        "has_classical": true
+      },
       "source_count": 2,
       "canonical_rule_count": 35277,
       "artifacts": {

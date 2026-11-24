@@ -1,8 +1,11 @@
+import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
-from scripts.emitters.common import CompiledBundle
+from scripts.build import build_to_dir
+from scripts.emitters.common import CompiledBundle, EmitStats
 from scripts.emitters.egern import emit_egern
 from scripts.emitters.loon import emit_loon
 from scripts.emitters.quantumultx import emit_quantumultx
@@ -168,6 +171,67 @@ class SchemaAndPipelineTest(unittest.TestCase):
                     {"id": "direct/empty", "provider": "blackmatrix7", "ref": "empty.yaml", "target": "upstream/empty.yaml", "name": "Empty"},
                     bm7_dir=bm7_dir,
                 )
+
+    def test_build_to_dir_emits_manifest_v1_artifact_root_and_capabilities(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "upstream" / "demo").mkdir(parents=True)
+            (root / "upstream" / "demo" / "domain_only.yaml").write_text(
+                "schema: zhbcn-rules/v1\nname: DomainOnly\nkind: upstream\nsource:\n  provider: test\n"
+                "rules:\n  domain_suffix:\n  - example.com\n",
+                encoding="utf-8",
+            )
+            (root / "upstream" / "demo" / "ip_and_asn.yaml").write_text(
+                "schema: zhbcn-rules/v1\nname: IpAndAsn\nkind: upstream\nsource:\n  provider: test\n"
+                "rules:\n  ip_cidr:\n  - 1.2.3.0/24\n  ip_asn:\n  - '132203'\n",
+                encoding="utf-8",
+            )
+            (root / "bundles.json").write_text(
+                json.dumps({
+                    "version": 1,
+                    "schema": "zhbcn-bundles/v1",
+                    "raw_base": "https://raw.githubusercontent.com/zhbcn/Rules/main/dist",
+                    "bundles": [
+                        {
+                            "id": "domain_only",
+                            "description": "Domain only",
+                            "category": "routing",
+                            "platform": "all",
+                            "dns_bound": True,
+                            "sources": ["upstream/demo/domain_only.yaml"],
+                        },
+                        {
+                            "id": "ip_and_asn",
+                            "description": "IP and ASN",
+                            "category": "routing",
+                            "platform": "all",
+                            "dns_bound": False,
+                            "sources": ["upstream/demo/ip_and_asn.yaml"],
+                        },
+                    ],
+                }),
+                encoding="utf-8",
+            )
+
+            dist_dir = root / "dist"
+            with patch(
+                "scripts.build.emit_mihomo_stash",
+                side_effect=lambda *_args, **_kwargs: (EmitStats(), EmitStats()),
+            ):
+                manifest, _report = build_to_dir(root, dist_dir, Path("mihomo"))
+
+            written = json.loads((dist_dir / "manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest, written)
+            self.assertEqual(written["schema"], "zhbcn-manifest/v1")
+            self.assertEqual(written["artifact_root"], "dist")
+            self.assertEqual(
+                written["bundles"]["domain_only"]["capabilities"],
+                {"has_ip_asn": False, "has_ip": False, "has_classical": False},
+            )
+            self.assertEqual(
+                written["bundles"]["ip_and_asn"]["capabilities"],
+                {"has_ip_asn": True, "has_ip": True, "has_classical": True},
+            )
 
 
 if __name__ == "__main__":
