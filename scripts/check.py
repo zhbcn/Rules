@@ -243,8 +243,8 @@ def check_privacy_and_coupling(root: Path, errors: list[str]) -> None:
                     errors.append(f"HOST-IP-ALLOWLIST {rel}: unallowlisted patch host IP: {s}")
 
 
-def _validate_qx_file(path: Path, errors: list[str]) -> None:
-    rel = path.relative_to(ROOT).as_posix()
+def _validate_qx_file(path: Path, root: Path, errors: list[str]) -> None:
+    rel = path.relative_to(root).as_posix()
     seen: set[str] = set()
     for lineno, line in enumerate(path.read_text(encoding="utf-8-sig").splitlines(), 1):
         if not line.strip() or line.startswith("#"):
@@ -271,8 +271,8 @@ def _validate_qx_file(path: Path, errors: list[str]) -> None:
             errors.append(f"{rel}:{lineno}: invalid hostname filter: {val!r}")
 
 
-def _validate_loon_file(path: Path, errors: list[str]) -> None:
-    rel = path.relative_to(ROOT).as_posix()
+def _validate_loon_file(path: Path, root: Path, errors: list[str]) -> None:
+    rel = path.relative_to(root).as_posix()
     seen: set[str] = set()
     for lineno, line in enumerate(path.read_text(encoding="utf-8-sig").splitlines(), 1):
         if not line.strip() or line.startswith("#"):
@@ -353,14 +353,14 @@ def check_dist_invariants(root: Path, errors: list[str], *, require_complete_qx:
         # Loon & QX grammar checks
         loon_rel = arts.get("loon", {}).get("list")
         if loon_rel and (root / loon_rel).is_file():
-            _validate_loon_file(root / loon_rel, errors)
+            _validate_loon_file(root / loon_rel, root, errors)
         loon_stun_rel = arts.get("loon", {}).get("stun_list")
         if loon_stun_rel and (root / loon_stun_rel).is_file():
-            _validate_loon_file(root / loon_stun_rel, errors)
+            _validate_loon_file(root / loon_stun_rel, root, errors)
 
         qx_rel = arts.get("quantumultx", {}).get("list")
         if qx_rel and (root / qx_rel).is_file():
-            _validate_qx_file(root / qx_rel, errors)
+            _validate_qx_file(root / qx_rel, root, errors)
 
     if require_complete_qx:
         qx_totals = (report.get("totals") or {}).get("quantumultx") or {}

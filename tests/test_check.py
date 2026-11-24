@@ -133,6 +133,81 @@ and_set:
             check_sources_and_bundles(root, errors)
             self.assertTrue(any("canonical source has 0 rules" in e and "empty.yaml" in e for e in errors))
 
+    def test_check_dist_invariants_across_temp_root_for_egern_loon_qx(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "dist" / "egern").mkdir(parents=True)
+            (root / "dist" / "loon").mkdir(parents=True)
+            (root / "dist" / "quantumultx").mkdir(parents=True)
+
+            (root / "dist" / "egern" / "demo.yaml").write_text(
+                "no_resolve: true\ndomain_suffix_set:\n- example.com\nip_cidr_set:\n- 1.2.3.0/24\n",
+                encoding="utf-8",
+            )
+            (root / "dist" / "egern" / "demo_domain.yaml").write_text(
+                "domain_suffix_set:\n- example.com\n",
+                encoding="utf-8",
+            )
+            (root / "dist" / "loon" / "demo.list").write_text(
+                "DOMAIN-SUFFIX,example.com\nIP-CIDR,1.2.3.0/24,no-resolve\n",
+                encoding="utf-8",
+            )
+            (root / "dist" / "loon" / "demo_stun.list").write_text(
+                "AND,((PROTOCOL,STUN),(DOMAIN-SUFFIX,example.com))\n"
+                "AND,((PROTOCOL,STUN),(IP-CIDR,1.2.3.0/24,no-resolve))\n",
+                encoding="utf-8",
+            )
+            (root / "dist" / "quantumultx" / "demo.list").write_text(
+                "host-suffix,example.com,proxy\nip-cidr,1.2.3.0/24,proxy\n",
+                encoding="utf-8",
+            )
+            (root / "dist" / "manifest.json").write_text(
+                json.dumps({
+                    "schema": "zhbcn-manifest/v1",
+                    "bundles": {
+                        "demo": {
+                            "dns_bound": True,
+                            "artifacts": {
+                                "egern": {
+                                    "yaml": "dist/egern/demo.yaml",
+                                    "dns_yaml": "dist/egern/demo_domain.yaml",
+                                },
+                                "loon": {
+                                    "list": "dist/loon/demo.list",
+                                    "stun_list": "dist/loon/demo_stun.list",
+                                },
+                                "quantumultx": {
+                                    "list": "dist/quantumultx/demo.list",
+                                },
+                            },
+                        }
+                    },
+                }),
+                encoding="utf-8",
+            )
+            (root / "dist" / "build-report.json").write_text(
+                json.dumps({"schema": "zhbcn-build-report/v1", "totals": {"quantumultx": {"adapted": 0, "skipped": 0}}}),
+                encoding="utf-8",
+            )
+
+            errors: list[str] = []
+            check_dist_invariants(root, errors)
+            self.assertEqual(errors, [])
+
+            # Inject invalid Loon & QX lines and verify relative paths resolve against temp root
+            (root / "dist" / "loon" / "demo.list").write_text(
+                "IP-CIDR,1.2.3.0/24\n",
+                encoding="utf-8",
+            )
+            (root / "dist" / "quantumultx" / "demo.list").write_text(
+                "host-suffix,example.com,DIRECT\n",
+                encoding="utf-8",
+            )
+            bad_errors: list[str] = []
+            check_dist_invariants(root, bad_errors)
+            self.assertTrue(any("dist/loon/demo.list:1: missing ,no-resolve" in e for e in bad_errors))
+            self.assertTrue(any("dist/quantumultx/demo.list:1: invalid 3-field QX rule" in e for e in bad_errors))
+
 
 if __name__ == "__main__":
     unittest.main()
