@@ -7,7 +7,7 @@ from scripts.emitters.egern import emit_egern
 from scripts.emitters.loon import emit_loon
 from scripts.emitters.quantumultx import emit_quantumultx
 from scripts.schema import RuleSet
-from scripts.sync_upstream import _is_simple_ref, parse_clash_or_list_lines, parse_clash_yaml_text, parse_sgmodule_text, sync_source_entry
+from scripts.sync_upstream import _is_simple_ref, parse_clash_or_list_lines, parse_clash_yaml_text, sync_source_entry
 
 
 class SchemaAndPipelineTest(unittest.TestCase):
@@ -88,19 +88,27 @@ class SchemaAndPipelineTest(unittest.TestCase):
         rs = RuleSet(
             domain_suffix=["example.com"],
             ip_cidr=["1.2.3.0/24"],
-            and_rules=["((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com))"],
             url_regex=[r"/igd\.xml"],
         )
-        bundle = CompiledBundle(id="reject", meta={"id": "reject"}, ruleset=rs, source_rulesets={})
+        bundle = CompiledBundle(id="demo", meta={"id": "demo"}, ruleset=rs, source_rulesets={})
         with tempfile.TemporaryDirectory() as tmp:
             dist = Path(tmp)
             stats = emit_quantumultx(bundle, dist)
-            self.assertEqual(stats.adapted, 1)
+            self.assertEqual(stats.adapted, 0)
             self.assertEqual(stats.skipped, 1)
-            text = (dist / "quantumultx" / "reject.list").read_text(encoding="utf-8")
+            text = (dist / "quantumultx" / "demo.list").read_text(encoding="utf-8")
             self.assertIn("ip-cidr,1.2.3.0/24,proxy", text)
-            self.assertIn("host-wildcard,*-ad-*.byteimg.com,proxy", text)
             self.assertNotIn("no-resolve", text.split("\n", 4)[-1])
+
+        bad_and_bundle = CompiledBundle(
+            id="bad_and",
+            meta={"id": "bad_and"},
+            ruleset=RuleSet(and_rules=["((DOMAIN-KEYWORD,foo),(DOMAIN-SUFFIX,example.com))"]),
+            source_rulesets={},
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaises(ValueError):
+                emit_quantumultx(bad_and_bundle, Path(tmp))
 
     def test_sync_upstream_parsers_strip_process_rules(self):
         clash_yaml = """payload:
@@ -113,32 +121,9 @@ class SchemaAndPipelineTest(unittest.TestCase):
         self.assertEqual(rs.ip_cidr, ["10.0.0.0/8"])
         self.assertEqual(stripped, ["PROCESS-NAME,Thunder"])
 
-        sgmodule = """[General]
-name = test
-[Rule]
-DOMAIN,ads.example.com,REJECT
-AND,((DOMAIN-KEYWORD,-ad-,extended-matching),(DOMAIN-SUFFIX,byteimg.com,extended-matching)),REJECT
-AND,((DOMAIN-KEYWORD,tnc,extended-matching),(OR,((DOMAIN-SUFFIX,a.com,extended-matching),(DOMAIN-SUFFIX,b.com,extended-matching)))),REJECT
-PROCESS-NAME,foo,DIRECT
-[MITM]
-hostname = *
-"""
-        rs2, stripped2 = parse_sgmodule_text(sgmodule)
-        self.assertEqual(rs2.domain, ["ads.example.com"])
-        self.assertEqual(
-            rs2.and_rules,
-            [
-                "((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com))",
-                "((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,a.com))",
-                "((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,b.com))",
-            ],
-        )
-        self.assertEqual(stripped2, ["PROCESS-NAME,foo,DIRECT"])
-
     def test_sync_upstream_skips_composite_refs_across_providers(self):
         self.assertTrue(_is_simple_ref("v2fly", "anthropic"))
         self.assertFalse(_is_simple_ref("v2fly", "category-cryptocurrency (Bitcoin subset)"))
-        self.assertTrue(_is_simple_ref("qingrex", "广告平台拦截器.beta.sgmodule"))
         self.assertFalse(_is_simple_ref("blackmatrix7", "rule/Clash/Crypto/Crypto.yaml (Avalanche subset)"))
         self.assertFalse(_is_simple_ref("sukka", "non_ip/lan.conf, ip/lan.conf"))
 

@@ -8,7 +8,6 @@ from pathlib import Path
 from .common import (
     APPROVED_WILDCARD_REGEX_ADAPTATIONS,
     COVERED_REGEX_SUFFIXES,
-    DOMAIN_AND_RULES,
     NETFLIX_REGEX_PREFIXES,
     QX_SUFFIX_ADAPTATIONS,
     CompiledBundle,
@@ -90,14 +89,7 @@ def emit_quantumultx(bundle: CompiledBundle, dist_dir: Path) -> EmitStats:
     lines.extend(f"ip-asn,{v},proxy" for v in rs.ip_asn)
 
     for expr in rs.and_rules:
-        full_key = f"AND,{expr}"
-        if full_key in DOMAIN_AND_RULES:
-            globs = DOMAIN_AND_RULES[full_key]
-            stats.add_adapted(full_key, "qx_approved_and_to_wildcard", len(globs))
-            lines.append(f"# QX-ADAPTED (approved domain AND): {full_key}")
-            lines.extend(f"host-wildcard,{g},proxy" for g in globs)
-        else:
-            raise ValueError(f"Unreviewed AND rule for Quantumult X: {full_key!r}")
+        raise ValueError(f"Unsupported AND rule for Quantumult X: AND,{expr!r}")
 
     for pat in rs.url_regex:
         stats.add_skipped(f"URL-REGEX,{pat}", "unsupported_url_regex_in_qx")

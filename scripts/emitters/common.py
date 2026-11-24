@@ -15,24 +15,8 @@ if str(SCRIPTS_DIR) not in sys.path:
 from schema import RuleSet, load_patch_file, load_source_file  # noqa: E402
 
 
-# Reviewed exact/approved regex & AND adaptation tables shared by Loon and QX.
+# Reviewed exact/approved regex adaptation tables shared by Loon and QX.
 # Never silently drop unreviewed patterns: emitters raise ValueError instead.
-DOMAIN_AND_RULES: dict[str, list[str]] = {
-    "AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com))": ["*-ad-*.byteimg.com"],
-    "AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,-normal.zijieapi.com))": [
-        "*ads*-normal.zijieapi.com*",
-        "*-normal.zijieapi.com*ads*",
-    ],
-    "AND,((DOMAIN-KEYWORD,adash),(DOMAIN-SUFFIX,ut.taobao.com))": ["*adash*.ut.taobao.com"],
-    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,bytedance.com))": ["*tnc*.bytedance.com"],
-    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,capcutapi.com))": ["*tnc*.capcutapi.com"],
-    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,isnssdk.com))": ["*tnc*.isnssdk.com"],
-    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,sgsnssdk.com))": ["*tnc*.sgsnssdk.com"],
-    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,snssdk.com))": ["*tnc*.snssdk.com"],
-    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,toutiaoapi.com))": ["*tnc*.toutiaoapi.com"],
-    "AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-SUFFIX,zijieapi.com))": ["*tnc*.zijieapi.com"],
-}
-
 APPROVED_WILDCARD_REGEX_ADAPTATIONS: dict[str, list[str]] = {
     r"^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$": [
         "chatgpt-async-webps-prod-?*-?*.webpubsub.azure.com",

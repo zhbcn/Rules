@@ -3,7 +3,7 @@
 
 Supports both:
   1. Remote pinned-commit fetch via GitHub Raw (--remote, with optional --update-commits)
-  2. Local snapshot directories (--v2fly-data, --bm7-dir, --sukka-dir, --qingrex-dir)
+  2. Local snapshot directories (--v2fly-data, --bm7-dir, --sukka-dir)
 
 All outputs are normalized to zhbcn-rules/v1 with PROCESS-* stripped and logged.
 """
@@ -44,48 +44,6 @@ V2FLY_PREFIX_MAP = {
 }
 SIMPLE_V2FLY_REF_RE = re.compile(r"^[a-z0-9!_-]+$")
 SIMPLE_PATH_REF_RE = re.compile(r"^[^\s,+()]+$")
-
-
-def _split_top_level_parens(text: str) -> list[str]:
-    parts: list[str] = []
-    start = 0
-    depth = 0
-    for idx, ch in enumerate(text):
-        if ch == "(":
-            depth += 1
-        elif ch == ")":
-            depth -= 1
-        elif ch == "," and depth == 0:
-            parts.append(text[start:idx].strip())
-            start = idx + 1
-    parts.append(text[start:].strip())
-    return parts
-
-
-def _normalize_and_exprs(rest: str) -> list[str]:
-    """Strip Surge-only trailing policy/extended-matching and flatten nested OR children."""
-    expr = rest.strip()
-    if expr.startswith("((") and not expr.endswith("))"):
-        last_paren = expr.rfind("))")
-        if last_paren != -1:
-            expr = expr[: last_paren + 2]
-    expr = re.sub(r",\s*extended-matching(?=\s*\))", "", expr, flags=re.IGNORECASE)
-    if not (expr.startswith("(") and expr.endswith(")")):
-        return [expr]
-    children = _split_top_level_parens(expr[1:-1].strip())
-    expanded: list[list[str]] = []
-    for child in children:
-        if child.upper().startswith("(OR,(") and child.endswith("))"):
-            or_inner = child[4:-1].strip()
-            if or_inner.startswith("(") and or_inner.endswith(")"):
-                expanded.append(_split_top_level_parens(or_inner[1:-1].strip()))
-                continue
-        expanded.append([child])
-    out: list[str] = []
-    from itertools import product
-    for combo in product(*expanded):
-        out.append("(" + ",".join(combo) + ")")
-    return out
 
 
 def _is_simple_ref(provider: str, ref: str) -> bool:
@@ -168,8 +126,7 @@ def parse_clash_or_list_lines(lines: list[str]) -> tuple[RuleSet, list[str]]:
             continue
 
         if kind_u == "AND":
-            for normalized in _normalize_and_exprs(rest):
-                rs.add("and", normalized)
+            rs.add("and", rest.strip())
             continue
 
         if kind_u == "DOMAIN-REGEX":
@@ -200,23 +157,6 @@ def parse_clash_yaml_text(text: str) -> tuple[RuleSet, list[str]]:
     if isinstance(doc, dict) and isinstance(doc.get("payload"), list):
         return parse_clash_or_list_lines([str(x) for x in doc["payload"]])
     return parse_clash_or_list_lines(text.splitlines())
-
-
-def parse_sgmodule_text(text: str) -> tuple[RuleSet, list[str]]:
-    in_rule = False
-    rule_lines: list[str] = []
-    for raw in text.splitlines():
-        s = raw.strip()
-        if s.startswith("[") and s.endswith("]"):
-            in_rule = s.lower() == "[rule]"
-            continue
-        if in_rule:
-            # QingRex sgmodules only contribute native domain/IP/AND rules;
-            # URL-REGEX / USER-AGENT require MITM and are intentionally excluded.
-            if s.upper().startswith(("URL-REGEX,", "USER-AGENT,")):
-                continue
-            rule_lines.append(raw)
-    return parse_clash_or_list_lines(rule_lines)
 
 
 def _fetch_v2fly_remote(raw_base: str, list_name: str, stack: tuple[str, ...] = ()) -> RuleSet:
@@ -255,7 +195,6 @@ def sync_source_entry(
     v2fly_data: Path | None = None,
     bm7_dir: Path | None = None,
     sukka_dir: Path | None = None,
-    qingrex_dir: Path | None = None,
     check_only: bool = False,
 ) -> tuple[str, int, list[str]]:
     """Sync one entry from sources.json. Returns (status, rule_count, stripped_process)."""
@@ -313,18 +252,6 @@ def sync_source_entry(
         else:
             return "skipped_no_input", 0, []
 
-    elif provider == "qingrex":
-        if qingrex_dir:
-            src_file = qingrex_dir / ref
-            if not src_file.is_file():
-                raise FileNotFoundError(f"Missing local qingrex file: {src_file}")
-            rs, stripped = parse_sgmodule_text(src_file.read_text(encoding="utf-8-sig"))
-        elif remote:
-            url = f"{raw_base}/{quote(ref, safe='/')}"
-            rs, stripped = parse_sgmodule_text(_http_get(url))
-        else:
-            return "skipped_no_input", 0, []
-
     assert rs is not None
     if rs.count() == 0:
         raise ValueError(
@@ -363,7 +290,6 @@ def main() -> int:
     parser.add_argument("--v2fly-data", type=Path, help="Local v2fly/domain-list-community/data directory")
     parser.add_argument("--bm7-dir", type=Path, help="Local blackmatrix7/ios_rule_script root directory")
     parser.add_argument("--sukka-dir", type=Path, help="Local SukkaLab/ruleset.skk.moe/List directory")
-    parser.add_argument("--qingrex-dir", type=Path, help="Local QingRex/LoonKissSurge/Surge/Beta directory")
     parser.add_argument("--source", action="append", help="Sync only specified source id(s)")
     parser.add_argument("--check", action="store_true", help="Check if upstream/*.yaml matches synced output")
     args = parser.parse_args()
@@ -398,7 +324,6 @@ def main() -> int:
             v2fly_data=args.v2fly_data,
             bm7_dir=args.bm7_dir,
             sukka_dir=args.sukka_dir,
-            qingrex_dir=args.qingrex_dir,
             check_only=args.check,
         )
         if status == "synced":

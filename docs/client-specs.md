@@ -103,11 +103,11 @@
     5. `user-agent`
     6. `final`
   * 同类型规则内，本地 `[filter_local]` 优先于远程 `[filter_remote]`，远程按书写顺序生效。
-  * **跨 Bundle 覆盖风险提示**：若靠后 Bundle（如 `direct_cn`）中存在精确 `host` 规则，而靠前 Bundle（如 `aigc` 或 `streaming`）中仅写了同域名的 `host-suffix`，在开启分流匹配优化时，靠后的精确 `host` 可能反超命中；因此关键例外（如 `cdn.jsdelivr.net`、字节 `tnc` 放行）在 QX 侧须留意类型层级，并在 `build-report.json` 中审计适配差异。
+  * **跨 Bundle 覆盖风险提示**：若靠后 Bundle（如 `direct_cn`）中存在精确 `host` 规则，而靠前 Bundle（如 `aigc` 或 `streaming`）中仅写了同域名的 `host-suffix`，在开启分流匹配优化时，靠后的精确 `host` 可能反超命中；因此关键例外（如 `cdn.jsdelivr.net`）在 QX 侧须留意类型层级，并在 `build-report.json` 中审计适配差异。
 * **DNS 绑定机制与限制**：
   * **`[dns]` 不支持规则集绑定**，仅支持单域/通配写法 `server = /domain/upstream` 与 `doh-server = /domain/url`。代理命中流量默认远端解析，本地 `[dns]` 仅负责直连域名、Apple 系统域与机场节点引导。
 * **不支持项与适配策略**：
-  * **不支持**：`DOMAIN-REGEX`（仅白名单转 `host-wildcard` 或数字后缀枚举，标记 `QX-ADAPTED`）、`AND`/`OR`/`NOT`（仅白名单纯域名 `AND` 转 `host-wildcard`，其余显式跳过）、`PROTOCOL`（无 STUN 协议分流）、`PROCESS-NAME`/`PROCESS-PATH`、`URL-REGEX`。
+  * **不支持**：`DOMAIN-REGEX`（仅白名单转 `host-wildcard` 或数字后缀枚举，标记 `QX-ADAPTED`）、`AND`/`OR`/`NOT`（不支持，编译期 fail-closed 报错）、`PROTOCOL`（无 STUN 协议分流）、`PROCESS-NAME`/`PROCESS-PATH`、`URL-REGEX`。
   * 所有跳过项必须在 `dist/build-report.json` 中显式计数并列出原因，绝不静默丢弃。
 
 ---
